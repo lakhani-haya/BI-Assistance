@@ -1,0 +1,1001 @@
+order_id,date,category,product_name,region,quantity,unit_price,total_amount,discount_percent,customer_id,sales_rep,payment_method,shipping_cost
+ORD-22280,2023-01-31,Toys,Board Game,North,10,49.62,496.19,12.7,CUST-4582,Rep_8,Credit Card,16.22
+ORD-54118,2023-08-09,Toys,Building Blocks,West,6,65.38,392.27,8.3,CUST-2674,Rep_3,Online,6.93
+ORD-85674,2024-01-06,Home & Garden,Curtains,East,10,410.82,4108.16,26.6,CUST-4150,Rep_3,Credit Card,18.23
+ORD-89840,2024-11-30,Home & Garden,Sofa,South,5,379.52,2579.26,21.1,CUST-3803,Rep_18,Debit Card,8.27
+ORD-84341,2023-08-05,Sports,Running Shoes,Central,7,38.75,271.22,8.0,CUST-6155,Rep_7,Online,12.91
+ORD-76784,2023-05-22,Toys,Doll,South,7,80.49,563.41,10.9,CUST-9085,Rep_3,Credit Card,22.22
+ORD-99353,2023-04-28,Clothing,Jeans,West,1,71.04,71.04,20.4,CUST-9797,Rep_9,Cash,7.23
+ORD-76540,2023-11-02,Sports,Tennis Racket,West,2,359.35,1032.53,26.1,CUST-4258,Rep_5,Cash,20.25
+ORD-20322,2024-08-03,Books,Comic Book,North,4,48.55,194.22,1.7,CUST-2403,Rep_16,Credit Card,7.87
+ORD-50857,2024-12-07,Books,Cookbook,South,9,26.5,281.54,22.7,CUST-7537,Rep_12,Online,7.4
+ORD-53309,2023-02-02,Sports,Basketball,South,1,117.91,117.91,6.9,CUST-2160,Rep_17,Debit Card,10.57
+ORD-65519,2024-11-05,Sports,Tennis Racket,Central,4,237.33,1207.95,2.8,CUST-7735,Rep_15,Credit Card,18.47
+ORD-42742,2024-04-18,Toys,Board Game,North,7,45.0,314.98,5.5,CUST-2235,Rep_15,Credit Card,6.01
+ORD-61173,2023-01-03,Books,Fiction Novel,North,1,17.63,17.63,4.9,CUST-5345,Rep_15,Cash,4.54
+ORD-75909,2024-05-03,Toys,Building Blocks,West,1,74.91,74.91,1.5,CUST-9701,Rep_6,Credit Card,24.22
+ORD-64948,2023-03-25,Electronics,Smartphone,North,10,1215.9,12158.95,1.2,CUST-9565,Rep_11,Cash,9.09
+ORD-23104,2024-07-30,Toys,Puzzle,South,1,80.99,80.99,13.7,CUST-2200,Rep_18,Debit Card,15.12
+ORD-49240,2024-07-21,Clothing,Dress,North,9,86.31,776.81,0.2,CUST-2697,Rep_5,Cash,7.31
+ORD-22097,2023-02-22,Electronics,Smart Watch,South,8,570.94,4567.55,7.5,CUST-7939,Rep_9,Credit Card,5.07
+ORD-86350,2024-01-14,Clothing,Dress,South,3,99.78,299.33,16.4,CUST-3426,Rep_14,Debit Card,5.84
+ORD-31299,2023-08-31,Home & Garden,Sofa,East,10,114.45,1144.55,22.5,CUST-3900,Rep_14,Credit Card,8.59
+ORD-39219,2023-08-22,Home & Garden,Plant,South,8,136.67,1093.39,10.5,CUST-1387,Rep_7,Online,11.57
+ORD-15014,2023-09-29,Electronics,Tablet,East,5,1248.17,6240.83,5.4,CUST-2776,Rep_20,Online,11.91
+ORD-97900,2024-07-05,Home & Garden,Plant,Central,9,653.37,5880.3,27.8,CUST-4228,Rep_12,Online,6.4
+ORD-26683,2024-07-21,Toys,Puzzle,Central,7,34.64,242.46,20.9,CUST-4143,Rep_14,Online,18.55
+ORD-98555,2024-03-28,Clothing,Jacket,Central,6,102.08,612.48,13.9,CUST-4501,Rep_17,Online,20.87
+ORD-29313,2023-07-23,Toys,Action Figure,North,5,25.47,127.36,6.7,CUST-1400,Rep_2,Debit Card,24.68
+ORD-65724,2023-04-20,Books,Fiction Novel,West,1,21.8,21.8,26.8,CUST-4585,Rep_6,Online,2.3
+ORD-65933,2024-05-31,Clothing,T-Shirt,West,8,84.59,676.7,18.4,CUST-9976,Rep_15,Debit Card,19.87
+ORD-40735,2023-10-20,Sports,Yoga Mat,East,8,383.06,3064.45,2.3,CUST-5451,Rep_11,Cash,22.86
+ORD-61049,2024-03-06,Electronics,Smartphone,South,7,529.32,3705.25,1.9,CUST-1320,Rep_19,Online,14.54
+ORD-67125,2023-10-07,Home & Garden,Lamp,West,4,382.44,1529.77,14.6,CUST-8956,Rep_1,Online,11.72
+ORD-27786,2024-03-14,Toys,Doll,South,1,59.69,59.69,2.5,CUST-8564,Rep_6,Credit Card,10.2
+ORD-16826,2024-07-06,Home & Garden,Table,West,2,352.3,704.6,14.1,CUST-6733,Rep_8,Credit Card,20.62
+ORD-43586,2024-04-21,Toys,Board Game,North,10,49.09,490.94,28.4,CUST-7043,Rep_6,Credit Card,20.56
+ORD-41830,2024-12-08,Clothing,Dress,North,4,182.93,1048.0,2.3,CUST-2669,Rep_10,Credit Card,20.92
+ORD-93307,2024-01-06,Books,Fiction Novel,East,8,10.17,81.39,3.2,CUST-8532,Rep_5,Online,3.06
+ORD-46559,2023-03-30,Books,Biography,Central,4,29.46,117.85,24.9,CUST-8385,Rep_8,Online,5.42
+ORD-82848,2023-10-10,Toys,Doll,East,10,29.48,294.79,21.0,CUST-1166,Rep_17,Debit Card,6.71
+ORD-97026,2024-12-09,Toys,Doll,West,5,6.2,37.1,6.6,CUST-7046,Rep_16,Cash,13.51
+ORD-38361,2024-12-07,Toys,Building Blocks,East,9,25.0,264.16,28.5,CUST-8933,Rep_9,Cash,24.61
+ORD-93606,2023-05-10,Clothing,Dress,South,5,58.84,294.2,20.9,CUST-9042,Rep_4,Credit Card,16.48
+ORD-99974,2024-10-06,Sports,Yoga Mat,West,8,423.31,3386.51,2.2,CUST-1878,Rep_5,Debit Card,21.22
+ORD-66207,2023-11-01,Home & Garden,Sofa,South,8,455.38,5260.84,27.3,CUST-6003,Rep_19,Credit Card,17.19
+ORD-71592,2024-08-31,Toys,Board Game,South,7,17.19,120.3,13.5,CUST-5771,Rep_2,Debit Card,10.76
+ORD-94886,2023-08-19,Home & Garden,Plant,North,7,770.94,5396.61,3.4,CUST-3441,Rep_9,Debit Card,6.43
+ORD-67377,2024-05-20,Clothing,Dress,Central,5,104.07,520.36,15.0,CUST-2317,Rep_20,Credit Card,22.79
+ORD-71669,2023-06-29,Toys,Puzzle,Central,5,78.85,394.23,17.3,CUST-9502,Rep_15,Cash,8.63
+ORD-96846,2023-10-23,Books,Textbook,West,7,11.23,78.63,20.8,CUST-7561,Rep_18,Credit Card,4.73
+ORD-77952,2023-07-12,Home & Garden,Lamp,East,8,763.6,6108.81,12.4,CUST-6927,Rep_20,Online,17.51
+ORD-82199,2024-12-27,Electronics,Smartphone,East,10,869.31,10113.11,24.0,CUST-1224,Rep_18,Online,6.86
+ORD-69871,2023-09-07,Electronics,Headphones,North,8,939.34,7514.72,29.4,CUST-3369,Rep_13,Debit Card,23.44
+ORD-86011,2024-08-24,Books,Cookbook,North,5,23.71,118.54,21.8,CUST-9022,Rep_5,Online,5.23
+ORD-15720,2024-02-25,Home & Garden,Lamp,Central,7,870.61,6094.27,7.0,CUST-6213,Rep_16,Online,12.72
+ORD-12011,2024-04-12,Toys,Action Figure,West,2,71.82,143.65,15.8,CUST-3361,Rep_14,Debit Card,6.5
+ORD-80912,2024-05-14,Home & Garden,Lamp,Central,6,697.62,4185.71,18.8,CUST-1588,Rep_20,Credit Card,9.7
+ORD-52516,2023-02-17,Toys,Puzzle,South,5,34.37,171.85,27.1,CUST-1919,Rep_10,Cash,12.5
+ORD-28758,2024-08-20,Clothing,Jeans,Central,4,121.42,485.66,14.9,CUST-4804,Rep_15,Cash,14.19
+ORD-49599,2024-04-12,Toys,Board Game,West,7,48.22,337.57,20.7,CUST-4263,Rep_13,Online,7.13
+ORD-89482,2023-02-20,Sports,Bicycle,East,10,362.32,3623.19,26.0,CUST-9138,Rep_10,Debit Card,17.14
+ORD-14373,2024-03-27,Home & Garden,Table,South,1,666.77,666.77,9.3,CUST-6977,Rep_5,Credit Card,23.19
+ORD-48684,2024-05-08,Home & Garden,Plant,South,3,814.59,2443.78,7.7,CUST-6549,Rep_4,Online,24.26
+ORD-59941,2024-11-19,Clothing,Jeans,West,8,146.6,1413.07,11.1,CUST-7086,Rep_4,Debit Card,14.43
+ORD-14877,2023-02-16,Books,Comic Book,East,7,44.75,313.27,3.5,CUST-5986,Rep_16,Credit Card,2.58
+ORD-74139,2024-11-01,Books,Cookbook,West,3,19.66,67.2,26.6,CUST-7686,Rep_9,Credit Card,6.14
+ORD-34878,2023-10-10,Clothing,Shoes,West,6,170.82,1024.92,1.8,CUST-3001,Rep_15,Credit Card,18.26
+ORD-40539,2023-08-10,Toys,Building Blocks,North,9,78.62,707.6,6.2,CUST-6383,Rep_5,Credit Card,10.55
+ORD-32838,2023-01-17,Clothing,Jeans,Central,4,42.33,169.31,17.7,CUST-5347,Rep_2,Debit Card,19.83
+ORD-70036,2024-11-05,Books,Fiction Novel,North,1,23.57,30.85,21.8,CUST-1510,Rep_2,Online,7.08
+ORD-52622,2024-07-15,Sports,Basketball,West,10,138.7,1387.05,19.0,CUST-7240,Rep_20,Cash,14.07
+ORD-64239,2023-08-22,Books,Textbook,North,7,27.71,193.98,13.5,CUST-6553,Rep_15,Online,4.5
+ORD-58843,2023-04-09,Electronics,Tablet,West,2,674.39,1348.78,2.8,CUST-3131,Rep_18,Credit Card,16.73
+ORD-50953,2024-09-06,Books,Comic Book,East,1,19.1,19.1,29.1,CUST-6761,Rep_4,Debit Card,2.93
+ORD-90422,2024-09-28,Sports,Tennis Racket,North,9,106.22,955.98,29.2,CUST-1430,Rep_20,Cash,5.58
+ORD-38197,2024-06-27,Home & Garden,Lamp,East,1,180.97,180.97,2.8,CUST-7163,Rep_14,Online,11.82
+ORD-89570,2024-11-08,Home & Garden,Lamp,East,2,120.04,304.81,8.2,CUST-8242,Rep_14,Cash,9.31
+ORD-11007,2023-02-26,Books,Fiction Novel,East,7,25.85,180.96,29.5,CUST-4349,Rep_10,Debit Card,6.6
+ORD-15544,2023-12-29,Home & Garden,Lamp,East,9,344.34,3498.3,25.0,CUST-8147,Rep_1,Online,23.42
+ORD-21551,2024-12-07,Home & Garden,Curtains,West,10,385.14,5653.45,13.8,CUST-8155,Rep_4,Debit Card,13.71
+ORD-55793,2023-07-18,Sports,Bicycle,North,2,148.44,296.87,15.9,CUST-6752,Rep_5,Debit Card,7.06
+ORD-99277,2024-04-04,Home & Garden,Table,South,10,519.38,5193.75,22.8,CUST-6295,Rep_11,Debit Card,13.8
+ORD-94497,2023-03-20,Sports,Yoga Mat,East,6,38.26,229.57,25.0,CUST-2479,Rep_20,Online,14.25
+ORD-21053,2023-12-18,Books,Fiction Novel,West,8,29.12,347.82,3.1,CUST-9266,Rep_6,Credit Card,3.49
+ORD-94843,2024-10-08,Sports,Yoga Mat,Central,10,149.81,1498.12,1.6,CUST-6482,Rep_3,Cash,6.89
+ORD-96787,2023-11-14,Toys,Doll,East,3,9.24,41.21,27.5,CUST-7421,Rep_5,Credit Card,11.19
+ORD-57526,2023-01-19,Sports,Running Shoes,South,7,294.43,2060.99,15.3,CUST-6060,Rep_6,Debit Card,11.83
+ORD-91006,2023-12-11,Sports,Tennis Racket,South,9,392.74,5127.22,1.1,CUST-3147,Rep_20,Online,8.09
+ORD-50562,2023-09-02,Clothing,Jacket,South,8,25.91,207.27,7.0,CUST-8684,Rep_7,Cash,18.57
+ORD-16839,2023-09-14,Books,Textbook,West,10,15.8,157.98,4.2,CUST-8873,Rep_12,Credit Card,6.27
+ORD-64381,2023-12-24,Books,Fiction Novel,East,4,32.65,192.25,24.5,CUST-1872,Rep_13,Cash,3.41
+ORD-28191,2024-04-28,Electronics,Tablet,South,5,111.29,556.47,27.5,CUST-8685,Rep_15,Credit Card,23.12
+ORD-65027,2023-09-02,Electronics,Tablet,South,5,1624.78,8123.92,3.7,CUST-8489,Rep_3,Credit Card,21.73
+ORD-97080,2023-07-11,Sports,Bicycle,Central,4,70.15,280.58,17.1,CUST-2402,Rep_17,Cash,6.35
+ORD-56805,2023-01-17,Books,Comic Book,Central,6,10.85,65.09,7.6,CUST-2106,Rep_12,Debit Card,6.4
+ORD-92802,2024-05-05,Toys,Board Game,Central,8,15.27,122.14,29.4,CUST-3986,Rep_5,Credit Card,19.32
+ORD-94790,2023-02-07,Sports,Basketball,East,9,144.2,1297.76,14.2,CUST-4131,Rep_10,Cash,22.24
+ORD-58148,2024-05-24,Electronics,Tablet,East,3,286.41,859.23,14.9,CUST-9507,Rep_9,Credit Card,19.54
+ORD-31842,2024-03-12,Electronics,Headphones,Central,8,1630.8,13046.38,18.1,CUST-8272,Rep_12,Online,5.85
+ORD-89635,2023-05-27,Home & Garden,Curtains,West,3,678.82,2036.46,28.6,CUST-8179,Rep_2,Debit Card,6.34
+ORD-58096,2024-06-26,Toys,Puzzle,East,2,33.4,66.79,17.2,CUST-7521,Rep_11,Cash,9.99
+ORD-36237,2024-05-17,Electronics,Laptop,South,10,958.38,9583.82,8.6,CUST-3009,Rep_5,Credit Card,14.04
+ORD-93584,2023-06-11,Toys,Doll,North,5,41.94,209.71,26.7,CUST-3852,Rep_12,Debit Card,7.43
+ORD-50539,2023-03-09,Clothing,Jeans,South,10,18.17,181.71,26.5,CUST-7523,Rep_16,Online,20.38
+ORD-26912,2023-07-06,Books,Fiction Novel,South,9,19.22,172.95,19.2,CUST-8088,Rep_17,Credit Card,6.99
+ORD-82199,2024-10-12,Books,Cookbook,East,2,44.05,88.11,7.5,CUST-5496,Rep_5,Cash,5.69
+ORD-20646,2023-01-30,Electronics,Smart Watch,South,10,1209.3,12093.04,1.2,CUST-1744,Rep_19,Cash,18.02
+ORD-17852,2023-03-16,Books,Textbook,Central,7,43.96,307.71,8.9,CUST-3589,Rep_15,Online,4.91
+ORD-51827,2023-04-19,Clothing,Dress,Central,6,148.02,888.12,15.4,CUST-4960,Rep_15,Credit Card,10.35
+ORD-30885,2023-11-17,Clothing,Jeans,North,6,136.9,965.9,28.0,CUST-9163,Rep_17,Online,14.98
+ORD-98148,2024-10-31,Home & Garden,Plant,North,5,412.46,2062.28,14.8,CUST-8710,Rep_10,Credit Card,21.94
+ORD-76093,2024-01-31,Sports,Tennis Racket,East,9,191.16,1720.46,8.7,CUST-8378,Rep_18,Cash,21.51
+ORD-62610,2024-06-05,Books,Comic Book,North,3,30.38,91.15,6.0,CUST-9193,Rep_2,Credit Card,2.23
+ORD-76494,2023-11-03,Toys,Puzzle,West,7,24.78,232.02,29.7,CUST-9351,Rep_18,Online,19.17
+ORD-95929,2023-09-29,Home & Garden,Plant,North,1,805.25,805.25,17.9,CUST-4728,Rep_2,Online,8.41
+ORD-36724,2024-02-27,Toys,Building Blocks,West,6,5.94,35.67,12.6,CUST-7723,Rep_17,Online,22.46
+ORD-98587,2023-12-17,Toys,Board Game,South,8,69.65,734.65,27.4,CUST-5331,Rep_20,Online,8.85
+ORD-45842,2023-12-24,Clothing,Dress,Central,8,171.45,1816.23,9.5,CUST-5715,Rep_4,Online,22.92
+ORD-45537,2024-07-05,Sports,Running Shoes,South,8,171.24,1369.91,6.4,CUST-5450,Rep_5,Credit Card,17.31
+ORD-10679,2023-05-21,Books,Cookbook,South,8,13.59,108.68,3.0,CUST-3587,Rep_14,Online,4.86
+ORD-64773,2023-06-29,Clothing,Dress,East,1,22.25,22.25,27.4,CUST-3880,Rep_2,Online,20.76
+ORD-76088,2023-05-18,Clothing,Dress,North,9,103.01,927.06,15.7,CUST-8668,Rep_9,Debit Card,21.18
+ORD-63148,2024-10-16,Home & Garden,Table,West,4,60.04,240.17,5.3,CUST-8007,Rep_17,Cash,6.73
+ORD-85088,2023-11-06,Toys,Board Game,South,5,33.86,225.69,28.6,CUST-1187,Rep_9,Cash,18.86
+ORD-58174,2023-11-06,Electronics,Board Game,West,2,552.07,1104.15,19.2,CUST-1187,Rep_8,Debit Card,14.56
+ORD-20730,2024-09-02,Sports,Bicycle,East,4,219.43,877.7,20.4,CUST-9609,Rep_15,Cash,6.56
+ORD-86434,2023-07-30,Books,Fiction Novel,North,8,16.0,128.03,3.5,CUST-9008,Rep_3,Online,6.85
+ORD-85800,2023-08-12,Sports,Tennis Racket,Central,5,257.7,1288.49,24.5,CUST-2196,Rep_2,Online,11.89
+ORD-68790,2024-01-27,Electronics,Smart Watch,North,7,1664.99,11654.96,11.2,CUST-7184,Rep_13,Credit Card,18.65
+ORD-49107,2023-01-24,Toys,Building Blocks,South,4,55.58,222.31,25.0,CUST-8585,Rep_18,Online,15.64
+ORD-41544,2023-01-17,Clothing,Jeans,West,7,56.77,397.42,18.4,CUST-4376,Rep_3,Credit Card,16.88
+ORD-40692,2023-10-24,Sports,Bicycle,North,3,234.94,704.83,15.1,CUST-6224,Rep_19,Cash,9.74
+ORD-55143,2023-02-18,Clothing,Jacket,South,7,57.93,405.54,16.7,CUST-7244,Rep_17,Cash,18.93
+ORD-64090,2024-07-29,Sports,Tennis Racket,East,8,309.77,2478.17,27.4,CUST-7824,Rep_18,Debit Card,12.77
+ORD-89026,2024-09-11,Home & Garden,Table,East,5,758.06,3790.29,11.3,CUST-1647,Rep_3,Debit Card,21.09
+ORD-41797,2024-05-05,Books,Comic Book,South,2,8.24,16.47,22.4,CUST-4350,Rep_13,Debit Card,5.31
+ORD-58589,2023-11-24,Home & Garden,Plant,West,8,230.28,2700.27,22.8,CUST-6126,Rep_14,Credit Card,16.25
+ORD-75444,2023-09-09,Clothing,Jeans,North,7,156.08,1092.54,17.1,CUST-6530,Rep_9,Online,24.33
+ORD-78674,2023-03-02,Toys,Doll,West,9,64.74,582.67,29.7,CUST-1554,Rep_3,Credit Card,20.29
+ORD-10866,2024-11-06,Sports,Tennis Racket,South,10,171.5,2221.13,27.4,CUST-9719,Rep_18,Online,5.24
+ORD-29516,2024-06-20,Books,Biography,Central,2,30.61,61.22,27.5,CUST-4948,Rep_7,Cash,6.89
+ORD-14152,2024-10-27,Home & Garden,Plant,North,2,471.68,943.36,19.6,CUST-2531,Rep_13,Online,12.54
+ORD-40115,2023-02-13,Sports,Basketball,North,2,239.79,479.58,26.8,CUST-4463,Rep_19,Online,10.42
+ORD-41519,2023-11-03,Electronics,Tablet,Central,7,844.45,6886.35,27.9,CUST-7375,Rep_18,Cash,12.68
+ORD-52778,2024-02-11,Toys,Action Figure,North,10,26.66,266.55,28.6,CUST-1485,Rep_9,Online,14.81
+ORD-59807,2023-06-07,Home & Garden,Curtains,West,2,660.96,1321.92,2.5,CUST-3527,Rep_13,Cash,12.21
+ORD-21746,2023-01-27,Electronics,Laptop,East,9,829.32,7463.86,12.2,CUST-6798,Rep_18,Credit Card,16.94
+ORD-28198,2024-12-02,Home & Garden,Plant,North,10,110.07,1378.38,15.6,CUST-5405,Rep_10,Cash,14.86
+ORD-70012,2023-07-20,Electronics,Smartphone,West,8,513.11,4104.87,17.8,CUST-2752,Rep_5,Cash,5.14
+ORD-36326,2023-11-25,Sports,Running Shoes,Central,10,214.71,2879.84,4.1,CUST-8848,Rep_11,Debit Card,24.29
+ORD-33583,2024-07-12,Home & Garden,Lamp,West,10,338.04,3380.38,6.0,CUST-1440,Rep_15,Debit Card,13.77
+ORD-72814,2024-09-04,Home & Garden,Sofa,West,7,330.2,2311.38,2.2,CUST-7566,Rep_18,Online,15.87
+ORD-98797,2024-10-22,Home & Garden,Curtains,Central,1,648.63,648.63,16.9,CUST-7547,Rep_11,Online,7.12
+ORD-55215,2023-06-04,Electronics,Tablet,South,10,848.6,8485.95,20.7,CUST-1402,Rep_16,Credit Card,10.91
+ORD-25084,2023-11-04,Electronics,Laptop,South,8,688.94,6161.17,9.6,CUST-1370,Rep_11,Credit Card,18.54
+ORD-13826,2024-11-04,Clothing,Jeans,Central,3,46.09,176.01,5.6,CUST-4232,Rep_15,Online,12.78
+ORD-24936,2024-04-13,Toys,Action Figure,South,6,50.53,303.16,9.8,CUST-5298,Rep_16,Cash,16.94
+ORD-25448,2024-11-19,Books,Textbook,Central,10,30.4,350.72,17.7,CUST-4908,Rep_10,Credit Card,3.1
+ORD-47858,2024-05-16,Toys,Action Figure,Central,3,46.72,140.16,16.6,CUST-3298,Rep_6,Cash,21.84
+ORD-68176,2024-03-01,Books,Fiction Novel,East,7,25.8,180.57,20.5,CUST-9006,Rep_6,Credit Card,5.39
+ORD-24969,2024-08-09,Clothing,Dress,North,9,98.88,889.88,15.3,CUST-5389,Rep_18,Cash,15.84
+ORD-21401,2023-12-23,Electronics,Headphones,Central,1,445.72,644.0,13.5,CUST-8193,Rep_4,Debit Card,9.2
+ORD-46842,2024-06-29,Toys,Building Blocks,East,1,68.21,68.21,17.1,CUST-9827,Rep_6,Cash,24.58
+ORD-95969,2023-10-11,Home & Garden,Lamp,Central,7,714.38,5000.68,27.6,CUST-3078,Rep_5,Debit Card,7.92
+ORD-58374,2023-10-12,Home & Garden,Table,West,2,268.39,536.77,12.1,CUST-8449,Rep_16,Cash,16.64
+ORD-54270,2023-11-27,Toys,Board Game,West,4,82.58,472.8,14.8,CUST-9967,Rep_19,Debit Card,16.32
+ORD-36518,2024-03-14,Sports,Running Shoes,North,8,22.89,183.13,0.0,CUST-3161,Rep_10,Debit Card,22.49
+ORD-22475,2023-04-04,Home & Garden,Sofa,East,4,791.61,3166.44,12.9,CUST-1017,Rep_7,Online,6.56
+ORD-60209,2023-08-23,Books,Cookbook,Central,3,42.43,127.29,14.3,CUST-2463,Rep_4,Credit Card,3.88
+ORD-67684,2023-06-18,Home & Garden,Table,West,1,144.17,144.17,18.3,CUST-6753,Rep_7,Debit Card,23.4
+ORD-46302,2023-09-11,Books,Textbook,South,6,19.34,116.05,23.7,CUST-2380,Rep_8,Cash,6.67
+ORD-41599,2023-04-26,Toys,Board Game,East,4,67.66,270.66,14.8,CUST-9185,Rep_20,Credit Card,15.57
+ORD-11807,2023-03-11,Electronics,Tablet,East,2,349.01,698.02,0.5,CUST-5295,Rep_7,,23.45
+ORD-50620,2023-03-27,Sports,Bicycle,East,10,339.1,3391.0,4.6,CUST-2294,Rep_17,Debit Card,24.49
+ORD-66948,2023-03-30,Clothing,Jacket,East,4,131.84,527.37,1.7,CUST-2900,Rep_15,Credit Card,11.19
+ORD-45227,2023-05-10,Toys,Action Figure,North,5,51.42,257.12,5.0,CUST-2934,Rep_1,Cash,21.14
+ORD-43438,2023-06-11,Home & Garden,Curtains,North,10,613.81,6138.07,5.0,CUST-2685,Rep_19,,9.57
+ORD-52179,2024-11-02,Books,Fiction Novel,North,1,39.05,49.5,16.6,CUST-5067,Rep_14,Cash,3.63
+ORD-47002,2024-04-21,Electronics,Smart Watch,East,7,320.1,2240.72,2.1,CUST-6090,Rep_11,Credit Card,16.06
+ORD-42129,2024-07-13,Electronics,Tablet,South,4,510.31,2041.26,22.0,CUST-3466,Rep_1,Online,5.48
+ORD-74491,2024-03-05,Books,Biography,North,9,27.56,248.04,29.5,CUST-1981,Rep_5,Cash,2.56
+ORD-18163,2024-08-04,Clothing,Jacket,West,7,85.09,595.66,2.2,CUST-8126,Rep_5,Debit Card,10.83
+ORD-71086,2024-04-05,Home & Garden,Plant,East,3,117.12,351.36,3.2,CUST-6145,Rep_14,Credit Card,15.72
+ORD-42534,2023-12-02,Clothing,Shoes,East,10,171.35,1986.49,1.2,CUST-6828,,Credit Card,18.54
+ORD-39135,2023-03-05,Home & Garden,Table,North,3,557.09,1671.27,3.6,CUST-3141,Rep_7,Online,12.44
+ORD-70423,2023-12-06,Toys,Board Game,Central,3,64.54,222.46,2.8,CUST-1829,Rep_6,Online,21.43
+ORD-90868,2024-09-26,Sports,Yoga Mat,North,3,450.79,1352.38,1.0,CUST-5026,Rep_10,Online,13.24
+ORD-57069,2024-01-27,Books,Textbook,North,9,31.9,287.1,23.8,CUST-8859,Rep_18,Online,4.06
+ORD-79393,2024-04-28,Books,Comic Book,East,1,34.71,34.71,24.3,CUST-6856,Rep_19,Debit Card,7.84
+ORD-33081,2023-06-27,Electronics,Smartphone,South,7,541.86,3792.99,10.6,CUST-4875,Rep_19,Cash,21.12
+ORD-74282,2023-06-29,Toys,Puzzle,Central,8,19.16,153.29,16.3,CUST-1621,Rep_3,Credit Card,9.65
+ORD-86888,2023-06-01,Clothing,T-Shirt,Central,6,78.29,469.73,1.8,CUST-3320,Rep_4,Cash,24.21
+ORD-83659,2023-06-28,Home & Garden,Plant,Central,8,144.65,1157.16,19.5,CUST-6846,Rep_8,Debit Card,12.57
+ORD-51709,2024-09-08,Toys,Puzzle,South,10,77.47,774.69,1.0,CUST-4619,Rep_19,Credit Card,23.73
+ORD-37483,2023-09-29,Clothing,Dress,North,6,170.46,1022.73,13.4,CUST-5088,Rep_3,Cash,10.13
+ORD-85766,2024-05-05,Electronics,Laptop,North,9,739.45,6655.05,11.3,CUST-4695,Rep_6,Online,6.47
+ORD-54295,2023-04-06,Electronics,Tablet,North,9,506.21,4555.85,28.3,CUST-8909,Rep_1,Online,23.85
+ORD-48980,2023-10-16,Clothing,Jacket,West,9,35.18,316.66,8.0,CUST-4891,Rep_4,Credit Card,12.86
+ORD-93648,2023-06-24,Books,Textbook,South,2,34.73,69.47,0.8,CUST-5781,Rep_3,Online,7.06
+ORD-44510,2023-02-15,Home & Garden,Plant,West,6,128.93,773.61,5.6,CUST-8204,Rep_15,Cash,9.52
+ORD-60738,2023-02-15,Home & Garden,Plant,North,10,132.18,1321.84,6.8,CUST-8204,Rep_14,Online,16.45
+ORD-32659,2024-04-04,Clothing,Shoes,East,10,174.43,1744.27,4.4,CUST-3738,Rep_7,Debit Card,7.52
+ORD-62082,2024-07-23,Sports,Basketball,West,2,295.67,591.34,2.6,CUST-6343,Rep_9,Online,23.34
+ORD-23237,2024-07-30,Electronics,Smart Watch,Central,2,789.62,1579.24,27.7,CUST-5687,Rep_18,Cash,22.56
+ORD-16460,2023-12-06,Home & Garden,Plant,West,7,211.1,2033.66,1.2,CUST-8785,Rep_9,Cash,5.4
+ORD-64627,2023-11-25,Home & Garden,Lamp,East,8,537.92,5197.47,23.2,CUST-2462,Rep_7,Online,9.23
+ORD-84537,2024-06-20,Sports,Yoga Mat,Central,3,70.54,211.61,23.4,CUST-1474,Rep_6,Debit Card,22.5
+ORD-99282,2023-05-07,Clothing,T-Shirt,South,7,23.55,164.87,19.1,CUST-1500,Rep_8,Cash,14.78
+ORD-31352,2023-02-20,Sports,Tennis Racket,West,5,445.13,2225.66,0.8,CUST-4511,Rep_8,Debit Card,18.55
+ORD-43081,2023-08-18,Home & Garden,Plant,Central,10,591.99,5919.85,24.0,CUST-6004,Rep_9,Online,22.91
+ORD-89829,2024-08-31,Home & Garden,Plant,East,6,452.87,2717.24,16.8,CUST-5631,Rep_10,Credit Card,14.63
+ORD-62965,2024-09-06,Home & Garden,Lamp,East,4,529.71,2118.85,27.0,CUST-6236,Rep_5,Credit Card,18.11
+ORD-72355,2024-10-15,Home & Garden,Lamp,West,4,479.54,1918.15,20.6,CUST-6873,Rep_17,Cash,21.91
+ORD-56567,2023-08-16,Toys,Building Blocks,South,6,73.7,442.18,19.6,CUST-4659,Rep_10,Online,20.76
+ORD-75598,2023-07-19,Home & Garden,Lamp,East,10,158.43,1584.34,2.1,CUST-2963,Rep_13,Cash,13.26
+ORD-53598,2024-05-14,Clothing,Jeans,South,3,151.5,454.49,23.4,CUST-3897,Rep_11,Credit Card,5.09
+ORD-60242,2024-05-03,Home & Garden,Table,South,7,699.63,4897.38,12.1,CUST-1076,Rep_2,Debit Card,19.61
+ORD-87158,2024-05-30,Electronics,Tablet,Central,3,447.86,1343.57,3.1,CUST-6015,Rep_6,Credit Card,21.48
+ORD-31611,2023-07-12,Home & Garden,Lamp,West,8,330.96,2647.72,10.8,CUST-7609,Rep_1,Debit Card,9.49
+ORD-16368,2024-09-30,Clothing,Jeans,North,5,38.75,193.76,23.1,CUST-1785,Rep_4,Credit Card,5.96
+ORD-96832,2023-04-14,Electronics,Headphones,West,5,718.63,3593.17,12.6,CUST-9524,Rep_9,Debit Card,13.38
+ORD-63707,2024-01-02,Electronics,Smart Watch,Central,9,229.2,2062.78,29.2,CUST-5839,Rep_6,Credit Card,15.96
+ORD-23276,2023-03-18,Clothing,Shoes,East,2,17.08,34.16,23.4,CUST-5192,Rep_8,Online,24.77
+ORD-16014,2023-04-08,Home & Garden,Lamp,West,7,685.36,4797.54,22.2,CUST-1158,Rep_5,Debit Card,11.57
+ORD-65278,2024-12-07,Sports,Bicycle,East,5,77.69,559.51,25.1,CUST-3732,Rep_4,Debit Card,18.92
+ORD-27125,2024-12-01,Electronics,Smartphone,North,6,727.14,6334.73,18.3,CUST-8914,Rep_16,Credit Card,22.75
+ORD-78039,2024-11-16,Sports,Basketball,North,10,320.69,4647.68,6.7,CUST-9570,Rep_20,Credit Card,13.66
+ORD-76265,2023-06-10,Toys,Action Figure,West,1,98.49,98.49,0.3,CUST-8688,Rep_16,,6.5
+ORD-68733,2024-08-09,Sports,Running Shoes,South,2,243.15,486.3,13.8,CUST-2442,,Online,11.32
+ORD-37112,2024-07-29,Sports,Basketball,North,5,304.6,1522.98,26.7,CUST-8474,Rep_11,Cash,21.51
+ORD-48270,2023-12-30,Clothing,Shoes,East,4,131.47,753.03,0.1,CUST-9973,Rep_17,Cash,19.04
+ORD-54293,2023-07-15,Electronics,Smartphone,West,7,343.13,2401.89,6.5,CUST-2765,Rep_14,Credit Card,23.53
+ORD-66729,2024-07-20,Toys,Building Blocks,North,9,40.82,367.36,22.1,CUST-8912,Rep_17,Debit Card,18.84
+ORD-69355,2023-12-18,Clothing,Jeans,North,4,117.58,699.95,8.2,CUST-3185,Rep_5,Online,17.05
+ORD-99995,2023-10-25,Toys,Building Blocks,East,4,20.85,83.38,18.7,CUST-6657,Rep_5,Debit Card,15.08
+ORD-11673,2024-03-08,Toys,Puzzle,North,9,63.13,568.17,8.6,CUST-9564,Rep_4,Credit Card,12.62
+ORD-14234,2024-07-08,Electronics,Laptop,South,5,570.09,2850.47,6.1,CUST-6876,Rep_15,Credit Card,17.32
+ORD-64600,2024-02-01,Toys,Building Blocks,South,1,23.34,23.34,27.8,CUST-6122,Rep_18,Credit Card,5.26
+ORD-89087,2024-07-13,Home & Garden,Table,Central,6,364.23,2185.41,22.7,CUST-4218,Rep_7,Cash,13.98
+ORD-10739,2023-09-19,Toys,Board Game,South,3,24.83,74.49,17.5,CUST-6415,Rep_15,Debit Card,5.8
+ORD-34100,2023-11-22,Home & Garden,Curtains,North,2,650.82,1705.36,23.5,CUST-9529,Rep_3,Debit Card,13.32
+ORD-95105,2024-07-28,Books,Textbook,North,10,18.28,182.83,15.9,CUST-1144,Rep_4,Cash,4.67
+ORD-13238,2023-10-17,Toys,Building Blocks,Central,5,13.21,66.07,16.2,CUST-9468,Rep_12,Online,14.74
+ORD-37941,2024-10-06,Home & Garden,Table,East,2,195.81,391.61,6.3,CUST-7950,Rep_4,Debit Card,15.76
+ORD-39837,2024-08-11,Toys,Doll,North,5,8.46,42.28,16.7,CUST-5237,Rep_14,Online,14.02
+ORD-56884,2023-03-16,Sports,Yoga Mat,East,10,321.64,3216.37,1.4,CUST-9238,Rep_4,Cash,20.74
+ORD-81529,2024-02-05,Home & Garden,Curtains,North,4,395.47,1581.89,4.1,CUST-5832,Rep_5,Cash,18.55
+ORD-94663,2023-12-19,Toys,Puzzle,North,2,50.91,120.62,9.1,CUST-9397,Rep_5,Debit Card,8.68
+ORD-19587,2024-07-16,Books,Biography,South,9,34.5,310.51,13.8,CUST-5762,Rep_3,Cash,2.59
+ORD-53036,2024-04-06,Toys,Building Blocks,West,4,10.52,42.09,9.5,CUST-6008,Rep_19,Debit Card,16.31
+ORD-70666,2023-12-06,Home & Garden,Lamp,West,6,764.29,6654.61,4.0,CUST-8296,Rep_12,Cash,14.74
+ORD-76476,2023-01-20,Electronics,Smartphone,Central,2,199.94,399.88,21.8,CUST-1511,Rep_19,Online,20.38
+ORD-27548,2023-10-25,Clothing,T-Shirt,Central,10,141.12,1411.21,22.0,CUST-8613,Rep_17,Credit Card,12.94
+ORD-96430,2024-08-02,Books,Fiction Novel,South,3,25.37,76.12,17.0,CUST-3395,Rep_16,Cash,2.24
+ORD-95003,2023-02-10,Sports,Tennis Racket,North,8,195.78,1566.24,26.4,CUST-6309,Rep_4,Cash,21.7
+ORD-77681,2023-08-17,Home & Garden,Curtains,Central,5,363.35,1816.75,11.3,CUST-7649,Rep_12,Cash,14.74
+ORD-25509,2024-09-08,Sports,Bicycle,North,3,49.91,149.74,4.7,CUST-4773,Rep_14,Cash,19.41
+ORD-15136,2024-06-08,Sports,Yoga Mat,West,3,24.84,74.52,4.0,CUST-3406,Rep_2,Debit Card,10.17
+ORD-71789,2024-09-13,Clothing,Jacket,West,2,113.56,227.11,6.5,CUST-8891,Rep_6,Debit Card,21.61
+ORD-40122,2023-03-12,Books,Cookbook,Central,8,31.99,255.95,17.9,CUST-7196,Rep_13,Debit Card,2.65
+ORD-22214,2023-05-01,Clothing,Jacket,Central,9,143.29,1289.59,15.1,CUST-8901,Rep_5,Credit Card,22.94
+ORD-65769,2024-12-14,Toys,Doll,Central,7,45.46,423.37,10.5,CUST-3193,Rep_9,Online,20.32
+ORD-95792,2024-01-20,Electronics,Tablet,Central,2,1490.51,2981.02,15.6,CUST-4365,Rep_11,Online,12.25
+ORD-73238,2024-07-24,Clothing,Shoes,Central,4,152.34,609.35,12.4,CUST-3928,Rep_12,Online,10.08
+ORD-62502,2024-06-04,Home & Garden,Curtains,East,3,175.71,527.14,3.0,CUST-6544,Rep_18,Credit Card,8.21
+ORD-62513,2024-01-29,Toys,Board Game,North,10,39.77,397.74,1.1,CUST-9536,Rep_10,Credit Card,23.91
+ORD-90634,2023-08-26,Clothing,Shoes,West,9,146.32,1316.84,15.5,CUST-3776,Rep_2,Cash,9.79
+ORD-47289,2024-07-16,Electronics,Smartphone,North,2,1444.11,2888.23,27.6,CUST-6703,Rep_12,Cash,9.53
+ORD-80504,2023-09-21,Clothing,Shoes,West,2,50.86,101.72,24.1,CUST-5098,Rep_15,Online,16.26
+ORD-51383,2023-08-24,Clothing,Dress,West,4,144.54,578.17,20.3,CUST-7757,Rep_12,Credit Card,19.02
+ORD-45268,2024-08-10,Home & Garden,Table,East,6,775.6,4653.58,6.6,CUST-3994,Rep_7,Online,19.74
+ORD-10868,2024-11-10,Clothing,Jeans,East,2,45.04,116.85,20.3,CUST-9871,Rep_2,Online,12.42
+ORD-65466,2024-06-22,Home & Garden,Plant,Central,10,947.27,9472.72,3.8,CUST-8836,Rep_18,Credit Card,15.05
+ORD-90318,2024-01-06,Sports,Tennis Racket,West,10,338.71,3387.11,3.0,CUST-5254,Rep_6,Cash,9.74
+ORD-27188,2024-08-08,Sports,Bicycle,East,5,306.86,1534.32,13.5,CUST-4744,Rep_4,Cash,21.08
+ORD-77765,2024-10-07,Books,Textbook,West,3,7.29,21.86,29.9,CUST-9748,Rep_11,Online,3.8
+ORD-57312,2023-09-24,Books,Comic Book,North,8,22.57,180.56,22.3,CUST-6903,Rep_18,Cash,4.06
+ORD-68580,2024-11-20,Sports,Basketball,East,5,262.96,1714.7,10.7,CUST-2284,Rep_13,Cash,14.28
+ORD-45058,2023-10-26,Clothing,Jeans,East,6,117.84,707.02,9.5,CUST-7479,Rep_9,Online,20.62
+ORD-23501,2024-02-11,Home & Garden,Curtains,Central,2,210.5,421.0,6.3,CUST-2565,Rep_3,Online,15.97
+ORD-68085,2023-10-18,Electronics,Headphones,Central,5,1446.6,7233.01,6.9,CUST-3071,Rep_5,Debit Card,5.57
+ORD-69840,2024-09-03,Toys,Puzzle,East,9,16.89,152.0,5.3,CUST-8126,Rep_17,Cash,23.18
+ORD-80136,2024-04-25,Sports,Bicycle,South,3,126.46,379.38,10.3,CUST-1136,Rep_16,Online,10.99
+ORD-61081,2024-10-23,Sports,Running Shoes,Central,3,168.64,505.93,21.4,CUST-7199,Rep_8,Cash,6.58
+ORD-33908,2023-03-12,Toys,Action Figure,Central,5,66.22,331.08,12.4,CUST-3238,Rep_10,Credit Card,17.74
+ORD-67464,2023-05-09,Books,Textbook,East,2,44.66,89.32,8.5,CUST-1134,Rep_8,Credit Card,2.9
+ORD-17345,2023-05-30,Sports,Tennis Racket,East,2,145.75,291.5,25.3,CUST-5366,Rep_13,Credit Card,15.86
+ORD-36106,2023-02-04,Clothing,Jeans,East,8,156.55,1252.38,7.4,CUST-8550,Rep_4,Debit Card,14.46
+ORD-97385,2023-02-23,Toys,Puzzle,East,5,47.69,238.47,6.0,CUST-4568,Rep_4,Debit Card,17.66
+ORD-58679,2023-06-08,Home & Garden,Sofa,South,8,338.04,2704.29,20.7,CUST-2466,Rep_8,Debit Card,15.0
+ORD-51515,2023-08-27,Toys,Building Blocks,East,2,68.92,137.84,3.8,CUST-6690,Rep_15,Debit Card,5.43
+ORD-71393,2023-12-23,Sports,Running Shoes,South,10,270.11,3320.9,5.6,CUST-5510,Rep_20,Debit Card,6.38
+ORD-91290,2024-01-08,Clothing,Shoes,East,1,95.65,95.65,18.6,CUST-4912,Rep_11,Credit Card,18.17
+ORD-27009,2024-11-05,Books,Textbook,South,2,22.24,50.12,2.9,CUST-3926,Rep_2,Debit Card,2.64
+ORD-11715,2023-03-14,Clothing,T-Shirt,North,6,159.24,955.45,6.6,CUST-4419,Rep_16,Credit Card,14.36
+ORD-49833,2023-03-14,Toys,Board Game,East,5,70.03,350.17,15.9,CUST-2276,Rep_7,Credit Card,7.02
+ORD-85571,2024-10-15,Clothing,Jacket,West,7,89.04,623.26,22.4,CUST-6864,Rep_15,Online,22.66
+ORD-64046,2023-11-29,Clothing,Jeans,Central,6,67.43,581.73,16.5,CUST-8054,Rep_11,Debit Card,16.26
+ORD-27705,2024-06-14,Clothing,Shoes,Central,5,53.99,269.94,17.9,CUST-5945,Rep_1,Cash,24.69
+ORD-70341,2023-02-08,Clothing,Dress,North,10,180.99,1809.93,4.6,CUST-6827,Rep_5,Debit Card,10.3
+ORD-73999,2023-06-27,Books,Cookbook,South,6,14.25,85.5,23.8,CUST-2562,Rep_20,Cash,2.22
+ORD-95561,2023-08-21,Books,Textbook,North,2,20.23,40.46,26.1,CUST-1187,Rep_13,Credit Card,3.83
+ORD-76155,2024-08-12,Electronics,Tablet,Central,8,908.33,7266.68,22.6,CUST-2475,Rep_8,Online,10.8
+ORD-27677,2023-05-14,Sports,Tennis Racket,South,7,215.65,1509.58,23.2,CUST-8879,Rep_18,Debit Card,14.76
+ORD-57876,2024-11-18,Toys,Building Blocks,South,10,44.62,564.68,2.7,CUST-6706,Rep_7,Cash,11.89
+ORD-30446,2024-01-18,Toys,Board Game,East,4,44.04,176.15,6.0,CUST-2405,Rep_4,Credit Card,9.86
+ORD-78585,2024-07-13,Books,Cookbook,East,9,10.22,91.95,6.4,CUST-5237,Rep_18,Online,5.74
+ORD-95820,2024-04-21,Clothing,T-Shirt,West,10,128.09,1280.87,8.1,CUST-1136,Rep_3,Online,18.21
+ORD-88263,2024-05-11,Toys,Puzzle,North,2,71.26,142.53,27.1,CUST-9709,Rep_3,Debit Card,8.98
+ORD-75700,2023-11-06,Sports,Bicycle,North,6,225.69,1617.46,10.7,CUST-5519,Rep_2,Cash,22.57
+ORD-41504,2024-12-03,Electronics,Smart Watch,East,10,390.21,4647.32,26.2,CUST-3502,Rep_14,Cash,23.19
+ORD-29025,2024-03-16,Home & Garden,Plant,Central,9,437.72,3939.46,27.3,CUST-3589,Rep_11,Credit Card,16.15
+ORD-45887,2024-10-14,Toys,Board Game,South,7,40.3,282.09,9.1,CUST-3489,Rep_7,Credit Card,7.63
+ORD-71441,2024-09-11,Electronics,Smart Watch,Central,8,582.62,4660.96,4.0,CUST-7126,Rep_6,Online,14.83
+ORD-33209,2023-03-09,Clothing,Jeans,South,4,72.28,289.12,22.7,CUST-8197,Rep_20,Online,18.76
+ORD-94068,2023-03-09,Sports,Jeans,West,10,163.95,1639.45,17.8,CUST-8197,Rep_17,Credit Card,14.03
+ORD-49918,2024-02-12,Electronics,Smartphone,Central,4,1023.94,4095.78,8.7,CUST-5684,Rep_15,Debit Card,13.45
+ORD-61520,2024-12-13,Books,Fiction Novel,Central,10,21.58,284.52,28.1,CUST-7775,Rep_11,Online,2.15
+ORD-57571,2024-12-24,Sports,Bicycle,South,2,320.54,820.44,2.7,CUST-2397,Rep_17,Online,19.54
+ORD-33444,2023-05-29,Books,Comic Book,South,3,31.03,93.1,4.9,CUST-1840,Rep_14,Cash,3.86
+ORD-89689,2023-01-06,Sports,Running Shoes,South,8,265.26,2122.11,16.3,CUST-9084,Rep_8,Debit Card,16.78
+ORD-17217,2023-06-01,Sports,Yoga Mat,West,4,436.35,1745.41,1.5,CUST-6718,Rep_2,Debit Card,22.08
+ORD-83685,2024-12-17,Toys,Building Blocks,Central,10,55.2,738.54,19.8,CUST-3906,Rep_15,Cash,23.63
+ORD-53150,2023-10-09,Electronics,Tablet,East,3,770.99,2312.96,3.7,CUST-9635,Rep_14,Debit Card,18.92
+ORD-85385,2023-11-21,Books,Fiction Novel,North,5,33.97,204.48,12.8,CUST-6797,Rep_5,Online,5.12
+ORD-37175,2023-05-01,Toys,Doll,West,8,13.18,105.47,18.8,CUST-7793,Rep_14,Credit Card,11.68
+ORD-84569,2023-12-08,Books,Cookbook,North,1,21.26,26.29,3.4,CUST-1477,Rep_6,Debit Card,3.98
+ORD-17342,2024-02-28,Home & Garden,Plant,West,6,437.02,2622.12,13.9,CUST-9537,Rep_10,Cash,16.1
+ORD-92118,2024-01-20,Electronics,Smartphone,Central,1,1259.75,1259.75,10.2,CUST-9753,Rep_6,Online,8.75
+ORD-59049,2023-11-06,Electronics,Tablet,East,5,1354.76,7925.38,6.5,CUST-1612,Rep_7,Credit Card,13.88
+ORD-98698,2024-06-12,Electronics,Headphones,Central,2,295.88,591.76,24.7,CUST-3174,Rep_7,Credit Card,14.19
+ORD-12946,2024-11-05,Toys,Building Blocks,North,1,47.83,66.87,3.1,CUST-6114,Rep_7,Cash,9.01
+ORD-37076,2023-04-15,Home & Garden,Lamp,Central,10,134.61,1346.09,16.8,CUST-9888,Rep_12,Cash,10.42
+ORD-23884,2023-02-21,Toys,Puzzle,Central,8,12.65,101.23,27.1,CUST-7284,Rep_2,Credit Card,13.53
+ORD-84421,2024-04-21,Clothing,Jacket,Central,9,140.82,1267.42,2.4,CUST-3159,Rep_3,Online,6.95
+ORD-13966,2023-11-29,Home & Garden,Plant,West,6,662.63,5094.25,23.7,CUST-2070,Rep_16,Credit Card,12.03
+ORD-49599,2023-03-14,Sports,Tennis Racket,East,6,54.09,324.54,16.7,CUST-9728,Rep_15,Online,16.81
+ORD-40953,2023-12-17,Clothing,Jacket,South,7,162.07,1495.02,17.0,CUST-3835,Rep_3,Online,7.29
+ORD-52914,2024-01-24,Books,Textbook,East,10,9.83,98.26,23.1,CUST-9098,Rep_2,Credit Card,3.31
+ORD-99071,2023-11-21,Clothing,Jacket,North,4,110.55,539.43,20.4,CUST-5989,Rep_14,Cash,24.81
+ORD-57086,2024-07-27,Books,Fiction Novel,Central,1,24.76,24.76,0.0,CUST-2797,Rep_10,Credit Card,3.41
+ORD-57223,2024-01-29,Toys,Building Blocks,West,3,20.26,60.78,5.6,CUST-7835,Rep_5,Cash,24.95
+ORD-64507,2024-10-19,Toys,Action Figure,South,3,95.14,285.43,2.5,CUST-8471,Rep_20,Online,17.46
+ORD-63849,2023-10-03,Sports,Bicycle,West,4,82.65,330.61,21.4,CUST-9948,Rep_19,Cash,5.67
+ORD-78597,2023-03-22,Electronics,Smart Watch,West,5,1238.53,6192.63,13.9,CUST-2449,Rep_8,Online,17.61
+ORD-53452,2024-08-10,Toys,Board Game,Central,9,36.08,324.68,27.2,CUST-7897,Rep_12,Cash,10.78
+ORD-13578,2024-10-01,Electronics,Smart Watch,East,5,1121.79,5608.97,24.3,CUST-5699,Rep_16,,7.54
+ORD-32989,2024-11-05,Electronics,Tablet,East,10,273.83,3501.33,22.2,CUST-5280,Rep_8,Online,8.62
+ORD-96594,2023-09-01,Books,Fiction Novel,East,7,33.45,234.15,23.1,CUST-8211,Rep_6,Debit Card,5.47
+ORD-72205,2024-11-30,Home & Garden,Sofa,East,9,194.55,2420.29,7.0,CUST-5302,Rep_5,Online,5.24
+ORD-45728,2024-10-29,Sports,Yoga Mat,East,7,375.83,2630.79,18.3,CUST-6488,Rep_9,Cash,21.05
+ORD-98185,2023-01-11,Home & Garden,Curtains,West,3,253.42,760.26,9.4,CUST-1138,Rep_3,Credit Card,13.22
+ORD-88562,2023-08-11,Books,Fiction Novel,West,10,27.93,279.26,19.7,CUST-2995,Rep_4,,7.14
+ORD-65965,2023-10-11,Clothing,Shoes,Central,2,43.05,86.1,19.2,CUST-6298,Rep_9,Debit Card,20.61
+ORD-94604,2023-07-02,Home & Garden,Sofa,West,4,241.26,965.02,18.3,CUST-9061,Rep_4,Debit Card,15.81
+ORD-75234,2023-01-20,Sports,Tennis Racket,Central,5,49.92,249.58,23.3,CUST-3438,Rep_1,Credit Card,18.29
+ORD-60387,2023-01-04,Home & Garden,Table,East,2,452.18,904.35,16.2,CUST-8898,Rep_4,Cash,11.67
+ORD-94907,2023-10-24,Home & Garden,Plant,North,8,105.08,840.61,22.8,CUST-4327,Rep_6,Credit Card,24.35
+ORD-13324,2023-07-17,Toys,Action Figure,East,4,62.38,249.53,4.2,CUST-4907,Rep_16,Online,6.26
+ORD-95701,2023-08-05,Books,Biography,West,1,10.08,10.08,12.2,CUST-9570,Rep_15,Debit Card,6.45
+ORD-16548,2024-10-09,Clothing,T-Shirt,North,3,107.54,322.61,0.4,CUST-6035,Rep_4,Online,17.22
+ORD-28000,2024-12-01,Books,Fiction Novel,North,7,16.34,152.21,9.7,CUST-6268,Rep_7,Credit Card,5.56
+ORD-92863,2023-04-13,Home & Garden,Sofa,North,10,207.09,2070.89,1.2,CUST-7162,Rep_6,Credit Card,22.59
+ORD-28754,2023-07-31,Electronics,Laptop,North,8,349.31,2794.48,20.8,CUST-5439,Rep_17,Online,13.24
+ORD-35153,2023-08-30,Clothing,Jacket,North,7,148.89,1042.24,0.1,CUST-2925,Rep_17,Credit Card,17.38
+ORD-97836,2023-06-13,Books,Comic Book,South,8,12.34,98.74,14.9,CUST-1706,Rep_2,Cash,3.71
+ORD-77489,2024-05-11,Sports,Running Shoes,East,3,50.18,150.53,23.6,CUST-2901,Rep_3,Debit Card,19.43
+ORD-59221,2023-07-24,Books,Comic Book,East,4,11.22,44.87,22.1,CUST-4615,Rep_3,Online,5.51
+ORD-54025,2023-07-27,Electronics,Headphones,South,6,361.24,2167.47,29.3,CUST-3084,Rep_2,Credit Card,10.61
+ORD-82450,2024-08-14,Electronics,Headphones,West,10,651.58,6515.79,27.2,CUST-4763,Rep_3,Online,22.14
+ORD-29525,2024-08-28,Sports,Tennis Racket,Central,7,183.93,1287.52,17.4,CUST-1083,Rep_14,Credit Card,5.8
+ORD-63296,2023-01-13,Sports,Bicycle,North,2,293.75,587.51,16.8,CUST-4571,Rep_5,Cash,10.92
+ORD-63131,2023-05-22,Toys,Board Game,North,8,6.3,50.41,13.9,CUST-4030,Rep_12,Online,19.08
+ORD-99740,2023-08-01,Electronics,Laptop,West,9,1487.33,13385.96,17.3,CUST-2326,Rep_20,Cash,19.72
+ORD-36832,2024-07-28,Electronics,Smart Watch,East,9,1409.24,12683.18,21.1,CUST-3267,Rep_11,Debit Card,15.79
+ORD-17138,2023-10-11,Toys,Doll,Central,9,71.88,646.88,20.4,CUST-2038,Rep_12,Cash,14.05
+ORD-21443,2024-04-13,Books,Comic Book,North,2,26.49,52.98,5.7,CUST-2313,Rep_13,Debit Card,3.73
+ORD-27305,2024-11-29,Electronics,Laptop,South,5,546.28,3596.08,12.5,CUST-8764,Rep_12,Online,13.88
+ORD-52769,2024-10-23,Toys,Board Game,East,10,33.11,331.13,10.3,CUST-8965,Rep_19,Online,14.16
+ORD-91085,2023-06-20,Books,Cookbook,East,6,37.31,223.86,8.5,CUST-3634,Rep_18,Cash,3.09
+ORD-55068,2024-11-12,Clothing,Jeans,South,9,21.59,238.41,21.2,CUST-3423,Rep_12,Online,15.8
+ORD-76507,2024-07-13,Clothing,Jacket,East,3,24.45,73.36,0.1,CUST-6427,Rep_10,Online,22.92
+ORD-62642,2023-01-26,Books,Cookbook,Central,9,28.14,253.23,3.5,CUST-4610,Rep_15,Cash,2.55
+ORD-77081,2023-03-31,Electronics,Smart Watch,South,8,963.05,7704.37,20.3,CUST-7462,Rep_7,Online,11.36
+ORD-83535,2023-11-12,Books,Comic Book,North,5,22.22,165.66,10.3,CUST-2435,Rep_7,Online,6.45
+ORD-49745,2023-08-01,Sports,Yoga Mat,East,10,358.86,3588.61,2.6,CUST-8776,Rep_17,Cash,6.32
+ORD-47940,2024-01-26,Books,Textbook,North,3,26.78,80.35,6.0,CUST-9037,Rep_2,Cash,7.01
+ORD-64677,2024-11-12,Home & Garden,Plant,Central,8,771.79,8996.5,3.7,CUST-3938,Rep_16,Debit Card,5.57
+ORD-12299,2024-08-12,Home & Garden,Plant,North,2,449.76,899.52,11.2,CUST-5252,Rep_6,Credit Card,7.92
+ORD-77353,2023-03-20,Sports,Tennis Racket,East,9,369.7,3327.3,19.2,CUST-4175,Rep_6,Credit Card,16.98
+ORD-11690,2023-12-27,Clothing,Jacket,East,2,141.76,405.24,16.0,CUST-3243,Rep_17,Cash,12.46
+ORD-79742,2024-06-22,Sports,Yoga Mat,East,9,211.45,1903.06,18.4,CUST-2867,Rep_14,Online,23.32
+ORD-25544,2023-11-08,Electronics,Smartphone,North,6,958.85,6394.59,5.2,CUST-4643,Rep_5,Debit Card,18.76
+ORD-14298,2023-04-21,Home & Garden,Table,South,7,697.27,4880.88,1.3,CUST-9412,Rep_19,Credit Card,14.38
+ORD-29078,2023-12-26,Home & Garden,Sofa,North,4,133.82,595.09,5.5,CUST-5544,Rep_19,Cash,12.04
+ORD-10567,2024-07-04,Books,Comic Book,South,5,29.55,147.74,5.2,CUST-2616,Rep_7,Online,4.2
+ORD-24459,2023-11-18,Books,Cookbook,West,7,26.05,209.61,3.4,CUST-9515,Rep_5,Online,6.57
+ORD-48088,2024-02-22,Toys,Puzzle,Central,8,69.86,558.87,6.8,CUST-8011,Rep_7,Credit Card,22.9
+ORD-87405,2024-02-15,Sports,Running Shoes,South,2,198.33,396.65,4.3,CUST-2666,Rep_6,Credit Card,12.27
+ORD-62459,2024-10-21,Clothing,Dress,South,10,163.0,1629.99,17.8,CUST-6834,,Online,24.75
+ORD-75291,2023-03-11,Books,Biography,South,2,27.36,54.72,22.1,CUST-1438,Rep_6,Online,5.63
+ORD-74258,2024-05-24,Home & Garden,Table,East,4,111.89,447.54,8.8,CUST-9270,Rep_9,Cash,21.19
+ORD-14306,2023-02-06,Books,Comic Book,North,7,21.98,153.86,13.3,CUST-3897,Rep_18,Cash,7.31
+ORD-83695,2024-05-02,Clothing,Shoes,West,9,123.28,1109.53,17.2,CUST-3560,Rep_17,Credit Card,12.83
+ORD-13525,2024-08-20,Sports,Bicycle,West,6,152.6,915.58,10.5,CUST-6591,Rep_13,Credit Card,13.56
+ORD-12583,2023-06-23,Home & Garden,Plant,East,5,263.52,1317.6,3.4,CUST-9821,Rep_11,Credit Card,14.22
+ORD-74010,2023-04-11,Sports,Bicycle,Central,7,271.14,1897.98,9.7,CUST-2639,Rep_7,Cash,14.93
+ORD-16230,2023-09-29,Toys,Puzzle,South,9,74.66,671.9,6.4,CUST-5871,Rep_19,Online,21.09
+ORD-49309,2023-11-06,Books,Fiction Novel,Central,2,23.34,60.77,19.5,CUST-8092,Rep_18,Cash,3.2
+ORD-96613,2023-08-07,Sports,Running Shoes,Central,3,365.7,1097.11,17.3,CUST-8656,Rep_9,Online,23.69
+ORD-93090,2023-03-07,Toys,Board Game,Central,7,77.05,539.33,9.6,CUST-4335,Rep_14,Cash,21.47
+ORD-67164,2024-07-27,Toys,Action Figure,East,5,69.48,347.4,13.9,CUST-7914,Rep_2,Debit Card,8.19
+ORD-51144,2023-03-27,Clothing,T-Shirt,East,1,68.84,68.84,1.7,CUST-5882,Rep_3,Online,22.94
+ORD-78846,2024-08-17,Toys,Board Game,West,9,74.97,674.75,19.9,CUST-5125,Rep_16,Credit Card,9.76
+ORD-67602,2023-10-09,Electronics,Tablet,East,2,1593.08,3186.16,5.3,CUST-7690,,Credit Card,14.81
+ORD-89405,2023-11-12,Home & Garden,Sofa,East,8,223.05,1977.86,21.5,CUST-1570,Rep_2,Debit Card,10.06
+ORD-49438,2023-09-19,Sports,Running Shoes,East,7,93.57,655.0,27.8,CUST-2478,Rep_8,Cash,9.21
+ORD-53610,2024-02-27,Clothing,Shoes,East,8,135.68,1085.45,14.1,CUST-7920,Rep_4,Debit Card,18.97
+ORD-27837,2024-10-18,Books,Fiction Novel,East,3,30.66,91.98,18.9,CUST-1050,Rep_13,Debit Card,5.77
+ORD-27499,2023-11-24,Home & Garden,Curtains,North,10,578.14,7403.65,20.6,CUST-5270,Rep_6,Cash,20.99
+ORD-90216,2024-10-24,Clothing,T-Shirt,West,1,65.68,65.68,27.7,CUST-4747,Rep_3,Online,8.97
+ORD-67037,2024-06-22,Toys,Action Figure,North,2,94.59,189.17,0.4,CUST-8433,Rep_16,Credit Card,9.49
+ORD-64831,2023-07-13,Clothing,Jeans,East,5,85.2,425.99,21.8,CUST-3955,Rep_14,Debit Card,5.58
+ORD-37815,2024-02-12,Home & Garden,Table,Central,6,427.27,2563.61,29.2,CUST-7283,Rep_14,Cash,6.46
+ORD-10702,2023-02-16,Books,Fiction Novel,North,10,37.45,374.46,21.3,CUST-5155,Rep_17,Online,3.82
+ORD-66744,2023-11-21,Sports,Running Shoes,South,8,135.65,1502.05,4.0,CUST-3323,Rep_9,Credit Card,11.27
+ORD-31624,2024-03-22,Clothing,Shoes,East,5,157.76,788.82,15.5,CUST-6169,Rep_16,Debit Card,16.11
+ORD-15346,2024-05-21,Toys,Doll,North,2,34.64,69.27,29.9,CUST-8233,Rep_12,Online,14.16
+ORD-37839,2024-08-22,Electronics,Smartphone,North,10,559.99,5599.89,26.7,CUST-1067,Rep_17,Debit Card,13.33
+ORD-52406,2023-04-19,Electronics,Smartphone,West,10,999.75,9997.51,27.9,CUST-3519,Rep_1,Credit Card,14.2
+ORD-26950,2024-08-05,Toys,Doll,West,8,57.87,462.99,9.7,CUST-4463,Rep_2,Cash,11.46
+ORD-31356,2023-08-02,Electronics,Laptop,Central,2,1896.87,3793.73,0.6,CUST-7365,Rep_13,Cash,17.94
+ORD-77194,2024-01-12,Toys,Action Figure,North,6,49.89,299.33,20.0,CUST-4274,Rep_16,Online,22.71
+ORD-98662,2023-12-16,Sports,Running Shoes,Central,2,191.25,569.65,1.2,CUST-4673,Rep_5,Online,15.55
+ORD-66063,2024-06-19,Toys,Building Blocks,North,5,12.81,64.06,25.2,CUST-5841,Rep_19,Credit Card,16.02
+ORD-12132,2024-05-30,Electronics,Smart Watch,North,10,1043.98,10439.84,2.5,CUST-2866,Rep_15,Debit Card,20.72
+ORD-37665,2023-07-11,Sports,Basketball,North,5,328.69,1643.44,10.2,CUST-4032,Rep_3,Cash,22.43
+ORD-90837,2023-11-07,Electronics,Headphones,Central,10,104.85,1412.73,21.8,CUST-6910,Rep_13,Cash,6.75
+ORD-80593,2024-10-03,Clothing,T-Shirt,South,4,19.87,79.48,13.1,CUST-4127,Rep_3,Cash,20.39
+ORD-48644,2023-07-26,Clothing,Shoes,West,8,41.14,329.11,17.6,CUST-7418,Rep_2,Cash,5.16
+ORD-98954,2024-09-18,Toys,Doll,West,8,43.41,347.28,15.4,CUST-8993,Rep_8,Credit Card,15.57
+ORD-12727,2024-03-22,Sports,Bicycle,East,6,386.22,2317.3,13.4,CUST-3643,Rep_10,Debit Card,14.38
+ORD-64638,2024-12-29,Sports,Tennis Racket,Central,3,225.67,850.44,26.5,CUST-6902,Rep_16,Debit Card,17.44
+ORD-16166,2024-07-24,Home & Garden,Sofa,West,5,581.42,2907.1,7.0,CUST-1297,Rep_12,Cash,12.14
+ORD-83010,2023-12-30,Clothing,Jeans,Central,5,22.08,155.43,29.8,CUST-5382,Rep_5,Credit Card,19.13
+ORD-25474,2024-10-07,Sports,Yoga Mat,North,9,417.68,3759.1,3.2,CUST-4365,Rep_12,Debit Card,19.57
+ORD-10863,2024-03-01,Toys,Doll,Central,4,14.49,57.94,13.2,CUST-5019,Rep_16,Cash,10.74
+ORD-66206,2023-05-22,Clothing,T-Shirt,East,7,119.06,833.42,23.6,CUST-7773,Rep_14,Online,24.04
+ORD-66894,2023-06-18,Books,Biography,North,7,9.02,63.12,29.5,CUST-2007,Rep_13,Credit Card,5.96
+ORD-49888,2024-12-18,Toys,Action Figure,Central,7,24.3,224.77,26.6,CUST-6139,Rep_12,Credit Card,21.54
+ORD-63019,2024-10-26,Books,Comic Book,South,6,30.47,182.84,26.6,CUST-4232,Rep_10,Credit Card,2.22
+ORD-87660,2024-07-06,Home & Garden,Plant,South,3,251.27,753.81,0.7,CUST-5238,Rep_8,Cash,19.53
+ORD-69394,2023-01-06,Books,Fiction Novel,North,8,36.66,293.31,8.9,CUST-6553,Rep_8,Debit Card,4.1
+ORD-65796,2023-05-31,Home & Garden,Curtains,South,6,246.37,1478.24,13.6,CUST-7751,Rep_3,Credit Card,6.24
+ORD-65498,2024-10-13,Clothing,Shoes,South,5,71.32,356.58,17.5,CUST-8210,Rep_16,Online,21.48
+ORD-83272,2023-06-10,Clothing,Jacket,South,8,87.85,702.79,14.2,CUST-7051,Rep_4,Online,7.21
+ORD-65280,2024-08-26,Home & Garden,Curtains,East,3,385.71,1157.14,4.3,CUST-1797,Rep_10,Cash,9.31
+ORD-89391,2024-05-01,Toys,Doll,North,6,44.98,269.86,23.4,CUST-3175,Rep_5,Online,20.23
+ORD-97876,2023-02-16,Toys,Doll,South,7,24.36,170.52,10.2,CUST-8259,Rep_9,Credit Card,22.32
+ORD-84743,2023-02-24,Toys,Board Game,Central,10,10.96,109.62,16.3,CUST-9548,Rep_7,Online,15.05
+ORD-89541,2024-06-30,Electronics,Laptop,Central,8,430.3,3442.4,2.5,CUST-6249,Rep_13,Credit Card,14.83
+ORD-33942,2023-05-28,Electronics,Tablet,West,9,420.62,3785.57,5.0,CUST-5187,Rep_3,Debit Card,11.14
+ORD-59219,2023-09-22,Sports,Tennis Racket,North,7,31.75,222.27,26.8,CUST-2981,Rep_2,Debit Card,9.79
+ORD-63411,2023-01-30,Books,Comic Book,South,7,12.18,85.27,2.0,CUST-4829,Rep_1,Cash,5.32
+ORD-58929,2023-05-26,Books,Fiction Novel,South,9,26.14,235.26,6.1,CUST-9854,Rep_6,Debit Card,5.23
+ORD-45822,2024-05-08,Sports,Bicycle,West,1,227.54,227.54,28.0,CUST-5110,Rep_13,Cash,21.85
+ORD-66618,2023-10-14,Clothing,Jacket,Central,3,38.38,115.15,21.8,CUST-4454,Rep_20,Cash,22.68
+ORD-89794,2023-01-03,Home & Garden,Lamp,West,3,286.6,859.81,19.4,CUST-8807,Rep_1,Credit Card,18.45
+ORD-59332,2023-12-28,Sports,Bicycle,West,8,263.3,3136.01,20.2,CUST-6864,Rep_13,Debit Card,21.78
+ORD-91951,2024-09-20,Toys,Board Game,North,6,29.89,179.32,5.7,CUST-5967,Rep_8,Debit Card,24.6
+ORD-75578,2024-08-05,Home & Garden,Sofa,East,2,462.43,924.85,26.1,CUST-9093,Rep_6,Debit Card,18.2
+ORD-35146,2023-10-08,Books,Comic Book,Central,9,36.99,332.91,21.9,CUST-1378,Rep_18,Cash,6.08
+ORD-71156,2024-06-14,Sports,Basketball,West,5,453.13,2265.63,3.7,CUST-9119,Rep_12,Credit Card,22.68
+ORD-65550,2023-08-20,Clothing,T-Shirt,East,1,81.42,81.42,29.7,CUST-2219,Rep_8,Debit Card,8.29
+ORD-54669,2023-09-02,Home & Garden,Sofa,North,4,70.47,281.87,3.2,CUST-1891,Rep_11,Debit Card,23.87
+ORD-26716,2024-12-11,Books,Comic Book,West,6,9.11,61.54,26.7,CUST-2015,Rep_15,Credit Card,3.81
+ORD-96471,2024-09-05,Toys,Doll,North,7,59.19,414.35,7.0,CUST-1173,Rep_15,Online,14.28
+ORD-18853,2024-09-01,Sports,Bicycle,Central,2,26.75,53.49,3.1,CUST-4172,Rep_19,Debit Card,17.75
+ORD-56890,2024-10-29,Home & Garden,Lamp,West,10,196.99,1969.95,13.1,CUST-6098,Rep_19,Debit Card,7.95
+ORD-55064,2024-03-08,Home & Garden,Curtains,East,9,402.22,3620.02,25.8,CUST-4201,Rep_7,Debit Card,20.71
+ORD-69546,2023-12-03,Home & Garden,Table,West,10,564.06,6570.84,9.0,CUST-1691,Rep_16,Debit Card,23.4
+ORD-10881,2023-07-08,Toys,Action Figure,South,7,76.66,536.61,6.2,CUST-6944,Rep_1,Credit Card,12.16
+ORD-44340,2023-08-13,Books,Fiction Novel,South,4,10.75,43.02,8.5,CUST-3855,Rep_11,Debit Card,3.07
+ORD-58449,2023-09-03,Electronics,Smartphone,East,4,1662.73,6650.91,9.2,CUST-7100,Rep_6,Online,22.57
+ORD-16054,2023-09-08,Electronics,Laptop,South,7,1256.29,8794.06,29.3,CUST-4098,Rep_18,Cash,20.79
+ORD-31945,2024-11-10,Home & Garden,Table,North,2,130.09,350.18,23.5,CUST-9333,Rep_13,Cash,14.97
+ORD-38773,2023-08-01,Sports,Tennis Racket,East,10,385.26,3852.62,19.5,CUST-4325,Rep_15,Debit Card,12.92
+ORD-86541,2023-08-24,Home & Garden,Plant,West,8,342.3,2738.42,15.6,CUST-1674,Rep_15,Cash,13.52
+ORD-48603,2023-03-26,Sports,Yoga Mat,West,2,24.08,48.16,10.8,CUST-9220,Rep_17,Credit Card,20.72
+ORD-28070,2024-09-10,Clothing,T-Shirt,North,5,25.35,126.76,5.7,CUST-9898,Rep_9,Credit Card,20.4
+ORD-39743,2023-08-22,Home & Garden,Lamp,West,3,570.01,1710.04,26.0,CUST-4438,Rep_16,Debit Card,15.32
+ORD-13945,2024-07-25,Books,Textbook,West,8,41.24,329.93,13.5,CUST-7139,Rep_5,Debit Card,3.83
+ORD-13046,2024-08-24,Toys,Board Game,West,9,39.43,354.83,9.0,CUST-1527,Rep_5,Debit Card,24.54
+ORD-53101,2023-04-22,Home & Garden,Curtains,Central,7,397.54,2782.75,5.7,CUST-8397,Rep_10,Credit Card,8.43
+ORD-96451,2023-10-26,Toys,Building Blocks,South,5,90.52,452.62,6.2,CUST-9591,Rep_3,Online,6.15
+ORD-27030,2023-07-31,Books,Fiction Novel,South,2,13.4,26.79,11.7,CUST-4369,,Online,6.91
+ORD-18384,2024-04-01,Toys,Doll,South,1,21.9,21.9,29.7,CUST-7541,Rep_20,Debit Card,15.52
+ORD-64401,2023-06-29,Books,Textbook,West,5,41.27,206.35,11.7,CUST-5081,Rep_6,Online,4.75
+ORD-38476,2023-03-10,Toys,Action Figure,Central,9,81.06,729.57,8.8,CUST-9085,Rep_14,Credit Card,24.91
+ORD-59958,2024-11-22,Electronics,Laptop,Central,2,1258.12,3522.47,19.2,CUST-6630,Rep_13,Debit Card,12.93
+ORD-28383,2024-03-24,Electronics,Tablet,North,4,1137.46,4549.85,21.4,CUST-8713,Rep_9,Debit Card,8.41
+ORD-33322,2024-01-02,Electronics,Smart Watch,North,5,416.64,2083.19,4.6,CUST-4549,Rep_2,Debit Card,13.84
+ORD-36212,2023-09-02,Electronics,Smart Watch,North,4,747.52,2990.08,11.2,CUST-2497,Rep_1,Online,5.56
+ORD-24114,2024-06-08,Electronics,Tablet,South,3,1373.54,4120.63,1.3,CUST-6359,Rep_11,Debit Card,17.49
+ORD-18652,2023-08-14,Books,Textbook,West,7,24.42,170.94,6.4,CUST-5562,Rep_20,Cash,2.26
+ORD-88625,2023-04-08,Clothing,Shoes,East,10,104.27,1042.69,5.1,CUST-6314,Rep_13,Debit Card,11.64
+ORD-40488,2023-01-14,Toys,Puzzle,West,9,62.17,559.54,17.6,CUST-1347,Rep_20,Credit Card,11.18
+ORD-68160,2024-09-04,Toys,Doll,South,1,22.67,22.67,7.1,CUST-6385,Rep_5,Cash,11.35
+ORD-39156,2024-11-11,Electronics,Smart Watch,West,9,1309.69,17626.03,1.6,CUST-7250,Rep_17,Cash,8.67
+ORD-36787,2024-07-16,Toys,Board Game,North,2,23.13,46.26,5.2,CUST-4871,Rep_17,Credit Card,13.52
+ORD-20487,2024-05-07,Sports,Running Shoes,South,4,124.68,498.71,8.2,CUST-6891,Rep_13,Online,8.36
+ORD-30027,2023-11-04,Sports,Yoga Mat,Central,7,355.21,3327.1,25.6,CUST-3878,Rep_9,Online,14.27
+ORD-59054,2024-05-27,Sports,Running Shoes,West,1,360.32,360.32,0.4,CUST-9051,Rep_13,Online,23.81
+ORD-35457,2023-06-16,Toys,Puzzle,West,7,66.67,466.7,28.0,CUST-8148,Rep_9,Cash,15.19
+ORD-29383,2024-10-22,Sports,Running Shoes,North,1,104.81,104.81,20.9,CUST-5281,Rep_20,Online,23.89
+ORD-20531,2024-08-23,Clothing,Dress,South,7,168.5,1179.47,11.9,CUST-9495,Rep_7,Online,8.32
+ORD-55140,2024-08-09,Sports,Running Shoes,East,2,289.44,578.88,3.3,CUST-3338,Rep_9,Debit Card,23.6
+ORD-33121,2023-06-24,Sports,Running Shoes,North,5,38.13,190.63,22.0,CUST-7138,Rep_6,Debit Card,8.96
+ORD-67767,2024-02-23,Clothing,Jacket,North,5,117.46,587.31,29.5,CUST-2789,Rep_6,Credit Card,10.86
+ORD-97205,2023-01-08,Sports,Basketball,East,5,193.86,969.31,22.6,CUST-1685,Rep_4,Debit Card,15.45
+ORD-41404,2023-12-18,Electronics,Headphones,Central,6,967.1,8702.62,11.1,CUST-6918,Rep_13,Online,17.22
+ORD-42576,2023-10-14,Home & Garden,Lamp,North,2,319.17,638.34,26.1,CUST-7036,Rep_15,Online,15.3
+ORD-89529,2023-08-28,Toys,Action Figure,North,6,7.45,44.67,20.3,CUST-8938,Rep_13,Credit Card,11.97
+ORD-21415,2024-05-24,Sports,Basketball,West,9,264.68,2382.13,1.0,CUST-5937,Rep_18,Online,8.36
+ORD-31002,2023-01-30,Sports,Basketball,West,7,266.99,1868.91,29.8,CUST-6349,Rep_13,Cash,9.41
+ORD-18476,2024-09-07,Home & Garden,Plant,North,4,469.65,1878.6,28.0,CUST-6623,Rep_13,Online,18.08
+ORD-51074,2024-09-07,Books,Plant,South,2,32.81,65.63,17.2,CUST-6623,Rep_19,Credit Card,3.86
+ORD-39116,2024-08-27,Books,Comic Book,South,9,29.77,267.93,19.9,CUST-2746,Rep_13,Credit Card,5.23
+ORD-26182,2023-11-13,Sports,Running Shoes,South,1,282.84,367.97,18.0,CUST-5480,Rep_19,Online,17.62
+ORD-33464,2023-02-23,Clothing,Shoes,East,4,69.36,277.43,21.0,CUST-8987,Rep_13,Cash,24.69
+ORD-35571,2023-10-17,Toys,Action Figure,North,9,32.96,296.65,21.8,CUST-9978,Rep_13,Credit Card,7.62
+ORD-95359,2023-07-20,Books,Fiction Novel,East,4,16.42,65.68,24.1,CUST-1149,Rep_12,Credit Card,6.07
+ORD-54366,2024-10-27,Clothing,Shoes,West,2,35.49,70.99,29.4,CUST-8107,Rep_5,Online,9.9
+ORD-60082,2024-10-27,Electronics,Smartphone,West,2,788.45,1576.89,23.3,CUST-5509,Rep_15,Cash,5.23
+ORD-87709,2023-04-07,Electronics,Laptop,North,5,815.25,4076.27,20.8,CUST-3967,Rep_13,Online,25.0
+ORD-79479,2024-07-03,Toys,Doll,East,1,19.9,19.9,11.8,CUST-9004,Rep_3,Credit Card,20.07
+ORD-21510,2023-06-15,Clothing,T-Shirt,South,10,136.16,1361.59,6.2,CUST-5206,Rep_2,Credit Card,24.6
+ORD-96397,2023-10-28,Books,Biography,East,9,14.52,130.71,27.1,CUST-9750,Rep_15,Debit Card,5.46
+ORD-28568,2023-07-12,Toys,Puzzle,Central,1,63.12,63.12,7.1,CUST-5910,Rep_7,Debit Card,17.04
+ORD-43315,2023-03-27,Clothing,Jacket,East,3,133.09,399.26,12.0,CUST-7968,Rep_5,Debit Card,6.41
+ORD-59668,2024-03-20,Toys,Puzzle,South,6,58.32,349.93,29.8,CUST-1424,Rep_20,Debit Card,6.55
+ORD-45867,2023-08-20,Electronics,Smart Watch,North,3,1034.76,3104.27,26.1,CUST-1161,Rep_4,Online,24.59
+ORD-46961,2024-12-18,Clothing,Shoes,North,2,35.53,94.43,15.9,CUST-5440,Rep_20,Credit Card,22.93
+ORD-43955,2023-05-11,Clothing,Dress,West,7,141.48,990.34,14.3,CUST-1155,Rep_17,Debit Card,18.15
+ORD-33999,2024-04-13,Clothing,Shoes,Central,10,25.81,258.12,12.5,CUST-8191,Rep_12,Online,15.04
+ORD-93188,2023-04-03,Home & Garden,Plant,Central,7,632.99,4430.94,23.1,CUST-2302,Rep_3,Debit Card,23.9
+ORD-72869,2023-05-20,Clothing,Jacket,North,9,51.47,463.19,28.0,CUST-9156,Rep_17,Credit Card,13.11
+ORD-89609,2023-02-13,Books,Cookbook,North,9,31.44,282.97,20.5,CUST-8350,Rep_6,Debit Card,3.05
+ORD-48019,2023-05-01,Home & Garden,Table,Central,4,390.8,1563.2,25.0,CUST-5901,Rep_16,Cash,10.3
+ORD-17536,2024-05-14,Electronics,Smart Watch,West,8,375.78,3006.22,26.8,CUST-6828,Rep_1,Online,11.57
+ORD-63833,2023-06-07,Home & Garden,Sofa,North,9,365.31,3287.83,15.4,CUST-3029,Rep_16,Credit Card,8.11
+ORD-31211,2024-03-25,Toys,Puzzle,South,8,24.58,196.61,19.7,CUST-3291,Rep_12,Online,5.12
+ORD-25570,2024-11-12,Toys,Action Figure,North,4,14.47,86.45,28.5,CUST-7899,Rep_16,Online,21.0
+ORD-12772,2023-04-21,Toys,Action Figure,East,3,80.69,242.07,3.3,CUST-3066,Rep_5,Cash,15.0
+ORD-42472,2024-03-15,Toys,Action Figure,North,8,31.69,253.55,2.5,CUST-3498,Rep_17,Debit Card,9.99
+ORD-92432,2024-08-28,Electronics,Tablet,South,10,1291.78,12917.75,5.4,CUST-3436,Rep_8,Credit Card,7.65
+ORD-39068,2023-08-25,Electronics,Tablet,South,5,1473.49,7367.44,21.0,CUST-6507,Rep_14,Online,6.23
+ORD-96563,2023-02-23,Sports,Basketball,East,3,355.7,1067.1,1.2,CUST-6269,Rep_7,Cash,14.44
+ORD-53412,2023-05-14,Books,Fiction Novel,West,9,10.67,96.01,23.1,CUST-6907,Rep_12,Cash,3.43
+ORD-22928,2024-04-01,Home & Garden,Table,Central,4,163.89,655.57,5.8,CUST-2226,Rep_18,Cash,11.03
+ORD-68783,2024-01-10,Sports,Tennis Racket,Central,9,199.5,1795.48,29.3,CUST-2923,Rep_14,Credit Card,14.66
+ORD-74884,2024-02-12,Books,Comic Book,North,4,37.51,150.06,22.2,CUST-9723,Rep_17,Credit Card,2.99
+ORD-69695,2024-06-09,Books,Textbook,Central,1,12.07,12.07,26.4,CUST-9254,Rep_17,Cash,3.82
+ORD-16752,2023-10-04,Clothing,Dress,East,5,36.67,183.34,27.8,CUST-5079,Rep_7,Credit Card,5.03
+ORD-92045,2023-02-28,Home & Garden,Curtains,East,5,803.13,4015.65,9.7,CUST-1170,Rep_12,Debit Card,19.61
+ORD-92081,2023-09-21,Home & Garden,Table,East,7,701.85,4912.96,28.4,CUST-4377,Rep_15,Debit Card,11.49
+ORD-34754,2023-06-30,Clothing,Jacket,West,3,53.21,159.62,13.8,CUST-9036,Rep_6,Cash,5.42
+ORD-27995,2024-06-23,Clothing,Jeans,West,7,52.19,365.36,3.0,CUST-1193,Rep_20,Credit Card,12.56
+ORD-23938,2023-01-10,Electronics,Laptop,North,10,1544.27,15442.69,0.4,CUST-9886,Rep_11,Credit Card,9.05
+ORD-23476,2023-02-15,Sports,Bicycle,West,9,128.33,1154.95,3.7,CUST-9923,Rep_10,Credit Card,15.23
+ORD-74463,2023-04-26,Sports,Tennis Racket,North,7,68.66,480.62,20.6,CUST-3778,Rep_4,Debit Card,7.03
+ORD-99054,2023-12-09,Home & Garden,Lamp,North,3,807.93,3247.51,12.9,CUST-7967,Rep_5,Cash,17.5
+ORD-95964,2023-06-02,Home & Garden,Lamp,North,1,297.08,297.08,25.9,CUST-3401,Rep_11,Debit Card,12.81
+ORD-65552,2024-05-21,Toys,Doll,North,7,15.31,107.14,10.6,CUST-8885,Rep_14,Cash,7.76
+ORD-85743,2024-06-23,Toys,Action Figure,West,10,32.63,326.3,21.4,CUST-4593,Rep_3,Debit Card,12.23
+ORD-82286,2023-05-28,Clothing,T-Shirt,East,3,175.36,526.09,8.8,CUST-7898,Rep_8,Debit Card,21.56
+ORD-72498,2023-03-17,Electronics,Smartphone,North,2,1544.59,3089.17,19.9,CUST-3591,Rep_1,Debit Card,12.3
+ORD-54215,2023-11-03,Electronics,Smartphone,North,9,97.78,1133.56,21.0,CUST-8274,Rep_1,Cash,7.23
+ORD-84981,2023-09-22,Electronics,Laptop,Central,9,1201.22,10811.02,21.3,CUST-9222,Rep_10,Debit Card,13.47
+ORD-89309,2024-07-26,Clothing,Dress,North,3,147.66,442.97,24.7,CUST-2264,Rep_15,Online,11.26
+ORD-46989,2023-12-10,Toys,Doll,West,10,9.5,105.53,23.4,CUST-3666,Rep_18,Credit Card,6.31
+ORD-15987,2024-05-10,Books,Fiction Novel,East,1,11.14,11.14,16.9,CUST-1787,Rep_11,Credit Card,7.66
+ORD-23238,2024-05-30,Electronics,Tablet,East,2,1730.61,3461.21,9.9,CUST-9227,Rep_5,Credit Card,16.74
+ORD-31108,2024-11-28,Sports,Yoga Mat,Central,4,254.16,1384.36,26.5,CUST-9218,Rep_17,Cash,13.95
+ORD-19830,2024-09-13,Clothing,Dress,East,4,122.01,488.02,29.9,CUST-3496,Rep_19,Online,6.95
+ORD-85564,2023-10-14,Electronics,Smartphone,East,5,1084.36,5421.78,4.8,CUST-6952,Rep_12,Credit Card,6.42
+ORD-47568,2024-01-08,Toys,Doll,East,10,80.47,804.73,14.6,CUST-7568,Rep_14,Debit Card,13.82
+ORD-42088,2023-02-28,Books,Comic Book,East,10,31.82,318.2,29.3,CUST-1130,Rep_5,Credit Card,3.74
+ORD-24302,2024-04-21,Clothing,Jacket,West,9,43.91,395.16,27.0,CUST-2406,Rep_6,Credit Card,23.35
+ORD-81444,2023-02-09,Sports,Yoga Mat,South,2,282.39,564.77,8.4,CUST-3551,Rep_16,Debit Card,17.8
+ORD-99610,2023-01-24,Home & Garden,Curtains,North,4,107.51,430.03,1.6,CUST-7929,Rep_9,,17.71
+ORD-22116,2023-02-25,Electronics,Smartphone,North,5,586.16,2930.79,5.5,CUST-8021,Rep_11,Cash,8.29
+ORD-88266,2024-07-28,Home & Garden,Plant,West,7,152.62,1068.33,24.7,CUST-4253,Rep_3,Debit Card,11.47
+ORD-69055,2023-01-04,Toys,Puzzle,North,7,89.49,626.42,7.9,CUST-3059,Rep_15,Credit Card,5.73
+ORD-57683,2024-01-15,Toys,Action Figure,West,10,16.52,165.24,28.7,CUST-1265,Rep_10,Cash,15.04
+ORD-33186,2024-01-18,Electronics,Headphones,West,3,764.65,2293.95,13.8,CUST-3664,Rep_18,Online,12.63
+ORD-63907,2024-09-23,Toys,Doll,East,2,68.06,136.12,19.5,CUST-2698,Rep_16,Credit Card,17.67
+ORD-70810,2023-12-26,Books,Comic Book,North,8,22.92,272.67,28.5,CUST-7765,Rep_13,Credit Card,7.64
+ORD-14282,2024-02-29,Clothing,Jacket,East,1,101.14,101.14,27.0,CUST-1254,Rep_1,Debit Card,20.81
+ORD-66243,2024-08-14,Books,Comic Book,East,7,36.77,257.42,24.9,CUST-3111,Rep_13,Debit Card,4.42
+ORD-52258,2023-06-12,Home & Garden,Curtains,South,5,607.36,3036.8,25.1,CUST-4338,Rep_3,Credit Card,5.51
+ORD-92772,2024-10-11,Electronics,Smart Watch,South,3,107.76,323.28,29.5,CUST-6867,Rep_6,Debit Card,18.05
+ORD-92239,2023-05-28,Clothing,Dress,South,5,62.55,312.75,2.5,CUST-1379,Rep_19,Credit Card,7.22
+ORD-12877,2024-05-17,Books,Fiction Novel,North,4,38.65,154.61,11.7,CUST-7778,Rep_3,Online,7.76
+ORD-89515,2024-10-08,Electronics,Smartphone,West,3,652.09,1956.28,19.8,CUST-1515,Rep_4,,24.87
+ORD-38351,2023-06-06,Sports,Bicycle,Central,1,392.23,392.23,15.5,CUST-6978,Rep_4,Debit Card,5.59
+ORD-74985,2024-04-23,Clothing,Jeans,North,9,152.17,1369.57,19.6,CUST-8144,Rep_17,Online,23.45
+ORD-73941,2023-07-30,Home & Garden,Table,South,5,301.27,1506.37,5.0,CUST-8101,Rep_15,Online,16.93
+ORD-77024,2023-02-04,Home & Garden,Lamp,Central,8,227.71,1821.65,5.0,CUST-5146,Rep_19,Online,10.87
+ORD-29010,2024-01-16,Toys,Building Blocks,East,4,22.73,90.91,19.7,CUST-6151,Rep_4,Credit Card,11.37
+ORD-46444,2024-07-28,Electronics,Tablet,South,9,920.01,8280.06,6.5,CUST-2225,Rep_19,Online,18.64
+ORD-40988,2023-12-01,Sports,Running Shoes,East,8,35.76,382.32,5.1,CUST-1348,Rep_10,Credit Card,17.87
+ORD-64405,2023-04-08,Books,Fiction Novel,West,1,45.75,45.75,2.1,CUST-5931,Rep_9,Cash,6.52
+ORD-23466,2024-09-24,Sports,Basketball,Central,2,119.34,238.68,25.3,CUST-1479,Rep_8,Credit Card,21.51
+ORD-44037,2024-12-05,Clothing,T-Shirt,East,9,105.73,1377.07,29.7,CUST-1705,Rep_4,Credit Card,23.94
+ORD-86563,2023-06-01,Electronics,Tablet,East,2,1353.74,2707.49,3.8,CUST-7771,Rep_15,Credit Card,15.44
+ORD-41768,2023-12-28,Clothing,Jacket,West,5,153.97,1018.81,21.3,CUST-4373,Rep_3,Credit Card,24.44
+ORD-50871,2023-11-17,Electronics,Smartphone,North,9,1162.12,14686.53,15.4,CUST-8438,Rep_5,Credit Card,23.28
+ORD-94984,2024-08-14,Clothing,Dress,West,3,139.94,419.81,20.6,CUST-2672,Rep_5,Online,22.52
+ORD-56455,2023-03-28,Toys,Board Game,South,2,27.75,55.5,27.8,CUST-8069,Rep_7,Debit Card,12.94
+ORD-87863,2023-06-30,Sports,Bicycle,East,5,310.85,1554.25,5.7,CUST-5520,Rep_17,Online,15.37
+ORD-63026,2024-09-27,Electronics,Laptop,South,2,1763.21,3526.43,8.3,CUST-7421,Rep_13,Credit Card,9.4
+ORD-50019,2024-12-18,Toys,Puzzle,West,2,70.57,190.38,5.6,CUST-4909,Rep_6,Cash,18.63
+ORD-99024,2023-06-24,Clothing,Jeans,East,5,33.49,167.46,26.4,CUST-1159,Rep_20,Cash,24.39
+ORD-29212,2023-06-21,Books,Fiction Novel,West,4,31.34,125.36,15.8,CUST-2538,Rep_4,Cash,6.82
+ORD-97023,2023-12-08,Home & Garden,Plant,West,6,267.87,2340.99,9.0,CUST-8935,Rep_4,Cash,18.72
+ORD-35407,2023-04-02,Toys,Board Game,South,7,25.17,176.21,10.8,CUST-7189,Rep_4,Cash,22.54
+ORD-50543,2023-10-10,Toys,Building Blocks,West,10,31.9,318.99,12.5,CUST-4122,Rep_2,Cash,21.68
+ORD-78575,2023-06-03,Electronics,Headphones,West,3,1012.05,3036.15,14.0,CUST-5747,Rep_20,Debit Card,11.07
+ORD-16540,2023-01-01,Home & Garden,Sofa,East,7,285.17,1996.19,10.6,CUST-5119,Rep_5,Cash,22.57
+ORD-56482,2024-04-29,Books,Comic Book,South,5,25.49,127.45,6.6,CUST-5075,Rep_13,Online,4.39
+ORD-82651,2024-03-02,Electronics,Tablet,East,4,1141.79,4567.15,7.5,CUST-4268,Rep_10,Cash,6.71
+ORD-56424,2024-12-30,Books,Textbook,Central,9,22.35,250.04,28.0,CUST-8006,Rep_15,Online,7.77
+ORD-91381,2023-05-11,Sports,Basketball,Central,10,70.4,704.02,15.4,CUST-9900,Rep_19,Cash,6.07
+ORD-24031,2024-10-27,Sports,Tennis Racket,West,5,199.95,999.75,24.9,CUST-6463,Rep_20,Credit Card,21.44
+ORD-27878,2024-05-22,Books,Textbook,East,9,37.01,333.05,4.3,CUST-4662,Rep_5,Cash,5.77
+ORD-13231,2024-04-30,Toys,Board Game,West,4,51.05,204.2,6.1,CUST-9287,Rep_15,Online,6.11
+ORD-26147,2024-09-23,Electronics,Tablet,West,8,756.36,6050.86,25.8,CUST-8083,Rep_5,Credit Card,8.7
+ORD-60570,2024-11-14,Toys,Action Figure,South,10,12.36,149.53,14.8,CUST-2758,Rep_15,Online,21.27
+ORD-71329,2023-12-30,Clothing,T-Shirt,East,10,105.35,1564.55,13.3,CUST-8509,Rep_9,Credit Card,24.64
+ORD-46482,2023-12-30,Home & Garden,T-Shirt,Central,10,492.94,4929.42,10.2,CUST-8509,Rep_13,Credit Card,23.32
+ORD-86116,2023-11-28,Toys,Doll,West,5,64.97,433.86,3.9,CUST-6703,Rep_19,Online,6.35
+ORD-60342,2023-06-28,Electronics,Smartphone,South,4,274.46,1097.85,3.2,CUST-7882,Rep_3,Credit Card,17.24
+ORD-85206,2024-10-14,Electronics,Laptop,North,8,832.54,6660.29,11.3,CUST-4272,Rep_7,Cash,14.82
+ORD-10686,2023-05-24,Toys,Puzzle,South,2,56.62,113.24,6.1,CUST-6891,Rep_14,Credit Card,11.81
+ORD-66034,2023-05-24,Toys,Puzzle,West,3,68.72,206.16,24.0,CUST-6891,Rep_3,Credit Card,7.54
+ORD-18906,2024-01-02,Books,Biography,North,5,16.74,83.7,11.7,CUST-3586,Rep_10,Credit Card,5.21
+ORD-54308,2023-02-03,Clothing,Jacket,Central,5,73.86,369.29,19.6,CUST-7904,Rep_9,Debit Card,11.69
+ORD-89954,2024-07-31,Electronics,Smartphone,South,2,864.06,1728.12,24.2,CUST-1579,Rep_12,Credit Card,24.0
+ORD-72599,2024-03-17,Books,Comic Book,North,4,11.4,45.6,19.5,CUST-5971,Rep_8,Credit Card,7.59
+ORD-65945,2024-03-16,Electronics,Smartphone,Central,7,993.53,6954.74,20.9,CUST-3257,Rep_4,Online,7.36
+ORD-42757,2023-01-16,Books,Biography,East,9,27.83,250.45,17.0,CUST-1931,Rep_3,Credit Card,2.76
+ORD-42794,2023-03-20,Clothing,Dress,North,2,103.14,206.27,19.7,CUST-9907,Rep_7,Online,19.11
+ORD-75987,2024-07-08,Home & Garden,Table,West,5,715.51,3577.57,9.6,CUST-2710,Rep_2,Cash,23.01
+ORD-14701,2023-05-26,Toys,Building Blocks,West,4,72.7,290.81,3.7,CUST-4851,Rep_15,Online,24.06
+ORD-60418,2024-01-27,Electronics,Headphones,North,7,522.39,3656.71,14.9,CUST-8274,Rep_2,Debit Card,9.11
+ORD-87458,2023-09-26,Clothing,Shoes,Central,6,54.19,325.12,27.7,CUST-4547,Rep_1,Cash,19.52
+ORD-70752,2024-07-01,Books,Textbook,West,5,23.86,119.28,25.8,CUST-7944,Rep_19,Cash,2.98
+ORD-61721,2024-08-07,Sports,Yoga Mat,South,9,433.96,3905.6,8.9,CUST-1632,Rep_20,Cash,12.23
+ORD-14850,2024-04-22,Toys,Puzzle,Central,1,40.94,40.94,13.2,CUST-6877,Rep_16,Debit Card,13.17
+ORD-39808,2023-05-11,Books,Fiction Novel,East,5,15.02,75.11,26.1,CUST-3858,Rep_5,Credit Card,3.4
+ORD-98917,2023-01-17,Toys,Board Game,South,5,7.62,38.12,29.3,CUST-6789,Rep_18,Credit Card,17.01
+ORD-47104,2024-03-12,Home & Garden,Sofa,North,7,120.93,846.52,2.1,CUST-3344,Rep_1,Cash,17.14
+ORD-13346,2024-08-28,Home & Garden,Lamp,West,5,681.51,3407.57,27.9,CUST-2740,Rep_20,Debit Card,21.16
+ORD-84108,2023-08-18,Books,Comic Book,Central,2,25.89,51.77,28.7,CUST-9249,Rep_19,Online,5.23
+ORD-40263,2024-01-06,Electronics,Smart Watch,North,4,1129.89,4519.57,9.9,CUST-8468,Rep_11,Credit Card,18.86
+ORD-80466,2023-05-09,Sports,Yoga Mat,East,7,177.57,1242.98,6.9,CUST-5013,Rep_14,Debit Card,17.11
+ORD-12033,2024-04-09,Home & Garden,Lamp,East,4,386.76,1547.02,27.0,CUST-3732,Rep_4,Online,10.27
+ORD-56447,2024-03-08,Books,Textbook,North,9,35.93,323.36,27.6,CUST-3088,Rep_13,Debit Card,6.27
+ORD-68950,2024-10-07,Electronics,Tablet,East,8,889.46,7115.69,27.3,CUST-8138,Rep_10,Online,19.0
+ORD-33163,2024-03-25,Toys,Action Figure,Central,8,35.57,284.56,11.4,CUST-9334,Rep_19,Cash,23.9
+ORD-28769,2023-11-23,Electronics,Smartphone,East,5,936.81,6571.34,9.7,CUST-1687,Rep_7,Online,15.38
+ORD-89451,2023-09-23,Books,Comic Book,East,5,19.79,98.96,28.2,CUST-2738,Rep_8,Cash,2.85
+ORD-58436,2023-01-27,Clothing,Jacket,Central,1,21.27,21.27,14.7,CUST-4328,Rep_10,Online,19.64
+ORD-46497,2023-05-21,Books,Cookbook,West,5,27.05,135.26,2.6,CUST-2908,Rep_12,Credit Card,6.47
+ORD-66803,2023-02-09,Clothing,T-Shirt,East,6,58.85,353.1,26.8,CUST-2645,Rep_17,Cash,8.81
+ORD-47040,2024-05-23,Books,Fiction Novel,North,8,13.47,107.8,24.4,CUST-3159,Rep_7,Credit Card,7.7
+ORD-40764,2024-08-20,Toys,Action Figure,North,10,62.33,623.31,11.4,CUST-6713,Rep_16,Debit Card,22.56
+ORD-52650,2024-04-02,Clothing,Dress,West,5,116.61,583.06,12.6,CUST-5053,Rep_14,Credit Card,8.52
+ORD-48132,2023-01-30,Home & Garden,Sofa,East,7,623.16,4362.1,20.6,CUST-5389,Rep_17,Debit Card,22.8
+ORD-54543,2023-08-13,Sports,Basketball,Central,1,188.33,188.33,8.0,CUST-1747,Rep_10,Online,13.2
+ORD-59700,2023-01-22,Books,Cookbook,Central,1,16.58,16.58,28.5,CUST-2478,Rep_11,Cash,6.6
+ORD-59005,2023-06-15,Books,Fiction Novel,North,4,28.69,114.77,8.7,CUST-6431,Rep_14,Debit Card,5.32
+ORD-92779,2023-08-24,Clothing,T-Shirt,North,5,141.82,709.1,9.0,CUST-5051,Rep_2,Cash,20.0
+ORD-89281,2024-07-08,Sports,Yoga Mat,South,7,51.8,362.6,0.6,CUST-3487,Rep_4,Online,8.89
+ORD-66299,2023-10-26,Books,Biography,East,10,12.01,120.09,14.1,CUST-2524,Rep_8,Online,5.37
+ORD-13262,2024-08-14,Sports,Running Shoes,Central,2,317.95,635.91,13.6,CUST-7510,Rep_8,Online,12.4
+ORD-28524,2023-03-27,Books,Fiction Novel,East,8,13.78,110.28,17.8,CUST-7605,Rep_20,Online,5.14
+ORD-45146,2023-01-06,Books,Cookbook,North,10,13.15,131.46,18.0,CUST-4427,Rep_18,Online,5.27
+ORD-26683,2024-01-20,Home & Garden,Table,East,7,456.01,3192.08,21.0,CUST-1223,Rep_6,Credit Card,8.32
+ORD-25411,2023-10-31,Sports,Basketball,North,7,237.14,1660.0,12.0,CUST-8134,Rep_10,Cash,15.45
+ORD-70670,2024-04-28,Books,Biography,Central,9,28.29,254.63,18.1,CUST-4450,Rep_11,Debit Card,2.99
+ORD-70108,2024-07-04,Toys,Doll,North,4,56.72,226.89,20.8,CUST-6423,Rep_4,Credit Card,17.5
+ORD-62857,2024-07-04,Books,Doll,North,7,38.85,339.13,17.5,CUST-6423,Rep_18,Debit Card,2.46
+ORD-89269,2024-08-29,Clothing,T-Shirt,South,6,55.7,334.21,17.3,CUST-5542,Rep_20,Online,9.19
+ORD-65758,2024-03-26,Electronics,Smartphone,South,1,262.3,262.3,4.1,CUST-8728,Rep_11,Cash,15.01
+ORD-31773,2023-08-08,Electronics,Smartphone,Central,2,622.68,1245.36,26.5,CUST-5550,Rep_5,Online,16.21
+ORD-90868,2023-08-07,Sports,Running Shoes,North,6,21.31,127.85,21.9,CUST-4129,Rep_13,Cash,8.58
+ORD-89531,2023-01-14,Toys,Board Game,South,5,34.0,170.01,15.1,CUST-5473,Rep_2,Cash,17.83
+ORD-32776,2024-05-17,Sports,Basketball,East,10,24.11,241.13,19.0,CUST-8756,Rep_18,Credit Card,5.76
+ORD-51187,2023-03-05,Electronics,Smart Watch,South,8,1165.19,9321.5,19.1,CUST-2597,Rep_18,Cash,24.67
+ORD-97519,2024-11-11,Clothing,Jacket,North,6,119.12,901.48,15.5,CUST-2007,Rep_3,Debit Card,21.5
+ORD-55964,2024-07-28,Books,Cookbook,East,1,27.4,27.4,9.3,CUST-2928,Rep_11,Online,5.41
+ORD-38511,2023-01-11,Toys,Board Game,Central,1,27.07,27.07,23.0,CUST-7136,Rep_15,Credit Card,22.54
+ORD-34673,2023-08-20,Clothing,Dress,South,10,138.39,1383.9,9.5,CUST-5469,Rep_7,Debit Card,24.59
+ORD-60551,2024-08-22,Home & Garden,Plant,East,3,391.08,1173.23,1.1,CUST-3551,Rep_18,Debit Card,24.88
+ORD-44189,2024-04-23,Sports,Running Shoes,East,4,385.14,1540.56,7.7,CUST-1515,Rep_4,Debit Card,14.5
+ORD-53871,2024-05-01,Sports,Bicycle,East,1,29.92,29.92,4.8,CUST-6516,Rep_4,Debit Card,23.26
+ORD-43105,2023-09-07,Home & Garden,Table,West,7,400.7,2804.92,14.2,CUST-7114,Rep_20,Cash,14.65
+ORD-87735,2024-02-15,Sports,Running Shoes,North,5,322.58,1612.91,28.6,CUST-1467,Rep_6,Debit Card,23.45
+ORD-55364,2023-05-25,Books,Comic Book,South,2,37.69,75.38,9.3,CUST-8515,Rep_13,Debit Card,4.76
+ORD-59054,2024-07-22,Toys,Action Figure,South,4,12.94,51.75,4.6,CUST-1081,Rep_16,Debit Card,11.89
+ORD-27501,2023-11-22,Sports,Bicycle,West,2,369.58,1038.67,11.6,CUST-7551,,Cash,21.4
+ORD-58382,2023-08-29,Toys,Doll,Central,10,24.67,246.68,5.3,CUST-6935,Rep_11,Credit Card,17.21
+ORD-73000,2023-11-15,Sports,Basketball,South,7,215.94,1896.63,4.5,CUST-1570,Rep_9,Online,8.59
+ORD-85324,2023-05-12,Sports,Bicycle,North,1,61.08,61.08,4.8,CUST-9306,Rep_13,Online,5.23
+ORD-53917,2024-04-29,Toys,Doll,West,8,69.0,551.96,15.1,CUST-9765,Rep_12,Credit Card,20.71
+ORD-67001,2024-04-10,Sports,Bicycle,West,9,359.08,3231.71,24.4,CUST-1795,Rep_15,Cash,5.8
+ORD-48435,2023-07-03,Sports,Yoga Mat,East,1,185.41,185.41,16.3,CUST-6847,Rep_14,Credit Card,13.94
+ORD-74677,2024-10-10,Home & Garden,Sofa,Central,3,433.76,1301.28,21.8,CUST-8063,Rep_9,Cash,24.44
+ORD-89869,2023-05-31,Toys,Building Blocks,South,6,7.87,47.22,11.2,CUST-2656,Rep_13,Credit Card,11.76
+ORD-84828,2023-07-16,Toys,Puzzle,West,7,8.9,62.32,29.0,CUST-5275,Rep_10,Debit Card,18.89
+ORD-98894,2023-07-05,Electronics,Tablet,Central,1,817.42,817.42,18.1,CUST-5668,Rep_9,Credit Card,13.14
+ORD-47726,2024-09-18,Electronics,Headphones,South,6,580.81,3484.84,6.6,CUST-8547,Rep_19,Online,17.7
+ORD-61126,2024-12-15,Home & Garden,Curtains,West,8,352.06,3289.62,6.3,CUST-5189,Rep_13,Credit Card,18.21
+ORD-13875,2024-04-23,Books,Fiction Novel,West,6,21.41,128.48,13.5,CUST-3554,Rep_20,Debit Card,5.75
+ORD-26186,2024-09-13,Books,Textbook,West,9,28.46,256.14,4.0,CUST-2588,Rep_13,Debit Card,3.27
+ORD-46553,2024-09-05,Electronics,Smart Watch,East,4,384.26,1537.04,12.5,CUST-6233,Rep_12,Credit Card,18.28
+ORD-62435,2023-07-01,Toys,Puzzle,Central,8,79.55,636.42,4.7,CUST-5725,Rep_1,Cash,20.26
+ORD-20552,2024-05-30,Toys,Action Figure,North,3,52.12,156.37,18.3,CUST-7697,Rep_1,Cash,17.2
+ORD-70000,2023-06-15,Clothing,Jacket,West,9,141.77,1275.94,25.9,CUST-7046,Rep_8,Debit Card,14.44
+ORD-70477,2023-07-01,Toys,Action Figure,East,8,49.18,393.44,29.7,CUST-9195,Rep_4,Cash,22.44
+ORD-64668,2023-03-14,Clothing,Jeans,West,8,24.15,193.18,25.9,CUST-5260,Rep_18,Credit Card,19.32
+ORD-92479,2024-06-07,Books,Comic Book,North,1,38.43,38.43,10.9,CUST-8209,Rep_14,Credit Card,2.62
+ORD-19708,2024-10-19,Home & Garden,Curtains,North,5,654.08,3270.4,2.9,CUST-8507,Rep_16,Debit Card,20.14
+ORD-58608,2023-08-15,Home & Garden,Lamp,West,9,269.5,2425.48,8.7,CUST-6942,Rep_10,Cash,23.9
+ORD-93461,2023-09-21,Clothing,Jacket,East,5,73.61,368.07,25.8,CUST-4734,Rep_1,Debit Card,16.66
+ORD-30431,2024-10-21,Clothing,Jacket,North,3,106.1,318.31,29.2,CUST-9209,Rep_11,Cash,12.56
+ORD-89775,2023-10-12,Sports,Tennis Racket,Central,4,316.51,1266.02,6.7,CUST-2959,Rep_7,Cash,14.98
+ORD-80091,2024-07-20,Books,Fiction Novel,Central,9,34.35,309.14,2.0,CUST-9810,Rep_3,Credit Card,4.68
+ORD-44834,2024-09-15,Books,Cookbook,South,8,18.75,149.99,5.3,CUST-5546,Rep_3,,6.4
+ORD-19575,2024-10-11,Electronics,Smartphone,Central,1,610.65,610.65,9.6,CUST-4218,Rep_16,Credit Card,13.84
+ORD-94230,2024-03-29,Sports,Tennis Racket,North,2,228.24,456.49,21.6,CUST-4191,Rep_19,Online,24.84
+ORD-54714,2023-09-12,Home & Garden,Plant,Central,5,267.97,1339.84,26.0,CUST-5510,Rep_18,Cash,17.52
+ORD-54883,2024-03-29,Electronics,Smartphone,West,5,109.19,545.97,2.8,CUST-9824,Rep_6,Debit Card,20.58
+ORD-61935,2023-11-28,Clothing,Jeans,East,10,61.96,720.33,20.2,CUST-3814,Rep_6,Debit Card,11.51
+ORD-56390,2023-11-10,Books,Textbook,Central,5,25.67,158.3,11.1,CUST-6166,Rep_15,Cash,4.55
+ORD-96776,2024-12-22,Sports,Yoga Mat,North,5,185.41,1094.75,0.6,CUST-5193,Rep_10,Cash,5.47
+ORD-87717,2023-11-30,Sports,Yoga Mat,East,2,291.57,810.07,7.3,CUST-8698,Rep_2,Online,18.76
+ORD-24553,2023-10-19,Toys,Doll,South,6,27.12,162.72,13.1,CUST-8730,Rep_5,Credit Card,11.49
+ORD-82964,2023-09-24,Toys,Doll,South,9,27.87,250.86,22.9,CUST-9700,Rep_10,Credit Card,7.81
+ORD-89117,2024-12-21,Electronics,Tablet,East,6,1711.07,12356.76,6.0,CUST-1379,Rep_5,Credit Card,17.84
+ORD-74488,2023-12-01,Sports,Yoga Mat,West,1,352.45,499.1,28.8,CUST-5630,Rep_19,Cash,17.69
+ORD-95219,2024-09-16,Toys,Board Game,Central,10,62.12,621.21,27.7,CUST-4127,Rep_3,Online,21.36
+ORD-85332,2024-02-16,Sports,Yoga Mat,South,7,131.83,922.82,26.7,CUST-5813,Rep_1,Online,5.38
+ORD-56484,2024-08-11,Clothing,Dress,West,4,133.81,535.25,23.1,CUST-3500,Rep_7,Debit Card,9.12
+ORD-49705,2024-11-04,Clothing,T-Shirt,North,6,137.08,973.45,27.9,CUST-3675,Rep_14,Cash,9.66
+ORD-67481,2024-04-02,Clothing,Dress,North,4,161.05,644.2,11.4,CUST-7540,Rep_7,Debit Card,20.42
+ORD-51534,2024-01-02,Books,Fiction Novel,North,8,12.85,102.77,22.2,CUST-7801,Rep_7,Debit Card,7.91
+ORD-66904,2023-11-14,Books,Biography,West,2,37.65,108.03,10.6,CUST-5926,Rep_8,Credit Card,5.9
+ORD-30415,2024-06-15,Sports,Yoga Mat,North,10,171.31,1713.08,0.3,CUST-3297,Rep_16,Credit Card,6.22
+ORD-31282,2023-04-23,Clothing,Dress,East,3,149.77,449.3,11.0,CUST-1491,Rep_16,Debit Card,11.12
+ORD-80710,2023-02-17,Toys,Puzzle,East,3,54.31,162.94,27.4,CUST-7177,Rep_20,Debit Card,8.16
+ORD-93473,2024-09-09,Electronics,Tablet,South,9,238.7,2148.27,13.2,CUST-1011,Rep_10,Online,14.39
+ORD-77467,2023-08-13,Home & Garden,Table,East,10,595.66,5956.58,5.9,CUST-3126,Rep_5,Debit Card,18.18
+ORD-77751,2024-06-16,Toys,Board Game,West,8,26.87,214.94,20.1,CUST-5370,Rep_5,Cash,13.44
+ORD-14471,2024-10-11,Toys,Action Figure,Central,3,80.1,240.31,0.4,CUST-4896,Rep_6,Online,11.45
+ORD-67653,2024-07-12,Books,Textbook,West,8,21.34,170.7,18.6,CUST-2930,Rep_9,Cash,4.02
+ORD-65904,2024-01-10,Clothing,Dress,East,9,99.23,893.06,7.9,CUST-1416,Rep_18,Debit Card,6.89
+ORD-33935,2024-05-31,Sports,Basketball,North,2,116.39,232.79,29.0,CUST-7513,Rep_17,Debit Card,7.83
+ORD-80707,2024-01-07,Toys,Action Figure,North,1,42.1,42.1,24.0,CUST-4775,Rep_17,Debit Card,12.49
+ORD-48862,2024-02-15,Electronics,Smartphone,Central,4,485.63,1942.52,8.4,CUST-7386,Rep_17,Online,22.87
+ORD-17762,2023-03-10,Sports,Running Shoes,South,10,294.65,2946.54,17.8,CUST-7723,Rep_5,Debit Card,14.62
+ORD-26183,2024-02-16,Clothing,Jeans,West,5,130.55,652.76,4.2,CUST-3487,Rep_7,Online,7.85
+ORD-80943,2023-05-08,Home & Garden,Lamp,North,8,498.9,3991.2,9.0,CUST-8444,Rep_5,Credit Card,22.6
+ORD-73871,2024-12-09,Toys,Puzzle,East,3,33.51,145.39,26.3,CUST-5769,Rep_8,Credit Card,6.77
+ORD-46158,2023-10-14,Toys,Building Blocks,Central,1,37.26,37.26,19.1,CUST-5123,Rep_17,Cash,13.39
+ORD-89513,2024-12-26,Home & Garden,Lamp,North,5,495.32,3207.59,3.1,CUST-7157,Rep_20,Online,5.84
+ORD-55521,2023-02-10,Electronics,Smart Watch,North,7,901.73,6312.11,24.5,CUST-8212,Rep_15,Credit Card,23.8
+ORD-57000,2023-09-17,Toys,Doll,North,1,34.5,34.5,21.9,CUST-6636,Rep_12,Debit Card,10.53
+ORD-32551,2023-12-23,Electronics,Tablet,West,6,1110.91,9414.25,22.2,CUST-9189,Rep_3,Cash,12.04
+ORD-44692,2023-07-27,Books,Cookbook,East,3,17.41,52.22,22.7,CUST-8953,Rep_12,Cash,6.84
+ORD-91064,2024-02-12,Home & Garden,Table,South,9,505.42,4548.82,16.1,CUST-2244,Rep_7,Credit Card,6.81
+ORD-52445,2023-03-26,Books,Textbook,East,5,20.73,103.67,18.4,CUST-4683,Rep_15,Credit Card,3.48
+ORD-41939,2023-10-31,Clothing,Dress,North,4,162.57,650.28,4.4,CUST-1340,Rep_20,Online,21.76
+ORD-57706,2024-12-24,Sports,Bicycle,Central,7,206.8,2053.73,22.4,CUST-5318,Rep_14,Cash,12.29
+ORD-76512,2023-04-09,Clothing,Dress,Central,9,159.03,1431.26,17.4,CUST-8794,Rep_18,Cash,7.1
+ORD-75160,2024-03-24,Books,Cookbook,East,1,24.66,24.66,13.8,CUST-8146,Rep_3,Debit Card,2.13
+ORD-88346,2023-01-29,Sports,Bicycle,North,5,38.08,190.4,17.1,CUST-9041,Rep_14,Debit Card,24.72
+ORD-10888,2024-11-28,Clothing,Shoes,East,3,108.92,436.16,23.0,CUST-1867,Rep_12,Credit Card,20.49
+ORD-95119,2023-01-31,Electronics,Smart Watch,North,3,829.13,2487.38,25.1,CUST-9109,Rep_4,Cash,6.78
+ORD-75494,2023-09-16,Sports,Bicycle,West,3,335.55,1006.66,21.2,CUST-2486,Rep_6,Cash,13.03
+ORD-32087,2023-04-08,Clothing,Dress,North,1,123.51,123.51,20.5,CUST-1028,Rep_17,Credit Card,5.09
+ORD-55252,2023-08-12,Sports,Running Shoes,North,8,46.0,368.0,5.5,CUST-2588,Rep_5,Cash,16.48
+ORD-24126,2023-11-16,Sports,Tennis Racket,Central,2,25.62,75.53,24.2,CUST-6718,Rep_6,Debit Card,23.0
+ORD-54347,2024-11-15,Sports,Tennis Racket,Central,8,168.82,1785.1,28.3,CUST-5034,Rep_12,Debit Card,9.79
+ORD-21921,2024-06-16,Sports,Tennis Racket,West,10,240.66,2406.56,3.0,CUST-6251,Rep_17,Online,20.14
+ORD-23673,2024-05-18,Toys,Action Figure,East,2,39.52,79.04,14.7,CUST-6267,Rep_18,Online,17.19
+ORD-81144,2024-08-07,Home & Garden,Plant,East,10,427.51,4275.14,22.4,CUST-3840,Rep_11,Credit Card,15.69
+ORD-58604,2024-06-04,Electronics,Tablet,West,9,341.06,3069.53,25.5,CUST-1732,Rep_7,Credit Card,14.14
+ORD-48068,2023-04-30,Clothing,Jeans,East,4,41.35,165.39,27.0,CUST-1077,Rep_8,Cash,24.69
+ORD-92076,2024-12-28,Sports,Tennis Racket,East,7,243.06,2459.38,20.4,CUST-6074,Rep_7,Cash,13.18
+ORD-26893,2024-04-04,Electronics,Headphones,West,7,806.31,5644.18,1.3,CUST-4653,Rep_3,Credit Card,7.31
+ORD-84725,2023-10-19,Sports,Basketball,South,5,401.38,2006.88,16.1,CUST-5284,Rep_4,Credit Card,12.9
+ORD-20958,2023-07-08,Clothing,T-Shirt,Central,1,42.11,42.11,25.0,CUST-2104,Rep_8,Online,17.31
+ORD-30016,2023-01-15,Sports,Tennis Racket,West,6,381.81,2290.89,1.3,CUST-6592,Rep_9,Debit Card,12.0
+ORD-19094,2024-03-27,Clothing,T-Shirt,West,8,188.98,1511.86,0.8,CUST-5026,Rep_20,Cash,16.14
+ORD-23604,2023-05-27,Clothing,Jacket,East,6,127.34,764.04,11.1,CUST-4828,Rep_1,Online,5.07
+ORD-60600,2024-10-22,Electronics,Headphones,Central,8,235.29,1882.32,28.1,CUST-5627,Rep_20,Online,13.99
+ORD-28927,2023-08-18,Toys,Action Figure,West,9,14.39,129.52,26.4,CUST-5699,Rep_6,Online,24.98
+ORD-56260,2024-10-03,Clothing,Dress,North,7,71.2,498.4,3.8,CUST-4409,Rep_13,Online,22.67
+ORD-84499,2023-07-15,Sports,Yoga Mat,West,4,315.73,1262.9,6.5,CUST-4188,Rep_20,Cash,23.01
+ORD-38465,2023-07-24,Books,Textbook,East,10,31.63,316.28,12.4,CUST-6532,Rep_18,Debit Card,5.96
+ORD-62674,2024-10-18,Books,Textbook,South,10,13.0,129.95,23.1,CUST-4240,Rep_5,Online,3.9
+ORD-16914,2023-01-09,Clothing,Jeans,West,2,183.11,366.22,2.6,CUST-6431,Rep_3,Cash,23.63
+ORD-49746,2024-12-21,Home & Garden,Table,South,8,96.66,904.77,14.3,CUST-2662,Rep_18,Debit Card,23.02
+ORD-24858,2023-09-13,Clothing,Jeans,West,5,145.79,728.94,20.7,CUST-3402,Rep_15,Credit Card,20.11
+ORD-12602,2024-04-03,Clothing,Shoes,West,10,41.99,419.87,17.2,CUST-9057,Rep_19,Cash,22.71
+ORD-20888,2023-11-25,Electronics,Tablet,North,4,310.76,1512.69,28.8,CUST-6811,Rep_20,Online,5.32
+ORD-95118,2023-02-23,Books,Textbook,South,6,33.62,201.75,27.2,CUST-4912,Rep_10,Cash,4.69
+ORD-12518,2024-08-10,Sports,Running Shoes,North,10,333.74,3337.42,0.3,CUST-5959,Rep_13,Debit Card,23.09
+ORD-55382,2023-12-17,Sports,Yoga Mat,North,7,169.33,1366.6,12.2,CUST-5285,Rep_18,Debit Card,14.78
+ORD-41845,2023-04-20,Home & Garden,Sofa,West,3,517.74,1553.21,24.2,CUST-2219,Rep_6,Cash,6.3
+ORD-92706,2024-04-16,Books,Cookbook,North,3,36.97,110.92,17.5,CUST-6421,Rep_4,Credit Card,2.34
+ORD-79380,2024-10-02,Clothing,Jeans,North,2,131.96,263.92,11.6,CUST-4156,Rep_16,Debit Card,19.16
+ORD-44506,2023-07-22,Sports,Bicycle,South,2,409.72,819.43,5.3,CUST-3357,Rep_18,Debit Card,19.0
+ORD-47408,2024-10-17,Toys,Board Game,South,10,53.69,536.91,12.4,CUST-4575,Rep_14,Cash,21.49
+ORD-91244,2023-03-03,Toys,Action Figure,Central,8,9.73,77.86,10.3,CUST-8046,Rep_3,Online,5.24
+ORD-72973,2023-11-23,Toys,Board Game,East,5,8.8,56.35,21.8,CUST-7069,Rep_16,Cash,20.27
+ORD-69267,2024-04-20,Home & Garden,Curtains,South,7,608.08,4256.57,13.9,CUST-3501,Rep_5,Online,13.39
+ORD-38441,2023-07-08,Electronics,Smartphone,East,3,787.4,2362.19,4.5,CUST-2553,Rep_1,Online,14.45
+ORD-66735,2024-05-26,Home & Garden,Lamp,South,8,276.75,2214.01,18.2,CUST-8128,Rep_6,Online,24.38
+ORD-50371,2023-01-14,Electronics,Tablet,North,4,198.75,795.01,12.5,CUST-3598,Rep_11,Cash,18.68
+ORD-12321,2023-03-06,Sports,Bicycle,North,10,138.99,1389.93,29.1,CUST-8324,Rep_12,Online,9.92
+ORD-85009,2023-11-26,Home & Garden,Table,East,4,366.46,2070.68,27.1,CUST-4750,Rep_19,Debit Card,21.27
+ORD-88983,2024-04-18,Clothing,Shoes,Central,2,19.76,39.52,15.9,CUST-5358,Rep_3,Online,12.79
+ORD-45750,2023-05-30,Clothing,Dress,South,10,136.83,1368.35,14.5,CUST-6243,Rep_16,Cash,17.1
+ORD-65442,2024-01-21,Books,Cookbook,South,9,36.08,324.72,8.5,CUST-1178,Rep_10,Cash,3.23
+ORD-68214,2024-08-31,Home & Garden,Sofa,North,7,103.99,727.93,16.7,CUST-6146,Rep_4,Cash,14.12
+ORD-59155,2023-11-19,Clothing,Jacket,West,8,111.67,1279.97,11.1,CUST-1417,Rep_14,Cash,12.91
+ORD-28338,2023-03-11,Home & Garden,Curtains,North,3,654.13,1962.4,14.9,CUST-3483,Rep_4,Debit Card,23.8
+ORD-30314,2024-02-10,Clothing,T-Shirt,East,9,70.77,636.91,12.5,CUST-9980,Rep_3,Debit Card,13.97
+ORD-30005,2023-08-27,Electronics,Tablet,South,1,547.59,547.59,1.3,CUST-3255,Rep_17,Cash,11.46
+ORD-40081,2023-08-02,Toys,Doll,North,4,9.43,37.72,17.7,CUST-9052,Rep_1,Cash,19.04
+ORD-76962,2024-01-19,Books,Biography,Central,5,42.89,214.47,8.0,CUST-7363,Rep_6,Debit Card,6.53
+ORD-34226,2023-07-29,Home & Garden,Lamp,South,9,125.51,1129.56,23.1,CUST-2846,Rep_2,Online,21.09
+ORD-94912,2023-07-29,Toys,Lamp,South,5,54.72,273.58,10.8,CUST-2846,Rep_19,Cash,9.34
+ORD-31660,2024-09-08,Electronics,Tablet,North,8,360.26,2882.1,29.5,CUST-9055,Rep_16,Cash,20.9
+ORD-84463,2024-01-26,Toys,Action Figure,North,1,86.3,86.3,9.1,CUST-3613,Rep_4,Credit Card,12.36
+ORD-69890,2023-09-27,Toys,Action Figure,West,2,7.57,15.14,9.1,CUST-4353,Rep_4,Credit Card,22.61
+ORD-18294,2024-05-06,Sports,Tennis Racket,North,1,351.11,351.11,21.1,CUST-3511,Rep_7,Credit Card,12.95
+ORD-46905,2023-10-15,Sports,Basketball,North,2,346.73,693.46,28.8,CUST-8850,Rep_7,Cash,5.49
+ORD-40345,2024-05-15,Home & Garden,Table,South,9,711.53,6403.78,28.6,CUST-1774,Rep_10,Cash,6.77
+ORD-62662,2024-08-17,Home & Garden,Plant,West,6,796.02,4776.11,12.2,CUST-7096,Rep_15,Cash,20.35
+ORD-99173,2024-07-06,Clothing,Shoes,Central,8,166.94,1335.55,13.5,CUST-3691,Rep_2,Cash,15.13
+ORD-20714,2024-02-10,Toys,Action Figure,Central,4,73.63,294.53,24.7,CUST-7864,Rep_4,Credit Card,15.39
+ORD-81886,2024-01-18,Books,Fiction Novel,East,2,34.64,69.28,9.8,CUST-7471,Rep_17,Online,3.31
+ORD-28920,2024-05-22,Home & Garden,Plant,North,9,150.42,1353.78,24.0,CUST-2183,Rep_10,Debit Card,20.12
+ORD-25591,2024-04-08,Home & Garden,Table,Central,2,226.8,453.6,2.0,CUST-7912,Rep_12,Online,5.21
+ORD-75535,2023-02-02,Books,Biography,East,1,23.2,23.2,20.4,CUST-6236,Rep_12,Credit Card,3.53
+ORD-21380,2024-05-14,Sports,Yoga Mat,Central,1,391.71,391.71,11.4,CUST-8780,Rep_9,Credit Card,6.66
+ORD-22445,2024-02-25,Toys,Board Game,West,8,53.76,430.11,6.5,CUST-1168,Rep_5,Credit Card,23.71
+ORD-32795,2024-12-15,Sports,Basketball,Central,5,332.72,2173.79,17.6,CUST-8401,Rep_10,Debit Card,5.8
+ORD-49620,2023-02-14,Books,Biography,West,3,22.63,67.88,23.2,CUST-3992,Rep_8,Cash,7.19
+ORD-75030,2024-03-24,Books,Textbook,South,10,13.78,137.79,16.9,CUST-7007,Rep_14,Credit Card,6.25
+ORD-62602,2024-11-11,Toys,Puzzle,Central,5,8.24,51.24,26.3,CUST-9308,Rep_8,Debit Card,7.42
+ORD-83356,2023-04-29,Clothing,T-Shirt,Central,3,45.7,137.11,17.5,CUST-1651,Rep_8,Debit Card,7.95
+ORD-51881,2023-05-21,Clothing,Shoes,North,5,82.3,411.49,26.4,CUST-4992,Rep_16,Debit Card,8.77
+ORD-18912,2023-05-29,Sports,Yoga Mat,West,3,236.99,710.96,25.7,CUST-8826,Rep_17,Credit Card,16.32
+ORD-58979,2024-11-18,Clothing,Shoes,East,7,167.63,1631.77,0.8,CUST-7402,Rep_15,Debit Card,19.97
+ORD-66720,2023-03-18,Clothing,Shoes,Central,9,102.08,918.71,8.6,CUST-1506,Rep_14,Credit Card,16.23
+ORD-71592,2023-11-12,Toys,Action Figure,North,9,27.69,359.38,18.2,CUST-9379,Rep_16,Online,20.15
+ORD-77763,2024-06-29,Toys,Building Blocks,Central,8,9.65,77.22,29.3,CUST-2031,Rep_9,Cash,23.68
+ORD-98617,2024-06-14,Home & Garden,Curtains,Central,4,269.28,1077.13,24.8,CUST-7742,Rep_9,Cash,16.96
+ORD-70645,2023-07-29,Toys,Action Figure,Central,9,32.82,295.34,16.6,CUST-9521,Rep_6,Credit Card,19.49
+ORD-84473,2023-10-05,Home & Garden,Table,South,7,316.67,2216.68,14.5,CUST-8521,Rep_18,Cash,7.93
+ORD-82174,2024-04-10,Books,Fiction Novel,East,5,9.14,45.69,27.8,CUST-5539,Rep_17,Online,3.2
+ORD-46353,2023-03-13,Electronics,Headphones,West,1,1215.86,1215.86,1.2,CUST-2760,Rep_18,Cash,7.55
+ORD-38893,2023-08-25,Electronics,Headphones,South,5,153.2,766.01,12.9,CUST-5370,Rep_18,Cash,21.82
+ORD-84873,2023-04-04,Clothing,T-Shirt,Central,1,112.2,112.2,28.6,CUST-5419,Rep_16,Credit Card,6.91
+ORD-60685,2024-09-06,Sports,Tennis Racket,South,5,105.96,529.78,13.1,CUST-8309,Rep_7,Debit Card,7.01
+ORD-78673,2024-11-20,Electronics,Headphones,West,5,882.91,5723.92,6.2,CUST-6608,Rep_11,Credit Card,14.98
+ORD-45932,2023-11-18,Books,Textbook,West,7,35.6,309.32,6.2,CUST-5075,Rep_10,Debit Card,4.28
+ORD-68369,2024-03-22,Sports,Basketball,Central,7,400.57,2804.0,0.6,CUST-7949,Rep_3,Online,10.1
+ORD-59996,2023-02-07,Clothing,Dress,East,9,50.55,454.91,24.3,CUST-6973,Rep_2,Debit Card,6.8
+ORD-40027,2023-07-10,Clothing,T-Shirt,Central,7,26.59,186.11,8.4,CUST-7708,Rep_10,Debit Card,15.41
+ORD-32010,2024-03-09,Clothing,T-Shirt,Central,9,118.39,1065.49,14.1,CUST-4870,Rep_1,Debit Card,17.05
+ORD-42197,2023-07-11,Electronics,Laptop,North,3,583.18,1749.55,4.6,CUST-1143,Rep_11,Debit Card,20.33
+ORD-46605,2024-08-10,Books,Fiction Novel,Central,10,12.17,121.73,25.0,CUST-8576,Rep_8,Online,3.05
+ORD-82130,2024-02-09,Electronics,Smartphone,South,8,1048.72,8389.75,20.3,CUST-9871,Rep_13,Online,24.24
+ORD-37117,2023-02-07,Books,Biography,Central,8,45.68,365.41,3.8,CUST-2202,Rep_20,,7.05
+ORD-28329,2024-08-27,Electronics,Smart Watch,West,3,715.27,2145.82,13.5,CUST-5947,Rep_13,Debit Card,7.85
+ORD-93889,2023-05-30,Clothing,Shoes,East,1,96.29,96.29,7.4,CUST-2659,Rep_10,Cash,6.06
+ORD-76416,2023-12-06,Sports,Yoga Mat,West,8,276.79,2607.09,2.0,CUST-3718,Rep_1,Credit Card,7.92
+ORD-52800,2024-09-28,Toys,Building Blocks,East,10,31.66,316.61,13.8,CUST-5668,Rep_12,Credit Card,21.02
+ORD-59535,2023-06-07,Books,Fiction Novel,West,9,31.28,281.48,2.0,CUST-6409,Rep_15,Cash,2.86
+ORD-65956,2023-06-05,Clothing,T-Shirt,Central,10,85.71,857.05,5.8,CUST-9962,Rep_19,Cash,24.81
+ORD-24973,2024-05-20,Clothing,T-Shirt,North,3,19.32,57.97,27.7,CUST-2310,Rep_15,Cash,17.34
+ORD-78163,2024-08-26,Home & Garden,Plant,East,3,724.71,2174.14,20.0,CUST-5570,Rep_20,Debit Card,9.52
+ORD-23958,2023-09-21,Electronics,Headphones,West,10,561.55,5615.51,9.0,CUST-3424,Rep_18,Debit Card,21.89
+ORD-41784,2023-09-21,Clothing,Headphones,West,10,168.14,1681.39,9.9,CUST-3424,Rep_20,Online,23.97
+ORD-50371,2023-05-02,Toys,Board Game,East,6,70.39,422.37,28.1,CUST-4861,Rep_16,Online,23.56
+ORD-23193,2023-03-26,Sports,Bicycle,South,6,255.74,1534.42,17.8,CUST-2345,Rep_3,Credit Card,8.0
+ORD-98963,2024-01-11,Sports,Yoga Mat,North,1,85.11,85.11,4.0,CUST-6853,Rep_19,Credit Card,5.81
+ORD-24095,2024-05-17,Home & Garden,Lamp,North,3,722.68,2168.04,26.9,CUST-5379,Rep_19,Cash,17.31
+ORD-47184,2023-08-18,Books,Fiction Novel,Central,2,30.42,60.83,14.9,CUST-1524,Rep_13,Cash,5.99
+ORD-37596,2023-11-13,Toys,Doll,West,4,62.2,340.01,23.8,CUST-4943,Rep_15,Debit Card,19.06
+ORD-41359,2024-08-16,Electronics,Laptop,North,6,965.59,5793.55,20.6,CUST-8890,Rep_14,Online,7.45
+ORD-43053,2023-02-02,Toys,Building Blocks,Central,6,41.29,247.74,2.0,CUST-7382,Rep_6,Online,14.27
+ORD-10975,2023-07-08,Sports,Running Shoes,West,10,162.58,1625.84,26.0,CUST-3689,Rep_9,Online,6.86
+ORD-92776,2023-01-10,Home & Garden,Table,North,7,616.53,4315.72,1.2,CUST-6910,Rep_11,Cash,11.74
+ORD-90276,2024-08-27,Electronics,Headphones,Central,7,354.29,2480.0,26.7,CUST-4222,Rep_14,Credit Card,14.1
+ORD-70757,2024-03-03,Toys,Building Blocks,Central,2,52.3,104.61,14.2,CUST-4783,Rep_11,Debit Card,13.99
+ORD-66362,2023-01-03,Home & Garden,Sofa,South,8,394.6,3156.77,7.2,CUST-1782,Rep_3,Cash,15.71
+ORD-37972,2024-08-17,Books,Textbook,North,1,18.93,18.93,14.9,CUST-9750,Rep_18,Cash,6.68
+ORD-23036,2023-01-22,Clothing,Shoes,Central,4,37.16,148.65,28.4,CUST-3127,Rep_9,Debit Card,18.15
+ORD-18990,2024-10-16,Toys,Puzzle,West,9,25.7,231.34,20.7,CUST-2248,Rep_5,Credit Card,22.06
+ORD-70987,2024-10-16,Electronics,Puzzle,North,2,1342.32,2684.65,15.0,CUST-2248,Rep_4,Online,18.36
+ORD-18314,2023-03-30,Home & Garden,Sofa,East,10,317.5,3175.01,24.1,CUST-3658,Rep_5,Cash,8.21
+ORD-62751,2024-06-08,Toys,Building Blocks,South,7,77.81,544.66,3.1,CUST-4479,Rep_6,Debit Card,17.42
+ORD-58348,2024-10-19,Sports,Bicycle,North,8,413.53,3308.24,11.6,CUST-4262,Rep_2,Credit Card,14.06
+ORD-27574,2023-03-29,Electronics,Smart Watch,East,6,98.26,589.55,25.9,CUST-2572,Rep_20,Credit Card,16.86
+ORD-65789,2024-07-03,Sports,Yoga Mat,Central,6,294.62,1767.72,7.4,CUST-5807,Rep_2,Credit Card,6.1
+ORD-63329,2023-11-12,Home & Garden,Table,East,6,309.5,2591.35,2.3,CUST-1372,Rep_1,Cash,11.56
+ORD-33936,2023-05-07,Toys,Board Game,South,6,27.22,163.35,9.5,CUST-4478,Rep_19,Credit Card,9.63
+ORD-96232,2024-07-19,Home & Garden,Lamp,Central,9,114.47,1030.27,8.9,CUST-5874,Rep_4,Online,20.05
+ORD-15573,2024-05-03,Electronics,Tablet,West,1,267.77,267.77,3.2,CUST-8687,Rep_12,Online,15.84
+ORD-71645,2023-01-18,Home & Garden,Table,Central,2,231.22,462.45,18.9,CUST-4578,Rep_5,Debit Card,19.76
+ORD-17781,2023-09-01,Toys,Building Blocks,South,4,67.11,268.43,14.8,CUST-8040,Rep_7,Online,8.85
+ORD-94978,2023-09-19,Books,Biography,East,2,16.37,32.74,21.2,CUST-9153,Rep_1,Credit Card,4.43
+ORD-19463,2023-02-17,Clothing,Dress,South,4,116.71,466.85,29.9,CUST-7467,Rep_5,Debit Card,10.53
+ORD-26153,2024-10-25,Electronics,Smart Watch,North,3,1279.5,3838.49,4.4,CUST-7041,Rep_11,Online,12.57
+ORD-67337,2023-10-08,Books,Biography,West,4,14.95,59.78,14.7,CUST-1801,Rep_9,Credit Card,4.6
+ORD-72027,2023-01-15,Clothing,T-Shirt,North,3,99.75,299.25,12.8,CUST-9676,Rep_3,Online,11.96
+ORD-40726,2023-01-18,Toys,Action Figure,West,8,36.89,295.11,27.1,CUST-8961,Rep_13,Debit Card,24.73
+ORD-18253,2023-01-21,Books,Comic Book,South,5,16.2,80.99,22.4,CUST-2755,Rep_8,Cash,3.51
+ORD-65014,2024-12-07,Clothing,Jacket,Central,1,168.09,236.65,9.8,CUST-6591,Rep_1,,8.87
+ORD-59797,2023-04-09,Electronics,Tablet,West,10,479.55,4795.49,16.9,CUST-8730,Rep_20,Debit Card,22.81
+ORD-40317,2023-05-21,Home & Garden,Sofa,East,2,538.65,1077.31,3.1,CUST-7729,Rep_2,Debit Card,14.34
+ORD-87004,2023-01-12,Books,Fiction Novel,North,2,39.09,78.17,1.1,CUST-7703,Rep_4,Cash,5.86
+ORD-31893,2024-12-06,Sports,Tennis Racket,North,4,400.25,1938.55,1.3,CUST-1104,Rep_16,Debit Card,20.91
+ORD-13525,2023-06-18,Home & Garden,Sofa,North,8,497.28,3978.23,16.7,CUST-2597,Rep_19,Credit Card,18.35
+ORD-91087,2023-08-20,Clothing,Jeans,South,1,22.55,22.55,19.8,CUST-3203,Rep_2,Credit Card,19.51
+ORD-32462,2023-01-08,Toys,Action Figure,East,3,9.45,28.34,14.2,CUST-7136,Rep_2,Debit Card,18.69
+ORD-98754,2024-12-31,Sports,Basketball,North,5,53.12,351.13,21.4,CUST-9697,Rep_19,Cash,22.73
+ORD-12625,2023-08-08,Clothing,Jacket,Central,6,54.21,325.29,7.8,CUST-4215,Rep_13,Cash,12.51
+ORD-95151,2024-02-09,Books,Textbook,North,2,15.97,31.93,16.8,CUST-3215,Rep_2,Debit Card,5.23
+ORD-44033,2023-04-06,Clothing,Jeans,South,6,93.95,563.69,15.8,CUST-5278,Rep_11,Debit Card,21.56
+ORD-93080,2024-03-08,Electronics,Headphones,West,10,1487.82,14878.16,13.3,CUST-9957,Rep_3,Cash,14.22
+ORD-93498,2023-06-18,Toys,Puzzle,East,1,84.79,84.79,2.5,CUST-2328,Rep_3,Debit Card,14.62
+ORD-76062,2024-11-19,Electronics,Headphones,Central,6,1205.48,8289.36,9.4,CUST-5749,Rep_10,Cash,8.19
+ORD-51171,2023-02-13,Books,Cookbook,Central,5,34.59,172.97,15.0,CUST-7216,Rep_16,Credit Card,5.04
+ORD-79472,2023-10-09,Sports,Basketball,North,6,104.99,629.97,21.7,CUST-3456,Rep_13,Online,16.26
+ORD-15488,2024-01-20,Clothing,Shoes,South,3,85.7,257.09,23.6,CUST-1645,Rep_16,Credit Card,13.13
+ORD-17957,2023-03-08,Clothing,Shoes,Central,9,113.81,1024.28,5.5,CUST-5387,Rep_2,Credit Card,22.31
+ORD-75332,2024-04-30,Home & Garden,Curtains,North,3,628.14,1884.42,16.4,CUST-5079,,Debit Card,12.56
+ORD-97752,2024-10-22,Clothing,Jacket,North,3,53.65,160.94,15.7,CUST-6038,Rep_14,Cash,8.17
+ORD-61142,2023-02-11,Clothing,Shoes,South,2,129.68,259.36,13.9,CUST-5777,Rep_13,Debit Card,12.09
+ORD-97643,2023-01-24,Home & Garden,Lamp,North,4,523.54,2094.16,28.8,CUST-2386,Rep_16,Online,11.15
+ORD-33390,2024-12-15,Home & Garden,Lamp,Central,6,491.57,3835.38,7.2,CUST-5512,Rep_11,Debit Card,14.31
+ORD-78971,2023-12-30,Toys,Board Game,East,4,65.28,307.54,29.1,CUST-5222,Rep_19,Cash,22.67
+ORD-36033,2024-09-13,Electronics,Headphones,South,2,1366.09,2732.18,16.3,CUST-4950,Rep_19,Credit Card,17.62
+ORD-76176,2024-09-18,Clothing,Shoes,South,2,96.93,193.87,28.7,CUST-9137,Rep_11,Online,6.91
+ORD-24681,2023-12-09,Books,Textbook,Central,1,15.12,21.34,17.6,CUST-3095,Rep_20,Credit Card,3.47
+ORD-99144,2024-09-27,Sports,Running Shoes,West,7,300.28,2101.93,27.5,CUST-4501,Rep_13,Cash,17.19
+ORD-40323,2023-08-20,Home & Garden,Table,North,2,685.75,1371.49,16.2,CUST-7504,Rep_17,Online,11.86
+ORD-69151,2023-09-03,Electronics,Smart Watch,South,9,1469.18,13222.66,4.4,CUST-5505,Rep_11,Cash,13.37
+ORD-61838,2023-12-12,Electronics,Tablet,North,6,1152.46,8263.58,18.9,CUST-8023,Rep_14,Credit Card,15.39
+ORD-89616,2024-02-12,Electronics,Laptop,South,4,811.7,3246.79,10.8,CUST-2448,Rep_1,,8.08
+ORD-82127,2024-06-05,Sports,Basketball,East,1,292.31,292.31,24.5,CUST-4004,Rep_14,,14.71
+ORD-10649,2023-11-08,Sports,Yoga Mat,Central,1,260.02,379.25,3.5,CUST-9647,Rep_15,Debit Card,11.85
+ORD-12366,2024-11-14,Clothing,Shoes,Central,2,113.3,282.86,1.6,CUST-1778,Rep_17,Cash,24.86
+ORD-85076,2024-09-04,Books,Fiction Novel,East,3,43.67,131.02,12.1,CUST-7893,Rep_20,Online,7.22
+ORD-29029,2023-10-30,Toys,Puzzle,Central,2,63.17,126.34,26.7,CUST-9769,Rep_12,Online,17.74
+ORD-24202,2023-07-14,Books,Cookbook,South,4,15.98,63.93,28.6,CUST-4030,Rep_8,Cash,6.68
+ORD-64749,2024-04-13,Sports,Yoga Mat,Central,7,286.28,2003.99,19.2,CUST-1500,Rep_15,Debit Card,19.99
+ORD-12293,2024-07-28,Home & Garden,Curtains,South,9,658.1,5922.94,4.2,CUST-5664,Rep_1,Cash,24.2
+ORD-81368,2024-01-03,Toys,Board Game,South,7,65.41,457.84,17.7,CUST-3402,Rep_14,Cash,6.87
+ORD-34941,2024-12-03,Books,Textbook,Central,7,10.28,104.6,2.9,CUST-9659,Rep_11,Cash,7.88
+ORD-13860,2023-02-11,Electronics,Tablet,South,5,1280.59,6402.94,18.8,CUST-3690,Rep_16,Debit Card,5.02
+ORD-20644,2023-03-18,Toys,Building Blocks,West,7,83.24,582.69,15.1,CUST-4167,Rep_20,Cash,21.47
+ORD-33224,2024-02-22,Electronics,Laptop,North,6,799.62,4797.7,1.6,CUST-9549,Rep_7,Online,17.84
+ORD-68854,2023-03-01,Toys,Action Figure,North,5,41.54,207.7,11.7,CUST-3289,Rep_13,Online,18.43
+ORD-84110,2023-06-14,Books,Cookbook,East,7,25.32,177.23,27.7,CUST-2094,Rep_9,Credit Card,4.38
+ORD-36557,2023-06-25,Books,Comic Book,East,6,42.39,254.35,10.7,CUST-6648,Rep_13,Credit Card,4.8
+ORD-41191,2024-03-08,Electronics,Headphones,North,7,472.81,3309.67,3.4,CUST-9409,Rep_11,Debit Card,14.35
+ORD-85865,2023-06-22,Books,Comic Book,East,10,31.34,313.38,1.5,CUST-6292,Rep_2,Debit Card,7.18
+ORD-71656,2024-02-12,Home & Garden,Curtains,North,5,233.84,1169.21,25.0,CUST-9752,Rep_4,Debit Card,23.1
+ORD-23413,2023-07-06,Toys,Doll,Central,10,43.38,433.83,16.1,CUST-4168,Rep_9,Online,8.43
+ORD-77541,2023-04-28,Books,Biography,West,9,41.41,372.66,7.3,CUST-3903,Rep_18,Cash,4.45
+ORD-69450,2023-05-02,Home & Garden,Table,Central,7,63.1,441.7,12.1,CUST-8836,Rep_2,Online,22.22
+ORD-33651,2023-06-25,Sports,Tennis Racket,West,3,21.93,65.79,2.5,CUST-4668,Rep_12,Cash,18.48
+ORD-95367,2024-06-19,Electronics,Headphones,East,3,100.01,300.04,22.0,CUST-3854,Rep_3,,11.55
+ORD-12118,2024-07-13,Sports,Yoga Mat,Central,9,315.75,2841.76,8.7,CUST-3594,Rep_5,Credit Card,22.02
+ORD-54265,2023-11-02,Electronics,Smart Watch,South,5,1094.17,7949.14,19.5,CUST-9391,Rep_18,Credit Card,17.95
+ORD-40838,2023-07-03,Home & Garden,Lamp,West,2,861.05,1722.1,10.7,CUST-9912,Rep_13,Online,12.81
+ORD-74549,2024-06-28,Clothing,Jacket,South,8,111.38,891.08,14.8,CUST-7299,Rep_18,Debit Card,22.14
+ORD-51714,2024-06-28,Books,Textbook,Central,1,23.38,23.38,23.7,CUST-9591,Rep_1,Online,5.86
+ORD-84605,2023-12-06,Toys,Action Figure,East,7,77.76,748.02,21.8,CUST-1627,Rep_1,Credit Card,8.36
+ORD-48556,2024-09-18,Books,Cookbook,East,3,25.42,76.25,10.6,CUST-4042,Rep_8,Debit Card,6.1
+ORD-44174,2023-12-15,Toys,Building Blocks,East,10,65.23,823.19,28.0,CUST-2304,Rep_11,Debit Card,15.66
