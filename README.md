@@ -57,15 +57,21 @@ cp .env.example .env
 
 4. Run the application:
 ```bash
-streamlit run src/dashboard.py
+# Option 1: Use the launcher script
+python run_dashboard.py
+
+# Option 2: Direct Streamlit command
+streamlit run app.py
 ```
 
 ## 📊 Usage
 
-1. Upload your CSV or Excel file
-2. Watch as the AI automatically analyzes your data
-3. View generated visualizations and insights
-4. Download the generated dashboard
+1. **Launch the Dashboard**: Run `python run_dashboard.py` 
+2. **Upload Data**: Use the sidebar to upload CSV/Excel files or load sample data
+3. **Configure Analysis**: Choose business category, theme, and analysis options
+4. **Run Analysis**: Click "🚀 Run Analysis" to generate insights and visualizations
+5. **Explore Results**: View interactive charts, AI insights, and dashboard summaries
+6. **Export**: Download results in JSON, CSV, or HTML format
 
 ## 🔧 Development Status
 
