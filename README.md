@@ -18,7 +18,7 @@ An intelligent data analysis tool that automatically generates visualizations an
 - **Web Interface**: Streamlit for user-friendly dashboard
 - **Data Formats**: CSV, Excel support
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 BI-Assistance/
