@@ -64,7 +64,7 @@ python run_dashboard.py
 streamlit run app.py
 ```
 
-## 📊 Usage
+## Usage
 
 1. **Launch the Dashboard**: Run `python run_dashboard.py` 
 2. **Upload Data**: Use the sidebar to upload CSV/Excel files or load sample data
