@@ -1,4 +1,4 @@
-# Smart Business Intelligence Assistant 🤖📊
+# Smart Business Intelligence Assistant 🤖
 
 An intelligent data analysis tool that automatically generates visualizations and insights from raw data using Python and AI.
 
