@@ -73,7 +73,7 @@ streamlit run app.py
 5. **Explore Results**: View interactive charts, AI insights, and dashboard summaries
 6. **Export**: Download results in JSON, CSV, or HTML format
 
-## 🔧 Development Status
+## Development Status
 
 - [x] Project setup and structure
 - [x] Core data processing module
