@@ -36,7 +36,7 @@ BI-Assistance/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 1. Clone the repository:
 ```bash
