@@ -1,6 +1,6 @@
 """
 Visualization Engine for BI Assistant
-Creates interactive charts, dashboards, and visual analytics
+Creates interactive charts, dashboards, and visual 
 """
 
 import pandas as pd
