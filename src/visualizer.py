@@ -1,6 +1,6 @@
 """
 Visualization Engine for BI Assistant
-Creates interactive 
+Creates
 
 """
 
