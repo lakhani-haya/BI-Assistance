@@ -1,5 +1,5 @@
 """
-Visualization Engine for BI Assistant
+Visualization Engine for BI
 
 
 """
