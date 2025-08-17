@@ -22,6 +22,7 @@ from src.intelligent_analyzer import IntelligentDataAnalyzer
 from src.intelligent_visualizer import IntelligentVisualizationEngine
 from src.config import Config
 from src.data_processor import DataProcessor, validate_file_size
+from src.streamlit_upload import StreamlitFileUploader
 
 
 # Page configuration
@@ -98,6 +99,7 @@ class StreamlitDashboard:
     def __init__(self):
         """Initialize dashboard components"""
         self.initialize_session_state()
+        self.file_uploader = StreamlitFileUploader()
         
         # Check configuration
         config_errors = Config.validate_config()
@@ -137,29 +139,17 @@ class StreamlitDashboard:
         """Render the sidebar with controls and options"""
         st.sidebar.header("🎛️ Control Panel")
         
-        # Data upload section
+        # Enhanced file upload section using new uploader
         st.sidebar.subheader("📁 Data Upload")
         
-        # Sample data option
-        use_sample = st.sidebar.checkbox("Use Sample Sales Data", help="Load pre-generated sample data for testing")
+        # Use the enhanced file uploader
+        upload_results = self.file_uploader.render_file_upload_section()
         
-        if use_sample:
-            if st.sidebar.button("Load Sample Data"):
-                sample_data = self.create_sample_data()
-                st.session_state.current_data = sample_data
-                st.session_state.data_loaded = True
-                st.sidebar.success("✅ Sample data loaded!")
-        
-        # File upload
-        uploaded_file = st.sidebar.file_uploader(
-            "Upload your data file",
-            type=['csv', 'xlsx', 'xls'],
-            help="Upload CSV or Excel files (max 50MB)"
-        )
-        
-        if uploaded_file is not None:
-            if self.process_uploaded_file(uploaded_file):
-                st.sidebar.success("✅ File uploaded successfully!")
+        if upload_results.get('success') and 'data' in upload_results:
+            st.session_state.current_data = upload_results['data']
+            st.session_state.data_loaded = True
+            st.session_state.file_info = upload_results.get('file_info')
+            st.sidebar.success("✅ Data loaded successfully!")
         
         # Analysis options
         if st.session_state.data_loaded:
@@ -207,71 +197,6 @@ class StreamlitDashboard:
             
             if st.sidebar.button("Download Results"):
                 self.export_results(export_format)
-    
-    def process_uploaded_file(self, uploaded_file) -> bool:
-        """Process uploaded file and load data"""
-        try:
-            # Validate file size
-            if uploaded_file.size > Config.MAX_FILE_SIZE_MB * 1024 * 1024:
-                st.error(f"❌ File too large. Maximum size: {Config.MAX_FILE_SIZE_MB}MB")
-                return False
-            
-            # Load data based on file type
-            if uploaded_file.type == "text/csv":
-                data = pd.read_csv(uploaded_file)
-            elif uploaded_file.type in ["application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", 
-                                       "application/vnd.ms-excel"]:
-                data = pd.read_excel(uploaded_file)
-            else:
-                st.error("❌ Unsupported file format")
-                return False
-            
-            # Store data in session state
-            st.session_state.current_data = data
-            st.session_state.data_loaded = True
-            
-            return True
-            
-        except Exception as e:
-            st.error(f"❌ Error loading file: {str(e)}")
-            return False
-    
-    def create_sample_data(self) -> pd.DataFrame:
-        """Create sample sales data for demonstration"""
-        np.random.seed(42)
-        
-        # Generate 500 sample records
-        n_records = 500
-        dates = pd.date_range('2024-01-01', '2024-12-31', freq='D')
-        
-        data = []
-        for i in range(n_records):
-            date = np.random.choice(dates)
-            
-            # Seasonal effects
-            seasonal_multiplier = 1.0
-            if date.month in [11, 12]:  # Holiday season
-                seasonal_multiplier = 1.3
-            elif date.month in [6, 7, 8]:  # Summer
-                seasonal_multiplier = 0.9
-            
-            base_amount = np.random.normal(1200, 400) * seasonal_multiplier
-            
-            record = {
-                'date': date,
-                'sales_amount': max(100, base_amount),
-                'region': np.random.choice(['North', 'South', 'East', 'West'], p=[0.3, 0.25, 0.25, 0.2]),
-                'product_category': np.random.choice(['Electronics', 'Clothing', 'Home', 'Sports'], p=[0.4, 0.3, 0.2, 0.1]),
-                'customer_type': np.random.choice(['New', 'Returning', 'VIP'], p=[0.3, 0.6, 0.1]),
-                'units_sold': np.random.randint(1, 15),
-                'discount_percent': np.random.uniform(0, 30),
-                'profit_margin_percent': np.random.normal(22, 6)
-            }
-            
-            record['profit_amount'] = record['sales_amount'] * (record['profit_margin_percent'] / 100)
-            data.append(record)
-        
-        return pd.DataFrame(data)
     
     def run_comprehensive_analysis(self, clean_data: bool, use_ai: bool, 
                                   business_category: str, theme: str):
@@ -430,6 +355,25 @@ class StreamlitDashboard:
         with col4:
             missing_pct = (data.isnull().sum().sum() / (len(data) * len(data.columns))) * 100
             st.metric("❓ Missing Data", f"{missing_pct:.1f}%")
+        
+        # Enhanced data overview with file info
+        if hasattr(st.session_state, 'file_info') and st.session_state.file_info:
+            file_info = st.session_state.file_info
+            
+            with st.expander("📄 File Information", expanded=False):
+                col1, col2 = st.columns(2)
+                
+                with col1:
+                    st.markdown(f"**📁 Filename:** {file_info.filename}")
+                    st.markdown(f"**📏 File Size:** {file_info.size_bytes / (1024*1024):.2f} MB")
+                    st.markdown(f"**🔤 Encoding:** {file_info.encoding or 'Auto-detected'}")
+                
+                with col2:
+                    st.markdown(f"**📋 MIME Type:** {file_info.mime_type}")
+                    if file_info.detected_separator:
+                        st.markdown(f"**🔗 Separator:** '{file_info.detected_separator}'")
+                    if file_info.sheet_names:
+                        st.markdown(f"**📊 Excel Sheets:** {', '.join(file_info.sheet_names)}")
         
         # Data preview
         with st.expander("🔍 Data Preview", expanded=True):
