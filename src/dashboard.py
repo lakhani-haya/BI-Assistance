@@ -249,17 +249,43 @@ class StreamlitDashboard:
                 st.error(f"❌ Analysis failed: {str(e)}")
     
     def render_main_content(self):
-        """Render the main content area"""
+        """Render the main content area with enhanced navigation"""
         if not st.session_state.data_loaded:
             self.render_welcome_screen()
         else:
-            self.render_data_overview()
+            # Enhanced navigation for loaded data
+            main_tabs = st.tabs([
+                "📊 Overview",
+                "🔍 Analysis", 
+                "📈 Visualizations",
+                "🎨 Dashboard Builder",
+                "✏️ Chart Editor",
+                "📤 Export"
+            ])
             
-            if st.session_state.analysis_results:
-                self.render_analysis_results()
+            with main_tabs[0]:
+                self.render_data_overview()
             
-            if st.session_state.dashboard_results:
-                self.render_dashboard_results()
+            with main_tabs[1]:
+                if st.session_state.analysis_results:
+                    self.render_analysis_results()
+                else:
+                    st.info("🔄 Run analysis to see detailed insights")
+            
+            with main_tabs[2]:
+                if st.session_state.dashboard_results:
+                    self.render_dashboard_results()
+                else:
+                    st.info("📊 Generate visualizations to see dashboard")
+            
+            with main_tabs[3]:
+                self.render_dashboard_builder()
+            
+            with main_tabs[4]:
+                self.render_chart_editor()
+            
+            with main_tabs[5]:
+                self.render_export_interface()
     
     def render_welcome_screen(self):
         """Render welcome screen when no data is loaded"""
@@ -705,6 +731,145 @@ class StreamlitDashboard:
         
         except Exception as e:
             st.error(f"❌ Export failed: {str(e)}")
+    
+    def render_dashboard_builder(self):
+        """Render dashboard builder interface"""
+        if not st.session_state.data_loaded:
+            st.warning("📊 Please upload data first to use the Dashboard Builder")
+            return
+        
+        try:
+            # Initialize dashboard builder
+            if 'dashboard_builder' not in st.session_state:
+                st.session_state.dashboard_builder = InteractiveDashboardBuilder(st.session_state.current_data)
+            
+            builder = st.session_state.dashboard_builder
+            
+            # Render builder interface
+            dashboard_config = builder.render_dashboard_builder()
+            
+            if dashboard_config:
+                st.success("✅ Dashboard created successfully!")
+                
+                # Store in session state for use in other tabs
+                if 'custom_dashboards' not in st.session_state:
+                    st.session_state.custom_dashboards = []
+                
+                st.session_state.custom_dashboards.append(dashboard_config)
+                
+                # Show quick preview
+                with st.expander("👁️ Dashboard Preview", expanded=True):
+                    builder._render_dashboard_from_config(dashboard_config)
+        
+        except Exception as e:
+            st.error(f"❌ Dashboard Builder error: {str(e)}")
+    
+    def render_chart_editor(self):
+        """Render chart editor interface"""
+        if not st.session_state.data_loaded:
+            st.warning("📊 Please upload data first to use the Chart Editor")
+            return
+        
+        try:
+            # Check if we have custom dashboards
+            if 'custom_dashboards' not in st.session_state or not st.session_state.custom_dashboards:
+                st.info("🎨 Create a dashboard first using the Dashboard Builder to edit charts")
+                return
+            
+            # Select dashboard to edit
+            dashboard_options = {f"Dashboard {i+1}: {dash.title}": i for i, dash in enumerate(st.session_state.custom_dashboards)}
+            
+            if dashboard_options:
+                selected_dashboard_name = st.selectbox("Select Dashboard to Edit", list(dashboard_options.keys()))
+                selected_index = dashboard_options[selected_dashboard_name]
+                selected_dashboard = st.session_state.custom_dashboards[selected_index]
+                
+                if selected_dashboard.charts:
+                    # Select chart to edit
+                    chart_options = {f"{chart.title} ({chart.chart_type.value})": chart for chart in selected_dashboard.charts}
+                    selected_chart_name = st.selectbox("Select Chart to Edit", list(chart_options.keys()))
+                    selected_chart = chart_options[selected_chart_name]
+                    
+                    # Initialize chart editor
+                    if 'chart_editor' not in st.session_state:
+                        st.session_state.chart_editor = InteractiveChartEditor(st.session_state.current_data)
+                    
+                    editor = st.session_state.chart_editor
+                    
+                    # Render editor interface
+                    updated_config, updated_styling = editor.render_chart_editor(selected_chart)
+                    
+                    # Update the chart in the dashboard
+                    for i, chart in enumerate(selected_dashboard.charts):
+                        if chart.chart_id == updated_config.chart_id:
+                            selected_dashboard.charts[i] = updated_config
+                            break
+                
+                else:
+                    st.info("📊 The selected dashboard has no charts to edit")
+            
+        except Exception as e:
+            st.error(f"❌ Chart Editor error: {str(e)}")
+    
+    def render_export_interface(self):
+        """Render export interface"""
+        if not st.session_state.data_loaded:
+            st.warning("📊 Please upload data first to export")
+            return
+        
+        try:
+            # Initialize exporter
+            if 'dashboard_exporter' not in st.session_state:
+                st.session_state.dashboard_exporter = DashboardExporter(st.session_state.current_data)
+            
+            exporter = st.session_state.dashboard_exporter
+            
+            # Check if we have custom dashboards to export
+            if 'custom_dashboards' in st.session_state and st.session_state.custom_dashboards:
+                # Select dashboard to export
+                dashboard_options = {f"Dashboard {i+1}: {dash.title}": dash for i, dash in enumerate(st.session_state.custom_dashboards)}
+                
+                selected_dashboard_name = st.selectbox("Select Dashboard to Export", list(dashboard_options.keys()))
+                selected_dashboard = dashboard_options[selected_dashboard_name]
+                
+                # Get chart stylings (if available)
+                chart_stylings = {}
+                
+                # Render export interface
+                exporter.render_export_interface(selected_dashboard, chart_stylings)
+            
+            else:
+                st.info("🎨 Create a dashboard first using the Dashboard Builder to export")
+                
+                # Still allow data export
+                st.markdown("### 💾 Data Export")
+                
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button("📥 Export as CSV"):
+                        csv_data = st.session_state.current_data.to_csv(index=False)
+                        st.download_button(
+                            "📥 Download CSV",
+                            data=csv_data,
+                            file_name=f"data_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                            mime="text/csv"
+                        )
+                
+                with col2:
+                    if st.button("📊 Export as Excel"):
+                        excel_buffer = io.BytesIO()
+                        st.session_state.current_data.to_excel(excel_buffer, index=False)
+                        excel_buffer.seek(0)
+                        
+                        st.download_button(
+                            "📥 Download Excel",
+                            data=excel_buffer.getvalue(),
+                            file_name=f"data_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
+                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                        )
+        
+        except Exception as e:
+            st.error(f"❌ Export interface error: {str(e)}")
     
     def run(self):
         """Main method to run the dashboard"""
