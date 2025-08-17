@@ -1,8 +1,8 @@
-# Smart Business Intelligence Assistant 🤖📊
+# Smart Business Intelligence Assistant 
 
 An intelligent data analysis tool that automatically generates visualizations and insights from raw data using Python and AI.
 
-## 🚀 Features
+## Features
 
 - **Automatic Data Processing**: Upload CSV/Excel files and get instant analysis
 - **AI-Powered Insights**: Natural language explanations of data patterns and trends
@@ -10,7 +10,7 @@ An intelligent data analysis tool that automatically generates visualizations an
 - **Smart Dashboard Generation**: Automated dashboard creation in seconds
 - **Natural Language Reports**: Clear explanations like "Sales dipped 12% in June due to reduced orders in category X"
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**: Data processing with Pandas, NumPy
 - **Visualization**: Matplotlib, Plotly, Seaborn
@@ -18,7 +18,7 @@ An intelligent data analysis tool that automatically generates visualizations an
 - **Web Interface**: Streamlit for user-friendly dashboard
 - **Data Formats**: CSV, Excel support
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 BI-Assistance/
@@ -36,7 +36,7 @@ BI-Assistance/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 1. Clone the repository:
 ```bash
@@ -64,7 +64,7 @@ python run_dashboard.py
 streamlit run app.py
 ```
 
-## 📊 Usage
+## Usage
 
 1. **Launch the Dashboard**: Run `python run_dashboard.py` 
 2. **Upload Data**: Use the sidebar to upload CSV/Excel files or load sample data
@@ -73,7 +73,7 @@ streamlit run app.py
 5. **Explore Results**: View interactive charts, AI insights, and dashboard summaries
 6. **Export**: Download results in JSON, CSV, or HTML format
 
-## 🔧 Development Status
+## Development Status
 
 - [x] Project setup and structure
 - [x] Core data processing module
