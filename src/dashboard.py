@@ -23,6 +23,9 @@ from src.intelligent_visualizer import IntelligentVisualizationEngine
 from src.config import Config
 from src.data_processor import DataProcessor, validate_file_size
 from src.streamlit_upload import StreamlitFileUploader
+from src.dashboard_builder import InteractiveDashboardBuilder, DashboardTemplate, DashboardTheme
+from src.chart_editor import InteractiveChartEditor
+from src.dashboard_exporter import DashboardExporter
 
 
 # Page configuration
