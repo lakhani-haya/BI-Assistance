@@ -1,5 +1,5 @@
 """
-Demoscript to test the Streamlit dashboard locally
+ to test the Streamlit dashboard locally
 """
 
 import subprocess
