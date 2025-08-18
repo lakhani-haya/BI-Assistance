@@ -73,7 +73,7 @@ def start_dashboard():
     except KeyboardInterrupt:
         print("\n\n🛑 Dashboard stopped by user")
     except Exception as e:
-        print(f"❌ Error starting dashboard: {e}")
+        print(f"Error starting dashboard: {e}")
 
 
 def create_sample_env():
