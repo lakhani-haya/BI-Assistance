@@ -62,8 +62,8 @@ def start_dashboard():
     # Start Streamlit
     try:
         print("Starting Streamlit server...")
-        print("📊 Dashboard will open in your default browser")
-        print("🛑 Press Ctrl+C to stop the server")
+        print("Dashboard will open in your default browser")
+        print("Press Ctrl+C to stop the server")
         print("=" * 50)
         
         # Run streamlit
