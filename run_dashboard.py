@@ -1,5 +1,5 @@
 """
- scto test the Streamlit dashboard locally
+ scri test the Streamlit dashboard locally
 """
 
 import subprocess
