@@ -31,7 +31,7 @@ def check_requirements():
             missing_packages.append(package)
     
     if missing_packages:
-        print("❌ Missing required packages:")
+        print("Missing required packages:")
         for package in missing_packages:
             print(f"   - {package}")
         print("\n📦 Install missing packages with:")
