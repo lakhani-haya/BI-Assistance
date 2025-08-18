@@ -44,7 +44,7 @@ def check_requirements():
 
 def start_dashboard():
     """Start the Streamlit dashboard"""
-    print("🚀 Starting BI Assistant Dashboard...")
+    print("Starting BI Assistant Dashboard...")
     print("=" * 50)
     
     # Check requirements
@@ -56,12 +56,12 @@ def start_dashboard():
     app_path = project_root / "app.py"
     
     if not app_path.exists():
-        print(f"❌ app.py not found at {app_path}")
+        print(f"app.py not found at {app_path}")
         return
     
     # Start Streamlit
     try:
-        print("🌐 Starting Streamlit server...")
+        print("Starting Streamlit server...")
         print("📊 Dashboard will open in your default browser")
         print("🛑 Press Ctrl+C to stop the server")
         print("=" * 50)
