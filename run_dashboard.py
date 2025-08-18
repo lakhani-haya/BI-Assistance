@@ -1,5 +1,5 @@
 """
- script test the Streamlit dashboard locally
+ script to test the Streamlit dashboard locally
 """
 
 import subprocess
