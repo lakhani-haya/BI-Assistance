@@ -34,11 +34,11 @@ def check_requirements():
         print("Missing required packages:")
         for package in missing_packages:
             print(f"   - {package}")
-        print("\n📦 Install missing packages with:")
+        print("\n Install missing packages with:")
         print("   pip install -r requirements.txt")
         return False
     
-    print("✅ All required packages are installed")
+    print("All required packages are installed")
     return True
 
 
