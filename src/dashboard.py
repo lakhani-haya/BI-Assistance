@@ -283,9 +283,12 @@ class StreamlitDashboard:
                 self.render_dashboard_builder()
             
             with main_tabs[4]:
-                self.render_chart_editor()
+                self.render_ai_storytelling()
             
             with main_tabs[5]:
+                self.render_chart_editor()
+            
+            with main_tabs[6]:
                 self.render_export_interface()
     
     def render_welcome_screen(self):
