@@ -259,6 +259,7 @@ class StreamlitDashboard:
                 "🔍 Analysis", 
                 "📈 Visualizations",
                 "🎨 Dashboard Builder",
+                "🤖 AI Insights",
                 "✏️ Chart Editor",
                 "📤 Export"
             ])
