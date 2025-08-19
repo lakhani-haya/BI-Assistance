@@ -815,6 +815,19 @@ class StreamlitDashboard:
         except Exception as e:
             st.error(f"❌ Chart Editor error: {str(e)}")
     
+    def render_ai_storytelling(self):
+        """Render AI storytelling interface"""
+        st.markdown("## 🤖 AI-Powered Data Storytelling")
+        
+        if st.session_state.data is not None:
+            # Enhanced AI storytelling interface
+            from src.interactive_storyteller import InteractiveStorytellerInterface
+            
+            storyteller = InteractiveStorytellerInterface(st.session_state.data)
+            storyteller.render_storytelling_interface()
+        else:
+            st.warning("⚠️ Please upload data first to generate AI insights!")
+    
     def render_export_interface(self):
         """Render export interface"""
         if not st.session_state.data_loaded:
