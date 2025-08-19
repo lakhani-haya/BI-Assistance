@@ -1,5 +1,5 @@
 """
-Demo script to test the Streamlit dashboard locally
+ script to test the Streamlit dashboard locally
 """
 
 import subprocess
@@ -31,20 +31,20 @@ def check_requirements():
             missing_packages.append(package)
     
     if missing_packages:
-        print("❌ Missing required packages:")
+        print("Missing required packages:")
         for package in missing_packages:
             print(f"   - {package}")
-        print("\n📦 Install missing packages with:")
+        print("\n Install missing packages with:")
         print("   pip install -r requirements.txt")
         return False
     
-    print("✅ All required packages are installed")
+    print("All required packages are installed")
     return True
 
 
 def start_dashboard():
     """Start the Streamlit dashboard"""
-    print("🚀 Starting BI Assistant Dashboard...")
+    print("Starting BI Assistant Dashboard...")
     print("=" * 50)
     
     # Check requirements
@@ -56,14 +56,14 @@ def start_dashboard():
     app_path = project_root / "app.py"
     
     if not app_path.exists():
-        print(f"❌ app.py not found at {app_path}")
+        print(f"app.py not found at {app_path}")
         return
     
     # Start Streamlit
     try:
-        print("🌐 Starting Streamlit server...")
-        print("📊 Dashboard will open in your default browser")
-        print("🛑 Press Ctrl+C to stop the server")
+        print("Starting Streamlit server...")
+        print("Dashboard will open in your default browser")
+        print("Press Ctrl+C to stop the server")
         print("=" * 50)
         
         # Run streamlit
@@ -73,7 +73,7 @@ def start_dashboard():
     except KeyboardInterrupt:
         print("\n\n🛑 Dashboard stopped by user")
     except Exception as e:
-        print(f"❌ Error starting dashboard: {e}")
+        print(f"Error starting dashboard: {e}")
 
 
 def create_sample_env():
