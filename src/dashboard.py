@@ -26,46 +26,9 @@ from src.streamlit_upload import StreamlitFileUploader
 from src.dashboard_builder import InteractiveDashboardBuilder, DashboardTemplate, DashboardTheme
 from src.chart_editor import InteractiveChartEditor
 from src.dashboard_exporter import DashboardExporter
-    
-    def render_ai_storytelling(self):
-        """Render AI storytelling interface"""
-        st.markdown("## 🤖 AI-Powered Data Storytelling")
-        
-        if st.session_state.data is not None:
-            # Enhanced AI storytelling interface
-            from src.interactive_storyteller import InteractiveStorytellerInterface
-            
-            storyteller = InteractiveStorytellerInterface(st.session_state.data)
-            storyteller.render_storytelling_interface()
-        else:
-            st.warning("⚠️ Please upload data first to generate AI insights!")
-    
-    def render_performance_monitor(self):
-        """Render performance monitoring interface"""
-        st.markdown("## ⚡ Performance Monitor")
-        
-        try:
-            from src.performance_optimizer import app_optimizer
-            app_optimizer.render_performance_dashboard()
-        except Exception as e:
-            st.error(f"❌ Performance monitor error: {str(e)}")
-            st.info("💡 Performance monitoring features are being initialized...")
-    
-    def render_documentation(self):
-        """Render documentation interface"""
-        st.markdown("## 📖 User Documentation")
-        
-        try:
-            from src.documentation_generator import DocumentationGenerator
-            
-            doc_generator = DocumentationGenerator()
-            doc_generator.render_documentation_interface()
-        except Exception as e:
-            st.error(f"❌ Documentation error: {str(e)}")
-            st.info("💡 Documentation features are being initialized...")
-    
-    def render_export_interface(self): DashboardTheme
-from src.chart_editor import InteractiveChartEditor
+
+
+# Page configuration
 from src.dashboard_exporter import DashboardExporter
 
 
@@ -936,6 +899,30 @@ class StreamlitDashboard:
         
         except Exception as e:
             st.error(f"❌ Export interface error: {str(e)}")
+    
+    def render_performance_monitor(self):
+        """Render performance monitoring interface"""
+        st.markdown("## ⚡ Performance Monitor")
+        
+        try:
+            from src.performance_optimizer import app_optimizer
+            app_optimizer.render_performance_dashboard()
+        except Exception as e:
+            st.error(f"❌ Performance monitor error: {str(e)}")
+            st.info("💡 Performance monitoring features are being initialized...")
+    
+    def render_documentation(self):
+        """Render documentation interface"""
+        st.markdown("## 📖 User Documentation")
+        
+        try:
+            from src.documentation_generator import DocumentationGenerator
+            
+            doc_generator = DocumentationGenerator()
+            doc_generator.render_documentation_interface()
+        except Exception as e:
+            st.error(f"❌ Documentation error: {str(e)}")
+            st.info("💡 Documentation features are being initialized...")
     
     def run(self):
         """Main method to run the dashboard"""
