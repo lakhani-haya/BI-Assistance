@@ -1,6 +1,6 @@
 """
 Streamlit App Entry Point
-Main entry point for the BI Assistant web 
+Main entry point for the BI Assistant 
 """
 
 import sys
