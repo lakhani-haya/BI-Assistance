@@ -67,7 +67,7 @@ print("• Performance: psutil for system monitoring")
 print("• Documentation: markdown for user guides")
 print("• Testing: pytest for quality assurance")
 
-print("\n📁 PROJECT STRUCTURE:")
+print("\n PROJECT STRUCTURE:")
 print("• src/ - Core application modules")
 print("• demos/ - Example usage and demonstrations")
 print("• tests/ - Comprehensive test suite")
