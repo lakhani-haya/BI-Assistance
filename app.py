@@ -1,6 +1,6 @@
 """
 Streamlit App Entry Point
-Main entry point for the
+Main entry point for 
 """
 
 import sys
