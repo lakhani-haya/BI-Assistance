@@ -58,7 +58,7 @@ print("• Visualization Types: 15+ chart types with intelligent selection")
 print("• Export Formats: Excel, PowerPoint, PDF, HTML, JSON")
 print("• Dashboard Templates: 10+ pre-built business templates")
 
-print("\n🛠️ TECHNICAL ARCHITECTURE:")
+print("\n TECHNICAL ARCHITECTURE:")
 print("• Data Processing: pandas, numpy, openpyxl")
 print("• Visualization: plotly, matplotlib, seaborn")
 print("• AI Integration: OpenAI GPT for intelligent insights")
