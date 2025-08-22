@@ -50,7 +50,7 @@ print("  - Scalability optimizations")
 print("  - Professional export options")
 print("  - Complete system integration")
 
-print("\n📊 FEATURE SUMMARY:")
+print("\n FEATURE SUMMARY:")
 print("• Total Features Implemented: 50+")
 print("• Core Components: 8 main modules")
 print("• AI Capabilities: Natural language processing, insights, storytelling")
