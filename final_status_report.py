@@ -7,7 +7,7 @@ print("=" * 80)
 print("SMART BUSINESS INTELLIGENCE ASSISTANT - FINAL PROJECT STATUS")
 print("=" * 80)
 
-print("\n📋 PROJECT OVERVIEW:")
+print("\n PROJECT OVERVIEW:")
 print("• Project Name: Smart Business Intelligence Assistant 🤖📊")
 print("• Development Approach: Systematic 9-Step Implementation")
 print("• Target: Production-Ready AI-Powered BI Tool")
