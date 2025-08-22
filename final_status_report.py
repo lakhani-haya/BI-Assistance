@@ -4,7 +4,7 @@ Smart Business Intelligence Assistant 🤖📊
 """
 
 print("=" * 80)
-print("🎉 SMART BUSINESS INTELLIGENCE ASSISTANT - FINAL PROJECT STATUS")
+print("SMART BUSINESS INTELLIGENCE ASSISTANT - FINAL PROJECT STATUS")
 print("=" * 80)
 
 print("\n📋 PROJECT OVERVIEW:")
