@@ -82,7 +82,7 @@ def create_sample_env():
     env_path = project_root / ".env"
     
     if not env_path.exists():
-        print("📝 Creating sample .env file...")
+        print("Creating sample .env file...")
         
         env_content = """# BI Assistant Configuration
 # Copy this file and add your actual API key
