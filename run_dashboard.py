@@ -109,7 +109,7 @@ LOG_LEVEL=INFO
             with open(env_path, 'w') as f:
                 f.write(env_content)
             print(f"Created {env_path}")
-            print("💡 Edit this file to add your OpenAI API key for AI features")
+            print("Edit this file to add your OpenAI API key for AI features")
         except Exception as e:
             print(f"❌ Error creating .env file: {e}")
 
