@@ -71,7 +71,7 @@ def start_dashboard():
         subprocess.run(cmd, cwd=project_root)
         
     except KeyboardInterrupt:
-        print("\n\n🛑 Dashboard stopped by user")
+        print("\n\n Dashboard stopped by user")
     except Exception as e:
         print(f"Error starting dashboard: {e}")
 
