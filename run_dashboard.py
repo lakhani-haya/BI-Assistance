@@ -116,7 +116,7 @@ LOG_LEVEL=INFO
 
 def main():
     """Main function"""
-    print("🤖BI Assistant Dashboard Launcher")
+    print("BI Assistant Dashboard Launcher")
     print("=" * 50)
     
     # Create sample .env if needed
