@@ -1,6 +1,5 @@
 """
-Q
-"""
+
 
 import sys
 import os
