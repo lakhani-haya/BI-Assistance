@@ -1,5 +1,5 @@
 """
-Quick validation script for 
+Quick validation script
 """
 
 import sys
