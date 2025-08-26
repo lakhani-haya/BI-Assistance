@@ -1,5 +1,5 @@
 """
-Quick validation 
+Quick 
 """
 
 import sys
@@ -34,7 +34,7 @@ def test_step9_components():
         print(f"✅ Data Optimizer: Successfully optimized test data ({len(optimized)} rows)")
         
     except Exception as e:
-        print(f"❌ Performance Optimizer: Failed - {str(e)}")
+        print(f"Performance Optimizer: Failed - {str(e)}")
     
     # Test 2: Documentation Generator
     try:
