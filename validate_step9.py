@@ -1,4 +1,4 @@
-"
+
 
 
 import sys
@@ -30,7 +30,7 @@ def test_step9_components():
         })
         
         optimized = DataOptimizer.optimize_dataframe(test_data)
-        print(f"✅ Data Optimizer: Successfully optimized test data ({len(optimized)} rows)")
+        print(f"Data Optimizer: Successfully optimized test data ({len(optimized)} rows)")
         
     except Exception as e:
         print(f"Performance Optimizer: Failed - {str(e)}")
@@ -39,7 +39,7 @@ def test_step9_components():
     try:
         from src.documentation_generator import DocumentationGenerator
         dg = DocumentationGenerator()
-        print("✅ Documentation Generator: Successfully imported and initialized")
+        print("Documentation Generator: Successfully imported and initialized")
         
         # Test documentation generation
         docs = dg.generate_complete_documentation()
