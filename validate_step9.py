@@ -1,5 +1,5 @@
 """
-Quick 
+Q
 """
 
 import sys
