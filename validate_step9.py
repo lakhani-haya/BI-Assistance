@@ -46,7 +46,7 @@ def test_step9_components():
         print(f"Documentation Generation: Created {len(docs)} documentation sections")
         
     except Exception as e:
-        print(f"❌ Documentation Generator: Failed - {str(e)}")
+        print(f"Documentation Generator: Failed - {str(e)}")
     
     # Test 3: Enhanced Dashboard
     try:
