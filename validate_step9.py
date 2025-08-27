@@ -13,7 +13,7 @@ def test_step9_components():
     print("🚀 Testing Step 9 (Final Polish & Documentation) Components...")
     print("=" * 60)
     
-    # Test 1: Performance Optimizer
+    # Test 1: Performance 
     try:
         from src.performance_optimizer import PerformanceMonitor, DataOptimizer
         pm = PerformanceMonitor()
