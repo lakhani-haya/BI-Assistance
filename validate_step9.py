@@ -35,7 +35,7 @@ def test_step9_components():
     except Exception as e:
         print(f"Performance Optimizer: Failed - {str(e)}")
     
-    # Test 2: Documentation Gener
+    # Test 2: Documentation 
     try:
         from src.documentation_generator import DocumentationGenerator
         dg = DocumentationGenerator()
