@@ -17,7 +17,7 @@ def test_step9_components():
     try:
         from src.performance_optimizer import PerformanceMonitor, DataOptimizer
         pm = PerformanceMonitor()
-        print("✅ Performance Monitor: Successfully imported and initialized")
+        print("Performance Monitor: Successfully imported and initialized")
         
         # Test data optimiz
         import pandas as pd
