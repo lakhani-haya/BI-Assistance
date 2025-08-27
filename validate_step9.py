@@ -56,7 +56,7 @@ def test_step9_components():
         print("✅ Dashboard Integration: All 9 tabs available including Performance and Documentation")
         
     except Exception as e:
-        print(f"❌ Enhanced Dashboard: Failed - {str(e)}")
+        print(f"Enhanced Dashboard: Failed - {str(e)}")
     
     # Test 4: Complete System Integration
     try:
