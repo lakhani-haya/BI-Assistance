@@ -53,7 +53,7 @@ def test_step9_components():
         from src.dashboard import StreamlitDashboard
         dashboard = StreamlitDashboard()
         print("Enhanced Dashboard: Successfully imported and initialized")
-        print("✅ Dashboard Integration: All 9 tabs available including Performance and Documentation")
+        print("Dashboard Integration: All 9 tabs available including Performance and Documentation")
         
     except Exception as e:
         print(f"Enhanced Dashboard: Failed - {str(e)}")
