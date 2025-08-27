@@ -43,7 +43,7 @@ def test_step9_components():
         
         # Test documentation generation
         docs = dg.generate_complete_documentation()
-        print(f"✅ Documentation Generation: Created {len(docs)} documentation sections")
+        print(f"Documentation Generation: Created {len(docs)} documentation sections")
         
     except Exception as e:
         print(f"❌ Documentation Generator: Failed - {str(e)}")
