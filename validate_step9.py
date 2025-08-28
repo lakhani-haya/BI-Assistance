@@ -98,7 +98,7 @@ def test_step9_components():
         builder = DashboardBuilder()
         print("Dashboard Builder: Successfully imported")
         
-        print("\n🎉 All system components successfully integrated!")
+        print("\n All system components successfully integrated!")
         
     except Exception as e:
         print(f"❌ System Integration: Failed - {str(e)}")
