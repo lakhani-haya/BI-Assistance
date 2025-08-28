@@ -74,7 +74,7 @@ def test_step9_components():
         })
         
         validation = processor.validate_data(sample_data)
-        print(f"✅ Data Validation: {validation['valid']}")
+        print(f" Data Validation: {validation['valid']}")
         
         # Test AI Analysis
         from src.intelligent_analyzer import IntelligentDataAnalyzer
