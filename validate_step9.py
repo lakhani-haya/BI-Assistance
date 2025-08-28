@@ -60,7 +60,7 @@ def test_step9_components():
     
     # Test 4: Complete System Integration
     try:
-        print("\n🔧 Testing Complete System Integration...")
+        print("\n Testing Complete System Integration...")
         
         # Test data processing pipeline
         from src.data_processor import DataProcessor
