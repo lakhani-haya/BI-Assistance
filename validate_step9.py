@@ -81,7 +81,7 @@ def test_step9_components():
         analyzer = IntelligentDataAnalyzer()
         
         # Note: This might fail without OpenAI API key, but import should work
-        print("✅ AI Analyzer: Successfully imported")
+        print("AI Analyzer: Successfully imported")
         
         # Test Visualization
         from src.intelligent_visualizer import IntelligentVisualizationEngine
