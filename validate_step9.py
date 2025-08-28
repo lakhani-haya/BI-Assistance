@@ -96,7 +96,7 @@ def test_step9_components():
         # Test Dashboard Builder
         from src.dashboard_builder import DashboardBuilder
         builder = DashboardBuilder()
-        print("✅ Dashboard Builder: Successfully imported")
+        print("Dashboard Builder: Successfully imported")
         
         print("\n🎉 All system components successfully integrated!")
         
