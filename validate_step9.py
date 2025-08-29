@@ -101,7 +101,7 @@ def test_step9_components():
         print("\n All system components successfully integrated!")
         
     except Exception as e:
-        print(f"❌ System Integration: Failed - {str(e)}")
+        print(f"System Integration: Failed - {str(e)}")
     
     print("\n" + "=" * 60)
     print("STEP 9 COMPLETION SUMMARY")
