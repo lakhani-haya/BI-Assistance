@@ -48,7 +48,7 @@ def test_step9_components():
     except Exception as e:
         print(f"Documentation Generator: Failed - {str(e)}")
     
-    # Test 3: Enhanced Dashboard
+    # Test 3: Enhanced Dash
     try:
         from src.dashboard import StreamlitDashboard
         dashboard = StreamlitDashboard()
