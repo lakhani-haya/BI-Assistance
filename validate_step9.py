@@ -58,7 +58,7 @@ def test_step9_components():
     except Exception as e:
         print(f"Enhanced Dashboard: Failed - {str(e)}")
     
-    # Test 4: ComSystem Integration
+    # Test 4: System Integration
     try:
         print("\n Testing Complete System Integration...")
         
