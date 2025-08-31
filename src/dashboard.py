@@ -452,7 +452,7 @@ class StreamlitDashboard:
             st.dataframe(data.head(10), use_container_width=True)
         
         # Column information
-        with st.expander("📊 Column Information"):
+        with st.expander("Column Information"):
             col_info = []
             for col in data.columns:
                 col_info.append({
@@ -485,7 +485,7 @@ class StreamlitDashboard:
     
     def render_data_quality_section(self, data_summary: Dict[str, Any]):
         """Render data quality assessment"""
-        st.markdown("### 📊 Data Quality Assessment")
+        st.markdown("### Data Quality Assessment")
         
         quality = data_summary.get('data_quality', {})
         
