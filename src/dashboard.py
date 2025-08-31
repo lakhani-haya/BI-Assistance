@@ -81,7 +81,7 @@ from datetime import datetime
             }
             </style>
         """, unsafe_allow_html=True)
-        st.markdown("<div style='text-align:center;'><h1 style='color:#3a8dde;font-weight:700;margin-bottom:0.2em;'>Smart Business Intelligence Assistant 🤖📊</h1><p style='color:#222;font-size:1.15rem;margin-top:0;'>Modern, smooth, and minimal UI</p></div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align:center;'><h1 style='color:#3a8dde;font-weight:700;margin-bottom:0.2em;'>Smart Business Intelligence Assistant</h1><p style='color:#222;font-size:1.15rem;margin-top:0;'>Modern, smooth, and minimal UI</p></div>", unsafe_allow_html=True)
         st.write("")
     
     .insight-box {
@@ -160,7 +160,7 @@ class StreamlitDashboard:
     
     def render_header(self):
         """Render the main header"""
-        st.markdown('<h1 class="main-header">🤖📊 BI Assistant</h1>', unsafe_allow_html=True)
+        st.markdown('<h1 class="main-header">BI Assistant</h1>', unsafe_allow_html=True)
         st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">Smart Business Intelligence with AI-Powered Insights</p>', unsafe_allow_html=True)
         
         # Display AI status
