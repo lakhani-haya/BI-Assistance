@@ -71,7 +71,7 @@ def start_dashboard():
         subprocess.run(cmd, cwd=project_root)
         
     except KeyboardInterrupt:
-        print("\n\n🛑 Dashboard stopped by user")
+        print("\n\n Dashboard stopped by user")
     except Exception as e:
         print(f"Error starting dashboard: {e}")
 
@@ -82,7 +82,7 @@ def create_sample_env():
     env_path = project_root / ".env"
     
     if not env_path.exists():
-        print("📝 Creating sample .env file...")
+        print("Creating sample .env file...")
         
         env_content = """# BI Assistant Configuration
 # Copy this file and add your actual API key
@@ -108,15 +108,15 @@ LOG_LEVEL=INFO
         try:
             with open(env_path, 'w') as f:
                 f.write(env_content)
-            print(f"✅ Created {env_path}")
-            print("💡 Edit this file to add your OpenAI API key for AI features")
+            print(f"Created {env_path}")
+            print("Edit this file to add your OpenAI API key for AI features")
         except Exception as e:
-            print(f"❌ Error creating .env file: {e}")
+            print(f"Error creating .env file: {e}")
 
 
 def main():
     """Main function"""
-    print("🤖📊 BI Assistant Dashboard Launcher")
+    print("BI Assistant Dashboard Launcher")
     print("=" * 50)
     
     # Create sample .env if needed
