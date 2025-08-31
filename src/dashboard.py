@@ -310,7 +310,7 @@ class StreamlitDashboard:
                 if st.session_state.dashboard_results:
                     self.render_dashboard_results()
                 else:
-                    st.info("📊 Generate visualizations to see dashboard")
+                    st.info("Generate visualizations to see dashboard")
             
             with main_tabs[3]:
                 self.render_dashboard_builder()
@@ -342,7 +342,7 @@ class StreamlitDashboard:
             
             **BI Assistant** is your intelligent data analysis companion that automatically:
             
-            - 📊 **Analyzes your data** with smart insights
+            - **Analyzes your data** with smart insights
             - 🤖 **Generates AI explanations** in plain English  
             - 📈 **Creates beautiful visualizations** automatically
             - 💡 **Provides business recommendations** based on patterns
