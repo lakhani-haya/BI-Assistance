@@ -11,51 +11,78 @@ import json
 import io
 import base64
 from datetime import datetime
-from typing import Dict, List, Any, Optional
-import sys
-import os
-
-# Add src directory to path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
-
-from src.intelligent_analyzer import IntelligentDataAnalyzer
-from src.intelligent_visualizer import IntelligentVisualizationEngine
-from src.config import Config
-from src.data_processor import DataProcessor, validate_file_size
-from src.streamlit_upload import StreamlitFileUploader
-from src.dashboard_builder import InteractiveDashboardBuilder, DashboardTemplate, DashboardTheme
-from src.chart_editor import InteractiveChartEditor
-from src.dashboard_exporter import DashboardExporter
-
-
-# Page configuration
-from src.dashboard_exporter import DashboardExporter
-
-
-# Page configuration
-st.set_page_config(
-    page_title="BI Assistant - Smart Data Analysis",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
-# Custom CSS for better styling
-st.markdown("""
-<style>
-    .main-header {
-        font-size: 3rem;
-        font-weight: bold;
-        color: #1f77b4;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    
-    .sub-header {
-        font-size: 1.5rem;
-        color: #333;
-        margin: 1rem 0;
-    }
+        st.set_page_config(page_title="Smart BI Assistant", layout="wide")
+        st.markdown("""
+            <style>
+            body {
+                background: #f5f7fa;
+            }
+            .main {
+                background: #f5f7fa;
+            }
+            .stTabs [data-baseweb="tab"] {
+                background: #fff;
+                color: #222;
+                border-radius: 10px 10px 0 0;
+                margin-right: 2px;
+                font-weight: 500;
+                font-size: 1.08rem;
+                padding: 0.5rem 1.2rem;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+                transition: box-shadow 0.2s;
+            }
+            .stTabs [aria-selected="true"] {
+                background: linear-gradient(90deg, #3a8dde 0%, #38c6ff 100%);
+                color: #fff;
+                box-shadow: 0 4px 16px rgba(58,141,222,0.08);
+            }
+            .stButton>button {
+                background: linear-gradient(90deg, #3a8dde 0%, #38c6ff 100%);
+                color: #fff;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 1rem;
+                padding: 0.5rem 1.2rem;
+                border: none;
+                box-shadow: 0 2px 8px rgba(58,141,222,0.08);
+                transition: background 0.2s;
+            }
+            .stButton>button:hover {
+                background: linear-gradient(90deg, #38c6ff 0%, #3a8dde 100%);
+            }
+            .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+                color: #3a8dde;
+            }
+            .stMarkdown p {
+                color: #222;
+                font-size: 1.07rem;
+            }
+            .stMarkdown ul {
+                color: #222;
+                font-size: 1.05rem;
+            }
+            .stMarkdown code {
+                background: #eaf4ff;
+                color: #3a8dde;
+                border-radius: 4px;
+                padding: 2px 6px;
+            }
+            .stTextInput>div>input {
+                border-radius: 6px;
+                border: 1px solid #38c6ff;
+                background: #fff;
+                font-size: 1rem;
+                padding: 0.4rem 0.8rem;
+            }
+            .stSelectbox>div>div {
+                border-radius: 6px;
+                border: 1px solid #38c6ff;
+                background: #fff;
+            }
+            </style>
+        """, unsafe_allow_html=True)
+        st.markdown("<div style='text-align:center;'><h1 style='color:#3a8dde;font-weight:700;margin-bottom:0.2em;'>Smart Business Intelligence Assistant 🤖📊</h1><p style='color:#222;font-size:1.15rem;margin-top:0;'>Modern, smooth, and minimal UI</p></div>", unsafe_allow_html=True)
+        st.write("")
     
     .insight-box {
         background-color: #f0f2f6;
