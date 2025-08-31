@@ -382,7 +382,7 @@ class StreamlitDashboard:
             with feature_col2:
                 if st.session_state.ai_enabled:
                     st.success("""
-                    **🤖 AI Insights (Enabled)**
+                    **AI Insights (Enabled)**
                     - Natural language explanations
                     - Pattern recognition
                     - Business recommendations
@@ -390,7 +390,7 @@ class StreamlitDashboard:
                     """)
                 else:
                     st.warning("""
-                    **🤖 AI Insights (Disabled)**
+                    **AI Insights (Disabled)**
                     - Add OpenAI API key to .env
                     - Unlock natural language insights
                     - Get business recommendations
