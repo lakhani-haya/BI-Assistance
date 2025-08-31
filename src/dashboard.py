@@ -415,7 +415,7 @@ class StreamlitDashboard:
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
-            st.metric("📊 Total Rows", f"{len(data):,}")
+            st.metric("Total Rows", f"{len(data):,}")
         
         with col2:
             st.metric("📈 Columns", len(data.columns))
@@ -445,7 +445,7 @@ class StreamlitDashboard:
                     if file_info.detected_separator:
                         st.markdown(f"**🔗 Separator:** '{file_info.detected_separator}'")
                     if file_info.sheet_names:
-                        st.markdown(f"**📊 Excel Sheets:** {', '.join(file_info.sheet_names)}")
+                        st.markdown(f"**Excel Sheets:** {', '.join(file_info.sheet_names)}")
         
         # Data preview
         with st.expander("🔍 Data Preview", expanded=True):
