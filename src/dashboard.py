@@ -343,7 +343,7 @@ class StreamlitDashboard:
             **BI Assistant** is your intelligent data analysis companion that automatically:
             
             - **Analyzes your data** with smart insights
-            - 🤖 **Generates AI explanations** in plain English  
+            - **Generates AI explanations** in plain English  
             - 📈 **Creates beautiful visualizations** automatically
             - 💡 **Provides business recommendations** based on patterns
             - 🎯 **Tailors analysis** to your industry (sales, finance, operations)
@@ -364,7 +364,7 @@ class StreamlitDashboard:
             
             with feature_col1:
                 st.info("""
-                **📊 Data Analysis**
+                **Data Analysis**
                 - Automatic data cleaning
                 - Statistical summaries
                 - Quality assessment
