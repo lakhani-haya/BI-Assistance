@@ -167,7 +167,7 @@ class StreamlitDashboard:
         if st.session_state.ai_enabled:
             st.success("🧠 AI Features Enabled - Full analytics available")
         else:
-            st.info("📊 Basic Mode - Upload .env with OpenAI API key for AI features")
+            st.info("Basic Mode - Upload .env with OpenAI API key for AI features")
     
     def render_sidebar(self):
         """Render the sidebar with controls and options"""
@@ -286,11 +286,11 @@ class StreamlitDashboard:
         else:
             # Enhanced navigation for loaded data
             main_tabs = st.tabs([
-                "📊 Overview",
+                "Overview",
                 "🔍 Analysis", 
                 "📈 Visualizations",
                 "🎨 Dashboard Builder",
-                "🤖 AI Insights",
+                "AI Insights",
                 "✏️ Chart Editor",
                 "📤 Export",
                 "⚡ Performance",
