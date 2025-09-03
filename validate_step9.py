@@ -88,7 +88,7 @@ def test_step9_components():
         viz_engine = IntelligentVisualizationEngine()
         print("Visualization Engine: Successfully imported")
         
-        # Test Advanced Insights
+        # Test Advance Insights
         from src.advanced_insights import AdvancedInsightsEngine
         insights_engine = AdvancedInsightsEngine()
         print("Advanced Insights: Successfully imported")
