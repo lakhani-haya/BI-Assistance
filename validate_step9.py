@@ -93,7 +93,7 @@ def test_step9_components():
         insights_engine = AdvancedInsightsEngine()
         print("Advanced Insights: Successfully imported")
         
-        # Test Dashboard Builde
+        # Test Dashboard Build
         from src.dashboard_builder import DashboardBuilder
         builder = DashboardBuilder()
         print("Dashboard Builder: Successfully imported")
