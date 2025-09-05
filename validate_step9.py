@@ -66,7 +66,7 @@ def test_step9_components():
         from src.data_processor import DataProcessor
         processor = DataProcessor()
         
-        # Creatingsample data  
+        # Creating sample data  
         sample_data = pd.DataFrame({
             'date': pd.date_range('2024-01-01', periods=50, freq='D'),
             'revenue': np.random.uniform(1000, 5000, 50),
