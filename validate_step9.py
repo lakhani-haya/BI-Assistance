@@ -19,7 +19,7 @@ def test_step9_components():
         pm = PerformanceMonitor()
         print("Performance Monitor: Successfully imported and initialized")
         
-        # Test data optimiz
+        # Test data optimizer
         import pandas as pd
         import numpy as np
         
