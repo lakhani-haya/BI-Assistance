@@ -41,7 +41,7 @@ def test_step9_components():
         dg = DocumentationGenerator()
         print("Documentation Generator: Successfully imported and initialized")
         
-        # Test documentation gen
+        # Test documentation 
         docs = dg.generate_complete_documentation()
         print(f"Documentation Generation: Created {len(docs)} documentation sections")
         
