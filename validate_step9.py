@@ -19,7 +19,7 @@ def test_step9_components():
         pm = PerformanceMonitor()
         print("Performance Monitor: Successfully imported and initialized")
         
-        # Test data optimizer
+        # Test data optimiz
         import pandas as pd
         import numpy as np
         
@@ -41,7 +41,7 @@ def test_step9_components():
         dg = DocumentationGenerator()
         print("Documentation Generator: Successfully imported and initialized")
         
-        # Test documentation genera
+        # Test documentation gen
         docs = dg.generate_complete_documentation()
         print(f"Documentation Generation: Created {len(docs)} documentation sections")
         
