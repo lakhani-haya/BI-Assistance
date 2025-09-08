@@ -80,7 +80,7 @@ def test_step9_components():
         from src.intelligent_analyzer import IntelligentDataAnalyzer
         analyzer = IntelligentDataAnalyzer()
         
-        # Note: This might fail without OpenAI API key, but import should work
+        # Note:This might fail without OpenAI API key, but import should work
         print("AI Analyzer: Successfully imported")
         
         # Test Visualization
