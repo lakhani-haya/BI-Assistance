@@ -66,34 +66,34 @@ def create_sample_sales_data():
 def demo_basic_visualization():
     """Demonstrate basic visualization capabilities"""
     print("=" * 60)
-    print(" DEMO: Basic Visualization Engine")
+    print("📊 DEMO: Basic Visualization Engine")
     print("=" * 60)
     
     # Create sample data
     df = create_sample_sales_data()
-    print(f" Created sample dataset: {len(df)} records")
+    print(f"📈 Created sample dataset: {len(df)} records")
     
     # Initialize visualization engine
     viz_engine = VisualizationEngine()
     
     # Generate automatic visualizations
-    print("\n Generating automatic visualizations...")
+    print("\n🎨 Generating automatic visualizations...")
     results = viz_engine.auto_visualize(df, max_charts=5)
     
-    print(f" Generated {results['charts_created']} interactive charts")
+    print(f"✅ Generated {results['charts_created']} interactive charts")
     
     # Display chart information
-    print("\n Generated Charts:")
+    print("\n📋 Generated Charts:")
     for i, chart in enumerate(results.get('interactive_charts', []), 1):
         print(f"   {i}. {chart['title']} ({chart['type']})")
         print(f"      └─ {chart['rationale']}")
         print(f"      └─ Columns: {', '.join(chart['columns_used'])}")
     
     # Show recommendations
-    print(f"\n Total Recommendations: {len(results.get('recommendations', []))}")
+    print(f"\n💡 Total Recommendations: {len(results.get('recommendations', []))}")
     
     # Test custom chart creation
-    print("\n  Testing Custom Chart Creation...")
+    print("\n🛠️  Testing Custom Chart Creation...")
     custom_chart = viz_engine.create_custom_chart(
         df, 'bar', {
             'x_col': 'region',
@@ -103,9 +103,9 @@ def demo_basic_visualization():
     )
     
     if custom_chart:
-        print(" Custom bar chart created successfully")
+        print("✅ Custom bar chart created successfully")
     else:
-        print(" Custom chart creation failed")
+        print("❌ Custom chart creation failed")
     
     return viz_engine, results
 
@@ -113,33 +113,33 @@ def demo_basic_visualization():
 def demo_intelligent_visualization():
     """Demonstrate AI-enhanced visualization"""
     print("\n" + "=" * 60)
-    print(" DEMO: Intelligent Visualization Engine")
+    print("🤖 DEMO: Intelligent Visualization Engine")
     print("=" * 60)
     
     # Check if API key is available
     api_key = Config.OPENAI_API_KEY
     if not api_key or api_key == "your_openai_api_key_here":
-        print("  OpenAI API key not configured - using basic mode")
+        print("⚠️  OpenAI API key not configured - using basic mode")
         intelligent_engine = IntelligentVisualizationEngine(openai_api_key=None)
     else:
-        print(" AI features enabled")
+        print("🧠 AI features enabled")
         intelligent_engine = IntelligentVisualizationEngine(openai_api_key=api_key)
     
     # Create sample data
     df = create_sample_sales_data()
     
     # Create smart dashboard
-    print("\nCreating smart dashboard...")
+    print("\n🎛️  Creating smart dashboard...")
     dashboard = intelligent_engine.create_smart_dashboard(
         df, 
         business_category='sales',
         theme='business'
     )
     
-    print(f" Smart dashboard created with {dashboard['metadata']['total_charts']} charts")
+    print(f"✅ Smart dashboard created with {dashboard['metadata']['total_charts']} charts")
     
     # Display dashboard information
-    print("\n Dashboard Components:")
+    print("\n📊 Dashboard Components:")
     for i, chart in enumerate(dashboard.get('charts', []), 1):
         print(f"   {i}. {chart['title']}")
         print(f"      └─ Type: {chart['type']}")
@@ -148,16 +148,16 @@ def demo_intelligent_visualization():
     # Show dashboard insights
     if dashboard.get('dashboard_insights'):
         insights = dashboard['dashboard_insights']
-        print(f"\n Dashboard Insights:")
+        print(f"\n🔍 Dashboard Insights:")
         print(f"   Overview: {insights.get('overview', 'N/A')[:100]}...")
         if 'recommended_actions' in insights:
             print(f"   Recommended Actions: {insights['recommended_actions'][:100]}...")
     
     # Test specialized dashboard
     if dashboard.get('specialized_dashboard'):
-        print("\n Specialized Sales Dashboard: Created")
+        print("\n🏢 Specialized Sales Dashboard: Created")
     else:
-        print("\n Specialized Sales Dashboard: Not created (insufficient data patterns)")
+        print("\n🏢 Specialized Sales Dashboard: Not created (insufficient data patterns)")
     
     return intelligent_engine, dashboard
 
@@ -165,7 +165,7 @@ def demo_intelligent_visualization():
 def demo_chart_templates():
     """Demonstrate chart templates"""
     print("\n" + "=" * 60)
-    print(" DEMO: Chart Templates")
+    print("📋 DEMO: Chart Templates")
     print("=" * 60)
     
     # Create mock data for sales dashboard template
@@ -196,17 +196,17 @@ def demo_chart_templates():
     # Generate dashboard template
     try:
         sales_dashboard = ChartTemplates.sales_dashboard_template(template_data)
-        print(" Sales dashboard template created successfully")
+        print("✅ Sales dashboard template created successfully")
         
         # Test theme application
         themed_dashboard = ChartStyling.apply_theme(sales_dashboard, 'business')
-        print(" Business theme applied successfully")
+        print("✅ Business theme applied successfully")
         
     except Exception as e:
-        print(f" Template creation failed: {str(e)}")
+        print(f"❌ Template creation failed: {str(e)}")
     
     # Test color sequences
-    print("\n Available Themes:")
+    print("\n🎨 Available Themes:")
     for theme in ['business', 'executive', 'presentation']:
         colors = ChartStyling.get_color_sequence(theme)
         print(f"   • {theme.title()}: {len(colors)} colors")
@@ -224,7 +224,7 @@ def demo_export_functionality():
     results = viz_engine.auto_visualize(df, max_charts=3)
     
     # Test export (simulated)
-    print(" Export Options Available:")
+    print("📁 Export Options Available:")
     print("   • HTML (Interactive charts)")
     print("   • PNG (Static images)")
     print("   • PDF (Print-ready)")
@@ -240,12 +240,12 @@ def demo_export_functionality():
         print("   ├── chart_3_pie.html")
         print("   └── dashboard_summary.json")
     else:
-        print("\n  No charts available for export")
+        print("\n⚠️  No charts available for export")
 
 
 def main():
     """Run all visualization demos"""
-    print(" BI Assistant - Visualization Engine Demo")
+    print("🚀 BI Assistant - Visualization Engine Demo")
     print("This demo showcases the visualization and charting capabilities")
     
     try:
@@ -262,21 +262,21 @@ def main():
         demo_export_functionality()
         
         print("\n" + "=" * 60)
-        print(" All visualization demos completed!")
+        print("✅ All visualization demos completed!")
         print("=" * 60)
         
         # Summary
-        print("\n Visualization Capabilities Summary:")
-        print("    Automatic chart generation based on data types")
-        print("    Interactive Plotly charts with hover effects")
-        print("    Static matplotlib summaries and statistical views")
-        print("    AI-enhanced chart explanations (with API key)")
-        print("    Business-specific dashboard templates")
-        print("    Consistent theming and styling")
-        print("    Smart chart recommendations")
-        print("    Export capabilities for multiple formats")
+        print("\n📊 Visualization Capabilities Summary:")
+        print("   ✅ Automatic chart generation based on data types")
+        print("   ✅ Interactive Plotly charts with hover effects")
+        print("   ✅ Static matplotlib summaries and statistical views")
+        print("   ✅ AI-enhanced chart explanations (with API key)")
+        print("   ✅ Business-specific dashboard templates")
+        print("   ✅ Consistent theming and styling")
+        print("   ✅ Smart chart recommendations")
+        print("   ✅ Export capabilities for multiple formats")
         
-        print("\n Next Steps:")
+        print("\n🔗 Next Steps:")
         print("   • Set up OpenAI API key for AI-enhanced features")
         print("   • Try the web interface (coming next)")
         print("   • Upload your own datasets")
@@ -290,7 +290,7 @@ def main():
         }
         
     except Exception as e:
-        print(f"\n Demo failed with error: {str(e)}")
+        print(f"\n❌ Demo failed with error: {str(e)}")
         print("This might be due to missing dependencies or configuration issues.")
         return None
 

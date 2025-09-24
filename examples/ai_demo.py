@@ -38,12 +38,12 @@ def create_sample_sales_data():
 def demo_basic_analysis():
     """Demonstrate basic analysis without AI"""
     print("=" * 60)
-    print("🔍 DEMO: Basic Data Analysis (No AI Required)")
+    print("DEMO: Basic Data Analysis (No AI Required)")
     print("=" * 60)
     
     # Create sample data
     df = create_sample_sales_data()
-    print(f"📊 Created sample dataset: {len(df)} rows × {len(df.columns)} columns")
+    print(f"Created sample dataset: {len(df)} rows × {len(df.columns)} columns")
     
     # Initialize analyzer without AI
     analyzer = IntelligentDataAnalyzer(openai_api_key=None)
@@ -52,21 +52,21 @@ def demo_basic_analysis():
     results = analyzer.analyze_dataframe(df, "Sample Sales Data", generate_insights=False)
     
     # Display basic results
-    print("\n📈 Data Summary:")
+    print("\nData Summary:")
     basic_info = results['data_summary']['basic_info']
     print(f"   • Rows: {basic_info['rows']:,}")
     print(f"   • Columns: {basic_info['columns']}")
     print(f"   • Data Quality Score: {results['data_summary']['data_quality']['overall_score']}/100")
     print(f"   • Missing Values: {basic_info['missing_values_total']}")
     
-    print("\n🧹 Data Cleaning:")
+    print("\nData Cleaning:")
     if results['cleaning_summary']['operations_performed']:
         for operation in results['cleaning_summary']['operations_performed']:
             print(f"   • {operation}")
     else:
         print("   • No cleaning operations needed")
     
-    print("\n📋 Column Types:")
+    print("\nColumn Types:")
     column_info = results['data_summary']['column_info']
     print(f"   • Numeric: {column_info['numeric_columns']}")
     print(f"   • Categorical: {column_info['categorical_columns']}")
@@ -77,14 +77,14 @@ def demo_basic_analysis():
 def demo_ai_analysis():
     """Demonstrate AI-powered analysis (requires API key)"""
     print("\n" + "=" * 60)
-    print("🤖 DEMO: AI-Powered Analysis")
+    print("DEMO: AI-Powered Analysis")
     print("=" * 60)
     
     # Check if API key is available
     api_key = Config.OPENAI_API_KEY
     
     if not api_key or api_key == "your_openai_api_key_here":
-        print("⚠️  OpenAI API key not configured.")
+        print("WARNING: OpenAI API key not configured.")
         print("   To enable AI features:")
         print("   1. Copy .env.example to .env")
         print("   2. Add your OpenAI API key to the .env file")
@@ -98,7 +98,7 @@ def demo_ai_analysis():
         # Initialize analyzer with AI
         analyzer = IntelligentDataAnalyzer(openai_api_key=api_key)
         
-        print("🧠 Generating AI insights... (this may take a moment)")
+        print("Generating AI insights... (this may take a moment)")
         
         # Run full analysis with AI
         results = analyzer.analyze_dataframe(df, "Sample Sales Data", generate_insights=True)
@@ -111,25 +111,25 @@ def demo_ai_analysis():
                 print("\n📝 Executive Summary:")
                 print(f"   {insights['overview'].get('executive_summary', 'Not available')}")
                 
-                print("\n🔍 Key Findings:")
+                print("\nKey Findings:")
                 findings = insights['overview'].get('key_findings', [])
                 for i, finding in enumerate(findings[:3], 1):
                     print(f"   {i}. {finding}")
                 
-                print("\n💡 Recommendations:")
+                print("\nRecommendations:")
                 recommendations = insights['overview'].get('recommendations', [])
                 for i, rec in enumerate(recommendations[:3], 1):
                     print(f"   {i}. {rec}")
             
             if 'narrative' in insights:
-                print("\n📖 Business Narrative:")
+                print("\nBusiness Narrative:")
                 narrative = insights['narrative'][:500] + "..." if len(insights['narrative']) > 500 else insights['narrative']
                 print(f"   {narrative}")
         
         return analyzer, results
         
     except Exception as e:
-        print(f"❌ Error in AI analysis: {str(e)}")
+        print(f"ERROR: Error in AI analysis: {str(e)}")
         print("   This might be due to:")
         print("   • Invalid API key")
         print("   • Network connectivity issues")
@@ -139,7 +139,7 @@ def demo_ai_analysis():
 def demo_targeted_analysis():
     """Demonstrate targeted business analysis"""
     print("\n" + "=" * 60)
-    print("🎯 DEMO: Targeted Business Analysis")
+    print("DEMO: Targeted Business Analysis")
     print("=" * 60)
     
     # This demo shows how to use the intelligent analyzer
@@ -151,10 +151,10 @@ def demo_targeted_analysis():
     
     # Get category suggestions
     suggestions = analyzer.get_data_category_suggestions()
-    print(f"📊 Detected data categories: {', '.join(suggestions)}")
+    print(f"Detected data categories: {', '.join(suggestions)}")
     
     # Show what targeted analysis would look like
-    print("\n🎯 Available Analysis Types:")
+    print("\nAvailable Analysis Types:")
     print("   • Sales Performance Analysis")
     print("   • Financial Health Assessment") 
     print("   • Operational Efficiency Review")
@@ -170,7 +170,7 @@ def demo_targeted_analysis():
 
 def main():
     """Run all demonstrations"""
-    print("🚀 BI Assistant - AI Integration Demo")
+    print("BI Assistant - AI Integration Demo")
     print("This demo showcases the AI-powered analysis capabilities")
     
     # Demo 1: Basic analysis (always works)
@@ -183,11 +183,11 @@ def main():
     targeted_analyzer = demo_targeted_analysis()
     
     print("\n" + "=" * 60)
-    print("✅ Demo completed!")
+    print("Demo completed!")
     print("=" * 60)
     
     # Show next steps
-    print("\n🔗 Next Steps:")
+    print("\nNext Steps:")
     print("   • Set up OpenAI API key for full AI features")
     print("   • Try uploading your own data files")
     print("   • Explore the web interface (coming next)")
