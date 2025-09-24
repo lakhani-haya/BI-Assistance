@@ -23,7 +23,7 @@ from src.dashboard_exporter import DashboardExporter
 
 def create_sample_business_data():
     """Create comprehensive sample business data"""
-    print("🏭 Creating sample business data...")
+    print(" Creating sample business data...")
     
     np.random.seed(42)
     
@@ -88,14 +88,14 @@ def create_sample_business_data():
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values('date').reset_index(drop=True)
     
-    print(f"✅ Created dataset with {len(df)} records and {len(df.columns)} columns")
+    print(f" Created dataset with {len(df)} records and {len(df.columns)} columns")
     return df
 
 
 def demonstrate_dashboard_templates():
     """Demonstrate dashboard template functionality"""
     print("\n" + "="*60)
-    print("📋 DASHBOARD TEMPLATES DEMONSTRATION")
+    print(" DASHBOARD TEMPLATES DEMONSTRATION")
     print("="*60)
     
     # Create sample data
@@ -103,22 +103,22 @@ def demonstrate_dashboard_templates():
     
     # Get available templates
     templates = DashboardTemplate.get_available_templates()
-    print(f"\n📊 Available Templates: {len(templates)}")
+    print(f"\n Available Templates: {len(templates)}")
     
     for template_name, template_info in templates.items():
-        print(f"\n🎨 {template_info['name']}")
+        print(f"\n {template_info['name']}")
         print(f"   Category: {template_info['category']}")
         print(f"   Description: {template_info['description']}")
         print(f"   Charts: {', '.join(template_info['charts'])}")
     
     # Create dashboards from templates
-    print(f"\n🚀 Creating dashboards from templates...")
+    print(f"\n Creating dashboards from templates...")
     
     created_dashboards = {}
     
     for template_name in ['executive_summary', 'sales_analytics', 'financial_dashboard']:
         try:
-            print(f"\n📊 Creating {template_name} dashboard...")
+            print(f"\n Creating {template_name} dashboard...")
             
             dashboard_config = DashboardTemplate.create_dashboard_from_template(
                 template_name,
@@ -128,10 +128,10 @@ def demonstrate_dashboard_templates():
             
             created_dashboards[template_name] = dashboard_config
             
-            print(f"   ✅ Created: {dashboard_config.title}")
-            print(f"   📈 Charts: {len(dashboard_config.charts)}")
-            print(f"   🎯 KPIs: {len(dashboard_config.kpis)}")
-            print(f"   🎨 Theme: {dashboard_config.theme.value}")
+            print(f"    Created: {dashboard_config.title}")
+            print(f"    Charts: {len(dashboard_config.charts)}")
+            print(f"    KPIs: {len(dashboard_config.kpis)}")
+            print(f"    Theme: {dashboard_config.theme.value}")
             
             # Show chart details
             for i, chart in enumerate(dashboard_config.charts, 1):
@@ -146,7 +146,7 @@ def demonstrate_dashboard_templates():
                 print(f"      KPI {i}: {kpi['title']} = {kpi['value']:.2f}")
         
         except Exception as e:
-            print(f"   ❌ Failed to create {template_name}: {str(e)}")
+            print(f"    Failed to create {template_name}: {str(e)}")
     
     return data, created_dashboards
 
@@ -154,7 +154,7 @@ def demonstrate_dashboard_templates():
 def demonstrate_chart_editor():
     """Demonstrate chart editor functionality"""
     print("\n" + "="*60)
-    print("✏️ CHART EDITOR DEMONSTRATION")
+    print(" CHART EDITOR DEMONSTRATION")
     print("="*60)
     
     # Create sample data
@@ -162,7 +162,7 @@ def demonstrate_chart_editor():
     
     # Create chart editor
     editor = InteractiveChartEditor(data)
-    print("✅ Chart Editor initialized")
+    print(" Chart Editor initialized")
     
     # Create sample chart configuration
     chart_config = ChartConfig(
@@ -175,7 +175,7 @@ def demonstrate_chart_editor():
         size_column="units_sold"
     )
     
-    print(f"\n📊 Created sample chart: {chart_config.title}")
+    print(f"\n Created sample chart: {chart_config.title}")
     print(f"   Type: {chart_config.chart_type.value}")
     print(f"   X-Axis: {chart_config.x_column}")
     print(f"   Y-Axis: {chart_config.y_column}")
@@ -230,10 +230,10 @@ def demonstrate_chart_editor():
         )
     }
     
-    print(f"\n🎨 Created {len(styling_options)} styling options:")
+    print(f"\n Created {len(styling_options)} styling options:")
     
     for style_name, styling in styling_options.items():
-        print(f"\n   🖌️ {style_name}:")
+        print(f"\n   ️ {style_name}:")
         print(f"      Color Scheme: {styling.color_scheme.value}")
         print(f"      Background: {styling.background_color}")
         print(f"      Font Size: {styling.title_font_size}px")
@@ -243,7 +243,7 @@ def demonstrate_chart_editor():
             print(f"      Annotations: {len(styling.annotations)}")
     
     # Demonstrate filter functionality
-    print(f"\n🔍 Demonstrating filter functionality...")
+    print(f"\n Demonstrating filter functionality...")
     
     filter_examples = {
         'High Revenue': {
@@ -260,10 +260,10 @@ def demonstrate_chart_editor():
     
     for filter_name, filters in filter_examples.items():
         filtered_data = editor._apply_filters(data, filters)
-        print(f"   📊 {filter_name}: {len(filtered_data)} records ({len(filtered_data)/len(data)*100:.1f}%)")
+        print(f"    {filter_name}: {len(filtered_data)} records ({len(filtered_data)/len(data)*100:.1f}%)")
     
     # Test color schemes
-    print(f"\n🌈 Available color schemes:")
+    print(f"\n Available color schemes:")
     for scheme in ColorScheme:
         colors = editor._get_colors_for_scheme(scheme, [])
         print(f"   {scheme.value}: {len(colors)} colors")
@@ -274,7 +274,7 @@ def demonstrate_chart_editor():
 def demonstrate_dashboard_export():
     """Demonstrate dashboard export functionality"""
     print("\n" + "="*60)
-    print("📤 DASHBOARD EXPORT DEMONSTRATION")
+    print(" DASHBOARD EXPORT DEMONSTRATION")
     print("="*60)
     
     # Create sample data and dashboard
@@ -289,9 +289,9 @@ def demonstrate_dashboard_export():
     
     # Create exporter
     exporter = DashboardExporter(data)
-    print("✅ Dashboard Exporter initialized")
+    print(" Dashboard Exporter initialized")
     
-    print(f"\n📊 Dashboard to export: {dashboard_config.title}")
+    print(f"\n Dashboard to export: {dashboard_config.title}")
     print(f"   Charts: {len(dashboard_config.charts)}")
     print(f"   KPIs: {len(dashboard_config.kpis)}")
     print(f"   Theme: {dashboard_config.theme.value}")
@@ -329,11 +329,11 @@ def demonstrate_dashboard_export():
         }
     ]
     
-    print(f"\n📁 Export format demonstrations:")
+    print(f"\n Export format demonstrations:")
     
     for export_example in export_examples:
         try:
-            print(f"\n   📄 {export_example['name']}...")
+            print(f"\n    {export_example['name']}...")
             
             if export_example['format'] == 'html':
                 result = exporter._generate_html_dashboard(
@@ -345,7 +345,7 @@ def demonstrate_dashboard_export():
                     theme_style="Light",
                     standalone_html=True
                 )
-                print(f"      ✅ HTML generated: {len(result)} characters")
+                print(f"       HTML generated: {len(result)} characters")
                 
             elif export_example['format'] == 'json':
                 result = exporter._generate_data_export(
@@ -359,7 +359,7 @@ def demonstrate_dashboard_export():
                 )
                 if result:
                     data_dict = json.loads(result.decode())
-                    print(f"      ✅ JSON exported with {len(data_dict)} sections")
+                    print(f"       JSON exported with {len(data_dict)} sections")
                     print(f"         Data records: {len(data_dict.get('data', []))}")
                     print(f"         Config included: {'config' in data_dict}")
                     print(f"         Metadata included: {'metadata' in data_dict}")
@@ -376,7 +376,7 @@ def demonstrate_dashboard_export():
                 )
                 if result:
                     lines = result.decode().split('\n')
-                    print(f"      ✅ CSV exported: {len(lines)} lines")
+                    print(f"       CSV exported: {len(lines)} lines")
             
             elif export_example['format'] == 'xlsx':
                 result = exporter._generate_data_export(
@@ -389,13 +389,13 @@ def demonstrate_dashboard_export():
                     compress_output=False
                 )
                 if result:
-                    print(f"      ✅ Excel exported: {len(result)} bytes")
+                    print(f"       Excel exported: {len(result)} bytes")
         
         except Exception as e:
-            print(f"      ❌ Export failed: {str(e)}")
+            print(f"       Export failed: {str(e)}")
     
     # Demonstrate web package export
-    print(f"\n📦 Web Package Export...")
+    print(f"\n Web Package Export...")
     try:
         web_package = exporter._generate_web_package(
             dashboard_config,
@@ -403,22 +403,22 @@ def demonstrate_dashboard_export():
             include_interactive=True,
             responsive_design=True
         )
-        print(f"   ✅ Web package created: {len(web_package)} bytes")
-        print(f"   📁 Package includes: HTML, CSS, JavaScript, README")
+        print(f"    Web package created: {len(web_package)} bytes")
+        print(f"    Package includes: HTML, CSS, JavaScript, README")
     except Exception as e:
-        print(f"   ❌ Web package failed: {str(e)}")
+        print(f"    Web package failed: {str(e)}")
     
     # Demonstrate text generation
-    print(f"\n📝 Text Generation Examples:")
+    print(f"\n Text Generation Examples:")
     
     executive_summary = exporter._generate_executive_summary(dashboard_config)
-    print(f"   📋 Executive Summary: {len(executive_summary)} characters")
+    print(f"    Executive Summary: {len(executive_summary)} characters")
     
     data_overview = exporter._generate_data_overview_text()
-    print(f"   📊 Data Overview: {len(data_overview)} characters")
+    print(f"    Data Overview: {len(data_overview)} characters")
     
     insights = exporter._generate_insights_text(dashboard_config)
-    print(f"   💡 Insights: {len(insights)} characters")
+    print(f"    Insights: {len(insights)} characters")
     
     return dashboard_config, chart_stylings
 
@@ -426,13 +426,13 @@ def demonstrate_dashboard_export():
 def demonstrate_integration_workflow():
     """Demonstrate complete integration workflow"""
     print("\n" + "="*60)
-    print("🔄 COMPLETE INTEGRATION WORKFLOW")
+    print(" COMPLETE INTEGRATION WORKFLOW")
     print("="*60)
     
     # Step 1: Create comprehensive data
     print("1️⃣ Creating business data...")
     data = create_sample_business_data()
-    print(f"   ✅ Dataset: {len(data)} records, {len(data.columns)} columns")
+    print(f"    Dataset: {len(data)} records, {len(data.columns)} columns")
     
     # Step 2: Generate multiple dashboards
     print("\n2️⃣ Creating multiple dashboards...")
@@ -446,7 +446,7 @@ def demonstrate_integration_workflow():
             template_name, data, theme
         )
         dashboards[template_name] = dashboard
-        print(f"   ✅ {dashboard.title} ({theme.value}): {len(dashboard.charts)} charts")
+        print(f"    {dashboard.title} ({theme.value}): {len(dashboard.charts)} charts")
     
     # Step 3: Create custom chart configurations
     print("\n3️⃣ Creating custom chart configurations...")
@@ -479,7 +479,7 @@ def demonstrate_integration_workflow():
     ]
     
     for chart in custom_charts:
-        print(f"   📊 {chart.title} ({chart.chart_type.value})")
+        print(f"    {chart.title} ({chart.chart_type.value})")
     
     # Step 4: Apply advanced styling
     print("\n4️⃣ Applying advanced styling...")
@@ -510,7 +510,7 @@ def demonstrate_integration_workflow():
         styling = styling_themes[dashboard_name]
         for chart in dashboard.charts:
             all_chart_stylings[chart.chart_id] = styling
-        print(f"   🎨 Styled {dashboard_name}: {styling.color_scheme.value} theme")
+        print(f"    Styled {dashboard_name}: {styling.color_scheme.value} theme")
     
     # Step 5: Export in multiple formats
     print("\n5️⃣ Exporting dashboards...")
@@ -520,7 +520,7 @@ def demonstrate_integration_workflow():
     export_summary = {}
     
     for dashboard_name, dashboard in dashboards.items():
-        print(f"\n   📤 Exporting {dashboard_name}...")
+        print(f"\n    Exporting {dashboard_name}...")
         
         try:
             # HTML export
@@ -542,32 +542,32 @@ def demonstrate_integration_workflow():
             )
             export_summary[f"{dashboard_name}_web"] = len(web_result)
             
-            print(f"      ✅ All formats exported successfully")
+            print(f"       All formats exported successfully")
             
         except Exception as e:
-            print(f"      ❌ Export error: {str(e)}")
+            print(f"       Export error: {str(e)}")
     
     # Step 6: Summary
     print("\n6️⃣ Workflow Summary:")
-    print(f"   📊 Dashboards Created: {len(dashboards)}")
-    print(f"   📈 Total Charts: {sum(len(d.charts) for d in dashboards.values())}")
-    print(f"   🎯 Total KPIs: {sum(len(d.kpis) for d in dashboards.values())}")
-    print(f"   🎨 Styling Themes: {len(styling_themes)}")
-    print(f"   📤 Export Outputs: {len(export_summary)}")
+    print(f"    Dashboards Created: {len(dashboards)}")
+    print(f"    Total Charts: {sum(len(d.charts) for d in dashboards.values())}")
+    print(f"    Total KPIs: {sum(len(d.kpis) for d in dashboards.values())}")
+    print(f"    Styling Themes: {len(styling_themes)}")
+    print(f"    Export Outputs: {len(export_summary)}")
     
-    print(f"\n   📁 Export Summary:")
+    print(f"\n    Export Summary:")
     for export_name, size in export_summary.items():
         print(f"      {export_name}: {size:,} bytes")
     
     total_size = sum(export_summary.values())
-    print(f"   📊 Total Export Size: {total_size:,} bytes ({total_size/1024/1024:.2f} MB)")
+    print(f"    Total Export Size: {total_size:,} bytes ({total_size/1024/1024:.2f} MB)")
     
     return dashboards, all_chart_stylings, export_summary
 
 
 def main():
     """Run all demonstrations"""
-    print("🚀 ADVANCED DASHBOARD GENERATION DEMONSTRATION")
+    print(" ADVANCED DASHBOARD GENERATION DEMONSTRATION")
     print("="*80)
     print("This demo showcases the advanced dashboard generation capabilities")
     print("including templates, chart editing, and multi-format export.")
@@ -581,26 +581,26 @@ def main():
         integration_demo = demonstrate_integration_workflow()
         
         print("\n" + "="*80)
-        print("🎉 DEMONSTRATION COMPLETE!")
+        print(" DEMONSTRATION COMPLETE!")
         print("="*80)
-        print("✅ Dashboard Templates: Demonstrated template-based dashboard creation")
-        print("✅ Chart Editor: Showcased advanced styling and customization")
-        print("✅ Dashboard Export: Displayed multi-format export capabilities")
-        print("✅ Integration Workflow: Completed end-to-end dashboard lifecycle")
+        print(" Dashboard Templates: Demonstrated template-based dashboard creation")
+        print(" Chart Editor: Showcased advanced styling and customization")
+        print(" Dashboard Export: Displayed multi-format export capabilities")
+        print(" Integration Workflow: Completed end-to-end dashboard lifecycle")
         
-        print(f"\n📊 Summary Statistics:")
-        print(f"   🏭 Sample Data Records: {len(data):,}")
-        print(f"   📋 Templates Available: {len(DashboardTemplate.get_available_templates())}")
-        print(f"   🎨 Color Schemes: {len(list(ColorScheme))}")
-        print(f"   📈 Chart Types: {len(list(ChartType))}")
-        print(f"   🎭 Themes: {len(list(DashboardTheme))}")
+        print(f"\n Summary Statistics:")
+        print(f"    Sample Data Records: {len(data):,}")
+        print(f"    Templates Available: {len(DashboardTemplate.get_available_templates())}")
+        print(f"    Color Schemes: {len(list(ColorScheme))}")
+        print(f"    Chart Types: {len(list(ChartType))}")
+        print(f"    Themes: {len(list(DashboardTheme))}")
         
-        print(f"\n🚀 The advanced dashboard generation system is ready for production use!")
+        print(f"\n The advanced dashboard generation system is ready for production use!")
         print("   Features include template-based creation, interactive editing,")
         print("   advanced styling, and comprehensive export capabilities.")
         
     except Exception as e:
-        print(f"\n❌ Demonstration failed: {str(e)}")
+        print(f"\n Demonstration failed: {str(e)}")
         import traceback
         traceback.print_exc()
 

@@ -21,7 +21,7 @@ from src.streamlit_upload import StreamlitFileUploader
 
 def demonstrate_file_validation():
     """Demonstrate file validation capabilities"""
-    print("🔍 File Validation Demonstration")
+    print(" File Validation Demonstration")
     print("-" * 40)
     
     # Create sample files for testing
@@ -35,7 +35,7 @@ def demonstrate_file_validation():
     validator = FileValidator()
     
     for filename, content in test_files.items():
-        print(f"\n📄 Testing: {filename}")
+        print(f"\n Testing: {filename}")
         
         if isinstance(content, str):
             file_obj = io.BytesIO(content.encode('utf-8'))
@@ -45,14 +45,14 @@ def demonstrate_file_validation():
         is_valid, errors = validator.validate_file(file_obj, filename)
         
         if is_valid:
-            print("   ✅ Valid file")
+            print("    Valid file")
         else:
-            print("   ❌ Invalid file:")
+            print("    Invalid file:")
             for error in errors:
                 print(f"      - {error}")
     
     # Test encoding detection
-    print(f"\n🔤 Encoding Detection:")
+    print(f"\n Encoding Detection:")
     test_content = "naïve résumé café"
     for encoding in ['utf-8', 'latin-1', 'cp1252']:
         encoded_content = test_content.encode(encoding)
@@ -62,13 +62,13 @@ def demonstrate_file_validation():
 
 def demonstrate_single_file_processing():
     """Demonstrate single file processing"""
-    print("\n📁 Single File Processing Demonstration")
+    print("\n Single File Processing Demonstration")
     print("-" * 50)
     
     processor = FileProcessor()
     
     # Test CSV processing
-    print("📊 Processing CSV file...")
+    print(" Processing CSV file...")
     csv_data = """date,sales,region,product
 2024-01-01,1500.50,North,Product A
 2024-01-02,2300.75,South,Product B
@@ -80,7 +80,7 @@ def demonstrate_single_file_processing():
     try:
         data, file_info = processor.process_file(csv_file, "sales_data.csv")
         
-        print(f"   ✅ Processed successfully:")
+        print(f"    Processed successfully:")
         print(f"      Rows: {len(data)}")
         print(f"      Columns: {len(data.columns)}")
         print(f"      Data types: {dict(data.dtypes)}")
@@ -88,14 +88,14 @@ def demonstrate_single_file_processing():
         print(f"      Detected separator: '{file_info.detected_separator}'")
         
         # Show data preview
-        print(f"\n   📋 Data Preview:")
+        print(f"\n    Data Preview:")
         print(data.head().to_string(index=False))
         
     except Exception as e:
-        print(f"   ❌ Processing failed: {e}")
+        print(f"    Processing failed: {e}")
     
     # Test JSON processing
-    print(f"\n📋 Processing JSON file...")
+    print(f"\n Processing JSON file...")
     json_data = {
         "customers": [
             {"id": 1, "name": "Alice", "age": 30, "purchases": 5},
@@ -110,18 +110,18 @@ def demonstrate_single_file_processing():
     try:
         data, file_info = processor.process_file(json_file, "customers.json")
         
-        print(f"   ✅ Processed successfully:")
+        print(f"    Processed successfully:")
         print(f"      Rows: {len(data)}")
         print(f"      Columns: {list(data.columns)}")
         print(f"      Encoding: {file_info.encoding}")
         
     except Exception as e:
-        print(f"   ❌ Processing failed: {e}")
+        print(f"    Processing failed: {e}")
 
 
 def demonstrate_batch_processing():
     """Demonstrate batch file processing"""
-    print(f"\n📦 Batch Processing Demonstration")
+    print(f"\n Batch Processing Demonstration")
     print("-" * 45)
     
     batch_processor = BatchFileProcessor()
@@ -154,7 +154,7 @@ def demonstrate_batch_processing():
     })
     datasets.append(sales_q3)
     
-    print("📊 Combining datasets...")
+    print(" Combining datasets...")
     
     # Test different combination methods
     for method in ['concat', 'union', 'intersect']:
@@ -166,12 +166,12 @@ def demonstrate_batch_processing():
                 print(f"      Common columns: {list(combined.columns)}")
                 
         except Exception as e:
-            print(f"   ❌ {method} failed: {e}")
+            print(f"    {method} failed: {e}")
 
 
 def demonstrate_zip_processing():
     """Demonstrate ZIP file processing"""
-    print(f"\n🗜️ ZIP Archive Processing Demonstration")
+    print(f"\n️ ZIP Archive Processing Demonstration")
     print("-" * 50)
     
     # Create a temporary ZIP file with multiple datasets
@@ -202,27 +202,27 @@ def demonstrate_zip_processing():
                 zip_data = io.BytesIO(zip_file_obj.read())
                 results = batch_processor.process_zip_file(zip_data, "quarterly_sales.zip")
             
-            print(f"📊 ZIP Processing Results:")
+            print(f" ZIP Processing Results:")
             print(f"   Total files: {results['total_files']}")
             print(f"   Processed: {results['processed_files']}")
             print(f"   Failed: {results['failed_files']}")
             
             if results['data_files']:
-                print(f"   📁 Extracted files:")
+                print(f"    Extracted files:")
                 for file_path, file_result in results['data_files'].items():
                     if file_result['status'] == 'success':
                         data = file_result['data']
-                        print(f"      ✅ {file_path}: {len(data)} rows")
+                        print(f"       {file_path}: {len(data)} rows")
                     else:
-                        print(f"      ❌ {file_path}: failed")
+                        print(f"       {file_path}: failed")
             
             if results['errors']:
-                print(f"   ⚠️ Errors:")
+                print(f"    Errors:")
                 for error in results['errors']:
                     print(f"      - {error}")
             
         except Exception as e:
-            print(f"❌ ZIP processing failed: {e}")
+            print(f" ZIP processing failed: {e}")
         
         finally:
             # Clean up
@@ -234,7 +234,7 @@ def demonstrate_zip_processing():
 
 def demonstrate_data_type_conversion():
     """Demonstrate intelligent data type conversion"""
-    print(f"\n🔄 Data Type Conversion Demonstration")
+    print(f"\n Data Type Conversion Demonstration")
     print("-" * 50)
     
     # Create test data with various convertible types
@@ -249,7 +249,7 @@ def demonstrate_data_type_conversion():
         'high_cardinality': [f'unique_{i}' for i in range(10)]  # High cardinality
     })
     
-    print("📊 Original data types:")
+    print(" Original data types:")
     for col, dtype in test_data.dtypes.items():
         print(f"   {col}: {dtype}")
     
@@ -257,11 +257,11 @@ def demonstrate_data_type_conversion():
     converter = DataTypeConverter()
     converted_data, conversion_log = converter.detect_and_convert_types(test_data)
     
-    print(f"\n✨ After intelligent conversion:")
+    print(f"\n After intelligent conversion:")
     for col, dtype in converted_data.dtypes.items():
         print(f"   {col}: {dtype}")
     
-    print(f"\n📋 Conversion log:")
+    print(f"\n Conversion log:")
     for col, log_entry in conversion_log.items():
         print(f"   {col}: {log_entry['from']} → {log_entry['to']}")
         print(f"      Sample values: {log_entry['samples']}")
@@ -269,7 +269,7 @@ def demonstrate_data_type_conversion():
 
 def demonstrate_sample_data_generation():
     """Demonstrate sample data generation"""
-    print(f"\n🎲 Sample Data Generation Demonstration")
+    print(f"\n Sample Data Generation Demonstration")
     print("-" * 50)
     
     uploader = StreamlitFileUploader()
@@ -283,7 +283,7 @@ def demonstrate_sample_data_generation():
     ]
     
     for sample_type in sample_types:
-        print(f"\n📊 Generating {sample_type} data...")
+        print(f"\n Generating {sample_type} data...")
         
         try:
             if sample_type == "Sales Performance":
@@ -299,23 +299,23 @@ def demonstrate_sample_data_generation():
             else:
                 continue
             
-            print(f"   ✅ Generated: {len(data)} rows, {len(data.columns)} columns")
-            print(f"   📋 Columns: {', '.join(list(data.columns)[:5])}{'...' if len(data.columns) > 5 else ''}")
+            print(f"    Generated: {len(data)} rows, {len(data.columns)} columns")
+            print(f"    Columns: {', '.join(list(data.columns)[:5])}{'...' if len(data.columns) > 5 else ''}")
             
             # Show basic statistics
             numeric_cols = data.select_dtypes(include=[np.number]).columns
             if len(numeric_cols) > 0:
-                print(f"   📈 Numeric columns: {len(numeric_cols)}")
+                print(f"    Numeric columns: {len(numeric_cols)}")
                 sample_col = numeric_cols[0]
                 print(f"      {sample_col}: min={data[sample_col].min():.2f}, max={data[sample_col].max():.2f}")
                 
         except Exception as e:
-            print(f"   ❌ Generation failed: {e}")
+            print(f"    Generation failed: {e}")
 
 
 def demonstrate_error_handling():
     """Demonstrate error handling and recovery"""
-    print(f"\n🛡️ Error Handling Demonstration")
+    print(f"\n Error Handling Demonstration")
     print("-" * 40)
     
     processor = FileProcessor()
@@ -345,24 +345,24 @@ def demonstrate_error_handling():
     ]
     
     for case in error_cases:
-        print(f"\n🧪 Testing: {case['name']}")
+        print(f"\n Testing: {case['name']}")
         
         file_obj = io.BytesIO(case['content'].encode('utf-8'))
         
         try:
             data, file_info = processor.process_file(file_obj, case['filename'])
-            print(f"   ✅ Handled gracefully: {len(data)} rows processed")
+            print(f"    Handled gracefully: {len(data)} rows processed")
             
             if file_info.validation_errors:
-                print(f"   ⚠️ Warnings: {len(file_info.validation_errors)}")
+                print(f"    Warnings: {len(file_info.validation_errors)}")
                 
         except Exception as e:
-            print(f"   ❌ Failed as expected: {str(e)[:50]}...")
+            print(f"    Failed as expected: {str(e)[:50]}...")
 
 
 def main():
     """Run all demonstrations"""
-    print("🤖📊 Enhanced File Processing System Demonstration")
+    print(" Enhanced File Processing System Demonstration")
     print("=" * 70)
     
     try:
@@ -379,22 +379,22 @@ def main():
         demonstrate_error_handling()
         
         print(f"\n" + "=" * 70)
-        print("🎉 All demonstrations completed successfully!")
-        print("\n💡 Key Features Demonstrated:")
-        print("   ✅ Multi-format file support (CSV, JSON, Excel, Parquet)")
-        print("   ✅ Intelligent encoding and separator detection")
-        print("   ✅ Batch processing with ZIP archive support")
-        print("   ✅ Advanced data type optimization")
-        print("   ✅ Comprehensive error handling and recovery")
-        print("   ✅ Rich sample data generation")
-        print("   ✅ File validation and quality assessment")
+        print(" All demonstrations completed successfully!")
+        print("\n Key Features Demonstrated:")
+        print("    Multi-format file support (CSV, JSON, Excel, Parquet)")
+        print("    Intelligent encoding and separator detection")
+        print("    Batch processing with ZIP archive support")
+        print("    Advanced data type optimization")
+        print("    Comprehensive error handling and recovery")
+        print("    Rich sample data generation")
+        print("    File validation and quality assessment")
         
     except ImportError as e:
-        print(f"❌ Required modules not available: {e}")
-        print("💡 Install dependencies: pip install -r requirements.txt")
+        print(f" Required modules not available: {e}")
+        print(" Install dependencies: pip install -r requirements.txt")
     
     except Exception as e:
-        print(f"❌ Demonstration failed: {e}")
+        print(f" Demonstration failed: {e}")
         import traceback
         traceback.print_exc()
 

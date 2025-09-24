@@ -16,7 +16,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 def create_comprehensive_sample_data():
     """Create comprehensive sample business data for final demo"""
     
-    print("🏗️ Creating comprehensive sample business dataset...")
+    print(" Creating comprehensive sample business dataset...")
     
     # Set random seed for reproducible results
     np.random.seed(42)
@@ -149,15 +149,15 @@ def create_comprehensive_sample_data():
     
     df = pd.DataFrame(records)
     
-    print(f"✅ Created comprehensive dataset:")
-    print(f"   📊 {len(df):,} records")
+    print(f" Created comprehensive dataset:")
+    print(f"    {len(df):,} records")
     print(f"   📅 {len(dates)} days ({start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')})")
     print(f"   🌍 {len(regions)} regions")
     print(f"   📦 {len(products)} products")
     print(f"   👥 {len(customer_segments)} customer segments")
     print(f"   🛒 {len(sales_channels)} sales channels")
-    print(f"   💰 Total revenue: ${df['Revenue'].sum():,.2f}")
-    print(f"   📈 Average daily revenue: ${df.groupby('Date')['Revenue'].sum().mean():,.2f}")
+    print(f"    Total revenue: ${df['Revenue'].sum():,.2f}")
+    print(f"    Average daily revenue: ${df.groupby('Date')['Revenue'].sum().mean():,.2f}")
     
     return df
 
@@ -165,7 +165,7 @@ def create_comprehensive_sample_data():
 def demonstrate_system_components():
     """Demonstrate all system components"""
     
-    print("\n🎯 Step 9: Final Polish & Documentation Demo")
+    print("\n Step 9: Final Polish & Documentation Demo")
     print("=" * 60)
     print("Testing all system components and final integrations")
     
@@ -173,24 +173,24 @@ def demonstrate_system_components():
     data = create_comprehensive_sample_data()
     
     # Test Data Processing
-    print("\n📊 Testing Data Processing Engine...")
+    print("\n Testing Data Processing Engine...")
     try:
         from src.data_processor import DataProcessor
         processor = DataProcessor()
         
         # Test data validation
         validation_result = processor.validate_data(data)
-        print(f"   ✅ Data validation: {validation_result['valid']}")
+        print(f"    Data validation: {validation_result['valid']}")
         
         # Test data summary
         summary = processor.get_data_summary(data)
-        print(f"   ✅ Data summary: {len(summary)} metrics calculated")
+        print(f"    Data summary: {len(summary)} metrics calculated")
         
     except Exception as e:
-        print(f"   ❌ Data processing error: {str(e)}")
+        print(f"    Data processing error: {str(e)}")
     
     # Test AI Analysis Engine
-    print("\n🤖 Testing AI Analysis Engine...")
+    print("\n Testing AI Analysis Engine...")
     try:
         from src.intelligent_analyzer import IntelligentDataAnalyzer
         analyzer = IntelligentDataAnalyzer()
@@ -202,13 +202,13 @@ def demonstrate_system_components():
             business_domain="technology",
             target_audience="executives"
         )
-        print(f"   ✅ Basic analysis: {len(analysis_result.get('insights', []))} insights generated")
+        print(f"    Basic analysis: {len(analysis_result.get('insights', []))} insights generated")
         
     except Exception as e:
-        print(f"   ❌ AI analysis error: {str(e)}")
+        print(f"    AI analysis error: {str(e)}")
     
     # Test Visualization Engine
-    print("\n📈 Testing Visualization Engine...")
+    print("\n Testing Visualization Engine...")
     try:
         from src.intelligent_visualizer import IntelligentVisualizationEngine
         viz_engine = IntelligentVisualizationEngine()
@@ -220,13 +220,13 @@ def demonstrate_system_components():
             business_domain="technology",
             chart_theme="business"
         )
-        print(f"   ✅ Visualization engine: {len(dashboard_result.get('charts', []))} charts created")
+        print(f"    Visualization engine: {len(dashboard_result.get('charts', []))} charts created")
         
     except Exception as e:
-        print(f"   ❌ Visualization error: {str(e)}")
+        print(f"    Visualization error: {str(e)}")
     
     # Test Advanced Insights
-    print("\n🧠 Testing Advanced AI Insights...")
+    print("\n Testing Advanced AI Insights...")
     try:
         from src.advanced_insights import AdvancedInsightsEngine, StorytellingMode
         insights_engine = AdvancedInsightsEngine()
@@ -239,20 +239,20 @@ def demonstrate_system_components():
             target_audience="Technology Executives",
             business_context="Software company with global presence"
         )
-        print(f"   ✅ Data storytelling: '{story.title}' generated")
+        print(f"    Data storytelling: '{story.title}' generated")
         
         # Test Q&A system
         answer = insights_engine.interactive_qa_session(
             sample_data,
             "What are the key revenue trends across regions?"
         )
-        print(f"   ✅ Q&A system: Confidence {answer.get('confidence', 0)}%")
+        print(f"    Q&A system: Confidence {answer.get('confidence', 0)}%")
         
     except Exception as e:
-        print(f"   ❌ Advanced insights error: {str(e)}")
+        print(f"    Advanced insights error: {str(e)}")
     
     # Test Dashboard Builder
-    print("\n🎨 Testing Dashboard Builder...")
+    print("\n Testing Dashboard Builder...")
     try:
         from src.dashboard_builder import DashboardBuilder
         builder = DashboardBuilder()
@@ -263,13 +263,13 @@ def demonstrate_system_components():
             sample_data,
             template_name="technology_executive"
         )
-        print(f"   ✅ Dashboard builder: Template dashboard with {len(template_dashboard.charts)} charts")
+        print(f"    Dashboard builder: Template dashboard with {len(template_dashboard.charts)} charts")
         
     except Exception as e:
-        print(f"   ❌ Dashboard builder error: {str(e)}")
+        print(f"    Dashboard builder error: {str(e)}")
     
     # Test Performance Optimizer
-    print("\n⚡ Testing Performance Optimizer...")
+    print("\n Testing Performance Optimizer...")
     try:
         from src.performance_optimizer import app_optimizer, DataOptimizer
         
@@ -279,17 +279,17 @@ def demonstrate_system_components():
         optimized_memory = optimized_data.memory_usage(deep=True).sum()
         
         memory_reduction = (1 - optimized_memory / original_memory) * 100
-        print(f"   ✅ Data optimization: {memory_reduction:.1f}% memory reduction")
+        print(f"    Data optimization: {memory_reduction:.1f}% memory reduction")
         
         # Test performance monitoring
         system_info = app_optimizer.get_system_info()
-        print(f"   ✅ Performance monitoring: {system_info['cpu_count']} CPU cores, {system_info['memory_total_gb']:.1f}GB RAM")
+        print(f"    Performance monitoring: {system_info['cpu_count']} CPU cores, {system_info['memory_total_gb']:.1f}GB RAM")
         
     except Exception as e:
-        print(f"   ❌ Performance optimizer error: {str(e)}")
+        print(f"    Performance optimizer error: {str(e)}")
     
     # Test Documentation Generator
-    print("\n📖 Testing Documentation Generator...")
+    print("\n Testing Documentation Generator...")
     try:
         from src.documentation_generator import DocumentationGenerator
         doc_generator = DocumentationGenerator()
@@ -299,10 +299,10 @@ def demonstrate_system_components():
         total_docs = len(documentation)
         total_chars = sum(len(content) for content in documentation.values())
         
-        print(f"   ✅ Documentation generator: {total_docs} sections, {total_chars:,} characters")
+        print(f"    Documentation generator: {total_docs} sections, {total_chars:,} characters")
         
     except Exception as e:
-        print(f"   ❌ Documentation generator error: {str(e)}")
+        print(f"    Documentation generator error: {str(e)}")
     
     return data
 
@@ -310,17 +310,17 @@ def demonstrate_system_components():
 def test_streamlit_integration():
     """Test Streamlit application integration"""
     
-    print("\n🌐 Testing Streamlit Integration...")
+    print("\n Testing Streamlit Integration...")
     
     try:
         # Test import of main dashboard
         from src.dashboard import StreamlitDashboard
         
-        print("   ✅ Main dashboard module imports successfully")
+        print("    Main dashboard module imports successfully")
         
         # Test dashboard initialization
         dashboard = StreamlitDashboard()
-        print("   ✅ Dashboard initializes without errors")
+        print("    Dashboard initializes without errors")
         
         # Test key components availability
         components = [
@@ -342,21 +342,21 @@ def test_streamlit_integration():
                 __import__(component)
                 successful_imports += 1
             except Exception as e:
-                print(f"   ⚠️ {component} import issue: {str(e)[:50]}...")
+                print(f"    {component} import issue: {str(e)[:50]}...")
         
-        print(f"   ✅ Component integration: {successful_imports}/{len(components)} modules available")
+        print(f"    Component integration: {successful_imports}/{len(components)} modules available")
         
         return True
         
     except Exception as e:
-        print(f"   ❌ Streamlit integration error: {str(e)}")
+        print(f"    Streamlit integration error: {str(e)}")
         return False
 
 
 def generate_final_summary():
     """Generate final project summary"""
     
-    print("\n🎉 Final Project Summary")
+    print("\n Final Project Summary")
     print("=" * 60)
     
     # Project statistics
@@ -371,72 +371,72 @@ def generate_final_summary():
         'documentation_sections': 8
     }
     
-    print("📊 Project Statistics:")
+    print(" Project Statistics:")
     for stat, value in project_stats.items():
         print(f"   • {stat.replace('_', ' ').title()}: {value}")
     
-    print("\n✅ Completed Features:")
+    print("\n Completed Features:")
     completed_features = [
-        "📁 Intelligent data upload and processing",
-        "🔍 Automated statistical analysis",
-        "🤖 AI-powered insights and explanations", 
-        "📈 15+ interactive chart types",
-        "🎨 Professional dashboard builder",
-        "✏️ Advanced chart editor with styling",
-        "📤 Multi-format export (PDF, PowerPoint, HTML, etc.)",
-        "💬 Natural language Q&A system",
-        "📖 AI data storytelling with 6 narrative modes",
-        "⛏️ Business opportunity mining",
-        "🩺 Performance diagnosis and recommendations",
-        "⚡ Performance monitoring and optimization",
-        "📚 Comprehensive user documentation",
-        "🌐 Professional web interface",
-        "🎯 Industry-specific analysis templates"
+        " Intelligent data upload and processing",
+        " Automated statistical analysis",
+        " AI-powered insights and explanations", 
+        " 15+ interactive chart types",
+        " Professional dashboard builder",
+        " Advanced chart editor with styling",
+        " Multi-format export (PDF, PowerPoint, HTML, etc.)",
+        " Natural language Q&A system",
+        " AI data storytelling with 6 narrative modes",
+        " Business opportunity mining",
+        " Performance diagnosis and recommendations",
+        " Performance monitoring and optimization",
+        " Comprehensive user documentation",
+        " Professional web interface",
+        " Industry-specific analysis templates"
     ]
     
     for feature in completed_features:
         print(f"   {feature}")
     
-    print("\n🎯 Business Value Delivered:")
+    print("\n Business Value Delivered:")
     business_value = [
-        "💰 Reduces data analysis time from hours to minutes",
-        "🚀 Enables non-technical users to perform advanced analytics",
-        "📊 Provides professional-quality reports and dashboards",
-        "🤖 Offers AI-powered insights in plain English",
-        "⚡ Scales from small datasets to enterprise-level data",
-        "🎨 Creates presentation-ready visualizations automatically",
-        "💡 Identifies business opportunities and optimization areas",
-        "📈 Supports data-driven decision making across all levels"
+        " Reduces data analysis time from hours to minutes",
+        " Enables non-technical users to perform advanced analytics",
+        " Provides professional-quality reports and dashboards",
+        " Offers AI-powered insights in plain English",
+        " Scales from small datasets to enterprise-level data",
+        " Creates presentation-ready visualizations automatically",
+        " Identifies business opportunities and optimization areas",
+        " Supports data-driven decision making across all levels"
     ]
     
     for value in business_value:
         print(f"   {value}")
     
-    print("\n🛠️ Technical Excellence:")
+    print("\n Technical Excellence:")
     technical_features = [
-        "🏗️ Modular, maintainable architecture",
+        " Modular, maintainable architecture",
         "🧪 Comprehensive testing with pytest",
-        "⚡ Performance optimization and monitoring", 
+        " Performance optimization and monitoring", 
         "🔒 Secure handling of sensitive data",
         "📱 Responsive design for all devices",
-        "🌐 Modern web technology stack",
+        " Modern web technology stack",
         "🔌 Extensible plugin architecture",
-        "📚 Complete API documentation"
+        " Complete API documentation"
     ]
     
     for feature in technical_features:
         print(f"   {feature}")
     
-    print("\n🚀 Ready for Production:")
+    print("\n Ready for Production:")
     production_readiness = [
-        "✅ All core features implemented and tested",
-        "✅ Professional user interface and experience",
-        "✅ Comprehensive error handling and validation",
-        "✅ Performance optimized for real-world usage",
-        "✅ Complete user documentation and guides",
-        "✅ Scalable architecture for future enhancements",
-        "✅ Industry-standard security practices",
-        "✅ Multi-format export capabilities"
+        " All core features implemented and tested",
+        " Professional user interface and experience",
+        " Comprehensive error handling and validation",
+        " Performance optimized for real-world usage",
+        " Complete user documentation and guides",
+        " Scalable architecture for future enhancements",
+        " Industry-standard security practices",
+        " Multi-format export capabilities"
     ]
     
     for item in production_readiness:
@@ -461,35 +461,35 @@ def main():
         # Generate final project summary
         generate_final_summary()
         
-        print(f"\n🎯 Demo Results:")
-        print(f"   📊 Sample data: {len(sample_data):,} records generated")
-        print(f"   🌐 Streamlit integration: {'✅ Success' if streamlit_success else '❌ Issues detected'}")
-        print(f"   ⏱️ Demo duration: {datetime.now().strftime('%H:%M:%S')}")
+        print(f"\n Demo Results:")
+        print(f"    Sample data: {len(sample_data):,} records generated")
+        print(f"    Streamlit integration: {' Success' if streamlit_success else ' Issues detected'}")
+        print(f"   Demo duration: {datetime.now().strftime('%H:%M:%S')}")
         
-        print("\n🎉 Step 9 Complete - BI Assistant Ready for Production!")
+        print("\n Step 9 Complete - BI Assistant Ready for Production!")
         print("=" * 70)
-        print("\n📋 Next Steps:")
-        print("1. 🚀 Run `streamlit run src/dashboard.py` to launch the application")
-        print("2. 📁 Upload your business data or try with sample datasets")
-        print("3. 🔍 Explore all features: Analysis, Dashboards, AI Insights")
-        print("4. 📤 Export professional reports and presentations")
-        print("5. 📖 Check the Documentation tab for detailed guides")
-        print("6. ⚡ Monitor performance in the Performance tab")
+        print("\n Next Steps:")
+        print("1.  Run `streamlit run src/dashboard.py` to launch the application")
+        print("2.  Upload your business data or try with sample datasets")
+        print("3.  Explore all features: Analysis, Dashboards, AI Insights")
+        print("4.  Export professional reports and presentations")
+        print("5.  Check the Documentation tab for detailed guides")
+        print("6.  Monitor performance in the Performance tab")
         
-        print("\n💡 Pro Tips:")
+        print("\n Pro Tips:")
         print("• Start with sample data to learn the interface")
         print("• Use the AI Q&A feature to ask questions about your data")
         print("• Try different dashboard templates for your industry")
         print("• Export to PowerPoint for executive presentations")
         print("• Check the Troubleshooting guide if you encounter issues")
         
-        print(f"\n🏆 Congratulations! Your Smart BI Assistant is ready to transform data into insights! 🎯")
+        print(f"\n🏆 Congratulations! Your Smart BI Assistant is ready to transform data into insights! ")
         
     except Exception as e:
-        print(f"\n❌ Demo encountered an error: {str(e)}")
+        print(f"\n Demo encountered an error: {str(e)}")
         import traceback
         traceback.print_exc()
-        print("\n💡 This is likely due to missing dependencies.")
+        print("\n This is likely due to missing dependencies.")
         print("   Run: pip install -r requirements.txt")
         print("   Then try the demo again.")
 

@@ -30,7 +30,7 @@ class DocumentationGenerator:
     def _generate_getting_started(self) -> str:
         """Generate getting started guide"""
         return """
-# 🚀 Getting Started with BI Assistant
+#  Getting Started with BI Assistant
 
 ## What is BI Assistant?
 
@@ -38,24 +38,24 @@ BI Assistant is an intelligent data analysis tool that transforms raw data into 
 
 ## Key Features
 
-### 📊 **Automated Data Analysis**
+###  **Automated Data Analysis**
 - Upload CSV/Excel files and get instant statistical analysis
 - Automatic data quality assessment and cleaning suggestions
 - Smart column type detection and handling of missing values
 
-### 🤖 **AI-Powered Insights**
+###  **AI-Powered Insights**
 - Natural language explanations of data patterns and trends
 - Interactive Q&A - ask questions about your data in plain English
 - Business opportunity identification and performance diagnosis
 - 6 different storytelling modes for various audiences
 
-### 📈 **Interactive Visualizations**
+###  **Interactive Visualizations**
 - 15+ chart types with automatic recommendations
 - Professional dashboard templates for different business domains
 - Interactive chart editor with advanced customization options
 - Real-time data filtering and dynamic updates
 
-### 🎨 **Professional Dashboards**
+###  **Professional Dashboards**
 - Template-based dashboard creation (Sales, Finance, Operations, Marketing, etc.)
 - Drag-and-drop interface for custom dashboard building
 - Export to PDF, PowerPoint, HTML, and image formats
@@ -78,17 +78,17 @@ streamlit run src/dashboard.py
 3. Configure analysis options (business domain, theme, etc.)
 
 ### Step 3: Run Analysis
-1. Click **"🚀 Run Analysis"** 
+1. Click **" Run Analysis"** 
 2. Wait for automated processing (usually 10-30 seconds)
 3. Review data quality assessment and statistics
 
 ### Step 4: Explore Results
-- **📊 Overview**: Data summary and quality metrics
-- **🔍 Analysis**: Detailed statistical insights and AI explanations  
-- **📈 Visualizations**: Interactive charts and graphs
-- **🎨 Dashboard Builder**: Create professional dashboards
-- **🤖 AI Insights**: Natural language Q&A and storytelling
-- **📤 Export**: Download results in various formats
+- ** Overview**: Data summary and quality metrics
+- ** Analysis**: Detailed statistical insights and AI explanations  
+- ** Visualizations**: Interactive charts and graphs
+- ** Dashboard Builder**: Create professional dashboards
+- ** AI Insights**: Natural language Q&A and storytelling
+- ** Export**: Download results in various formats
 
 ## First Analysis Checklist
 
@@ -102,27 +102,27 @@ streamlit run src/dashboard.py
 ## Need Help?
 
 - Check the **Troubleshooting** section for common issues
-- Use the **🤖 AI Insights** tab to ask specific questions about your data
+- Use the ** AI Insights** tab to ask specific questions about your data
 - Review sample datasets to understand expected data formats
 - Contact support for technical assistance
 
 ---
-*Ready to transform your data into insights? Let's get started!* 🎯
+*Ready to transform your data into insights? Let's get started!* 
 """
     
     def _generate_data_upload_guide(self) -> str:
         """Generate data upload guide"""
         return """
-# 📁 Data Upload Guide
+#  Data Upload Guide
 
 ## Supported File Formats
 
-### ✅ **Recommended Formats**
+###  **Recommended Formats**
 - **CSV (.csv)**: Comma-separated values - most reliable
 - **Excel (.xlsx)**: Modern Excel format with multiple sheets
 - **Excel (.xls)**: Legacy Excel format
 
-### 📊 **Data Requirements**
+###  **Data Requirements**
 
 #### **Structure Guidelines**
 - **Headers Required**: First row should contain column names
@@ -139,13 +139,13 @@ streamlit run src/dashboard.py
 
 ### Step 1: Prepare Your Data
 ```
-✅ Good Example:
+ Good Example:
 Date,Product,Sales,Region,Customer_Satisfaction
 2024-01-01,Widget A,1500,North,4.2
 2024-01-02,Widget B,2300,South,4.8
 2024-01-03,Widget A,1800,East,4.1
 
-❌ Avoid:
+ Avoid:
 - Missing headers
 - Inconsistent date formats
 - Mixed data types in columns
@@ -153,7 +153,7 @@ Date,Product,Sales,Region,Customer_Satisfaction
 ```
 
 ### Step 2: Upload File
-1. **Locate Upload Section**: Look for "📁 Upload Data" in the sidebar
+1. **Locate Upload Section**: Look for " Upload Data" in the sidebar
 2. **Choose File**: Click "Browse files" or drag and drop
 3. **Wait for Processing**: File will be validated and processed
 4. **Confirm Success**: Green checkmark indicates successful upload
@@ -166,39 +166,39 @@ Date,Product,Sales,Region,Customer_Satisfaction
 
 ## Data Types and Handling
 
-### 📅 **Date Columns**
+###  **Date Columns**
 - **Supported Formats**: YYYY-MM-DD, MM/DD/YYYY, DD/MM/YYYY
 - **Automatic Detection**: System will try to auto-detect date columns
 - **Time Series Analysis**: Date columns enable time-based insights
 
-### 🔢 **Numeric Columns**
+###  **Numeric Columns**
 - **Integers**: Whole numbers (sales quantities, counts)
 - **Floats**: Decimal numbers (prices, ratings, percentages)
 - **Currency**: Will be treated as numeric (remove currency symbols)
 
-### 📝 **Text/Categorical Columns**
+###  **Text/Categorical Columns**
 - **Categories**: Product names, regions, customer segments
 - **IDs**: Customer IDs, order numbers (treated as categories)
 - **Descriptions**: Free text fields (limited analysis available)
 
-### ✅ **Boolean Columns**
+###  **Boolean Columns**
 - **True/False**: Binary indicators
 - **Yes/No**: Converted to boolean
 - **1/0**: Numeric boolean representation
 
 ## Common Data Issues and Solutions
 
-### 🔧 **Missing Values**
+###  **Missing Values**
 - **Detection**: Automatically identified and highlighted
 - **Options**: Exclude, fill with average, fill with most common value
 - **Recommendation**: Review missing data patterns before analysis
 
-### 🔧 **Inconsistent Formats**
+###  **Inconsistent Formats**
 - **Dates**: Standardize date format across all rows
 - **Numbers**: Remove commas, currency symbols, percentage signs
 - **Text**: Consistent capitalization and spelling
 
-### 🔧 **Large Files**
+###  **Large Files**
 - **Sampling**: System may sample large datasets for performance
 - **Optimization**: Remove unnecessary columns before upload
 - **Chunking**: Consider splitting very large files
@@ -207,49 +207,49 @@ Date,Product,Sales,Region,Customer_Satisfaction
 
 Try these sample datasets to explore features:
 
-### 🛒 **Sales Data Sample**
+###  **Sales Data Sample**
 - Monthly sales by product and region
 - Includes customer satisfaction scores
 - Perfect for revenue analysis and forecasting
 
-### 💰 **Financial Data Sample**  
+###  **Financial Data Sample**  
 - Quarterly financial metrics
 - Budget vs actual comparisons
 - Ideal for financial performance analysis
 
-### 👥 **Customer Data Sample**
+###  **Customer Data Sample**
 - Customer demographics and behavior
 - Purchase history and preferences
 - Great for customer segmentation analysis
 
-### 📈 **Marketing Data Sample**
+###  **Marketing Data Sample**
 - Campaign performance metrics
 - Multi-channel attribution data
 - Excellent for marketing ROI analysis
 
 ## Advanced Upload Options
 
-### ⚙️ **File Processing Settings**
+###  **File Processing Settings**
 - **Encoding**: UTF-8 (default), Windows-1252, ISO-8859-1
 - **Delimiter**: Comma (default), semicolon, tab
 - **Quote Character**: Double quote (default), single quote
 - **Skip Rows**: Skip header rows if needed
 
-### 🔍 **Data Validation**
+###  **Data Validation**
 - **Automatic Validation**: File structure and format checks
 - **Quality Assessment**: Data completeness and consistency scores
 - **Recommendations**: Suggestions for improving data quality
 
 ## Best Practices
 
-### ✅ **Do's**
+###  **Do's**
 - Use descriptive column names (Sales_Amount vs Col1)
 - Maintain consistent data formats within columns
 - Include date columns for time-based analysis
 - Remove or document any unusual values or outliers
 - Test with a small sample file first
 
-### ❌ **Don'ts**
+###  **Don'ts**
 - Don't include totals or summary rows in the data
 - Avoid special characters in column names (use underscores)
 - Don't mix different units in the same column
@@ -257,17 +257,17 @@ Try these sample datasets to explore features:
 - Don't include sensitive personal information
 
 ---
-*Need help with your specific data format? Use the 🤖 AI Insights feature to ask questions!*
+*Need help with your specific data format? Use the  AI Insights feature to ask questions!*
 """
     
     def _generate_analysis_guide(self) -> str:
         """Generate analysis features guide"""
         return """
-# 🔍 Analysis Features Guide
+#  Analysis Features Guide
 
 ## Automated Statistical Analysis
 
-### 📊 **Descriptive Statistics**
+###  **Descriptive Statistics**
 The system automatically calculates comprehensive statistics for all numeric columns:
 
 - **Central Tendency**: Mean, median, mode
@@ -275,7 +275,7 @@ The system automatically calculates comprehensive statistics for all numeric col
 - **Distribution Shape**: Skewness, kurtosis, percentiles
 - **Data Quality**: Missing values, outliers, duplicates
 
-### 📈 **Trend Analysis**
+###  **Trend Analysis**
 For time-series data, automatic trend detection includes:
 
 - **Growth Rates**: Period-over-period changes
@@ -283,7 +283,7 @@ For time-series data, automatic trend detection includes:
 - **Trend Direction**: Increasing, decreasing, or stable trends
 - **Anomaly Detection**: Unusual spikes or drops in data
 
-### 🔗 **Correlation Analysis**
+###  **Correlation Analysis**
 Identifies relationships between variables:
 
 - **Correlation Matrix**: Strength of relationships between all numeric variables
@@ -293,7 +293,7 @@ Identifies relationships between variables:
 
 ## Business Domain Intelligence
 
-### 🛒 **Sales Analytics**
+###  **Sales Analytics**
 Specialized analysis for sales data:
 
 - **Revenue Trends**: Sales performance over time
@@ -302,7 +302,7 @@ Specialized analysis for sales data:
 - **Customer Segmentation**: High, medium, and low value customers
 - **Forecasting**: Predictive sales projections
 
-### 💰 **Financial Analytics**
+###  **Financial Analytics**
 Financial performance insights:
 
 - **Profitability Analysis**: Margins and cost analysis
@@ -311,7 +311,7 @@ Financial performance insights:
 - **Financial Ratios**: Key performance indicators
 - **Risk Assessment**: Financial health indicators
 
-### ⚙️ **Operations Analytics**
+###  **Operations Analytics**
 Operational efficiency analysis:
 
 - **Process Performance**: Efficiency metrics and bottlenecks
@@ -320,7 +320,7 @@ Operational efficiency analysis:
 - **Productivity Trends**: Output and efficiency over time
 - **Cost Optimization**: Cost reduction opportunities
 
-### 📢 **Marketing Analytics**
+###  **Marketing Analytics**
 Marketing campaign effectiveness:
 
 - **Campaign ROI**: Return on marketing investment
@@ -331,7 +331,7 @@ Marketing campaign effectiveness:
 
 ## AI-Powered Insights
 
-### 🤖 **Natural Language Explanations**
+###  **Natural Language Explanations**
 AI generates business-friendly explanations:
 
 - **Pattern Recognition**: What trends and patterns exist in your data
@@ -340,7 +340,7 @@ AI generates business-friendly explanations:
 - **Risk Alerts**: Potential issues or concerns identified
 - **Opportunity Identification**: Areas for improvement or growth
 
-### 💬 **Interactive Q&A**
+###  **Interactive Q&A**
 Ask questions about your data in plain English:
 
 ```
@@ -352,7 +352,7 @@ Example Questions:
 • "Are there any seasonal patterns in the data?"
 ```
 
-### 📖 **Data Storytelling**
+###  **Data Storytelling**
 AI creates comprehensive narratives:
 
 - **Executive Summary**: High-level insights for leadership
@@ -362,7 +362,7 @@ AI creates comprehensive narratives:
 
 ## Advanced Analysis Features
 
-### 🔍 **Outlier Detection**
+###  **Outlier Detection**
 Identifies unusual data points:
 
 - **Statistical Outliers**: Values outside normal ranges
@@ -370,7 +370,7 @@ Identifies unusual data points:
 - **Impact Assessment**: How outliers affect overall analysis
 - **Recommendations**: Whether to investigate or exclude outliers
 
-### 📊 **Segmentation Analysis**
+###  **Segmentation Analysis**
 Automatic grouping and classification:
 
 - **Customer Segments**: Based on behavior and characteristics
@@ -378,7 +378,7 @@ Automatic grouping and classification:
 - **Geographic Regions**: Location-based analysis
 - **Time Periods**: Comparative analysis across different periods
 
-### 🎯 **Performance Benchmarking**
+###  **Performance Benchmarking**
 Compare against standards:
 
 - **Industry Benchmarks**: How you compare to industry standards
@@ -388,7 +388,7 @@ Compare against standards:
 
 ## Quality Assessment
 
-### ✅ **Data Quality Metrics**
+###  **Data Quality Metrics**
 Comprehensive data quality evaluation:
 
 - **Completeness**: Percentage of missing values
@@ -397,7 +397,7 @@ Comprehensive data quality evaluation:
 - **Uniqueness**: Duplicate record identification
 - **Validity**: Data conforms to expected formats
 
-### 🔧 **Data Cleaning Recommendations**
+###  **Data Cleaning Recommendations**
 Automated suggestions for data improvement:
 
 - **Missing Value Treatment**: Fill, interpolate, or exclude options
@@ -407,7 +407,7 @@ Automated suggestions for data improvement:
 
 ## Customization Options
 
-### ⚙️ **Analysis Configuration**
+###  **Analysis Configuration**
 Customize analysis parameters:
 
 - **Confidence Levels**: Statistical significance thresholds
@@ -415,7 +415,7 @@ Customize analysis parameters:
 - **Filters**: Include/exclude specific data segments
 - **Aggregation**: Daily, weekly, monthly, or custom groupings
 
-### 🎨 **Visualization Preferences**
+###  **Visualization Preferences**
 Control chart generation:
 
 - **Chart Types**: Preferred visualization styles
@@ -425,7 +425,7 @@ Control chart generation:
 
 ## Performance Optimization
 
-### ⚡ **Large Dataset Handling**
+###  **Large Dataset Handling**
 Efficient processing for big data:
 
 - **Intelligent Sampling**: Representative data samples for faster analysis
@@ -440,7 +440,7 @@ Efficient processing for big data:
     def _generate_dashboard_guide(self) -> str:
         """Generate dashboard creation guide"""
         return """
-# 🎨 Dashboard Creation Guide
+#  Dashboard Creation Guide
 
 ## Dashboard Builder Overview
 
@@ -448,17 +448,17 @@ The Dashboard Builder provides professional-grade dashboard creation with templa
 
 ## Quick Dashboard Creation
 
-### 🚀 **Template-Based Dashboards (5 minutes)**
+###  **Template-Based Dashboards (5 minutes)**
 
 #### Step 1: Choose a Template
 Select from 6 professional templates:
 
-- **📊 Sales Analytics**: Revenue trends, product performance, regional analysis
-- **💰 Financial Overview**: P&L visualization, budget tracking, financial KPIs
-- **⚙️ Operations Dashboard**: Process metrics, efficiency tracking, quality indicators
-- **📢 Marketing Performance**: Campaign ROI, channel analysis, conversion funnels
-- **👥 Customer Analytics**: Segmentation, satisfaction, retention metrics
-- **📋 Executive Summary**: High-level KPIs for leadership overview
+- ** Sales Analytics**: Revenue trends, product performance, regional analysis
+- ** Financial Overview**: P&L visualization, budget tracking, financial KPIs
+- ** Operations Dashboard**: Process metrics, efficiency tracking, quality indicators
+- ** Marketing Performance**: Campaign ROI, channel analysis, conversion funnels
+- ** Customer Analytics**: Segmentation, satisfaction, retention metrics
+- ** Executive Summary**: High-level KPIs for leadership overview
 
 #### Step 2: Customize Content
 - **Auto-Population**: Template automatically maps your data to relevant charts
@@ -471,7 +471,7 @@ Select from 6 professional templates:
 - **Layout Adjustment**: Modify chart sizes and positions
 - **Export Options**: PDF, PowerPoint, HTML, or image formats
 
-### 🛠️ **Custom Dashboard Creation (15 minutes)**
+###  **Custom Dashboard Creation (15 minutes)**
 
 #### Step 1: Start from Scratch
 1. Select **"Custom Dashboard"** option
@@ -492,7 +492,7 @@ Select from 6 professional templates:
 
 ## Chart Types and Best Uses
 
-### 📈 **Time Series Charts**
+###  **Time Series Charts**
 **Best for**: Trends over time, forecasting, seasonal analysis
 
 - **Line Charts**: Continuous trends and patterns
@@ -505,7 +505,7 @@ Select from 6 professional templates:
 - One or more numeric metrics
 - Consistent time intervals
 
-### 📊 **Comparison Charts**
+###  **Comparison Charts**
 **Best for**: Category comparisons, ranking, performance gaps
 
 - **Bar Charts**: Category comparisons and rankings
@@ -518,7 +518,7 @@ Select from 6 professional templates:
 - One or more numeric metrics
 - Clear category distinctions
 
-### 🥧 **Composition Charts**
+###  **Composition Charts**
 **Best for**: Parts of a whole, market share, budget allocation
 
 - **Pie Charts**: Simple proportions (max 5-7 categories)
@@ -531,7 +531,7 @@ Select from 6 professional templates:
 - Numeric values that sum to meaningful total
 - Limited number of categories for clarity
 
-### 🔗 **Relationship Charts**
+###  **Relationship Charts**
 **Best for**: Correlations, clustering, outlier detection
 
 - **Scatter Plots**: Two-variable relationships and correlations
@@ -544,7 +544,7 @@ Select from 6 professional templates:
 - Sufficient data points for pattern recognition
 - Meaningful relationships between variables
 
-### 📍 **Geographic Charts**
+###  **Geographic Charts**
 **Best for**: Location-based analysis, regional performance
 
 - **Choropleth Maps**: Regional performance with color intensity
@@ -558,19 +558,19 @@ Select from 6 professional templates:
 
 ## Dashboard Layout Best Practices
 
-### 📐 **Visual Hierarchy**
+###  **Visual Hierarchy**
 - **Top-Left Priority**: Place most important metrics top-left
 - **F-Pattern Layout**: Follow natural reading patterns
 - **Size Indicates Importance**: Larger charts for key metrics
 - **Grouping**: Related charts near each other
 
-### 🎨 **Design Principles**
+###  **Design Principles**
 - **Consistent Styling**: Same fonts, colors, and spacing throughout
 - **White Space**: Don't overcrowd; allow breathing room
 - **Color Consistency**: Use color to group related information
 - **Accessibility**: Ensure color-blind friendly palettes
 
-### 📱 **Responsive Design**
+###  **Responsive Design**
 - **Mobile First**: Ensure readability on small screens
 - **Flexible Layouts**: Charts that adapt to screen size
 - **Touch Friendly**: Interactive elements sized for fingers
@@ -578,19 +578,19 @@ Select from 6 professional templates:
 
 ## Interactive Features
 
-### 🔍 **Filtering and Drilling**
+###  **Filtering and Drilling**
 - **Global Filters**: Apply filters across entire dashboard
 - **Chart-Specific Filters**: Individual chart filtering options
 - **Drill-Down**: Click to explore deeper levels of detail
 - **Cross-Filtering**: Selecting in one chart filters others
 
-### 📊 **Dynamic Updates**
+###  **Dynamic Updates**
 - **Real-Time Data**: Automatic refresh capabilities
 - **Parameter Controls**: Sliders, dropdowns for user interaction
 - **Time Range Selection**: Dynamic time period adjustment
 - **Conditional Formatting**: Visual alerts based on thresholds
 
-### 💫 **Animation and Transitions**
+###  **Animation and Transitions**
 - **Smooth Transitions**: Animated changes between states
 - **Loading Indicators**: Progress feedback during updates
 - **Hover Effects**: Interactive feedback on mouse hover
@@ -598,19 +598,19 @@ Select from 6 professional templates:
 
 ## Export and Sharing Options
 
-### 📄 **Static Exports**
+###  **Static Exports**
 - **PDF Reports**: Multi-page professional documents
 - **PowerPoint**: Business presentation ready slides
 - **High-Res Images**: PNG/SVG for publications and reports
 - **Print Optimization**: Layouts optimized for printing
 
-### 🌐 **Interactive Exports**
+###  **Interactive Exports**
 - **HTML Dashboards**: Fully interactive web pages
 - **Embedded Widgets**: Individual charts for websites
 - **Shareable Links**: Secure sharing with access controls
 - **Mobile Apps**: Responsive web apps for mobile access
 
-### 📊 **Data Exports**
+###  **Data Exports**
 - **CSV Downloads**: Raw data behind visualizations
 - **Excel Workbooks**: Formatted data with calculations
 - **JSON Data**: Structured data for developers
@@ -618,19 +618,19 @@ Select from 6 professional templates:
 
 ## Advanced Dashboard Features
 
-### 🤖 **AI-Assisted Creation**
+###  **AI-Assisted Creation**
 - **Smart Recommendations**: AI suggests optimal chart types
 - **Auto-Layout**: Intelligent arrangement of dashboard elements
 - **Content Generation**: Automatic titles, labels, and descriptions
 - **Performance Optimization**: AI optimizes for speed and clarity
 
-### 🔧 **Custom Components**
+###  **Custom Components**
 - **Text Boxes**: Narrative explanations and context
 - **Image Embedding**: Logos, photos, and branded elements
 - **Custom Calculations**: Derived metrics and KPIs
 - **Third-Party Integrations**: External data sources and widgets
 
-### 📈 **Advanced Analytics**
+###  **Advanced Analytics**
 - **Statistical Overlays**: Trend lines, confidence intervals
 - **Forecasting**: Predictive analytics and projections
 - **Anomaly Highlighting**: Automatic outlier identification
@@ -643,7 +643,7 @@ Select from 6 professional templates:
     def _generate_ai_insights_guide(self) -> str:
         """Generate AI insights guide"""
         return """
-# 🤖 AI Insights Guide
+#  AI Insights Guide
 
 ## Overview of AI Capabilities
 
@@ -651,7 +651,7 @@ The AI Insights feature transforms your data into natural language explanations,
 
 ## Data Storytelling
 
-### 📖 **Storytelling Modes**
+###  **Storytelling Modes**
 
 #### **Executive Brief**
 Perfect for leadership presentations and high-level overviews:
@@ -695,7 +695,7 @@ Analysis comparing different segments, periods, or scenarios:
 - **Audience**: Competitive analysis teams, strategy groups
 - **Format**: Comparison framework + findings + strategic implications
 
-### 🎯 **Audience Targeting**
+###  **Audience Targeting**
 
 #### **Business Executives**
 - **Language**: High-level, strategic terminology
@@ -723,7 +723,7 @@ Analysis comparing different segments, periods, or scenarios:
 
 ## Interactive Q&A System
 
-### 💬 **How to Ask Effective Questions**
+###  **How to Ask Effective Questions**
 
 #### **Trend Analysis Questions**
 ```
@@ -781,7 +781,7 @@ Tips:
 - Request risk assessments
 ```
 
-### 🎭 **Question Suggestions**
+###  **Question Suggestions**
 
 The AI automatically suggests relevant questions based on your data:
 
@@ -797,7 +797,7 @@ The AI automatically suggests relevant questions based on your data:
 - **Marketing Data**: Campaign ROI, channel effectiveness, conversion rates
 - **Operations Data**: Efficiency metrics, quality indicators, process analysis
 
-### 🔍 **Follow-Up Conversations**
+###  **Follow-Up Conversations**
 
 The AI maintains context across questions:
 
@@ -808,7 +808,7 @@ The AI maintains context across questions:
 
 ## Advanced Insight Generation
 
-### 🧠 **Deep Pattern Analysis**
+###  **Deep Pattern Analysis**
 
 #### **Trend Detection**
 - **Growth Patterns**: Exponential, linear, or cyclical growth
@@ -828,7 +828,7 @@ The AI maintains context across questions:
 - **Geographic Regions**: Location-based patterns
 - **Time Segments**: Period-based analysis
 
-### 🎯 **Business Opportunity Mining**
+###  **Business Opportunity Mining**
 
 #### **Growth Opportunities**
 - **Market Expansion**: Underperforming regions or segments
@@ -848,7 +848,7 @@ The AI maintains context across questions:
 - **Customer Risks**: Satisfaction or retention issues
 - **Financial Risks**: Profitability or cash flow concerns
 
-### 🩺 **Performance Diagnosis**
+###  **Performance Diagnosis**
 
 #### **Health Assessment**
 - **Overall Performance**: Comprehensive business health score
@@ -870,7 +870,7 @@ The AI maintains context across questions:
 
 ## AI Configuration and Customization
 
-### ⚙️ **Analysis Settings**
+###  **Analysis Settings**
 
 #### **Industry Context**
 - **Retail**: Focus on sales, inventory, customer behavior
@@ -891,7 +891,7 @@ The AI maintains context across questions:
 - **Opportunities**: Growth and optimization identification
 - **Performance**: Health assessment and benchmarking
 
-### 🎨 **Output Customization**
+###  **Output Customization**
 
 #### **Report Style**
 - **Professional**: Formal business language and structure
@@ -907,7 +907,7 @@ The AI maintains context across questions:
 
 ## Best Practices for AI Insights
 
-### ✅ **Getting Better Results**
+###  **Getting Better Results**
 
 #### **Data Preparation**
 - **Clean Data**: Remove obvious errors and inconsistencies
@@ -927,7 +927,7 @@ The AI maintains context across questions:
 - **Action Orientation**: Focus on actionable recommendations
 - **Continuous Learning**: Use feedback to improve future analysis
 
-### ⚠️ **Important Limitations**
+###  **Important Limitations**
 
 #### **Data Quality Dependency**
 - AI insights are only as good as the underlying data
@@ -951,7 +951,7 @@ The AI maintains context across questions:
     def _generate_export_guide(self) -> str:
         """Generate export options guide"""
         return """
-# 📤 Export Guide
+#  Export Guide
 
 ## Export Options Overview
 
@@ -959,13 +959,13 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 
 ## Quick Export Actions
 
-### 🚀 **One-Click Exports**
+###  **One-Click Exports**
 - **PDF Report**: Complete analysis with charts and insights
 - **PowerPoint Deck**: Presentation-ready slides with key findings
 - **Excel Workbook**: Data and charts for further analysis
 - **Image Gallery**: High-resolution chart images
 
-### 📊 **Dashboard Exports**
+###  **Dashboard Exports**
 - **Interactive HTML**: Fully functional web dashboard
 - **Static PDF**: Print-ready dashboard layout
 - **Image Sets**: Individual chart images in various formats
@@ -973,7 +973,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 
 ## Detailed Export Options
 
-### 📄 **PDF Reports**
+###  **PDF Reports**
 
 #### **Professional Business Reports**
 - **Executive Summary**: Key findings and recommendations
@@ -993,7 +993,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Margins**: Professional or compact layouts
 - **Font Selection**: Corporate or accessibility fonts
 
-### 📽️ **PowerPoint Presentations**
+### ️ **PowerPoint Presentations**
 
 #### **Presentation Formats**
 - **Executive Briefing**: 5-10 slides for leadership
@@ -1013,7 +1013,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Animation Ready**: Slides optimized for presentation flow
 - **Brand Consistency**: Corporate colors and styling
 
-### 🌐 **Interactive HTML Dashboards**
+###  **Interactive HTML Dashboards**
 
 #### **Web Dashboard Features**
 - **Full Interactivity**: Filtering, zooming, hover details
@@ -1033,7 +1033,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Data Encryption**: Secure data transmission
 - **Audit Trails**: Track access and usage
 
-### 📊 **Data Exports**
+###  **Data Exports**
 
 #### **CSV Files**
 - **Raw Data**: Original uploaded data with any cleaning applied
@@ -1053,7 +1053,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Configuration Files**: Dashboard and analysis settings
 - **Metadata**: Information about data sources and transformations
 
-### 🖼️ **Image Exports**
+### ️ **Image Exports**
 
 #### **Chart Images**
 - **PNG Format**: High-quality raster images (recommended)
@@ -1075,7 +1075,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 
 ## Advanced Export Features
 
-### 🤖 **AI-Enhanced Exports**
+###  **AI-Enhanced Exports**
 
 #### **Smart Summaries**
 - **Auto-Generated Insights**: AI writes executive summaries
@@ -1089,7 +1089,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Technical Notes**: Methodology and analysis approach
 - **Confidence Indicators**: Reliability of findings and recommendations
 
-### 📈 **Dynamic Content**
+###  **Dynamic Content**
 
 #### **Real-Time Updates**
 - **Live Data Connections**: Exports that update with new data
@@ -1103,7 +1103,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Comparative Reports**: Side-by-side analysis of different periods
 - **What-If Analysis**: Impact of different business scenarios
 
-### 🔄 **Batch Export Operations**
+###  **Batch Export Operations**
 
 #### **Multiple Format Export**
 - **Single Click**: Export to PDF, PowerPoint, and Excel simultaneously
@@ -1119,7 +1119,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 
 ## Integration and Automation
 
-### 🔗 **System Integrations**
+###  **System Integrations**
 
 #### **Email Integration**
 - **Direct Email**: Send reports directly from the application
@@ -1139,7 +1139,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **BI Platforms**: Export to Tableau, Power BI, or other BI tools
 - **Collaboration Tools**: Integration with Slack, Teams, or similar
 
-### 🤖 **Automation Features**
+###  **Automation Features**
 
 #### **Scheduled Exports**
 - **Daily Reports**: Automated daily performance summaries
@@ -1155,7 +1155,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 
 ## Best Practices for Exports
 
-### ✅ **Professional Presentation**
+###  **Professional Presentation**
 
 #### **Report Design**
 - **Consistent Branding**: Use corporate colors, fonts, and logos
@@ -1169,7 +1169,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Supporting Detail**: Provide detailed analysis after high-level insights
 - **Action Items**: End with clear, actionable next steps
 
-### 📊 **Data Integrity**
+###  **Data Integrity**
 
 #### **Accuracy Checks**
 - **Data Validation**: Verify exported data matches source data
@@ -1183,7 +1183,7 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
 - **Change Documentation**: Record what changed between versions
 - **Archive Management**: Maintain historical versions for reference
 
-### 🔒 **Security and Compliance**
+###  **Security and Compliance**
 
 #### **Data Protection**
 - **Sensitive Data**: Remove or mask sensitive information before sharing
@@ -1204,22 +1204,22 @@ The BI Assistant provides comprehensive export capabilities to share insights, i
     def _generate_troubleshooting(self) -> str:
         """Generate troubleshooting guide"""
         return """
-# 🔧 Troubleshooting Guide
+#  Troubleshooting Guide
 
 ## Common Issues and Solutions
 
-### 📁 Data Upload Problems
+###  Data Upload Problems
 
 #### **File Upload Failures**
 ```
 Problem: "Upload failed" or "File not supported"
 
 Solutions:
-✅ Check file format (CSV, XLSX, XLS only)
-✅ Verify file size is under 50MB limit
-✅ Ensure file isn't corrupted or password-protected
-✅ Try saving Excel files as CSV format
-✅ Remove special characters from filename
+ Check file format (CSV, XLSX, XLS only)
+ Verify file size is under 50MB limit
+ Ensure file isn't corrupted or password-protected
+ Try saving Excel files as CSV format
+ Remove special characters from filename
 
 Technical Fix:
 - Clear browser cache and cookies
@@ -1233,11 +1233,11 @@ Technical Fix:
 Problem: Data appears blank or columns misaligned
 
 Solutions:
-✅ Check that first row contains column headers
-✅ Verify consistent data formatting within columns
-✅ Remove empty rows and columns
-✅ Ensure date formats are consistent (YYYY-MM-DD recommended)
-✅ Check for hidden characters or encoding issues
+ Check that first row contains column headers
+ Verify consistent data formatting within columns
+ Remove empty rows and columns
+ Ensure date formats are consistent (YYYY-MM-DD recommended)
+ Check for hidden characters or encoding issues
 
 Data Format Fix:
 - Save file with UTF-8 encoding
@@ -1251,11 +1251,11 @@ Data Format Fix:
 Problem: Upload slow or system freezing with large files
 
 Solutions:
-✅ Reduce file size by removing unnecessary columns
-✅ Filter data to relevant time periods only
-✅ Sample your data (take every nth row)
-✅ Split large files into smaller chunks
-✅ Use CSV format instead of Excel for better performance
+ Reduce file size by removing unnecessary columns
+ Filter data to relevant time periods only
+ Sample your data (take every nth row)
+ Split large files into smaller chunks
+ Use CSV format instead of Excel for better performance
 
 Optimization Tips:
 - Remove calculated columns (recreate in analysis)
@@ -1264,18 +1264,18 @@ Optimization Tips:
 - Consider monthly vs daily granularity
 ```
 
-### 🔍 Analysis Issues
+###  Analysis Issues
 
 #### **No Analysis Results Generated**
 ```
 Problem: Analysis runs but no insights or charts appear
 
 Solutions:
-✅ Verify data has numeric columns for analysis
-✅ Check that data isn't all missing values
-✅ Ensure date columns are properly formatted
-✅ Try with sample data to test system functionality
-✅ Check business domain selection matches your data
+ Verify data has numeric columns for analysis
+ Check that data isn't all missing values
+ Ensure date columns are properly formatted
+ Try with sample data to test system functionality
+ Check business domain selection matches your data
 
 Debugging Steps:
 1. Review data preview for obvious issues
@@ -1290,11 +1290,11 @@ Debugging Steps:
 Problem: AI insights don't make business sense
 
 Solutions:
-✅ Review data quality - garbage in, garbage out
-✅ Provide more business context in settings
-✅ Check for data entry errors or outliers
-✅ Verify column names are descriptive
-✅ Use correct business domain setting
+ Review data quality - garbage in, garbage out
+ Provide more business context in settings
+ Check for data entry errors or outliers
+ Verify column names are descriptive
+ Use correct business domain setting
 
 Data Quality Checklist:
 - Remove test data or dummy entries
@@ -1309,11 +1309,11 @@ Data Quality Checklist:
 Problem: Visualizations show blank or error messages
 
 Solutions:
-✅ Check that data has sufficient non-null values
-✅ Verify numeric columns for chart creation
-✅ Try different chart types
-✅ Reduce data complexity (fewer categories)
-✅ Check browser compatibility (Chrome recommended)
+ Check that data has sufficient non-null values
+ Verify numeric columns for chart creation
+ Try different chart types
+ Reduce data complexity (fewer categories)
+ Check browser compatibility (Chrome recommended)
 
 Technical Fixes:
 - Clear browser cache
@@ -1323,18 +1323,18 @@ Technical Fixes:
 - Update browser to latest version
 ```
 
-### 🤖 AI Features Issues
+###  AI Features Issues
 
 #### **AI Insights Not Working**
 ```
 Problem: AI analysis fails or returns generic responses
 
 Solutions:
-✅ Verify OpenAI API key is configured (if using real AI)
-✅ Check internet connection for API calls
-✅ Try with mock responses enabled for testing
-✅ Provide more specific business context
-✅ Try simpler questions first
+ Verify OpenAI API key is configured (if using real AI)
+ Check internet connection for API calls
+ Try with mock responses enabled for testing
+ Provide more specific business context
+ Try simpler questions first
 
 API Configuration:
 1. Check .env file has correct OPENAI_API_KEY
@@ -1349,11 +1349,11 @@ API Configuration:
 Problem: AI gives irrelevant answers to questions
 
 Solutions:
-✅ Use more specific business terminology
-✅ Reference actual column names in questions
-✅ Provide context about your industry
-✅ Ask one question at a time
-✅ Try suggested questions first
+ Use more specific business terminology
+ Reference actual column names in questions
+ Provide context about your industry
+ Ask one question at a time
+ Try suggested questions first
 
 Question Improvement Tips:
 - Include time periods in questions
@@ -1363,18 +1363,18 @@ Question Improvement Tips:
 - Build on previous successful questions
 ```
 
-### 📊 Dashboard and Export Issues
+###  Dashboard and Export Issues
 
 #### **Dashboard Not Loading**
 ```
 Problem: Dashboard builder crashes or won't load
 
 Solutions:
-✅ Reduce number of charts in dashboard
-✅ Try simpler chart types first
-✅ Check data size isn't too large
-✅ Clear browser cache and restart
-✅ Try building dashboard in steps
+ Reduce number of charts in dashboard
+ Try simpler chart types first
+ Check data size isn't too large
+ Clear browser cache and restart
+ Try building dashboard in steps
 
 Performance Optimization:
 - Limit dashboard to 6-8 charts maximum
@@ -1389,11 +1389,11 @@ Performance Optimization:
 Problem: PDF/PowerPoint export fails or incomplete
 
 Solutions:
-✅ Reduce dashboard complexity before export
-✅ Try exporting individual charts first
-✅ Check available disk space
-✅ Try different export formats
-✅ Ensure charts have finished loading
+ Reduce dashboard complexity before export
+ Try exporting individual charts first
+ Check available disk space
+ Try different export formats
+ Ensure charts have finished loading
 
 Export Troubleshooting:
 1. Wait for all charts to fully render
@@ -1403,18 +1403,18 @@ Export Troubleshooting:
 5. Check file permissions in download folder
 ```
 
-### 🌐 Web Interface Issues
+###  Web Interface Issues
 
 #### **Streamlit App Not Starting**
 ```
 Problem: Application won't launch or crashes on startup
 
 Solutions:
-✅ Check Python environment and dependencies
-✅ Verify all required packages are installed
-✅ Try running from command line for error details
-✅ Check port 8501 isn't already in use
-✅ Update Streamlit to latest version
+ Check Python environment and dependencies
+ Verify all required packages are installed
+ Try running from command line for error details
+ Check port 8501 isn't already in use
+ Update Streamlit to latest version
 
 Command Line Debugging:
 ```bash
@@ -1436,11 +1436,11 @@ streamlit run src/dashboard.py --server.port 8502
 Problem: Application runs slowly or becomes unresponsive
 
 Solutions:
-✅ Close other browser tabs and applications
-✅ Use smaller datasets for testing
-✅ Clear browser cache and cookies
-✅ Try Chrome browser for best performance
-✅ Restart the Streamlit application
+ Close other browser tabs and applications
+ Use smaller datasets for testing
+ Clear browser cache and cookies
+ Try Chrome browser for best performance
+ Restart the Streamlit application
 
 Performance Optimization:
 - Limit data to last 12 months if possible
@@ -1452,7 +1452,7 @@ Performance Optimization:
 
 ## Error Messages and Solutions
 
-### 🚨 **Common Error Messages**
+###  **Common Error Messages**
 
 #### **"ModuleNotFoundError"**
 ```
@@ -1502,7 +1502,7 @@ Solutions:
 
 ## Performance Optimization
 
-### ⚡ **Speed Improvements**
+###  **Speed Improvements**
 
 #### **Data Processing**
 - **Sample Large Datasets**: Use 10,000 rows or less for initial analysis
@@ -1516,7 +1516,7 @@ Solutions:
 - **Progressive Loading**: Build dashboards incrementally
 - **Image Optimization**: Use appropriate resolution for purpose
 
-### 💾 **Memory Management**
+###  **Memory Management**
 - **Clear Cache Regularly**: Use memory cleanup features
 - **Restart Application**: Restart every few hours for long sessions
 - **Monitor Usage**: Keep track of memory consumption
@@ -1524,7 +1524,7 @@ Solutions:
 
 ## Getting Additional Help
 
-### 📞 **Support Resources**
+###  **Support Resources**
 
 #### **Self-Help Options**
 1. **Documentation**: Check relevant guide sections
@@ -1559,7 +1559,7 @@ Data Information (non-sensitive):
 - Time range of data
 ```
 
-### 🔍 **Advanced Troubleshooting**
+###  **Advanced Troubleshooting**
 
 #### **Debug Mode**
 Enable debug mode for detailed error information:
@@ -1592,7 +1592,7 @@ Check application logs for detailed error information:
     def _generate_api_reference(self) -> str:
         """Generate API reference documentation"""
         return """
-# 🔌 API Reference
+#  API Reference
 
 ## Core Classes and Methods
 
@@ -1836,18 +1836,18 @@ exporter.register_format("custom", CustomExporter())
     def render_documentation_interface(self):
         """Render documentation interface in Streamlit"""
         
-        st.markdown("## 📖 User Documentation")
+        st.markdown("##  User Documentation")
         
         # Documentation sections
         doc_tabs = st.tabs([
-            "🚀 Getting Started",
-            "📁 Data Upload",
-            "🔍 Analysis Features",
-            "🎨 Dashboard Creation",
-            "🤖 AI Insights",
-            "📤 Export Options",
-            "🔧 Troubleshooting",
-            "🔌 API Reference"
+            " Getting Started",
+            " Data Upload",
+            " Analysis Features",
+            " Dashboard Creation",
+            " AI Insights",
+            " Export Options",
+            " Troubleshooting",
+            " API Reference"
         ])
         
         documentation = self.generate_complete_documentation()
@@ -1882,7 +1882,7 @@ exporter.register_format("custom", CustomExporter())
         col1, col2, col3 = st.columns(3)
         
         with col1:
-            if st.button("📥 Download All Docs"):
+            if st.button(" Download All Docs"):
                 # Create zip file with all documentation
                 import zipfile
                 import io
@@ -1894,18 +1894,18 @@ exporter.register_format("custom", CustomExporter())
                         zip_file.writestr(f"{section_name}.md", content)
                 
                 st.download_button(
-                    "📦 Download Documentation ZIP",
+                    " Download Documentation ZIP",
                     data=zip_buffer.getvalue(),
                     file_name=f"bi_assistant_docs_{datetime.now().strftime('%Y%m%d')}.zip",
                     mime="application/zip"
                 )
         
         with col2:
-            if st.button("📄 Generate PDF"):
+            if st.button(" Generate PDF"):
                 st.info("PDF generation feature coming soon!")
         
         with col3:
-            if st.button("🌐 Create Website"):
+            if st.button(" Create Website"):
                 st.info("Static site generation feature coming soon!")
 
 

@@ -13,7 +13,7 @@ class StreamlitConfig:
     # Page configuration
     PAGE_CONFIG = {
         "page_title": "BI Assistant - Smart Data Analysis",
-        "page_icon": "📊",
+        "page_icon": "",
         "layout": "wide",
         "initial_sidebar_state": "expanded"
     }
@@ -427,12 +427,12 @@ class ComponentHelpers:
         # Error messages
         if st.session_state.get('error_messages'):
             for error in st.session_state.error_messages:
-                st.error(f"❌ {error}")
+                st.error(f" {error}")
         
         # Success messages
         if st.session_state.get('success_messages'):
             for success in st.session_state.success_messages:
-                st.success(f"✅ {success}")
+                st.success(f" {success}")
     
     @staticmethod
     def create_metric_card(title: str, value: str, delta: Optional[str] = None, 

@@ -62,7 +62,7 @@ class DashboardExporter:
     def render_export_interface(self, dashboard_config: DashboardConfig, 
                               chart_stylings: Dict[str, ChartStyling] = None) -> None:
         """Render export interface"""
-        st.markdown("## 📤 Export Dashboard")
+        st.markdown("##  Export Dashboard")
         
         if chart_stylings is None:
             chart_stylings = {}
@@ -70,8 +70,8 @@ class DashboardExporter:
         # Export format selection
         export_tabs = st.tabs([
             "📄 PDF Report",
-            "🌐 Web Export", 
-            "📊 PowerPoint",
+            " Web Export", 
+            " PowerPoint",
             "📱 Images",
             "💾 Data Export"
         ])
@@ -97,7 +97,7 @@ class DashboardExporter:
         st.markdown("### 📄 PDF Report Export")
         
         if not PDF_AVAILABLE:
-            st.error("📋 PDF export requires `reportlab` package. Install with: `pip install reportlab`")
+            st.error(" PDF export requires `reportlab` package. Install with: `pip install reportlab`")
             return
         
         col1, col2 = st.columns(2)
@@ -113,7 +113,7 @@ class DashboardExporter:
             include_insights = st.checkbox("Include AI Insights", value=True)
         
         # Report structure
-        st.markdown("#### 📋 Report Structure")
+        st.markdown("####  Report Structure")
         report_sections = st.multiselect(
             "Select Sections",
             [
@@ -149,17 +149,17 @@ class DashboardExporter:
                             file_name=f"{dashboard_config.title}_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf",
                             mime="application/pdf"
                         )
-                        st.success("✅ PDF report generated successfully!")
+                        st.success(" PDF report generated successfully!")
                     else:
-                        st.error("❌ Failed to generate PDF report")
+                        st.error(" Failed to generate PDF report")
                         
                 except Exception as e:
-                    st.error(f"❌ PDF generation error: {str(e)}")
+                    st.error(f" PDF generation error: {str(e)}")
     
     def _render_web_export(self, dashboard_config: DashboardConfig,
                           chart_stylings: Dict[str, ChartStyling]) -> None:
         """Render web export interface"""
-        st.markdown("### 🌐 Web Export")
+        st.markdown("###  Web Export")
         
         col1, col2 = st.columns(2)
         
@@ -179,7 +179,7 @@ class DashboardExporter:
             default=["HTML Dashboard"]
         )
         
-        if st.button("🌐 Generate Web Export", type="primary"):
+        if st.button(" Generate Web Export", type="primary"):
             with st.spinner("🔄 Generating web export..."):
                 try:
                     if "HTML Dashboard" in export_options:
@@ -215,18 +215,18 @@ class DashboardExporter:
                             mime="application/zip"
                         )
                     
-                    st.success("✅ Web export generated successfully!")
+                    st.success(" Web export generated successfully!")
                     
                 except Exception as e:
-                    st.error(f"❌ Web export error: {str(e)}")
+                    st.error(f" Web export error: {str(e)}")
     
     def _render_powerpoint_export(self, dashboard_config: DashboardConfig,
                                  chart_stylings: Dict[str, ChartStyling]) -> None:
         """Render PowerPoint export interface"""
-        st.markdown("### 📊 PowerPoint Export")
+        st.markdown("###  PowerPoint Export")
         
         if not PPTX_AVAILABLE:
-            st.error("📋 PowerPoint export requires `python-pptx` package. Install with: `pip install python-pptx`")
+            st.error(" PowerPoint export requires `python-pptx` package. Install with: `pip install python-pptx`")
             return
         
         col1, col2 = st.columns(2)
@@ -245,14 +245,14 @@ class DashboardExporter:
             include_data_slides = st.checkbox("Include Data Tables", value=False)
         
         # Slide layout options
-        st.markdown("#### 🎨 Slide Layout")
+        st.markdown("####  Slide Layout")
         slide_layout = st.selectbox(
             "Chart Layout",
             ["Full Slide", "Chart + Text", "2 Charts per Slide", "Chart + Data Table"],
             index=0
         )
         
-        if st.button("📊 Generate PowerPoint", type="primary"):
+        if st.button(" Generate PowerPoint", type="primary"):
             with st.spinner("🔄 Creating PowerPoint presentation..."):
                 try:
                     pptx_bytes = self._generate_powerpoint_presentation(
@@ -273,12 +273,12 @@ class DashboardExporter:
                             file_name=f"{dashboard_config.title}_presentation_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pptx",
                             mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"
                         )
-                        st.success("✅ PowerPoint presentation generated successfully!")
+                        st.success(" PowerPoint presentation generated successfully!")
                     else:
-                        st.error("❌ Failed to generate PowerPoint presentation")
+                        st.error(" Failed to generate PowerPoint presentation")
                         
                 except Exception as e:
-                    st.error(f"❌ PowerPoint generation error: {str(e)}")
+                    st.error(f" PowerPoint generation error: {str(e)}")
     
     def _render_image_export(self, dashboard_config: DashboardConfig,
                            chart_stylings: Dict[str, ChartStyling]) -> None:
@@ -347,12 +347,12 @@ class DashboardExporter:
                             file_name=f"{dashboard_config.title}_images_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip",
                             mime="application/zip"
                         )
-                        st.success("✅ Images generated successfully!")
+                        st.success(" Images generated successfully!")
                     else:
-                        st.error("❌ Failed to generate images")
+                        st.error(" Failed to generate images")
                         
                 except Exception as e:
-                    st.error(f"❌ Image generation error: {str(e)}")
+                    st.error(f" Image generation error: {str(e)}")
     
     def _render_data_export(self, dashboard_config: DashboardConfig) -> None:
         """Render data export interface"""
@@ -405,12 +405,12 @@ class DashboardExporter:
                             file_name=f"{dashboard_config.title}_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.{file_extension}",
                             mime=self._get_mime_type(file_extension)
                         )
-                        st.success("✅ Data exported successfully!")
+                        st.success(" Data exported successfully!")
                     else:
-                        st.error("❌ Failed to export data")
+                        st.error(" Failed to export data")
                         
                 except Exception as e:
-                    st.error(f"❌ Data export error: {str(e)}")
+                    st.error(f" Data export error: {str(e)}")
     
     def _generate_pdf_report(self, dashboard_config: DashboardConfig,
                            chart_stylings: Dict[str, ChartStyling],

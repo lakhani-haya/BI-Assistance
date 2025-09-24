@@ -403,7 +403,7 @@ def test_complete_workflow():
     dashboard = builder.create_template_dashboard(sample_data, "sales_analytics")
     assert len(dashboard.charts) > 0
     
-    print("✅ Complete workflow test passed!")
+    print(" Complete workflow test passed!")
 
 
 if __name__ == "__main__":

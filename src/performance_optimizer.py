@@ -349,7 +349,7 @@ class ApplicationOptimizer:
     def render_performance_dashboard(self):
         """Render performance monitoring dashboard in Streamlit"""
         
-        st.markdown("## ⚡ Performance Monitor")
+        st.markdown("##  Performance Monitor")
         
         # System metrics
         col1, col2, col3, col4 = st.columns(4)
@@ -389,7 +389,7 @@ class ApplicationOptimizer:
         perf_summary = system_info['performance_summary']
         
         if perf_summary.get('function_stats'):
-            st.markdown("### 📊 Function Performance")
+            st.markdown("###  Function Performance")
             
             func_data = []
             for func_name, stats in perf_summary['function_stats'].items():
@@ -406,23 +406,23 @@ class ApplicationOptimizer:
                 st.dataframe(df_funcs, use_container_width=True)
         
         # Memory cleanup
-        st.markdown("### 🧹 Memory Management")
+        st.markdown("###  Memory Management")
         
         col_a, col_b = st.columns(2)
         
         with col_a:
-            if st.button("🧹 Clean Memory"):
+            if st.button(" Clean Memory"):
                 collected = self.cache_manager.memory_cleanup()
                 st.success(f"Cleaned up {collected} objects")
         
         with col_b:
-            if st.button("🗑️ Clear Cache"):
+            if st.button("️ Clear Cache"):
                 if hasattr(st, 'cache_data'):
                     st.cache_data.clear()
                 st.success("Cache cleared successfully")
         
         # System information
-        with st.expander("🔧 System Information", expanded=False):
+        with st.expander(" System Information", expanded=False):
             st.json(system_info, expanded=False)
 
 
