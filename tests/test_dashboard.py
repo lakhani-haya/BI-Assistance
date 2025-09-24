@@ -20,7 +20,7 @@ try:
     STREAMLIT_AVAILABLE = True
 except ImportError:
     STREAMLIT_AVAILABLE = False
-    print("⚠️ Streamlit not available - skipping dashboard tests")
+    print(" Streamlit not available - skipping dashboard tests")
 
 
 class TestStreamlitConfig(unittest.TestCase):
@@ -256,7 +256,7 @@ class TestDashboardIntegration(unittest.TestCase):
 
 def run_dashboard_tests():
     """Run all dashboard tests"""
-    print("🧪 Running Dashboard Tests")
+    print(" Running Dashboard Tests")
     print("=" * 50)
     
     # Create test suite
@@ -275,7 +275,7 @@ def run_dashboard_tests():
     total_failures = 0
     
     for test_class in test_classes:
-        print(f"\n📋 Testing {test_class.__name__}...")
+        print(f"\n Testing {test_class.__name__}...")
         
         suite = unittest.TestLoader().loadTestsFromTestCase(test_class)
         runner = unittest.TextTestRunner(verbosity=1)
@@ -285,51 +285,51 @@ def run_dashboard_tests():
         total_failures += len(result.failures) + len(result.errors)
     
     print("\n" + "=" * 50)
-    print(f"📊 Test Summary:")
+    print(f" Test Summary:")
     print(f"   Total Tests: {total_tests}")
     print(f"   Failures: {total_failures}")
     print(f"   Success Rate: {((total_tests - total_failures) / total_tests * 100):.1f}%")
     
     if total_failures == 0:
-        print("✅ All tests passed!")
+        print(" All tests passed!")
     else:
-        print(f"❌ {total_failures} test(s) failed")
+        print(f" {total_failures} test(s) failed")
     
     return total_failures == 0
 
 
 def test_dashboard_launch():
     """Test dashboard launch capabilities"""
-    print("\n🚀 Testing Dashboard Launch...")
+    print("\n Testing Dashboard Launch...")
     
     try:
         # Test imports
         if STREAMLIT_AVAILABLE:
             from src.dashboard import StreamlitDashboard
-            print("✅ Dashboard module imports successfully")
+            print(" Dashboard module imports successfully")
         else:
-            print("⚠️ Streamlit not available")
+            print(" Streamlit not available")
         
         # Test configuration
         from src.streamlit_config import StreamlitConfig
         config = StreamlitConfig.get_custom_css()
-        print("✅ Configuration system working")
+        print(" Configuration system working")
         
         # Test sample data generation
         if STREAMLIT_AVAILABLE:
             dashboard = StreamlitDashboard()
             sample_data = dashboard.create_sample_data()
-            print(f"✅ Sample data generation working ({len(sample_data)} records)")
+            print(f" Sample data generation working ({len(sample_data)} records)")
         
         return True
         
     except Exception as e:
-        print(f"❌ Dashboard launch test failed: {e}")
+        print(f" Dashboard launch test failed: {e}")
         return False
 
 
 if __name__ == "__main__":
-    print("🤖📊 BI Assistant Dashboard Testing Suite")
+    print(" BI Assistant Dashboard Testing Suite")
     print("=" * 60)
     
     # Run component tests
@@ -339,14 +339,14 @@ if __name__ == "__main__":
     launch_test_passed = test_dashboard_launch()
     
     print("\n" + "=" * 60)
-    print("🏁 Overall Results:")
+    print(" Overall Results:")
     
     if tests_passed and launch_test_passed:
-        print("✅ All dashboard tests passed! Ready for deployment.")
+        print(" All dashboard tests passed! Ready for deployment.")
         exit_code = 0
     else:
-        print("❌ Some tests failed. Check the output above for details.")
+        print(" Some tests failed. Check the output above for details.")
         exit_code = 1
     
-    print("💡 To start the dashboard, run: python run_dashboard.py")
+    print(" To start the dashboard, run: python run_dashboard.py")
     sys.exit(exit_code)

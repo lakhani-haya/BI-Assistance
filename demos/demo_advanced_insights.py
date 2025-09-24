@@ -118,23 +118,23 @@ def create_demo_business_data():
 def demo_ai_storytelling():
     """Demonstrate AI storytelling capabilities"""
     
-    print("🤖 Advanced AI Storytelling Demo")
+    print(" Advanced AI Storytelling Demo")
     print("=" * 50)
     
     # Create demo data
-    print("📊 Creating comprehensive business demo data...")
+    print(" Creating comprehensive business demo data...")
     data = create_demo_business_data()
     
-    print(f"✅ Generated dataset with {len(data)} records")
-    print(f"📅 Date range: {data['Date'].min()} to {data['Date'].max()}")
-    print(f"💰 Total revenue: ${data['Revenue'].sum():,.2f}")
+    print(f" Generated dataset with {len(data)} records")
+    print(f" Date range: {data['Date'].min()} to {data['Date'].max()}")
+    print(f" Total revenue: ${data['Revenue'].sum():,.2f}")
     
     # Initialize insights engine
-    print("\n🚀 Initializing Advanced Insights Engine...")
+    print("\n Initializing Advanced Insights Engine...")
     insights_engine = AdvancedInsightsEngine()
     
     # Demo 1: Executive Brief Story
-    print("\n📖 Demo 1: Executive Brief Story")
+    print("\n Demo 1: Executive Brief Story")
     print("-" * 30)
     
     executive_story = insights_engine.create_data_story(
@@ -144,13 +144,13 @@ def demo_ai_storytelling():
         business_context="Multi-regional retail business with diverse product portfolio"
     )
     
-    print(f"📝 Title: {executive_story.title}")
-    print(f"🎯 Target: {executive_story.target_audience}")
-    print(f"📋 Executive Summary: {executive_story.executive_summary[:200]}...")
-    print(f"🔍 Key Findings: {len(executive_story.key_findings)} insights")
+    print(f" Title: {executive_story.title}")
+    print(f" Target: {executive_story.target_audience}")
+    print(f" Executive Summary: {executive_story.executive_summary[:200]}...")
+    print(f" Key Findings: {len(executive_story.key_findings)} insights")
     
     # Demo 2: Interactive Q&A Session
-    print("\n💬 Demo 2: Interactive Q&A Session")
+    print("\n Demo 2: Interactive Q&A Session")
     print("-" * 30)
     
     sample_questions = [
@@ -161,17 +161,17 @@ def demo_ai_storytelling():
     ]
     
     for question in sample_questions:
-        print(f"\n❓ Question: {question}")
+        print(f"\n Question: {question}")
         
         answer = insights_engine.interactive_qa_session(data, question)
-        print(f"🤖 Answer: {answer['answer'][:150]}...")
-        print(f"🎯 Confidence: {answer.get('confidence', 0)}%")
+        print(f" Answer: {answer['answer'][:150]}...")
+        print(f" Confidence: {answer.get('confidence', 0)}%")
         
         if answer.get('follow_up_questions'):
-            print(f"💭 Follow-up: {answer['follow_up_questions'][0]}")
+            print(f" Follow-up: {answer['follow_up_questions'][0]}")
     
     # Demo 3: Opportunity Mining
-    print("\n⛏️ Demo 3: Business Opportunity Mining")
+    print("\n Demo 3: Business Opportunity Mining")
     print("-" * 30)
     
     opportunities = insights_engine.mine_opportunities(
@@ -185,15 +185,15 @@ def demo_ai_storytelling():
         }
     )
     
-    print(f"🎯 Identified {len(opportunities)} business opportunities:")
+    print(f" Identified {len(opportunities)} business opportunities:")
     for i, opp in enumerate(opportunities[:3], 1):
         print(f"\n{i}. {opp['title']}")
-        print(f"   💡 {opp['description'][:100]}...")
-        print(f"   💰 Impact: {opp['potential_impact']}")
-        print(f"   ⏱️ Timeline: {opp['time_to_value']}")
+        print(f"    {opp['description'][:100]}...")
+        print(f"    Impact: {opp['potential_impact']}")
+        print(f"    Timeline: {opp['time_to_value']}")
     
     # Demo 4: Performance Diagnosis
-    print("\n🩺 Demo 4: Performance Diagnosis")
+    print("\n Demo 4: Performance Diagnosis")
     print("-" * 30)
     
     diagnosis = insights_engine.diagnose_performance(
@@ -202,13 +202,13 @@ def demo_ai_storytelling():
         performance_metrics=['Revenue', 'Profit', 'Customer_Satisfaction']
     )
     
-    print(f"📊 Overall Assessment: {diagnosis['overall_assessment']}")
-    print(f"✅ Strengths: {len(diagnosis.get('strengths', []))} identified")
-    print(f"⚠️ Improvement Areas: {len(diagnosis.get('areas_for_improvement', []))}")
-    print(f"💡 Recommendations: {len(diagnosis.get('recommendations', []))}")
+    print(f" Overall Assessment: {diagnosis['overall_assessment']}")
+    print(f" Strengths: {len(diagnosis.get('strengths', []))} identified")
+    print(f" Improvement Areas: {len(diagnosis.get('areas_for_improvement', []))}")
+    print(f" Recommendations: {len(diagnosis.get('recommendations', []))}")
     
     # Demo 5: Enhanced Insights Generation
-    print("\n🧠 Demo 5: Enhanced Insights Generation")
+    print("\n Demo 5: Enhanced Insights Generation")
     print("-" * 30)
     
     enhanced_insights = insights_engine.generate_enhanced_insights(
@@ -217,14 +217,14 @@ def demo_ai_storytelling():
         focus_areas=['trends', 'correlations', 'opportunities', 'performance']
     )
     
-    print(f"💡 Generated {len(enhanced_insights)} enhanced insights:")
+    print(f" Generated {len(enhanced_insights)} enhanced insights:")
     for insight in enhanced_insights[:3]:
-        print(f"\n🎯 {insight.title}")
-        print(f"   📊 Type: {insight.insight_type.value}")
-        print(f"   🎪 Priority: {insight.priority}")
-        print(f"   🎯 Confidence: {insight.confidence_score}%")
-        print(f"   📝 Summary: {insight.summary[:100]}...")
-        print(f"   🎯 Actions: {len(insight.recommended_actions)} recommended")
+        print(f"\n {insight.title}")
+        print(f"    Type: {insight.insight_type.value}")
+        print(f"    Priority: {insight.priority}")
+        print(f"    Confidence: {insight.confidence_score}%")
+        print(f"    Summary: {insight.summary[:100]}...")
+        print(f"    Actions: {len(insight.recommended_actions)} recommended")
     
     return data, insights_engine
 
@@ -232,7 +232,7 @@ def demo_ai_storytelling():
 def demo_streamlit_interface():
     """Demonstrate Streamlit interface integration"""
     
-    print("\n🌐 Streamlit Interface Demo")
+    print("\n Streamlit Interface Demo")
     print("=" * 50)
     
     # This would be run in a Streamlit app
@@ -241,16 +241,16 @@ def demo_streamlit_interface():
     # Initialize the interactive storyteller interface
     storyteller = InteractiveStorytellerInterface(data)
     
-    print("✅ Interactive Storyteller Interface initialized")
-    print("🎯 Ready for Streamlit integration")
+    print(" Interactive Storyteller Interface initialized")
+    print(" Ready for Streamlit integration")
     print("\nFeatures available:")
-    print("- 📖 Story Generation with 6 modes")
-    print("- 💬 Interactive Q&A with follow-ups")
-    print("- 🔍 Deep AI insights generation")
-    print("- ⛏️ Business opportunity mining")
-    print("- 🩺 Performance diagnosis")
-    print("- 📊 Visualization suggestions")
-    print("- 📤 Export capabilities")
+    print("-  Story Generation with 6 modes")
+    print("-  Interactive Q&A with follow-ups")
+    print("-  Deep AI insights generation")
+    print("-  Business opportunity mining")
+    print("-  Performance diagnosis")
+    print("-  Visualization suggestions")
+    print("-  Export capabilities")
     
     return storyteller
 
@@ -258,7 +258,7 @@ def demo_streamlit_interface():
 def main():
     """Main demo function"""
     
-    print("🚀 Step 8: Natural Language Insights Enhancement Demo")
+    print(" Step 8: Natural Language Insights Enhancement Demo")
     print("=" * 60)
     print("This demo showcases advanced AI-powered data storytelling")
     print("and interactive Q&A capabilities for business intelligence.")
@@ -271,18 +271,18 @@ def main():
         # Demo Streamlit interface
         storyteller = demo_streamlit_interface()
         
-        print("\n🎉 Demo Complete!")
+        print("\n Demo Complete!")
         print("=" * 50)
-        print("✅ All Step 8 features demonstrated successfully")
-        print("🔄 Ready for Streamlit web interface")
-        print("\n📋 Next Steps:")
+        print(" All Step 8 features demonstrated successfully")
+        print(" Ready for Streamlit web interface")
+        print("\n Next Steps:")
         print("1. Run `streamlit run src/dashboard.py` to test web interface")
-        print("2. Navigate to '🤖 AI Insights' tab")
+        print("2. Navigate to ' AI Insights' tab")
         print("3. Explore all storytelling features")
         print("4. Test Q&A with your own questions")
         print("5. Export generated stories and insights")
         
-        print(f"\n📊 Demo Data Summary:")
+        print(f"\n Demo Data Summary:")
         print(f"   Records: {len(data):,}")
         print(f"   Columns: {len(data.columns)}")
         print(f"   Date Range: {data['Date'].min()} to {data['Date'].max()}")
@@ -290,7 +290,7 @@ def main():
         print(f"   Avg Daily Revenue: ${data.groupby('Date')['Revenue'].sum().mean():,.2f}")
         
     except Exception as e:
-        print(f"❌ Demo failed: {str(e)}")
+        print(f" Demo failed: {str(e)}")
         import traceback
         traceback.print_exc()
 

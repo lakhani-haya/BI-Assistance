@@ -28,7 +28,7 @@ class StreamlitFileUploader:
     
     def render_file_upload_section(self) -> Dict[str, Any]:
         """Render comprehensive file upload interface"""
-        st.markdown("### 📁 File Upload & Processing")
+        st.markdown("###  File Upload & Processing")
         
         # Upload mode selection
         upload_mode = st.radio(
@@ -87,14 +87,14 @@ class StreamlitFileUploader:
                     self._display_file_info(file)
             
             # Combination options
-            st.markdown("#### 🔗 Combination Options")
+            st.markdown("####  Combination Options")
             combination_method = st.selectbox(
                 "How to combine files:",
                 ["concat", "union", "intersect"],
                 help="concat: stack files vertically, union: include all columns, intersect: only common columns"
             )
             
-            if st.button("🚀 Process All Files", type="primary"):
+            if st.button(" Process All Files", type="primary"):
                 return self._process_multiple_files(uploaded_files, combination_method)
         
         return {}
@@ -116,7 +116,7 @@ class StreamlitFileUploader:
     
     def _render_sample_data_selection(self) -> Dict[str, Any]:
         """Render sample data selection interface"""
-        st.markdown("#### 📊 Sample Datasets")
+        st.markdown("####  Sample Datasets")
         
         sample_options = {
             "Sales Performance": "Comprehensive sales data with regions, products, and time series",
@@ -187,7 +187,7 @@ class StreamlitFileUploader:
                 }
                 
         except Exception as e:
-            st.error(f"❌ Processing failed: {str(e)}")
+            st.error(f" Processing failed: {str(e)}")
             return {'success': False, 'error': str(e)}
     
     def _process_multiple_files(self, uploaded_files, combination_method: str) -> Dict[str, Any]:
@@ -249,11 +249,11 @@ class StreamlitFileUploader:
                         'success': True
                     }
                 else:
-                    st.error("❌ No files were processed successfully")
+                    st.error(" No files were processed successfully")
                     return {'success': False, 'processing_results': processing_results}
                 
         except Exception as e:
-            st.error(f"❌ Batch processing failed: {str(e)}")
+            st.error(f" Batch processing failed: {str(e)}")
             return {'success': False, 'error': str(e)}
     
     def _process_zip_file(self, uploaded_zip) -> Dict[str, Any]:
@@ -280,11 +280,11 @@ class StreamlitFileUploader:
                             'success': True
                         }
                 
-                st.error("❌ No valid data files found in ZIP archive")
+                st.error(" No valid data files found in ZIP archive")
                 return {'success': False, 'zip_results': results}
                 
         except Exception as e:
-            st.error(f"❌ ZIP processing failed: {str(e)}")
+            st.error(f" ZIP processing failed: {str(e)}")
             return {'success': False, 'error': str(e)}
     
     def _generate_sample_data(self, sample_type: str) -> Dict[str, Any]:
@@ -312,7 +312,7 @@ class StreamlitFileUploader:
                     encoding="utf-8"
                 )
                 
-                st.success(f"✅ Generated {sample_type} dataset with {len(data)} records")
+                st.success(f" Generated {sample_type} dataset with {len(data)} records")
                 self._display_processing_results(data, file_info)
                 
                 return {
@@ -323,7 +323,7 @@ class StreamlitFileUploader:
                 }
                 
         except Exception as e:
-            st.error(f"❌ Sample data generation failed: {str(e)}")
+            st.error(f" Sample data generation failed: {str(e)}")
             return {'success': False, 'error': str(e)}
     
     def _get_processing_options(self, file, show_ui: bool = True) -> Dict[str, Any]:
@@ -335,7 +335,7 @@ class StreamlitFileUploader:
         
         file_ext = file.name.split('.')[-1].lower()
         
-        with st.expander("⚙️ Processing Options", expanded=False):
+        with st.expander(" Processing Options", expanded=False):
             col1, col2 = st.columns(2)
             
             with col1:
@@ -363,7 +363,7 @@ class StreamlitFileUploader:
                 if file_ext in ['xlsx', 'xls']:
                     # For Excel files, we could add sheet selection here
                     # This would require reading the file first to get sheet names
-                    st.info("💡 Excel files: First sheet will be used by default")
+                    st.info(" Excel files: First sheet will be used by default")
                 
                 # Data type optimization
                 optimize_types = st.checkbox(
@@ -377,15 +377,15 @@ class StreamlitFileUploader:
     
     def _display_processing_results(self, data: pd.DataFrame, file_info: FileInfo):
         """Display processing results and data preview"""
-        st.markdown("#### ✅ Processing Complete")
+        st.markdown("####  Processing Complete")
         
         # Success metrics
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
-            st.metric("📊 Rows", f"{len(data):,}")
+            st.metric(" Rows", f"{len(data):,}")
         with col2:
-            st.metric("📈 Columns", len(data.columns))
+            st.metric(" Columns", len(data.columns))
         with col3:
             memory_mb = data.memory_usage(deep=True).sum() / (1024 * 1024)
             st.metric("💾 Memory", f"{memory_mb:.1f} MB")
@@ -394,7 +394,7 @@ class StreamlitFileUploader:
             st.metric("❓ Missing", f"{missing_pct:.1f}%")
         
         # Data preview tabs
-        tab1, tab2, tab3, tab4 = st.tabs(["📋 Preview", "📊 Summary", "🔍 Quality", "⚙️ Processing Info"])
+        tab1, tab2, tab3, tab4 = st.tabs([" Preview", " Summary", " Quality", " Processing Info"])
         
         with tab1:
             st.markdown("**Data Preview (first 10 rows):**")
@@ -419,19 +419,19 @@ class StreamlitFileUploader:
         
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.metric("✅ Successful", successful)
+            st.metric(" Successful", successful)
         with col2:
-            st.metric("❌ Failed", failed)
+            st.metric(" Failed", failed)
         with col3:
-            st.metric("📊 Combined Rows", f"{len(combined_data):,}")
+            st.metric(" Combined Rows", f"{len(combined_data):,}")
         
         # Detailed results
         with st.expander("📄 File Processing Details"):
             for result in processing_results:
                 if result['status'] == 'success':
-                    st.success(f"✅ {result['filename']} - {result['rows']:,} rows, {result['columns']} columns")
+                    st.success(f" {result['filename']} - {result['rows']:,} rows, {result['columns']} columns")
                 else:
-                    st.error(f"❌ {result['filename']} - {result['error']}")
+                    st.error(f" {result['filename']} - {result['error']}")
         
         # Combined data preview
         st.markdown("**Combined Dataset Preview:**")
@@ -444,13 +444,13 @@ class StreamlitFileUploader:
         # Summary
         col1, col2, col3, col4 = st.columns(4)
         with col1:
-            st.metric("📁 Total Files", results['total_files'])
+            st.metric(" Total Files", results['total_files'])
         with col2:
-            st.metric("✅ Processed", results['processed_files'])
+            st.metric(" Processed", results['processed_files'])
         with col3:
-            st.metric("❌ Failed", results['failed_files'])
+            st.metric(" Failed", results['failed_files'])
         with col4:
-            st.metric("📊 Final Rows", f"{len(combined_data):,}")
+            st.metric(" Final Rows", f"{len(combined_data):,}")
         
         # File details
         if results['data_files']:
@@ -458,11 +458,11 @@ class StreamlitFileUploader:
                 for file_path, file_result in results['data_files'].items():
                     if file_result['status'] == 'success':
                         data = file_result['data']
-                        st.success(f"✅ {file_path} - {len(data):,} rows, {len(data.columns)} columns")
+                        st.success(f" {file_path} - {len(data):,} rows, {len(data.columns)} columns")
         
         # Error details
         if results['errors']:
-            with st.expander("❌ Processing Errors"):
+            with st.expander(" Processing Errors"):
                 for error in results['errors']:
                     st.error(error)
     
@@ -508,7 +508,7 @@ class StreamlitFileUploader:
             fig.update_layout(height=400)
             st.plotly_chart(fig, use_container_width=True)
         else:
-            st.success("🎉 No missing data found!")
+            st.success(" No missing data found!")
         
         # Data type distribution
         type_counts = data.dtypes.value_counts()
@@ -536,7 +536,7 @@ class StreamlitFileUploader:
                     outliers = data[(data[col] < Q1 - 1.5 * IQR) | (data[col] > Q3 + 1.5 * IQR)]
                     outlier_count += len(outliers)
                 
-                st.metric("📊 Potential Outliers", outlier_count)
+                st.metric(" Potential Outliers", outlier_count)
     
     def _display_file_processing_info(self, file_info: FileInfo):
         """Display file processing information"""
@@ -561,7 +561,7 @@ class StreamlitFileUploader:
         if file_info.validation_errors:
             st.markdown("**Validation Issues:**")
             for error in file_info.validation_errors:
-                st.warning(f"⚠️ {error}")
+                st.warning(f" {error}")
     
     # Sample data generators
     def _create_sales_sample(self) -> pd.DataFrame:

@@ -609,7 +609,7 @@ class InteractiveDashboardBuilder:
     
     def render_dashboard_builder(self) -> Optional[DashboardConfig]:
         """Render the interactive dashboard builder interface"""
-        st.markdown("## 🎨 Dashboard Builder")
+        st.markdown("##  Dashboard Builder")
         
         # Builder mode selection
         builder_mode = st.radio(
@@ -628,7 +628,7 @@ class InteractiveDashboardBuilder:
     
     def _render_template_builder(self) -> Optional[DashboardConfig]:
         """Render template-based dashboard builder"""
-        st.markdown("### 📋 Choose a Template")
+        st.markdown("###  Choose a Template")
         
         templates = DashboardTemplate.get_available_templates()
         
@@ -645,7 +645,7 @@ class InteractiveDashboardBuilder:
             
             if selected_template:
                 template_info = templates[selected_template]
-                st.info(f"📝 **Description:** {template_info['description']}")
+                st.info(f" **Description:** {template_info['description']}")
                 st.write(f"**Category:** {template_info['category'].title()}")
                 st.write(f"**Charts:** {', '.join(template_info['charts'])}")
         
@@ -656,7 +656,7 @@ class InteractiveDashboardBuilder:
                 index=0
             )
             
-            if st.button("🚀 Create Dashboard", type="primary"):
+            if st.button(" Create Dashboard", type="primary"):
                 try:
                     dashboard_config = DashboardTemplate.create_dashboard_from_template(
                         selected_template, 
@@ -665,21 +665,21 @@ class InteractiveDashboardBuilder:
                     )
                     
                     st.session_state.dashboard_builder_state['current_dashboard'] = dashboard_config
-                    st.success("✅ Dashboard created successfully!")
+                    st.success(" Dashboard created successfully!")
                     
                     return dashboard_config
                     
                 except Exception as e:
-                    st.error(f"❌ Failed to create dashboard: {str(e)}")
+                    st.error(f" Failed to create dashboard: {str(e)}")
         
         return None
     
     def _render_custom_builder(self) -> Optional[DashboardConfig]:
         """Render custom dashboard builder"""
-        st.markdown("### 🛠️ Custom Dashboard Builder")
+        st.markdown("###  Custom Dashboard Builder")
         
         # Dashboard basic settings
-        with st.expander("⚙️ Dashboard Settings", expanded=True):
+        with st.expander(" Dashboard Settings", expanded=True):
             col1, col2 = st.columns(2)
             
             with col1:
@@ -691,9 +691,9 @@ class InteractiveDashboardBuilder:
                 layout_type = st.selectbox("Layout:", ["grid", "flow", "fixed"])
         
         # Chart builder
-        st.markdown("#### 📊 Add Charts")
+        st.markdown("####  Add Charts")
         
-        chart_tabs = st.tabs(["➕ Add Chart", "📝 Edit Charts", "👁️ Preview"])
+        chart_tabs = st.tabs([" Add Chart", " Edit Charts", "️ Preview"])
         
         with chart_tabs[0]:
             self._render_chart_editor()
@@ -708,10 +708,10 @@ class InteractiveDashboardBuilder:
     
     def _render_ai_assisted_builder(self) -> Optional[DashboardConfig]:
         """Render AI-assisted dashboard builder"""
-        st.markdown("### 🤖 AI-Assisted Dashboard Builder")
+        st.markdown("###  AI-Assisted Dashboard Builder")
         
         # AI prompt interface
-        with st.expander("💭 Describe Your Dashboard", expanded=True):
+        with st.expander(" Describe Your Dashboard", expanded=True):
             dashboard_prompt = st.text_area(
                 "What kind of dashboard do you want to create?",
                 placeholder="I want to create a sales dashboard showing revenue trends, top products, and regional performance...",
@@ -731,25 +731,25 @@ class InteractiveDashboardBuilder:
                     ["Executive Summary", "Detailed Analysis", "Operational View"]
                 )
         
-        if st.button("🧠 Generate AI Dashboard", type="primary"):
-            with st.spinner("🤖 AI is analyzing your data and creating dashboard..."):
+        if st.button(" Generate AI Dashboard", type="primary"):
+            with st.spinner(" AI is analyzing your data and creating dashboard..."):
                 try:
                     # Simulate AI dashboard generation
                     ai_dashboard = self._generate_ai_dashboard(dashboard_prompt, focus_area, detail_level)
                     
                     st.session_state.dashboard_builder_state['current_dashboard'] = ai_dashboard
-                    st.success("✅ AI Dashboard generated successfully!")
+                    st.success(" AI Dashboard generated successfully!")
                     
                     return ai_dashboard
                     
                 except Exception as e:
-                    st.error(f"❌ AI Dashboard generation failed: {str(e)}")
+                    st.error(f" AI Dashboard generation failed: {str(e)}")
         
         return None
     
     def _render_chart_editor(self):
         """Render chart editor interface"""
-        st.markdown("##### ➕ Add New Chart")
+        st.markdown("#####  Add New Chart")
         
         col1, col2, col3 = st.columns(3)
         
@@ -786,7 +786,7 @@ class InteractiveDashboardBuilder:
                 aggregation = None
         
         # Chart positioning
-        with st.expander("📐 Chart Position & Size"):
+        with st.expander(" Chart Position & Size"):
             pos_col1, pos_col2 = st.columns(2)
             
             with pos_col1:
@@ -797,7 +797,7 @@ class InteractiveDashboardBuilder:
                 width = st.number_input("Width", min_value=1, max_value=12, value=6)
                 height = st.number_input("Height", min_value=1, max_value=10, value=4)
         
-        if st.button("➕ Add Chart"):
+        if st.button(" Add Chart"):
             # Create chart config
             chart_config = ChartConfig(
                 chart_id=str(uuid.uuid4()),
@@ -833,7 +833,7 @@ class InteractiveDashboardBuilder:
                 st.session_state.dashboard_builder_state['current_dashboard'].charts.append(chart_config)
                 st.session_state.dashboard_builder_state['current_dashboard'].modified_at = datetime.now()
             
-            st.success(f"✅ Added {chart_title} to dashboard")
+            st.success(f" Added {chart_title} to dashboard")
             st.rerun()
     
     def _render_chart_list_editor(self):
@@ -841,13 +841,13 @@ class InteractiveDashboardBuilder:
         current_dashboard = st.session_state.dashboard_builder_state['current_dashboard']
         
         if not current_dashboard or not current_dashboard.charts:
-            st.info("📝 No charts added yet. Use the 'Add Chart' tab to create your first chart.")
+            st.info(" No charts added yet. Use the 'Add Chart' tab to create your first chart.")
             return
         
-        st.markdown("##### 📝 Manage Charts")
+        st.markdown("#####  Manage Charts")
         
         for i, chart in enumerate(current_dashboard.charts):
-            with st.expander(f"📊 {chart.title}", expanded=False):
+            with st.expander(f" {chart.title}", expanded=False):
                 col1, col2, col3 = st.columns([2, 1, 1])
                 
                 with col1:
@@ -859,13 +859,13 @@ class InteractiveDashboardBuilder:
                         st.write(f"**Y-Axis:** {chart.y_column}")
                 
                 with col2:
-                    if st.button(f"✏️ Edit", key=f"edit_{chart.chart_id}"):
+                    if st.button(f" Edit", key=f"edit_{chart.chart_id}"):
                         st.session_state.dashboard_builder_state['selected_chart'] = chart.chart_id
                         st.session_state.dashboard_builder_state['edit_mode'] = True
                         st.rerun()
                 
                 with col3:
-                    if st.button(f"🗑️ Delete", key=f"delete_{chart.chart_id}"):
+                    if st.button(f"️ Delete", key=f"delete_{chart.chart_id}"):
                         current_dashboard.charts.pop(i)
                         current_dashboard.modified_at = datetime.now()
                         st.success("Chart deleted")
@@ -876,10 +876,10 @@ class InteractiveDashboardBuilder:
         current_dashboard = st.session_state.dashboard_builder_state['current_dashboard']
         
         if not current_dashboard:
-            st.info("📊 Create some charts first to see the dashboard preview.")
+            st.info(" Create some charts first to see the dashboard preview.")
             return
         
-        st.markdown("##### 👁️ Dashboard Preview")
+        st.markdown("##### ️ Dashboard Preview")
         
         # Preview controls
         col1, col2, col3 = st.columns(3)
@@ -888,7 +888,7 @@ class InteractiveDashboardBuilder:
         with col2:
             interactive = st.checkbox("Interactive Mode", value=True)
         with col3:
-            if st.button("🔄 Refresh Preview"):
+            if st.button(" Refresh Preview"):
                 st.rerun()
         
         # Render dashboard
@@ -901,7 +901,7 @@ class InteractiveDashboardBuilder:
         st.markdown(f"*{dashboard_config.description}*")
         
         if not dashboard_config.charts:
-            st.warning("📊 No charts configured for this dashboard.")
+            st.warning(" No charts configured for this dashboard.")
             return
         
         # Create grid layout

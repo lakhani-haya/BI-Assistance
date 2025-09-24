@@ -103,15 +103,15 @@ class InteractiveChartEditor:
     
     def render_chart_editor(self, chart_config: ChartConfig) -> Tuple[ChartConfig, ChartStyling]:
         """Render interactive chart editor interface"""
-        st.markdown("## 🎨 Chart Editor")
+        st.markdown("##  Chart Editor")
         
         # Create tabs for different editing aspects
         editor_tabs = st.tabs([
-            "📊 Data & Structure", 
-            "🎨 Styling", 
-            "📐 Layout", 
-            "🔧 Advanced", 
-            "👁️ Preview"
+            " Data & Structure", 
+            " Styling", 
+            " Layout", 
+            " Advanced", 
+            "️ Preview"
         ])
         
         # Initialize styling if not in session state
@@ -143,7 +143,7 @@ class InteractiveChartEditor:
     
     def _render_data_structure_editor(self, chart_config: ChartConfig) -> ChartConfig:
         """Render data and structure editor"""
-        st.markdown("### 📊 Data Configuration")
+        st.markdown("###  Data Configuration")
         
         # Create a copy to modify
         config = copy.deepcopy(chart_config)
@@ -191,7 +191,7 @@ class InteractiveChartEditor:
                 )
         
         # Additional columns
-        st.markdown("#### 🎨 Optional Styling Columns")
+        st.markdown("####  Optional Styling Columns")
         col3, col4 = st.columns(2)
         
         with col3:
@@ -211,13 +211,13 @@ class InteractiveChartEditor:
                 )
         
         # Data filtering
-        st.markdown("#### 🔍 Data Filters")
+        st.markdown("####  Data Filters")
         with st.expander("Add Data Filters", expanded=False):
             self._render_filter_editor(config)
         
         # Aggregation settings
         if config.x_column and config.x_column in self.data.select_dtypes(include=['object', 'category']).columns:
-            st.markdown("#### 📊 Aggregation")
+            st.markdown("####  Aggregation")
             config.aggregation = st.selectbox(
                 "Aggregation Method",
                 ['sum', 'mean', 'count', 'max', 'min', 'median'],
@@ -228,7 +228,7 @@ class InteractiveChartEditor:
     
     def _render_styling_editor(self, styling: ChartStyling) -> ChartStyling:
         """Render styling editor"""
-        st.markdown("### 🎨 Chart Styling")
+        st.markdown("###  Chart Styling")
         
         # Color scheme
         col1, col2 = st.columns(2)
@@ -254,7 +254,7 @@ class InteractiveChartEditor:
             styling.plot_background_color = st.color_picker("Plot Background", value=styling.plot_background_color)
         
         # Typography
-        st.markdown("#### 📝 Typography")
+        st.markdown("####  Typography")
         col3, col4 = st.columns(2)
         
         with col3:
@@ -274,7 +274,7 @@ class InteractiveChartEditor:
             )
         
         # Grid and axes
-        st.markdown("#### 📐 Grid & Axes")
+        st.markdown("####  Grid & Axes")
         col5, col6 = st.columns(2)
         
         with col5:
@@ -292,10 +292,10 @@ class InteractiveChartEditor:
     
     def _render_layout_editor(self, styling: ChartStyling) -> ChartStyling:
         """Render layout editor"""
-        st.markdown("### 📐 Layout Configuration")
+        st.markdown("###  Layout Configuration")
         
         # Margins
-        st.markdown("#### 📏 Margins")
+        st.markdown("####  Margins")
         col1, col2 = st.columns(2)
         
         with col1:
@@ -307,7 +307,7 @@ class InteractiveChartEditor:
             styling.margin_right = st.number_input("Right Margin", min_value=0, max_value=200, value=styling.margin_right)
         
         # Legend
-        st.markdown("#### 🏷️ Legend")
+        st.markdown("#### ️ Legend")
         col3, col4 = st.columns(2)
         
         with col3:
@@ -332,10 +332,10 @@ class InteractiveChartEditor:
     
     def _render_advanced_editor(self, styling: ChartStyling) -> ChartStyling:
         """Render advanced editor"""
-        st.markdown("### 🔧 Advanced Settings")
+        st.markdown("###  Advanced Settings")
         
         # Interactivity
-        st.markdown("#### 🖱️ Interactivity")
+        st.markdown("#### ️ Interactivity")
         col1, col2 = st.columns(2)
         
         with col1:
@@ -360,7 +360,7 @@ class InteractiveChartEditor:
             )
         
         # Animation
-        st.markdown("#### 🎬 Animation")
+        st.markdown("####  Animation")
         col3, col4 = st.columns(2)
         
         with col3:
@@ -380,7 +380,7 @@ class InteractiveChartEditor:
                 )
         
         # Annotations
-        st.markdown("#### 📝 Annotations")
+        st.markdown("####  Annotations")
         with st.expander("Add Annotations", expanded=False):
             self._render_annotation_editor(styling)
         
@@ -494,24 +494,24 @@ class InteractiveChartEditor:
     
     def _render_chart_preview(self, config: ChartConfig, styling: ChartStyling):
         """Render real-time chart preview"""
-        st.markdown("### 👁️ Live Preview")
+        st.markdown("### ️ Live Preview")
         
         preview_col1, preview_col2 = st.columns([3, 1])
         
         with preview_col2:
-            if st.button("🔄 Refresh Preview"):
+            if st.button(" Refresh Preview"):
                 st.rerun()
             
             show_code = st.checkbox("Show Code", value=False)
             
-            if st.button("💾 Save Configuration"):
+            if st.button(" Save Configuration"):
                 config_data = {
                     'config': asdict(config),
                     'styling': asdict(styling)
                 }
                 
                 st.download_button(
-                    "📥 Download Config",
+                    " Download Config",
                     data=json.dumps(config_data, indent=2, default=str),
                     file_name=f"chart_config_{config.chart_id}.json",
                     mime="application/json"
@@ -526,7 +526,7 @@ class InteractiveChartEditor:
                     st.plotly_chart(chart, use_container_width=True)
                     
                     if show_code:
-                        st.markdown("#### 🔧 Generated Code")
+                        st.markdown("####  Generated Code")
                         st.code(self._generate_chart_code(config, styling), language="python")
                 else:
                     st.error("Unable to create chart preview")

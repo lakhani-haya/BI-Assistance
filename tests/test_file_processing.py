@@ -23,14 +23,14 @@ try:
     FILE_PROCESSOR_AVAILABLE = True
 except ImportError as e:
     FILE_PROCESSOR_AVAILABLE = False
-    print(f"⚠️ File processor modules not available: {e}")
+    print(f" File processor modules not available: {e}")
 
 try:
     import streamlit as st
     STREAMLIT_AVAILABLE = True
 except ImportError:
     STREAMLIT_AVAILABLE = False
-    print("⚠️ Streamlit not available - skipping streamlit upload tests")
+    print(" Streamlit not available - skipping streamlit upload tests")
 
 
 class TestFileValidator(unittest.TestCase):
@@ -420,7 +420,7 @@ class TestFileProcessingIntegration(unittest.TestCase):
 
 def run_file_processing_tests():
     """Run all file processing tests"""
-    print("🧪 Running File Processing Tests")
+    print(" Running File Processing Tests")
     print("=" * 60)
     
     # Test classes to run
@@ -440,7 +440,7 @@ def run_file_processing_tests():
     total_failures = 0
     
     for test_class in test_classes:
-        print(f"\n📋 Testing {test_class.__name__}...")
+        print(f"\n Testing {test_class.__name__}...")
         
         suite = unittest.TestLoader().loadTestsFromTestCase(test_class)
         runner = unittest.TextTestRunner(verbosity=1)
@@ -450,7 +450,7 @@ def run_file_processing_tests():
         total_failures += len(result.failures) + len(result.errors)
     
     print("\n" + "=" * 60)
-    print(f"📊 Test Summary:")
+    print(f" Test Summary:")
     print(f"   Total Tests: {total_tests}")
     print(f"   Failures: {total_failures}")
     
@@ -459,16 +459,16 @@ def run_file_processing_tests():
         print(f"   Success Rate: {success_rate:.1f}%")
     
     if total_failures == 0:
-        print("✅ All file processing tests passed!")
+        print(" All file processing tests passed!")
     else:
-        print(f"❌ {total_failures} test(s) failed")
+        print(f" {total_failures} test(s) failed")
     
     return total_failures == 0
 
 
 def test_file_processing_capabilities():
     """Test file processing capabilities"""
-    print("\n🔧 Testing File Processing Capabilities...")
+    print("\n Testing File Processing Capabilities...")
     
     try:
         if FILE_PROCESSOR_AVAILABLE:
@@ -476,44 +476,44 @@ def test_file_processing_capabilities():
             
             # Test basic validation
             validator_test = FileValidator.SUPPORTED_EXTENSIONS
-            print(f"✅ File validator supports {len(validator_test)} file types")
+            print(f" File validator supports {len(validator_test)} file types")
             
             # Test processor
             processor = FileProcessor()
-            print("✅ File processor initialized successfully")
+            print(" File processor initialized successfully")
             
             # Test sample data processing
             test_csv = "name,age\nJohn,25\nJane,30"
             csv_file = io.BytesIO(test_csv.encode('utf-8'))
             
             data, file_info = processor.process_file(csv_file, "test.csv")
-            print(f"✅ Sample CSV processing: {len(data)} rows, {len(data.columns)} columns")
+            print(f" Sample CSV processing: {len(data)} rows, {len(data.columns)} columns")
         else:
-            print("❌ File processor modules not available")
+            print(" File processor modules not available")
             return False
         
         if STREAMLIT_AVAILABLE:
             from src.streamlit_upload import StreamlitFileUploader
             uploader = StreamlitFileUploader()
-            print("✅ Streamlit file uploader initialized")
+            print(" Streamlit file uploader initialized")
         else:
-            print("⚠️ Streamlit not available for upload interface testing")
+            print(" Streamlit not available for upload interface testing")
         
         return True
         
     except Exception as e:
-        print(f"❌ File processing capability test failed: {e}")
+        print(f" File processing capability test failed: {e}")
         return False
 
 
 if __name__ == "__main__":
-    print("🤖📊 BI Assistant File Processing Testing Suite")
+    print(" BI Assistant File Processing Testing Suite")
     print("=" * 70)
     
     # Check availability
-    print("📋 Component Availability:")
-    print(f"   File Processor: {'✅' if FILE_PROCESSOR_AVAILABLE else '❌'}")
-    print(f"   Streamlit: {'✅' if STREAMLIT_AVAILABLE else '❌'}")
+    print(" Component Availability:")
+    print(f"   File Processor: {'' if FILE_PROCESSOR_AVAILABLE else ''}")
+    print(f"   Streamlit: {'' if STREAMLIT_AVAILABLE else ''}")
     
     # Run tests
     tests_passed = run_file_processing_tests()
@@ -522,16 +522,16 @@ if __name__ == "__main__":
     capabilities_test_passed = test_file_processing_capabilities()
     
     print("\n" + "=" * 70)
-    print("🏁 Overall Results:")
+    print(" Overall Results:")
     
     if tests_passed and capabilities_test_passed:
-        print("✅ All file processing tests passed! Enhanced upload system ready.")
+        print(" All file processing tests passed! Enhanced upload system ready.")
         exit_code = 0
     else:
-        print("❌ Some tests failed. Check the output above for details.")
+        print(" Some tests failed. Check the output above for details.")
         exit_code = 1
     
-    print("💡 Enhanced file processing features:")
+    print(" Enhanced file processing features:")
     print("   - Multi-format support (CSV, Excel, JSON, Parquet)")
     print("   - Intelligent encoding detection")
     print("   - Batch processing and ZIP archives")
