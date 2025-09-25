@@ -38,7 +38,7 @@ print("  - Feature documentation")
 print("  - Troubleshooting guides")
 print("  - API reference")
 
-print("• ✅ Enhanced Dashboard Interface")
+print("• Enhanced Dashboard Interface")
 print("  - 9-tab navigation system")
 print("  - Performance monitoring tab")
 print("  - Documentation access tab")
