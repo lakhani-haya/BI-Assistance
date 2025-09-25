@@ -83,7 +83,7 @@ print("• ✅ Professional export capabilities")
 print("• ✅ AI-powered intelligent insights")
 print("• ✅ Interactive dashboard interface")
 
-print("\n🚀 NEXT STEPS FOR USERS:")
+print("\n NEXT STEPS FOR USERS:")
 print("1. Run: streamlit run src/dashboard.py")
 print("2. Upload your business data")
 print("3. Explore AI-powered insights")
