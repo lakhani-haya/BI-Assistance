@@ -90,7 +90,7 @@ print("3. Explore AI-powered insights")
 print("4. Create professional dashboards")
 print("5. Export reports and visualizations")
 
-print("\n💡 KEY BENEFITS:")
+print("\n KEY BENEFITS:")
 print("• Transform raw data into actionable insights")
 print("• AI-powered analysis and recommendations")
 print("• Professional visualizations and reports")
