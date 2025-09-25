@@ -99,7 +99,7 @@ print("• Natural language data querying")
 print("• Automated storytelling from data")
 
 print("\n" + "=" * 80)
-print("🎉 PROJECT COMPLETE - READY FOR PRODUCTION USE!")
+print("PROJECT COMPLETE - READY FOR PRODUCTION USE!")
 print("📊 Smart Business Intelligence Assistant successfully delivered!")
 print("🤖 All AI-powered features operational!")
 print("✨ Transform your business data into intelligent insights!")
