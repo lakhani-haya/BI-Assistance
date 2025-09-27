@@ -708,7 +708,7 @@ class InteractiveDashboardBuilder:
     
     def _render_ai_assisted_builder(self) -> Optional[DashboardConfig]:
         """Render AI-assisted dashboard builder"""
-        st.markdown("### 🤖 AI-Assisted Dashboard Builder")
+        st.markdown("### AI-Assisted Dashboard Builder")
         
         # AI prompt interface
         with st.expander("💭 Describe Your Dashboard", expanded=True):
@@ -732,7 +732,7 @@ class InteractiveDashboardBuilder:
                 )
         
         if st.button("🧠 Generate AI Dashboard", type="primary"):
-            with st.spinner("🤖 AI is analyzing your data and creating dashboard..."):
+            with st.spinner("AI is analyzing your data and creating dashboard..."):
                 try:
                     # Simulate AI dashboard generation
                     ai_dashboard = self._generate_ai_dashboard(dashboard_prompt, focus_area, detail_level)
@@ -847,7 +847,7 @@ class InteractiveDashboardBuilder:
         st.markdown("##### 📝 Manage Charts")
         
         for i, chart in enumerate(current_dashboard.charts):
-            with st.expander(f"📊 {chart.title}", expanded=False):
+            with st.expander(f"{chart.title}", expanded=False):
                 col1, col2, col3 = st.columns([2, 1, 1])
                 
                 with col1:
@@ -876,7 +876,7 @@ class InteractiveDashboardBuilder:
         current_dashboard = st.session_state.dashboard_builder_state['current_dashboard']
         
         if not current_dashboard:
-            st.info("📊 Create some charts first to see the dashboard preview.")
+            st.info("Create some charts first to see the dashboard preview.")
             return
         
         st.markdown("##### 👁️ Dashboard Preview")
@@ -901,7 +901,7 @@ class InteractiveDashboardBuilder:
         st.markdown(f"*{dashboard_config.description}*")
         
         if not dashboard_config.charts:
-            st.warning("📊 No charts configured for this dashboard.")
+            st.warning("No charts configured for this dashboard.")
             return
         
         # Create grid layout

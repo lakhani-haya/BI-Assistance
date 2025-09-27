@@ -71,7 +71,7 @@ class DashboardExporter:
         export_tabs = st.tabs([
             "📄 PDF Report",
             "🌐 Web Export", 
-            "📊 PowerPoint",
+            "PowerPoint",
             "📱 Images",
             "💾 Data Export"
         ])

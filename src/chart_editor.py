@@ -107,7 +107,7 @@ class InteractiveChartEditor:
         
         # Create tabs for different editing aspects
         editor_tabs = st.tabs([
-            "📊 Data & Structure", 
+            "Data & Structure", 
             "🎨 Styling", 
             "📐 Layout", 
             "🔧 Advanced", 
@@ -143,7 +143,7 @@ class InteractiveChartEditor:
     
     def _render_data_structure_editor(self, chart_config: ChartConfig) -> ChartConfig:
         """Render data and structure editor"""
-        st.markdown("### 📊 Data Configuration")
+        st.markdown("### Data Configuration")
         
         # Create a copy to modify
         config = copy.deepcopy(chart_config)
@@ -217,7 +217,7 @@ class InteractiveChartEditor:
         
         # Aggregation settings
         if config.x_column and config.x_column in self.data.select_dtypes(include=['object', 'category']).columns:
-            st.markdown("#### 📊 Aggregation")
+            st.markdown("#### Aggregation")
             config.aggregation = st.selectbox(
                 "Aggregation Method",
                 ['sum', 'mean', 'count', 'max', 'min', 'median'],
