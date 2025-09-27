@@ -856,7 +856,7 @@ class StreamlitDashboard:
     
     def render_ai_storytelling(self):
         """Render AI storytelling interface"""
-        st.markdown("## 🤖 AI-Powered Data Storytelling")
+        st.markdown("## AI-Powered Data Storytelling")
         
         if st.session_state.data is not None:
             # Enhanced AI storytelling interface
@@ -870,7 +870,7 @@ class StreamlitDashboard:
     def render_export_interface(self):
         """Render export interface"""
         if not st.session_state.data_loaded:
-            st.warning("📊 Please upload data first to export")
+            st.warning("Please upload data first to export")
             return
         
         try:
@@ -912,7 +912,7 @@ class StreamlitDashboard:
                         )
                 
                 with col2:
-                    if st.button("📊 Export as Excel"):
+                    if st.button("Export as Excel"):
                         excel_buffer = io.BytesIO()
                         st.session_state.current_data.to_excel(excel_buffer, index=False)
                         excel_buffer.seek(0)

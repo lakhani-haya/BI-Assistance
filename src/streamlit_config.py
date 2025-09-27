@@ -13,7 +13,7 @@ class StreamlitConfig:
     # Page configuration
     PAGE_CONFIG = {
         "page_title": "BI Assistant - Smart Data Analysis",
-        "page_icon": "📊",
+        "page_icon": "�",
         "layout": "wide",
         "initial_sidebar_state": "expanded"
     }

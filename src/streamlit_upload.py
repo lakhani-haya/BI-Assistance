@@ -116,7 +116,7 @@ class StreamlitFileUploader:
     
     def _render_sample_data_selection(self) -> Dict[str, Any]:
         """Render sample data selection interface"""
-        st.markdown("#### 📊 Sample Datasets")
+        st.markdown("#### Sample Datasets")
         
         sample_options = {
             "Sales Performance": "Comprehensive sales data with regions, products, and time series",
