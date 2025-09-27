@@ -1,6 +1,5 @@
 """
-AI Analyzer Module for BI Assistant
-Generates natural language insights and analysis using OpenAI API
+AI analysis using OpenAI API
 """
 
 import openai

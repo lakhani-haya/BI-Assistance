@@ -10,94 +10,39 @@ import json
 import io
 import base64
 from datetime import datetime
-        st.set_page_config(page_title="Smart BI Assistant", layout="wide")
-        st.markdown("""
-            <style>
-            body {
-                background: #f5f7fa;
-            }
-            .main {
-                background: #f5f7fa;
-            }
-            .stTabs [data-baseweb="tab"] {
-                background: #fff;
-                color: #222;
-                border-radius: 10px 10px 0 0;
-                margin-right: 2px;
-                font-weight: 500;
-                font-size: 1.08rem;
-                padding: 0.5rem 1.2rem;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-                transition: box-shadow 0.2s;
-            }
-            .stTabs [aria-selected="true"] {
-                background: linear-gradient(90deg, #3a8dde 0%, #38c6ff 100%);
-                color: #fff;
-                box-shadow: 0 4px 16px rgba(58,141,222,0.08);
-            }
-            .stButton>button {
-                background: linear-gradient(90deg, #3a8dde 0%, #38c6ff 100%);
-                color: #fff;
-                border-radius: 8px;
-                font-weight: 500;
-                font-size: 1rem;
-                padding: 0.5rem 1.2rem;
-                border: none;
-                box-shadow: 0 2px 8px rgba(58,141,222,0.08);
-                transition: background 0.2s;
-            }
-            .stButton>button:hover {
-                background: linear-gradient(90deg, #38c6ff 0%, #3a8dde 100%);
-            }
-            .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-                color: #3a8dde;
-            }
-            .stMarkdown p {
-                color: #222;
-                font-size: 1.07rem;
-            }
-            .stMarkdown ul {
-                color: #222;
-                font-size: 1.05rem;
-            }
-            .stMarkdown code {
-                background: #eaf4ff;
-                color: #3a8dde;
-                border-radius: 4px;
-                padding: 2px 6px;
-            }
-            .stTextInput>div>input {
-                border-radius: 6px;
-                border: 1px solid #38c6ff;
-                background: #fff;
-                font-size: 1rem;
-                padding: 0.4rem 0.8rem;
-            }
-            .stSelectbox>div>div {
-                border-radius: 6px;
-                border: 1px solid #38c6ff;
-                background: #fff;
-            }
-            </style>
-        """, unsafe_allow_html=True)
-        st.markdown("<div style='text-align:center;'><h1 style='color:#3a8dde;font-weight:700;margin-bottom:0.2em;'>Smart Business Intelligence Assistant</h1><p style='color:#222;font-size:1.15rem;margin-top:0;'>Modern, smooth, and minimal UI</p></div>", unsafe_allow_html=True)
-        st.write("")
-    
-    .insight-box {
-        background-color: #f0f2f6;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-left: 4px solid #1f77b4;
-        margin: 1rem 0;
-    }
-    
-    .metric-card {
-        background-color: white;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        text-align: center;
-    }
+from typing import Dict, List, Any, Optional
+
+# Import additional components
+try:
+    from src.streamlit_upload import StreamlitFileUploader
+    from src.config import Config
+    from src.data_processor import DataProcessor
+    from src.intelligent_analyzer import IntelligentDataAnalyzer
+    from src.intelligent_visualizer import IntelligentVisualizationEngine
+    from src.dashboard_builder import DashboardBuilder
+    from src.interactive_storyteller import InteractiveStoryteller
+    from src.dashboard_exporter import DashboardExporter
+except ImportError as e:
+    st.error(f"Import error: {e}")
+
+# Custom CSS for styling
+st.markdown("""
+<style>
+.insight-box {
+    background-color: #f0f2f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid #1f77b4;
+    margin: 1rem 0;
+}
+
+.metric-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
     
     .success-message {
         background-color: #d4edda;
@@ -164,16 +109,16 @@ class StreamlitDashboard:
         
         # Display AI status
         if st.session_state.ai_enabled:
-            st.success("🧠 AI Features Enabled - Full analytics available")
+            st.success("AI Features Enabled - Full analytics available")
         else:
             st.info("Basic Mode - Upload .env with OpenAI API key for AI features")
     
     def render_sidebar(self):
         """Render the sidebar with controls and options"""
-        st.sidebar.header("🎛️ Control Panel")
+        st.sidebar.header("Control Panel")
         
         # Enhanced file upload section using new uploader
-        st.sidebar.subheader("📁 Data Upload")
+        st.sidebar.subheader("Data Upload")
         
         # Use the enhanced file uploader
         upload_results = self.file_uploader.render_file_upload_section()
@@ -783,7 +728,7 @@ class StreamlitDashboard:
         try:
             # Initialize dashboard builder
             if 'dashboard_builder' not in st.session_state:
-                st.session_state.dashboard_builder = InteractiveDashboardBuilder(st.session_state.current_data)
+                st.session_state.dashboard_builder = DashboardBuilder(st.session_state.current_data)
             
             builder = st.session_state.dashboard_builder
             
@@ -834,7 +779,8 @@ class StreamlitDashboard:
                     
                     # Initialize chart editor
                     if 'chart_editor' not in st.session_state:
-                        st.session_state.chart_editor = InteractiveChartEditor(st.session_state.current_data)
+                        from src.chart_editor import ChartEditor
+                        st.session_state.chart_editor = ChartEditor(st.session_state.current_data)
                     
                     editor = st.session_state.chart_editor
                     
@@ -952,6 +898,85 @@ class StreamlitDashboard:
     
     def run(self):
         """Main method to run the dashboard"""
+        # Page configuration
+        st.set_page_config(
+            page_title="BI Assistant - Smart Data Analysis",
+            page_icon="📈",
+            layout="wide",
+            initial_sidebar_state="expanded"
+        )
+        
+        # Apply custom styling
+        st.markdown("""
+            <style>
+            body {
+                background: #f5f7fa;
+            }
+            .main {
+                background: #f5f7fa;
+            }
+            .stTabs [data-baseweb="tab"] {
+                background: #fff;
+                color: #222;
+                border-radius: 10px 10px 0 0;
+                margin-right: 2px;
+                font-weight: 500;
+                font-size: 1.08rem;
+                padding: 0.5rem 1.2rem;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+                transition: box-shadow 0.2s;
+            }
+            .stTabs [aria-selected="true"] {
+                background: linear-gradient(90deg, #3a8dde 0%, #38c6ff 100%);
+                color: #fff;
+                box-shadow: 0 4px 16px rgba(58,141,222,0.08);
+            }
+            .stButton>button {
+                background: linear-gradient(90deg, #3a8dde 0%, #38c6ff 100%);
+                color: #fff;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 1rem;
+                padding: 0.5rem 1.2rem;
+                border: none;
+                box-shadow: 0 2px 8px rgba(58,141,222,0.08);
+                transition: background 0.2s;
+            }
+            .stButton>button:hover {
+                background: linear-gradient(90deg, #38c6ff 0%, #3a8dde 100%);
+            }
+            .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+                color: #3a8dde;
+            }
+            .stMarkdown p {
+                color: #222;
+                font-size: 1.07rem;
+            }
+            .stMarkdown ul {
+                color: #222;
+                font-size: 1.05rem;
+            }
+            .stMarkdown code {
+                background: #eaf4ff;
+                color: #3a8dde;
+                border-radius: 4px;
+                padding: 2px 6px;
+            }
+            .stTextInput>div>input {
+                border-radius: 6px;
+                border: 1px solid #38c6ff;
+                background: #fff;
+                font-size: 1rem;
+                padding: 0.4rem 0.8rem;
+            }
+            .stSelectbox>div>div {
+                border-radius: 6px;
+                border: 1px solid #38c6ff;
+                background: #fff;
+            }
+            </style>
+        """, unsafe_allow_html=True)
+        
         self.render_header()
         
         # Create layout
@@ -960,7 +985,7 @@ class StreamlitDashboard:
         
         # Footer
         st.markdown("---")
-        st.markdown("*Built with ❤️ using Streamlit, Plotly, and OpenAI*")
+        st.markdown("*Built using Streamlit, Plotly, and OpenAI*")
 
 
 def main():

@@ -1,5 +1,5 @@
 """
-Integration module combining visualization with AI-powered insights
+Visualization with AI insights
 """
 
 import pandas as pd
@@ -15,9 +15,7 @@ logger = logging.getLogger(__name__)
 
 
 class IntelligentVisualizationEngine:
-    """
-    Combines visualization capabilities with AI-powered insights
-    """
+    """Visualization engine with AI insights"""
     
     def __init__(self, openai_api_key: Optional[str] = None):
         """
