@@ -1,6 +1,5 @@
 """
-Main Streamlit Dashboard for BI Assistant
-Provides user-friendly web interface for data analysis and visualization
+Main dashboard interface
 """
 
 import streamlit as st
