@@ -223,7 +223,7 @@ class DashboardExporter:
     def _render_powerpoint_export(self, dashboard_config: DashboardConfig,
                                  chart_stylings: Dict[str, ChartStyling]) -> None:
         """Render PowerPoint export interface"""
-        st.markdown("### 📊 PowerPoint Export")
+        st.markdown("### PowerPoint Export")
         
         if not PPTX_AVAILABLE:
             st.error("📋 PowerPoint export requires `python-pptx` package. Install with: `pip install python-pptx`")
@@ -252,7 +252,7 @@ class DashboardExporter:
             index=0
         )
         
-        if st.button("📊 Generate PowerPoint", type="primary"):
+        if st.button("Generate PowerPoint", type="primary"):
             with st.spinner("🔄 Creating PowerPoint presentation..."):
                 try:
                     pptx_bytes = self._generate_powerpoint_presentation(
