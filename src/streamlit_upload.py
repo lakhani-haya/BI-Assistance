@@ -383,7 +383,7 @@ class StreamlitFileUploader:
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
-            st.metric("📊 Rows", f"{len(data):,}")
+            st.metric("Rows", f"{len(data):,}")
         with col2:
             st.metric("📈 Columns", len(data.columns))
         with col3:
@@ -394,7 +394,7 @@ class StreamlitFileUploader:
             st.metric("❓ Missing", f"{missing_pct:.1f}%")
         
         # Data preview tabs
-        tab1, tab2, tab3, tab4 = st.tabs(["📋 Preview", "📊 Summary", "🔍 Quality", "⚙️ Processing Info"])
+        tab1, tab2, tab3, tab4 = st.tabs(["Preview", "Summary", "Quality", "Processing Info"])
         
         with tab1:
             st.markdown("**Data Preview (first 10 rows):**")
@@ -423,7 +423,7 @@ class StreamlitFileUploader:
         with col2:
             st.metric("❌ Failed", failed)
         with col3:
-            st.metric("📊 Combined Rows", f"{len(combined_data):,}")
+            st.metric("Combined Rows", f"{len(combined_data):,}")
         
         # Detailed results
         with st.expander("📄 File Processing Details"):
@@ -450,7 +450,7 @@ class StreamlitFileUploader:
         with col3:
             st.metric("❌ Failed", results['failed_files'])
         with col4:
-            st.metric("📊 Final Rows", f"{len(combined_data):,}")
+            st.metric("Final Rows", f"{len(combined_data):,}")
         
         # File details
         if results['data_files']:
@@ -536,7 +536,7 @@ class StreamlitFileUploader:
                     outliers = data[(data[col] < Q1 - 1.5 * IQR) | (data[col] > Q3 + 1.5 * IQR)]
                     outlier_count += len(outliers)
                 
-                st.metric("📊 Potential Outliers", outlier_count)
+                st.metric("Potential Outliers", outlier_count)
     
     def _display_file_processing_info(self, file_info: FileInfo):
         """Display file processing information"""

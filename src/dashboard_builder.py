@@ -691,7 +691,7 @@ class InteractiveDashboardBuilder:
                 layout_type = st.selectbox("Layout:", ["grid", "flow", "fixed"])
         
         # Chart builder
-        st.markdown("#### 📊 Add Charts")
+        st.markdown("#### Add Charts")
         
         chart_tabs = st.tabs(["➕ Add Chart", "📝 Edit Charts", "👁️ Preview"])
         
