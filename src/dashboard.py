@@ -542,7 +542,7 @@ class StreamlitDashboard:
     
     def render_ai_insights_section(self, insights: Dict[str, Any]):
         """Render AI-generated insights"""
-        st.markdown("### 🤖 AI-Generated Insights")
+        st.markdown("### AI-Generated Insights")
         
         # Overview insights
         if 'overview' in insights:
@@ -581,7 +581,7 @@ class StreamlitDashboard:
         
         # Column insights
         if 'columns' in insights:
-            with st.expander("📊 Column-Specific Insights"):
+            with st.expander("Column-Specific Insights"):
                 for col_name, col_insights in insights['columns'].items():
                     st.markdown(f"**{col_name}:**")
                     if col_insights.get('business_significance'):
@@ -600,7 +600,7 @@ class StreamlitDashboard:
     
     def render_dashboard_results(self):
         """Render dashboard and visualization results"""
-        st.markdown("## 📊 Interactive Dashboard")
+        st.markdown("## Interactive Dashboard")
         
         dashboard = st.session_state.dashboard_results
         
@@ -729,7 +729,7 @@ class StreamlitDashboard:
         
         # AI explanation
         if not compact and chart_info.get('ai_explanation'):
-            with st.expander("🤖 AI Explanation"):
+            with st.expander("AI Explanation"):
                 st.markdown(chart_info['ai_explanation'])
         
         # Chart rationale
@@ -778,7 +778,7 @@ class StreamlitDashboard:
     def render_dashboard_builder(self):
         """Render dashboard builder interface"""
         if not st.session_state.data_loaded:
-            st.warning("📊 Please upload data first to use the Dashboard Builder")
+            st.warning("Please upload data first to use the Dashboard Builder")
             return
         
         try:
@@ -810,7 +810,7 @@ class StreamlitDashboard:
     def render_chart_editor(self):
         """Render chart editor interface"""
         if not st.session_state.data_loaded:
-            st.warning("📊 Please upload data first to use the Chart Editor")
+            st.warning("Please upload data first to use the Chart Editor")
             return
         
         try:
@@ -849,7 +849,7 @@ class StreamlitDashboard:
                             break
                 
                 else:
-                    st.info("📊 The selected dashboard has no charts to edit")
+                    st.info("The selected dashboard has no charts to edit")
             
         except Exception as e:
             st.error(f"❌ Chart Editor error: {str(e)}")
