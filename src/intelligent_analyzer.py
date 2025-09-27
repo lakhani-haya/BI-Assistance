@@ -14,18 +14,10 @@ logger = logging.getLogger(__name__)
 
 
 class IntelligentDataAnalyzer:
-    """
-    Main class that combines data processing with AI analysis
-    Provides end-to-end intelligent data analysis capabilities
-    """
+    """Combines data processing with AI analysis"""
     
     def __init__(self, openai_api_key: Optional[str] = None):
-        """
-        Initialize the intelligent analyzer
-        
-        Args:
-            openai_api_key (str, optional): OpenAI API key for AI analysis
-        """
+        """Initialize the analyzer with optional OpenAI API key"""
         self.data_processor = DataProcessor()
         self.ai_analyzer = AIAnalyzer(api_key=openai_api_key) if openai_api_key else None
         self.analysis_results = {}
