@@ -43,7 +43,7 @@ class InteractiveStorytellerInterface:
     
     def render_storytelling_interface(self):
         """Render the main storytelling interface"""
-        st.markdown("## 🤖 AI-Powered Data Storytelling")
+        st.markdown("## AI-Powered Data Storytelling")
         
         # Create tabs for different storytelling features
         story_tabs = st.tabs([
