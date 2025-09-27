@@ -51,7 +51,7 @@ class InteractiveStorytellerInterface:
             "💬 Interactive Q&A", 
             "🔍 Deep Insights",
             "🎯 Opportunity Mining",
-            "📊 Performance Diagnosis"
+            "Performance Diagnosis"
         ])
         
         with story_tabs[0]:
@@ -216,7 +216,7 @@ class InteractiveStorytellerInterface:
                     # Visualization suggestions
                     viz_suggestions = qa_item['answer'].get('visualization_suggestions', [])
                     if viz_suggestions:
-                        st.markdown("**📊 Visualization Suggestions:**")
+                        st.markdown("**Visualization Suggestions:**")
                         for viz in viz_suggestions:
                             st.markdown(f"• {viz}")
         
@@ -325,7 +325,7 @@ class InteractiveStorytellerInterface:
             )
             
             # Current metrics (optional)
-            with st.expander("📊 Current Performance Metrics", expanded=False):
+            with st.expander("Current Performance Metrics", expanded=False):
                 col_a, col_b = st.columns(2)
                 
                 with col_a:
@@ -365,7 +365,7 @@ class InteractiveStorytellerInterface:
     
     def _render_performance_diagnosis(self):
         """Render performance diagnosis interface"""
-        st.markdown("### 📊 Performance Diagnosis")
+        st.markdown("### Performance Diagnosis")
         
         col1, col2 = st.columns([2, 1])
         
@@ -453,7 +453,7 @@ class InteractiveStorytellerInterface:
             st.session_state.storytelling_state['qa_history'].append(qa_item)
             
             # Display the answer immediately
-            st.markdown("#### 🤖 AI Response")
+            st.markdown("#### AI Response")
             st.markdown(answer['answer'])
             
             # Show confidence
@@ -562,7 +562,7 @@ class InteractiveStorytellerInterface:
         
         # Recommended visualizations
         if story.recommended_visualizations:
-            st.markdown("## 📊 Recommended Visualizations")
+            st.markdown("## Recommended Visualizations")
             
             for viz in story.recommended_visualizations:
                 st.markdown(f"• **{viz['type'].replace('_', ' ').title()}:** {viz['description']}")
@@ -658,7 +658,7 @@ class InteractiveStorytellerInterface:
             st.markdown(f"**🔧 Implementation:** {opportunity['implementation_difficulty']}")
         
         if 'success_metrics' in opportunity:
-            st.markdown("**📊 Success Metrics:**")
+            st.markdown("**Success Metrics:**")
             for metric in opportunity['success_metrics']:
                 st.markdown(f"• {metric}")
     

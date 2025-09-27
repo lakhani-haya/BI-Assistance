@@ -389,7 +389,7 @@ class ApplicationOptimizer:
         perf_summary = system_info['performance_summary']
         
         if perf_summary.get('function_stats'):
-            st.markdown("### 📊 Function Performance")
+            st.markdown("### Function Performance")
             
             func_data = []
             for func_name, stats in perf_summary['function_stats'].items():

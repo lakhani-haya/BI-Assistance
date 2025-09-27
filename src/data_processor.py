@@ -1,6 +1,5 @@
 """
-Core Data Processing Module for BI Assistant
-Handles file upload, data cleaning, validation, and basic analysis
+Data processing module for file handling and analysis
 """
 
 import pandas as pd
@@ -16,9 +15,7 @@ logger = logging.getLogger(__name__)
 
 
 class DataProcessor:
-    """
-    Core data processing class that handles file reading, cleaning, and analysis
-    """
+    """Data processing utilities"""
     
     def __init__(self):
         self.data = None

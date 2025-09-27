@@ -1,4 +1,4 @@
-# Smart Business Intelligence Assistant 
+# Business Intelligence Assistant 
 
 An intelligent data analysis tool that automatically generates visualizations and insights from raw data using Python and AI.
 
@@ -82,14 +82,14 @@ streamlit run app.py
 - [x] Web interface foundation
 - [x] Enhanced file upload & processing
 - [x] Dashboard generation advanced features
-- [x] Natural language insights enhancement ✨ **NEW: AI Storytelling & Q&A**
+- [x] Natural language insights enhancement **NEW: AI Storytelling & Q&A**
 - [ ] Final documentation
 
-## ✨ Step 8 Complete: Natural Language Insights Enhancement 🤖
+## Step 8 Complete: Natural Language Insights Enhancement
 
 **Advanced AI Capabilities Now Available:**
 
-### 🤖 AI-Powered Data Storytelling
+### AI-Powered Data Storytelling
 - **6 Storytelling Modes**: Executive Brief, Detailed Analysis, Narrative Story, Problem-Solution, Opportunity Focus, Comparative Study
 - **Interactive Q&A**: Ask questions about your data in natural language
 - **Business Opportunity Mining**: AI identifies growth and optimization opportunities
@@ -109,7 +109,7 @@ streamlit run app.py
 - **Professional Reports**: Export stories and insights in multiple formats
 
 ### 🌐 Enhanced Web Interface
-Navigate to the **🤖 AI Insights** tab in the dashboard to access:
+Navigate to the **AI Insights** tab in the dashboard to access:
 - Story Generation with customizable modes and audiences
 - Interactive Q&A with your data
 - Deep insights generation with business context
