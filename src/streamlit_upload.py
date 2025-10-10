@@ -28,7 +28,7 @@ class StreamlitFileUploader:
     
     def render_file_upload_section(self) -> Dict[str, Any]:
         """Render comprehensive file upload interface"""
-        st.markdown("### 📁 File Upload & Processing")
+        st.markdown("### File Upload & Processing")
         
         # Upload mode selection
         upload_mode = st.radio(
@@ -94,7 +94,7 @@ class StreamlitFileUploader:
                 help="concat: stack files vertically, union: include all columns, intersect: only common columns"
             )
             
-            if st.button("🚀 Process All Files", type="primary"):
+            if st.button("Process All Files", type="primary"):
                 return self._process_multiple_files(uploaded_files, combination_method)
         
         return {}
@@ -363,7 +363,7 @@ class StreamlitFileUploader:
                 if file_ext in ['xlsx', 'xls']:
                     # For Excel files, we could add sheet selection here
                     # This would require reading the file first to get sheet names
-                    st.info("💡 Excel files: First sheet will be used by default")
+                    st.info("Excel files: First sheet will be used by default")
                 
                 # Data type optimization
                 optimize_types = st.checkbox(
@@ -444,7 +444,7 @@ class StreamlitFileUploader:
         # Summary
         col1, col2, col3, col4 = st.columns(4)
         with col1:
-            st.metric("📁 Total Files", results['total_files'])
+            st.metric("Total Files", results['total_files'])
         with col2:
             st.metric("✅ Processed", results['processed_files'])
         with col3:
