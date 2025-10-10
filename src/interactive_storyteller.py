@@ -181,7 +181,7 @@ class InteractiveStorytellerInterface:
         
         # Process question
         if ask_button and question:
-            with st.spinner("🧠 Analyzing your question..."):
+            with st.spinner("Analyzing your question..."):
                 self._process_qa_question(question)
         
         # Display Q&A history
