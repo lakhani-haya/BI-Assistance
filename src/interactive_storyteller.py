@@ -124,7 +124,7 @@ class InteractiveStorytellerInterface:
         with col2:
             st.markdown("#### Quick Actions")
             
-            if st.button("🚀 Generate Story", type="primary"):
+            if st.button("Generate Story", type="primary"):
                 self._generate_data_story(
                     mode_options[selected_mode],
                     target_audience,
@@ -171,7 +171,7 @@ class InteractiveStorytellerInterface:
             ask_button = st.button("🤔 Ask", type="primary")
         
         # Suggested questions
-        with st.expander("💡 Suggested Questions", expanded=False):
+        with st.expander("Suggested Questions", expanded=False):
             suggested_questions = self._get_suggested_questions()
             
             for i, suggestion in enumerate(suggested_questions):
