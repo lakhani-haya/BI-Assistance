@@ -24,6 +24,9 @@ try:
     from src.dashboard_exporter import DashboardExporter
 except ImportError as e:
     st.error(f"Import error: {e}")
+    # Create fallback Config class
+    class Config:
+        OPENAI_API_KEY = ""
 
 # Custom CSS for styling
 st.markdown("""

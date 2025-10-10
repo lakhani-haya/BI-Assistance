@@ -69,7 +69,7 @@ streamlit run app.py
 1. **Launch the Dashboard**: Run `python run_dashboard.py` 
 2. **Upload Data**: Use the sidebar to upload CSV/Excel files or load sample data
 3. **Configure Analysis**: Choose business category, theme, and analysis options
-4. **Run Analysis**: Click "🚀 Run Analysis" to generate insights and visualizations
+4. **Run Analysis**: Click "Run Analysis" to generate insights and visualizations
 5. **Explore Results**: View interactive charts, AI insights, and dashboard summaries
 6. **Export**: Download results in JSON, CSV, or HTML format
 
