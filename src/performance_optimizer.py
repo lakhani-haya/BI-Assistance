@@ -349,7 +349,7 @@ class ApplicationOptimizer:
     def render_performance_dashboard(self):
         """Render performance monitoring dashboard in Streamlit"""
         
-        st.markdown("## ⚡ Performance Monitor")
+        st.markdown("## Performance Monitor")
         
         # System metrics
         col1, col2, col3, col4 = st.columns(4)

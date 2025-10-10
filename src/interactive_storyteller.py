@@ -221,7 +221,7 @@ class InteractiveStorytellerInterface:
                             st.markdown(f"• {viz}")
         
         else:
-            st.info("💡 Start by asking a question about your data! I can help you understand patterns, trends, correlations, and more.")
+            st.info("Start by asking a question about your data! I can help you understand patterns, trends, correlations, and more.")
     
     def _render_deep_insights(self):
         """Render deep insights generation interface"""
@@ -266,7 +266,7 @@ class InteractiveStorytellerInterface:
         with col2:
             st.markdown("#### Generate Insights")
             
-            if st.button("🧠 Generate Insights", type="primary"):
+            if st.button("Generate Insights", type="primary"):
                 focus_areas = [focus_options[area] for area in selected_focus_areas]
                 self._generate_deep_insights(focus_areas, business_domain, analysis_depth)
             
@@ -304,7 +304,7 @@ class InteractiveStorytellerInterface:
             
             # Display individual insights
             for i, insight in enumerate(insights):
-                with st.expander(f"💡 {insight.title}", expanded=i==0):
+                with st.expander(f"{insight.title}", expanded=i==0):
                     self._display_enhanced_insight(insight)
         
         else:
@@ -354,7 +354,7 @@ class InteractiveStorytellerInterface:
         opportunities = st.session_state.storytelling_state['opportunities']
         
         if opportunities:
-            st.markdown("#### 🚀 Identified Opportunities")
+            st.markdown("#### Identified Opportunities")
             
             for i, opportunity in enumerate(opportunities):
                 with st.expander(f"💼 {opportunity['title']}", expanded=i==0):
@@ -466,7 +466,7 @@ class InteractiveStorytellerInterface:
     def _generate_deep_insights(self, focus_areas: List[str], business_domain: str, depth: str):
         """Generate deep insights"""
         
-        with st.spinner("🧠 Generating advanced insights..."):
+        with st.spinner("Generating advanced insights..."):
             try:
                 insights = self.insights_engine.generate_enhanced_insights(
                     self.data,
@@ -552,7 +552,7 @@ class InteractiveStorytellerInterface:
         
         # Insights
         if story.insights:
-            st.markdown("## 💡 AI-Generated Insights")
+            st.markdown("## AI-Generated Insights")
             
             insight_tabs = st.tabs([f"Insight {i+1}" for i in range(len(story.insights))])
             
@@ -652,7 +652,7 @@ class InteractiveStorytellerInterface:
         
         with col1:
             st.markdown(f"**💰 Potential Impact:** {opportunity['potential_impact']}")
-            st.markdown(f"**⚡ Time to Value:** {opportunity['time_to_value']}")
+            st.markdown(f"**Time to Value:** {opportunity['time_to_value']}")
         
         with col2:
             st.markdown(f"**🔧 Implementation:** {opportunity['implementation_difficulty']}")
@@ -689,7 +689,7 @@ class InteractiveStorytellerInterface:
         
         # Recommendations
         if 'recommendations' in diagnosis:
-            st.markdown("#### 💡 Recommendations")
+            st.markdown("#### Recommendations")
             for rec in diagnosis['recommendations']:
                 st.markdown(f"• {rec}")
     
