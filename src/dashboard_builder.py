@@ -656,7 +656,7 @@ class InteractiveDashboardBuilder:
                 index=0
             )
             
-            if st.button("🚀 Create Dashboard", type="primary"):
+            if st.button("Create Dashboard", type="primary"):
                 try:
                     dashboard_config = DashboardTemplate.create_dashboard_from_template(
                         selected_template, 
@@ -731,7 +731,7 @@ class InteractiveDashboardBuilder:
                     ["Executive Summary", "Detailed Analysis", "Operational View"]
                 )
         
-        if st.button("🧠 Generate AI Dashboard", type="primary"):
+        if st.button("Generate AI Dashboard", type="primary"):
             with st.spinner("AI is analyzing your data and creating dashboard..."):
                 try:
                     # Simulate AI dashboard generation
