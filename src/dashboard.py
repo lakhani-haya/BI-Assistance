@@ -143,7 +143,7 @@ class StreamlitDashboard:
                                            help="Use AI to generate natural language insights")
             else:
                 use_ai = False
-                st.sidebar.info("💡 Add OpenAI API key to enable AI insights")
+                st.sidebar.info("Add OpenAI API key to enable AI insights")
             
             # Business category selection
             business_category = st.sidebar.selectbox(
@@ -160,7 +160,7 @@ class StreamlitDashboard:
             )
             
             # Analysis button
-            if st.sidebar.button("🚀 Run Analysis", type="primary"):
+            if st.sidebar.button("Run Analysis", type="primary"):
                 self.run_comprehensive_analysis(clean_data, use_ai, business_category, theme)
         
         # Export options
@@ -237,7 +237,7 @@ class StreamlitDashboard:
                 "AI Insights",
                 "✏️ Chart Editor",
                 "📤 Export",
-                "⚡ Performance",
+                "Performance",
                 "📖 Documentation"
             ])
             
@@ -282,17 +282,17 @@ class StreamlitDashboard:
         
         with col2:
             st.markdown("""
-            ### 🚀 Get Started
+            ### Get Started
             
             **BI Assistant** is your intelligent data analysis companion that automatically:
             
             - **Analyzes your data** with smart insights
             - **Generates AI explanations** in plain English  
             - 📈 **Creates beautiful visualizations** automatically
-            - 💡 **Provides business recommendations** based on patterns
+            - **Provides business recommendations** based on patterns
             - 🎯 **Tailors analysis** to your industry (sales, finance, operations)
             
-            ### 📁 Upload Your Data
+            ### Upload Your Data
             
             Use the **sidebar** to:
             1. Upload a CSV or Excel file, OR
@@ -300,7 +300,7 @@ class StreamlitDashboard:
             3. Configure analysis options
             4. Run comprehensive analysis
             
-            ### ✨ Features Available
+            ### Features Available
             """)
             
             # Feature cards
@@ -380,7 +380,7 @@ class StreamlitDashboard:
                 col1, col2 = st.columns(2)
                 
                 with col1:
-                    st.markdown(f"**📁 Filename:** {file_info.filename}")
+                    st.markdown(f"**Filename:** {file_info.filename}")
                     st.markdown(f"**📏 File Size:** {file_info.size_bytes / (1024*1024):.2f} MB")
                     st.markdown(f"**🔤 Encoding:** {file_info.encoding or 'Auto-detected'}")
                 
@@ -482,7 +482,7 @@ class StreamlitDashboard:
             with col2:
                 st.metric("After Cleaning", f"{final_shape[0]:,} × {final_shape[1]}")
         else:
-            st.info("✨ No cleaning operations were needed - your data is already in great shape!")
+            st.info("No cleaning operations were needed - your data is already in great shape!")
     
     def render_ai_insights_section(self, insights: Dict[str, Any]):
         """Render AI-generated insights"""
@@ -509,7 +509,7 @@ class StreamlitDashboard:
             
             # Recommendations
             if overview.get('recommendations'):
-                st.markdown("#### 💡 Recommendations")
+                st.markdown("#### Recommendations")
                 recommendations = overview['recommendations']
                 if isinstance(recommendations, list):
                     for rec in recommendations:
@@ -585,7 +585,7 @@ class StreamlitDashboard:
         # Chart recommendations
         recommendations = dashboard.get('recommendations', [])
         if recommendations:
-            with st.expander("💡 Additional Chart Recommendations"):
+            with st.expander("Additional Chart Recommendations"):
                 for i, rec in enumerate(recommendations, 1):
                     st.markdown(f"**{i}. {rec.get('title', 'Chart')}** ({rec.get('chart_type', 'Unknown')})")
                     st.markdown(f"   *Rationale:* {rec.get('rationale', 'N/A')}")
@@ -678,7 +678,7 @@ class StreamlitDashboard:
         
         # Chart rationale
         if not compact and chart_info.get('rationale'):
-            st.caption(f"💡 {chart_info['rationale']}")
+            st.caption(f"{chart_info['rationale']}")
     
     def export_results(self, format: str):
         """Export analysis results in specified format"""
@@ -874,14 +874,14 @@ class StreamlitDashboard:
     
     def render_performance_monitor(self):
         """Render performance monitoring interface"""
-        st.markdown("## ⚡ Performance Monitor")
+        st.markdown("## Performance Monitor")
         
         try:
             from src.performance_optimizer import app_optimizer
             app_optimizer.render_performance_dashboard()
         except Exception as e:
             st.error(f"❌ Performance monitor error: {str(e)}")
-            st.info("💡 Performance monitoring features are being initialized...")
+            st.info("Performance monitoring features are being initialized...")
     
     def render_documentation(self):
         """Render documentation interface"""
@@ -894,7 +894,7 @@ class StreamlitDashboard:
             doc_generator.render_documentation_interface()
         except Exception as e:
             st.error(f"❌ Documentation error: {str(e)}")
-            st.info("💡 Documentation features are being initialized...")
+            st.info("Documentation features are being initialized...")
     
     def run(self):
         """Main method to run the dashboard"""
