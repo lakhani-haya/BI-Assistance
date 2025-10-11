@@ -24,9 +24,40 @@ try:
     from src.dashboard_exporter import DashboardExporter
 except ImportError as e:
     st.error(f"Import error: {e}")
-    # Create fallback Config class
+    # Create fallback classes
     class Config:
         OPENAI_API_KEY = ""
+    
+    class StreamlitFileUploader:
+        def __init__(self):
+            pass
+        def render_upload_section(self):
+            st.warning("File uploader not available")
+            return None
+    
+    class DataProcessor:
+        def __init__(self):
+            pass
+    
+    class IntelligentDataAnalyzer:
+        def __init__(self, api_key=None):
+            pass
+    
+    class IntelligentVisualizationEngine:
+        def __init__(self, api_key=None):
+            pass
+    
+    class DashboardBuilder:
+        def __init__(self, data=None):
+            pass
+    
+    class InteractiveStoryteller:
+        def __init__(self, api_key=None):
+            pass
+    
+    class DashboardExporter:
+        def __init__(self):
+            pass
 
 # Custom CSS for styling
 st.markdown("""
