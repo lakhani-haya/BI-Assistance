@@ -1,6 +1,6 @@
 """
 Test Suite for Advanced AI Insights and Interactive Storytelling
-Tests Step 8: Natural Language Insights Enhancement
+Tests Step 8: Natural
 """
 
 import pytest
