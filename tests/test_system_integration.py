@@ -1,5 +1,5 @@
 """
-Compre Test Suite for Final System Integration
+Come Test Suite for Final System Integration
 Tests all components working together 
 """
 
