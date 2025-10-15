@@ -1,5 +1,5 @@
 """
-Co Test Suite for Final System Integration
+Test Suite for Final System Integration
 Tests all components working together 
 """
 
