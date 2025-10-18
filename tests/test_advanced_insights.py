@@ -1,5 +1,5 @@
 """
-Test Suite for Advan AI Insights and Interactive Storytelling
+Test Suite for Adv AI Insights and Interactive Storytelling
 
 """
 
