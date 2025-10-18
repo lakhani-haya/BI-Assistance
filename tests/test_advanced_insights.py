@@ -1,5 +1,5 @@
 """
-Test Suite for Ad AI Insights and Interactive Storytelling
+Test Suite for AAI Insights and Interactive Storytelling
 
 """
 
