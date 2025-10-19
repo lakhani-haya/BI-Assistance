@@ -1,6 +1,6 @@
 """
 Advanced Dashboard Demo
-advanced dashboard generation, editing, and export capabilities
+Advanced dashboard generation, editing, and export capabilities
 """
 
 import sys
