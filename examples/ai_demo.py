@@ -1,6 +1,6 @@
 """
 Example script demonstrating AI-powered data analysis
-Run this AI integration in action
+AI integration in action
 """
 
 import sys
