@@ -18,7 +18,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 import time
 
-# Import configuration and AI components
+# Import confand AI components
 from src.config import Config
 from src.ai_insights import AIInsightsEngine
 
