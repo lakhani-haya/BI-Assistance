@@ -1,6 +1,6 @@
 """
 Advanced Natural Language Insights Engine
-Provides AI-powered data storytelling, contextual recommendations, aninteractive Q&A
+Provides AI-powered data storytelling, contextual recommendations, ainteractive Q&A
 """
 
 import streamlit as st
