@@ -21,7 +21,7 @@ from src.streamlit_upload import StreamlitFileUploader
 
 def demonstrate_file_validation():
     """Demonstrate file validation capabilities"""
-    print("🔍 File Validation Demonstration")
+    print("File Validation Demonstration")
     print("-" * 40)
     
     # Create sample files for testing
