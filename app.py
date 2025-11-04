@@ -6,7 +6,7 @@ Streamlit App Entry Point
 import sys
 import os
 
-# Add here  src directory to path
+# Addsrc directory to path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from src.dashboard import main
