@@ -52,7 +52,7 @@ def demonstrate_file_validation():
                 print(f"      - {error}")
     
     # Test encoding detection
-    print(f"\n🔤 Encoding Detection:")
+    print(f"\n Encoding Detection:")
     test_content = "naïve résumé café"
     for encoding in ['utf-8', 'latin-1', 'cp1252']:
         encoded_content = test_content.encode(encoding)
