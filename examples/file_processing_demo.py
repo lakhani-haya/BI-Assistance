@@ -35,7 +35,7 @@ def demonstrate_file_validation():
     validator = FileValidator()
     
     for filename, content in test_files.items():
-        print(f"\n📄 Testing: {filename}")
+        print(f"\n Testing: {filename}")
         
         if isinstance(content, str):
             file_obj = io.BytesIO(content.encode('utf-8'))
