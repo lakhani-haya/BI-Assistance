@@ -1,6 +1,6 @@
 """
 Example usage of the enhanced file processing system
-Demonstrates thnew file upload and processing capabilities
+Demonstrates thnew file upload anprocessing capabilities
 """
 
 import sys
