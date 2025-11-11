@@ -1,5 +1,5 @@
 """
-Simple launcher for the BI Assistant dashboard
+Simplelauncher for the BI Assistant dashboard
 """
 
 import subprocess
