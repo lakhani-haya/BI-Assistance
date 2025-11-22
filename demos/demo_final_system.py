@@ -1,5 +1,5 @@
 """
-Final Demo Script for Step 9: Final Polis
+Final Demo Script for Step 9: Final
 Demonstrates the complete BI Assistant system with all features
 """
 
