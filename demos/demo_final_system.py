@@ -1,5 +1,5 @@
 """
-Final Demo Script for S
+Final Demo Script for 
 Demonstrates the complete BI Assistant system with all features
 """
 
