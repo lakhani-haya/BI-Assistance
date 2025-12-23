@@ -1,6 +1,6 @@
 """
 Final Demo Script
-Demonstrates the complete BI Assistant system with all 
+Demonstrates the complete BI Assistant system wit
 """
 
 import os
