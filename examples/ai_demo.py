@@ -1,5 +1,5 @@
 """
-Example script showAI-powered data analysis
+Example script showing AI-powered data analysis
 AI integration in action
 """
 
