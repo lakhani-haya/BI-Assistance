@@ -180,7 +180,7 @@ def demonstrate_system_components():
         
         # Test data validation
         validation_result = processor.validate_data(data)
-        print(f"   ✅ Data validation: {validation_result['valid']}")
+        print(f"   Data validation: {validation_result['valid']}")
         
         # Test data summary
         summary = processor.get_data_summary(data)
