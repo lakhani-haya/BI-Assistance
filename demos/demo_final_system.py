@@ -16,7 +16,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 def create_comprehensive_sample_data():
     """Create comprehensive sample business data for final demo"""
     
-    print("🏗️ Creating comprehensive sample business dataset...")
+    print("Creating comprehensive sample business dataset...")
     
     # Set random seed for reproducible results
     np.random.seed(42)
