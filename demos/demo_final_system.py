@@ -173,7 +173,7 @@ def demonstrate_system_components():
     data = create_comprehensive_sample_data()
     
     # Test Data Processing
-    print("\n📊 Testing Data Processing Engine...")
+    print("\n Testing Data Processing Engine...")
     try:
         from src.data_processor import DataProcessor
         processor = DataProcessor()
