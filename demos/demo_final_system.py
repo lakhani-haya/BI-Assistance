@@ -149,7 +149,7 @@ def create_comprehensive_sample_data():
     
     df = pd.DataFrame(records)
     
-    print(f"✅ Created comprehensive dataset:")
+    print(f" Created comprehensive dataset:")
     print(f"   📊 {len(df):,} records")
     print(f"   📅 {len(dates)} days ({start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')})")
     print(f"   🌍 {len(regions)} regions")
