@@ -23,7 +23,7 @@ try:
     FILE_PROCESSOR_AVAILABLE = True
 except ImportError as e:
     FILE_PROCESSOR_AVAILABLE = False
-    print(f"⚠️ File processor modules not available: {e}")
+    print(f"File processor modules not available: {e}")
 
 try:
     import streamlit as st
