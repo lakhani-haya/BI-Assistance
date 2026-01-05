@@ -30,7 +30,7 @@ try:
     STREAMLIT_AVAILABLE = True
 except ImportError:
     STREAMLIT_AVAILABLE = False
-    print("⚠️ Streamlit not available - skipping streamlit upload tests")
+    print("Streamlit not available - skipping streamlit upload tests")
 
 
 class TestFileValidator(unittest.TestCase):
