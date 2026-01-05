@@ -20,7 +20,7 @@ try:
     STREAMLIT_AVAILABLE = True
 except ImportError:
     STREAMLIT_AVAILABLE = False
-    print("⚠️ Streamlit not available - skipping dashboard tests")
+    print("Streamlit not available - skipping dashboard tests")
 
 
 class TestStreamlitConfig(unittest.TestCase):
