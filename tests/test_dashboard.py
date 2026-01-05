@@ -256,7 +256,7 @@ class TestDashboardIntegration(unittest.TestCase):
 
 def run_dashboard_tests():
     """Run all dashboard tests"""
-    print("🧪 Running Dashboard Tests")
+    print("Running Dashboard Tests")
     print("=" * 50)
     
     # Create test suite
