@@ -15,7 +15,7 @@ import json
 import copy
 from enum import Enum
 
-# Import dashboard components
+# Import dash components
 from src.dashboard_builder import ChartConfig, ChartType
 
 
