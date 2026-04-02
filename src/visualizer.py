@@ -19,7 +19,7 @@ from src.config import Config
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Set style for matplotlib
+
 plt.style.use('default')
 sns.set_palette("husl")
 
