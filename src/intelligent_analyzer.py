@@ -1,5 +1,5 @@
 """
-Integration utilities for combining data processing with AI analysis
+Integration utils for combining data processing with AI analysis
 """
 
 import pandas as pd
